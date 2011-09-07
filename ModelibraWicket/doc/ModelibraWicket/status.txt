@@ -1,0 +1,74 @@
+Modelibra
+
+Not to forget for deployment:
+
+	email password must be yes and not scrambled (email-config.xml)
+	    ulaval must be the last email config (email-config.xml)
+	    
+	login must be true (specific-domain-config.xml)
+	
+	remove servlet-api.jar
+	
+	remove development tags from web.xml.
+	    (WEB-INF/server)
+	
+	admin password must not be scrambled in users.xml
+	    (use dr, dr and change it on the web) 
+	    
+	rename the app name in jetty-config.xml to dmLite
+	    
+	src/org/domain; classes
+	lib
+	config
+	db
+	mm
+	version.txt
+	
+Objective
+
+  To update to Wicket-2.0.
+  
+Done
+  
+  Lookup at any level of the hierarchy (topics and subtopics). 
+		Now, you can lookup only at the root level of an entry concept.
+  
+  
+To do
+	
+	Last value as default value.
+	
+	Table component with sort columns.
+    
+    Back context may be improved for add and edit by returning 
+	    to the first list view context?
+    
+    Make a link of an absorbed entity parent.
+    
+    Multiple relations between the same two concepts (only one lookup now).
+
+	Save context page by a user. Back to the user saved context page.
+	
+	Add a Display Parent link for parents that you do not come from?
+
+	Type conversion error msgs?
+    
+    Do not display what you cannot use?
+    
+    Undo at least the last action (similar to Clipboard). (Redo?)
+    
+    Display the model config as a report.
+    
+    Display a tree of subjects.
+	
+	There is a performance hit on the display of all approved subjects (left column)?
+
+	Generalize specific web components as much as possible.
+	Introduce more display web components in dmWicket.
+	
+	
+	
+	
+	
+
+		

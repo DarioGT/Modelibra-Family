@@ -1,0 +1,35 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 03
+Title: Order and Selection
+Created: 2006.01.11
+Updated: 2007.10.08
+
+Objective
+
+    To introduce order and selection of entities.
+    
+Concepts
+
+	Url new property
+		name
+
+	Url name property is now unique and not link
+		one identifier per concept (in addition to oid)
+	
+	order and selection of entities
+	    simple order (sorting)
+	        ascending vs. descending order
+		simple selection
+		    equal, not equal, contain, contain some, contain all, greater than				
+		Date vs. EasyDate 
+	
+	UTF-8 for accents (Eclipse project: Text file encoding)
+	
+	list display type vs. table display type
+	
+	Wicket view concepts
+		selections in method chain
+	
+
+	

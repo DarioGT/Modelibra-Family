@@ -1,0 +1,4 @@
+http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html
+ftp://ftp.fu-berlin.de/doc/iso/iso3166-countrycodes.txt
+
+http://www.w3.org/International/resource-index

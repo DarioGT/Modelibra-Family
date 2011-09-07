@@ -1,0 +1,78 @@
+Major problems (affect the productivity of a user):
+
+Provide buttons/links to move a slide up or down (often required in the creation or maintenance of a presentation).
+Provide buttons/links to move a point up or down (often required in the creation or maintenance of a presentation).
+
+What happens if one wants to edit a property that is optional? Has to go somewhere else? But where? The generic code 
+has been replaced with the specific Property Editor code. Perhaps, we should keep the generic code and add a link to the 
+table of presentations in the home page, or provide optional properties in editors.
+
+
+Minor problems (may stay without affecting the productivity of a user):
+
+When point number is required, the auto increment is not reached since the required check is done before the increment. 
+	<property oid="1176413579105">
+		<code>number</code>
+		<propertyClass>java.lang.Integer</propertyClass>
+		<required>true</required>
+		<autoIncrement>true</autoIncrement>
+		<unique>true</unique>
+Right now the only way to resolve the problem without programming changes is either to change required to false, to add update as false, or
+to add validateForm as false in the domain XML element.
+
+If a property is configured not to be updateable, the field is displayed and not a label.
+
+UploadForm uses the findUploadFolderPath() method to find the absolute (computer disk) path of an upload folder. 
+Is there a way to use the application context path in conjunction with the org.apache.wicket.markup.html.form.upload.FileUpload class?
+	[An opportunity for a generic web component for an upload. 
+	The CourseQuiz application has a more elaborate upload with private and public folders that can be seen in the upload component.]
+
+All upload files go to the same upload folder. It would have been more user friendly to separate them into presentation folders
+within the upload folder. It would have been more user friendly to provide an upload of an image file from the context of a new image point,
+or at least to accept only the image file name and append the prefix of upload or upload/PresenationName 
+(need for a user property in the ContextImagePanel generic web component to append the prefix).
+
+
+Nice to have (some time in future): 
+
+Provide a direct access to a slide from a presentation.
+	[An opportunity for a generic web component that has more than first, next, prior and last.]
+	
+Provide a second counter for a slide. 
+Provide a visual feedback when only 5, 3 and 1 minute left for the presentation 
+(important at conferences).
+
+Provide an audio support to listen to a presenter that recorded the presentation using the timer,
+so that the audio and display are well synchronized.
+
+Each slide could have duration property (Integer), so that a presentation author could determine its duration. 
+We could even allow an author to navigate trough the slides, while recording times. 
+
+Provide a version where a slide purpose can be also seen (for e-learning).
+	
+Provide, in the home page, a clickable header for table properties to sort presentations by a property. 
+
+Provide a choice of a few colours for a point background.
+
+Perhaps we should add the type property to the graphical model and make the text property optional? 
+In that case, there would not be a need to couple image editing with the text editing as in AjaxImageModalEditorPanel.
+
+Semantically there is no reason to have two text properties for the Point concept: text and explanation. 
+Perhaps we should have only one regular text property and for it we should use AjaxEditableMulitilineLabel. 
+The other point types are code (special case of the text property), image and link. 
+Thus a point is either text, code, image or link. What about a link property that has both text and url?
+
+Generate a PDF file of a presentation.
+http://www-128.ibm.com/developerworks/opensource/library/os-javapdf/
+http://www.onjava.com/pub/a/onjava/2003/06/18/dynamic_files.html
+http://www.manning.com/lowagie/
+
+Import a spreadsheet as a simple presentation (to speed up the presentation creation).
+http://jexcelapi.sourceforge.net/
+http://cwiki.apache.org/WICKET/how-to-work-with-excel-in-wicket-using-jexcel-api.html
+
+
+
+
+
+

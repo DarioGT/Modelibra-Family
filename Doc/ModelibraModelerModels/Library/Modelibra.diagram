@@ -1,0 +1,40 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1233251516994,89,Personal,Personals,PersonalLibrary,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,true,90,94,161,167,1233251560026,90,Person,Persons,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1233251560026,90,960496657960,1,Oid,1233251560027,91,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1233251560026,90,1138035633296,1,Name,1233252088979,92,firstName,firstNames,?,255,204,102,1,1,false,false,?,false
+I,1233251560026,90,1138035633296,1,Name,1234736532404,5,lastName,lastNames,?,255,204,102,1,1,false,false,?,false
+I,1233251560026,90,1131484746612,110,Email,1235772852256,4,email,emails,?,255,204,102,1,1,false,true,?,false
+I,1233251560026,90,1146828554640,178,Logic,1235772584766,1,onTime,onTimes,?,255,204,102,1,1,false,false,true,false
+I,1233251560026,90,960496658020,11,Integer,1233252095780,93,maxNumberOfBooks,maxNumberOfBookss,?,255,204,102,1,1,false,false,1,false
+I,1233251560026,90,1137362490437,10,JDate,1235772763295,2,returnDate,returnDates,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,true,491,116,128,134,1234736431783,1,Book,Books,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1234736431783,1,960496657960,1,Oid,1234736431783,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1234736431783,1,1165588261375,80,String,1234736439091,3,name,names,?,255,204,102,1,1,false,true,?,false
+I,1234736431783,1,1165588261375,80,String,1234736441891,4,author,authors,?,255,204,102,1,1,false,false,?,false
+I,1234736431783,1,1131484778208,111,Url,1235772843103,3,webLink,webLinks,?,255,204,102,0,1,false,false,?,false
+I,1234736431783,1,1138035779453,2,Text,1235841544643,1,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1233251516994,89,1233251560026,90,1234736431783,1,false,false,false,0,N,false,books,true,NONE,NONE,NONE,0,1,false,person,true,NONE,NONE,NONE,1234736625880,6,?,?,?,153,102,0,true,false

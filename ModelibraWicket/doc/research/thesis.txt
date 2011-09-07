@@ -1,0 +1,32 @@
+Thesis Topics
+
+Report Generation in dmLite
+(http://java-source.net/open-source/charting-and-reporting)
+
+Catalog of Web Components in ModelibraWicket Inspired by Netvibes Components 
+(http://www.netvibes.com/)
+
+AJAX Web Components in ModelibraWicket
+(http://ajaxpatterns.org/)
+
+ModelibraWicket View Configurations
+
+Code Generation of Specific Web Components from ModelibraWicket View Configurations
+
+Developing ModelibraSwing for Modelibra Inspired by ModelibraWicket
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

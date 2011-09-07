@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<title>Cheesr - Making cheese taste beta</title>
+	<wicket:link>
+		<link href="style.css" rel="stylesheet" />
+	</wicket:link>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>Cheesr Application</h1>
+		</div> <!-- header -->
+		<div id="content">
+			
+			<wicket:extend>
+				<div id="main">	
+					<p>
+						<a wicket:id="discounts">Discounts</a>	
+					</p>
+					<div wicket:id="cheeses">
+						<h3 wicket:id="name">Gouda</h3>
+						<p wicket:id="description">Gouda is a Dutch...</p>
+						<p>
+							<span wicket:id="price">$1.99</span> 
+							<a wicket:id="add">[add to cart]</a>
+							<a wicket:id="ajaxAdd">[add to cart with Ajax]</a>
+							<a wicket:id="bookmarkableDetails">[bookmarkable details]</a>
+							<a wicket:id="details">[details]</a>
+						</p>
+					</div>				
+					<div wicket:id="navigator"></div>				
+				</div> <!-- main -->
+				
+				<div id="cart">
+					<div wicket:id="cart"></div>
+					<input type="button" wicket:id="checkout" value="Check out" />
+				</div> <!-- cart -->	
+			</wicket:extend>
+					
+		</div> <!-- content -->
+	</div> <!-- container -->
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tests>
+  <test oid="1156429687328">
+    <name>CSS Quiz</name>
+    <description>Quiz on CSS from http://www.w3schools.com/css/css_quiz.asp.
+Only the seven questions out of twenty are entered.</description>
+    <questions>
+      <question oid="1156715266061">
+        <memberOid>1146253298836</memberOid>
+        <number>1</number>
+        <type>single choice</type>
+        <text>What does CSS stand for?</text>
+        <points>1.0</points>
+        <creationDate>2006-08-27</creationDate>
+        <items>
+          <item oid="1156715301609">
+            <number>1</number>
+            <text>Computer Style Sheets</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715316454">
+            <number>2</number>
+            <text>Colorful Style Sheets</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715328517">
+            <number>3</number>
+            <text>Creative Style Sheets</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715338425">
+            <number>4</number>
+            <text>Cascading Style Sheets</text>
+            <correct>true</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1156715361988">
+        <memberOid>1146253298836</memberOid>
+        <number>2</number>
+        <type>single choice</type>
+        <text>What is the correct HTML for referring to an external style sheet?</text>
+        <points>1.0</points>
+        <creationDate>2006-08-27</creationDate>
+        <items>
+          <item oid="1156715419317">
+            <number>1</number>
+            <text>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1156715429646">
+            <number>2</number>
+            <text>&lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715449866">
+            <number>3</number>
+            <text>&lt;style src="mystyle.css"&gt;</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1156715480103">
+        <memberOid>1146253298836</memberOid>
+        <number>3</number>
+        <type>single choice</type>
+        <text>Where in an HTML document is the correct place to refer to an external style sheet?</text>
+        <points>1.0</points>
+        <creationDate>2006-08-27</creationDate>
+        <items>
+          <item oid="1156715513823">
+            <number>1</number>
+            <text>In the &lt;head&gt; section</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1156715533355">
+            <number>2</number>
+            <text>At the top of the document</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715545138">
+            <number>3</number>
+            <text>In the &lt;body&gt; section</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715562967">
+            <number>4</number>
+            <text>At the end of the document</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1156715579530">
+        <memberOid>1146253298836</memberOid>
+        <number>4</number>
+        <type>single choice</type>
+        <text>Which HTML tag is used to define an internal style sheet?</text>
+        <points>1.0</points>
+        <creationDate>2006-08-27</creationDate>
+        <items>
+          <item oid="1156715630549">
+            <number>1</number>
+            <text>&lt;style&gt;</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1156715640097">
+            <number>2</number>
+            <text>&lt;css&gt;</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715657442">
+            <number>3</number>
+            <text>&lt;script&gt;</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1156715665052">
+        <memberOid>1146253298836</memberOid>
+        <number>5</number>
+        <type>single choice</type>
+        <text>Which HTML attribute is used to define inline styles?</text>
+        <points>1.0</points>
+        <creationDate>2006-08-27</creationDate>
+        <items>
+          <item oid="1156715718555">
+            <number>1</number>
+            <text>font</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715730650">
+            <number>2</number>
+            <text>styles</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715748573">
+            <number>3</number>
+            <text>class</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715762324">
+            <number>4</number>
+            <text>style</text>
+            <correct>true</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1156715774075">
+        <memberOid>1146253298836</memberOid>
+        <number>6</number>
+        <type>single choice</type>
+        <text>Which is the correct CSS syntax?</text>
+        <points>1.0</points>
+        <creationDate>2006-08-27</creationDate>
+        <items>
+          <item oid="1156715818732">
+            <number>1</number>
+            <text>body:color=black</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715832405">
+            <number>2</number>
+            <text>{body:color=black(body}</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156715854406">
+            <number>3</number>
+            <text>body {color: black}</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1156715870313">
+            <number>4</number>
+            <text>{body;color:black}</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1156716652772">
+        <memberOid>1146253298836</memberOid>
+        <number>7</number>
+        <type>true or false</type>
+        <text>To define the space between the element's border and content, you use the padding property, but are you allowed to use negative values?</text>
+        <points>1.0</points>
+        <creationDate>2006-08-27</creationDate>
+        <items>
+          <item oid="1156716728195">
+            <number>1</number>
+            <text>yes</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156716745243">
+            <number>2</number>
+            <text>no</text>
+            <correct>true</correct>
+          </item>
+        </items>
+      </question>
+    </questions>
+  </test>
+  <test oid="1156771693635">
+    <name>Introduction to Modelibra</name>
+    <description>Formative questions prepared by members, to allow other members to test their understanding of concepts.</description>
+    <questions>
+      <question oid="1156796635011">
+        <memberOid>1146253298836</memberOid>
+        <number>1</number>
+        <type>multiple choice</type>
+        <text>Modelibra can be used to represent in Java</text>
+        <points>0.5</points>
+        <creationDate>2006-08-28</creationDate>
+        <items>
+          <item oid="1156796769325">
+            <number>1</number>
+            <text>a concept.</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1156796785904">
+            <number>2</number>
+            <text>a concept property.</text>
+            <correct>true</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1156795994988">
+        <memberOid>1146253298836</memberOid>
+        <number>2</number>
+        <type>single choice</type>
+        <text>How many classes are defined for a single Modelibra concept?</text>
+        <points>0.5</points>
+        <creationDate>2006-08-28</creationDate>
+        <items>
+          <item oid="1156796065317">
+            <number>1</number>
+            <text>one</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156796073365">
+            <number>2</number>
+            <text>two</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1156796080366">
+            <number>3</number>
+            <text>three</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1156796086961">
+            <number>4</number>
+            <text>four</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1198781821914">
+        <memberOid>1146253298836</memberOid>
+        <number>3</number>
+        <type>short answer</type>
+        <text>What is the name of the graphical tool where you can design a domain  model and generate its XML configuration.</text>
+        <response>ModelibraModeler</response>
+        <points>0.5</points>
+        <creationDate>2007-12-27</creationDate>
+      </question>
+      <question oid="1198783988724">
+        <memberOid>1146253298836</memberOid>
+        <number>4</number>
+        <type>true or false</type>
+        <text>Does Moedlibra have a query language?</text>
+        <response>true</response>
+        <points>0.5</points>
+        <creationDate>2007-12-27</creationDate>
+        <items>
+          <item oid="1198784062674">
+            <number>1</number>
+            <text>true</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1198784072853">
+            <number>2</number>
+            <text>false</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1198784258736">
+        <memberOid>1146253298836</memberOid>
+        <number>5</number>
+        <type>multiple choice</type>
+        <text>In Modelibra data can be saved in:</text>
+        <points>2.0</points>
+        <creationDate>2007-12-27</creationDate>
+        <items>
+          <item oid="1198784338141">
+            <number>1</number>
+            <text>XML files.</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1198784354694">
+            <number>2</number>
+            <text>In a relational database.</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1198784367202">
+            <number>3</number>
+            <text>In an object database.</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1198784379583">
+            <number>4</number>
+            <text>In an XML database.</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1198784480668">
+        <memberOid>1146253298836</memberOid>
+        <number>6</number>
+        <type>single choice</type>
+        <text>Modelibra is</text>
+        <points>0.0</points>
+        <creationDate>2007-12-27</creationDate>
+        <items>
+          <item oid="1198784634497">
+            <number>1</number>
+            <text>a commercial software.</text>
+            <correct>false</correct>
+          </item>
+          <item oid="1198784655613">
+            <number>2</number>
+            <text>an open source software.</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1198784675082">
+            <number>3</number>
+            <text>a closed source software.</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+      <question oid="1198785272177">
+        <number>7</number>
+        <type>short answer</type>
+        <text>Explain the essence of Modelibra in one sentence.</text>
+        <points>0.5</points>
+        <creationDate>2007-12-27</creationDate>
+      </question>
+    </questions>
+  </test>
+  <test oid="1156771693641">
+    <name>Introduction to ModelibraWicket</name>
+    <description>Formative questions prepared by members, to allow other members to test their understanding of concepts.</description>
+    <questions>
+      <question oid="1156795772799">
+        <memberOid>1146253298836</memberOid>
+        <number>1</number>
+        <type>short answer</type>
+        <text>What is the purpose of the web.xml file?</text>
+        <response>The purpose of the web.xml file is to configure a web application. In the urls00 spiral the Urls application is defined as a Wicket servlet with one parameter that determines the application class complete name.</response>
+        <points>0.5</points>
+        <creationDate>2006-08-28</creationDate>
+      </question>
+      <question oid="1156796423696">
+        <memberOid>1146253298836</memberOid>
+        <number>2</number>
+        <type>true or false</type>
+        <text>Wicket is used to create application views.</text>
+        <points>0.5</points>
+        <creationDate>2006-08-28</creationDate>
+        <items>
+          <item oid="1156796615244">
+            <number>1</number>
+            <text>true</text>
+            <correct>true</correct>
+          </item>
+          <item oid="1156796622823">
+            <number>2</number>
+            <text>false</text>
+            <correct>false</correct>
+          </item>
+        </items>
+      </question>
+    </questions>
+  </test>
+</tests>

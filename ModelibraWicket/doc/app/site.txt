@@ -1,0 +1,27 @@
+OSS Site Requirements
+
+Example: http://www.rubyonrails.org/
+
+Overview
+Screens
+Download
+Documentation
+Weblog
+Community
+Source
+
+Best of breed soultion
+
+Source:
+CMS; http://drupal.org/
+Forum: http://www.nabble.com/
+Blog, weblog: http://wordpress.org/
+Wiki: http://atlassian.com/software/confluence/ 
+Bug tracker: http://www.atlassian.com/software/jira/
+FTP: http://jscape.com/platypus/index.html
+Hosting:
+Examples:
+Tutorials:
+Javadoc:
+
+

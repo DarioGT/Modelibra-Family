@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<comments>
+  <comment oid="1170444011109">
+    <text>This is something!</text>
+    <creationDate>2007-02-02</creationDate>
+  </comment>
+  <comment oid="1170444011125">
+    <text>What is the magic?</text>
+    <creationDate>2007-02-02</creationDate>
+  </comment>
+  <comment oid="1170868984008">
+    <text>There is no magic. It is all in the configuration of your domain.</text>
+    <source>Dzenan Ridjanovic</source>
+    <creationDate>2007-02-07</creationDate>
+  </comment>
+  <comment oid="1188916278204">
+    <source>dr</source>
+    <creationDate>2007-09-04</creationDate>
+  </comment>
+</comments>

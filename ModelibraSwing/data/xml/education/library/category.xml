@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<categories>
+  <category oid="1236181376748">
+    <name>Computer Science</name>
+    <categories>
+      <category oid="1236183258123">
+        <name>Web Technologies</name>
+        <categories>
+          <category oid="1236183407685">
+            <name>Wicket</name>
+          </category>
+          <category oid="1236352552039">
+            <name>jQuery</name>
+          </category>
+          <category oid="1236353072261">
+            <name>GWT</name>
+          </category>
+        </categories>
+      </category>
+      <category oid="1236183356219">
+        <name>Software Engineering</name>
+        <categories>
+          <category oid="1236352594369">
+            <name>Frameworks</name>
+          </category>
+          <category oid="1236352715467">
+            <name>Design Patterns</name>
+          </category>
+          <category oid="1236352896123">
+            <name>Software Architecture</name>
+          </category>
+        </categories>
+      </category>
+      <category oid="1258741498589">
+        <name>Databases</name>
+        <categories>
+          <category oid="1258741518838">
+            <name>Relational Databases</name>
+          </category>
+        </categories>
+      </category>
+    </categories>
+  </category>
+  <category oid="1236181412328">
+    <name>Novels</name>
+  </category>
+  <category oid="1258741919985">
+    <name>Management Information Systems</name>
+    <categories>
+      <category oid="1258741969327">
+        <name>Project Management</name>
+      </category>
+    </categories>
+  </category>
+</categories>

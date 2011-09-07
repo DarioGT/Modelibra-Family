@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+
+<h2>6.1 What are forms?</h2>
+<div class="section">
+<h3>6.5.1 Using buttons to submit data</h3>
+<p></p>
+<div class="example">
+<form wicket:id="form751">
+<input type="submit" value="Click me!" wicket:id="button1" />
+<button wicket:id="button2" type="submit">Click me!</button>
+</form>
+</div>
+</div>
+<div class="section">
+<h3>6.5.2 Using links to submit data</h3>
+<p></p>
+<div class="example">
+<form wicket:id="form752">
+<a href="#" wicket:id="inside">Click me!</a>
+</form>
+<input type="button" value="Outside!" wicket:id="outside" /></div>
+</div>
+<div class="section">
+<h3>6.5.3 Using Ajax to submit data</h3>
+<p>The following example shows a simple form. Check the log when you
+submit the form to see the submission message.</p>
+<div class="example">
+<div wicket:id="comments">
+<h4>Comments</h4>
+<div wicket:id="list"><span wicket:id="comment"></span></div>
+<form wicket:id="form753">
+<textarea wicket:id="editor"></textarea>
+<input type="button" wicket:id="save" value="Add comment" />
+</form>
+</div>
+</div>
+</div>
+<div class="section">
+<h3>6.5.4 Bypassing Wicket's form processing for special purposes</h3>
+<p>Pressing the button will submit the form, but not process the
+input. The server will respond with a different page. When you return to
+this page, the input is still available.</p>
+<div class="example">
+<form wicket:id="form">
+Text field:
+<input type="text" wicket:id="q" />
+<input type="submit" wicket:id="do" value="Go to other page" />
+<div wicket:id="feedback"></div>
+</form>
+</div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+
+  <h2>6.6 Validating user input</h2>
+  <p>Various examples demonstrating the Wicket validation mechanism. To see what was wrong, check the feedback panel at the bottom of the page.</p>
+  <form wicket:id="form">
+  <div class="section">
+  	<h3>6.6.1 Making a field required</h3>
+  	<p>This example shows a required field.</p>
+  	<div class="example">
+		    Age: <input type="text" wicket:id="age1" /> <input type="submit" value="Send to server" />
+  	</div>
+  </div>
+  <div class="section">
+  	<h3>6.6.2 Converting user input from strings to domain types</h3>
+  	<p>This example shows the conversion from string to integer and back.</p>
+  	<div class="example">
+		    Age: <input type="text" wicket:id="age2" /> <input type="submit" value="Send to server" />
+  	</div>
+  </div>
+  <div class="section">
+  	<h3>6.6.3 Using Wicket supplied validators</h3>
+  	<p>This example shows the validators available from Wicket.</p>
+  	<div class="example">
+  	<table>
+	  	<tr><td>Age:</td><td><input type="text" wicket:id="age3" /></td></tr> 
+		<tr><td>Handicap:</td><td><input type="text" wicket:id="handicap" /></td></tr> 
+		<tr><td>Duration:</td><td><input type="text" wicket:id="duration" /></td></tr> 
+		<tr><td>Userid:</td><td><input type="text" wicket:id="userid" /></td></tr> 
+		<tr><td>Comment:</td><td><input type="text" wicket:id="comment" /></td></tr> 
+		<tr><td>Phone:</td><td><input type="text" wicket:id="phone" /></td></tr> 
+		<tr><td>Email:</td><td><input type="text" wicket:id="email" /></td></tr> 
+		<tr><td>Url:</td><td><input type="text" wicket:id="url" /></td></tr> 
+		<tr><td>Password:</td><td><input type="password" wicket:id="password" /></td><td>Repeat: <input type="password" wicket:id="controlPassword" /></td></tr> 
+		<tr><td><input type="submit" value="Send to server" /></td></tr>
+	</table>
+  	</div>
+  </div>
+  <div class="section">
+  	<h3>6.6.4 Writing your own validator</h3>
+  	<p>This example shows how to create our own custom validator.</p>
+  	<div class="example">
+		Even number: <input type="text" wicket:id="divisible" /><br /> 
+		<input type="submit" value="Send to server" />
+  	</div>
+  </div>
+  <h3>Feedback messages from submit</h3>
+  <div wicket:id="feedback"></div>
+  </form>
+
+</body>
+</html>
+

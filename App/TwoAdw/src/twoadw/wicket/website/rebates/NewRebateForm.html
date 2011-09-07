@@ -1,0 +1,43 @@
+<wicket:panel>
+  <table>
+    <form wicket:id="form">
+      <tbody>
+        <tr>
+          <td>Rebate Name</td>
+          <td><input type="text" wicket:id="rebateName"/></td>
+        </tr>
+        <tr>
+          <td>Rebate Value</td>
+          <td><input type="text" wicket:id="rebateValue" /></td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td><input type="checkbox" wicket:id="percentRebate" class="genericInput"/></td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td><input type="text" wicket:id="description" /></td>
+        </tr>
+        <tr>
+          <td>Postal Rebate</td>
+          <td><input type="checkbox" wicket:id="postalRebate" class="genericInput" /></td>
+        </tr>
+        <tr>
+          <td>Priority</td>
+          <td><input type="text" wicket:id="rebatePriority" class="smallInput" /></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+          	<input type="submit" wicket:id="addButton" value="add" class="genericInput" />
+            <input type="submit" wicket:id="cancelButton" value="cancel" class="genericInput" />
+          </td>
+        </tr>
+        <tr>
+           <td colspan="4">
+             <span wicket:id="feedback">[any feedback here]</span>
+           </td>     
+        </tr>
+      </tbody>
+    </form>
+  </table>
+</wicket:panel>

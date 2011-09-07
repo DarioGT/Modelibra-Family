@@ -1,0 +1,61 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1174415568812,87,RushHour,?,game,255,255,255,Dzenan Ridjanovic,false,?,xml,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1174415568812,87,false,?,false,true,164,299,120,95,1174415643109,88,Parking,Parkings,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1174415643109,88,960496657960,1,Oid,1174415643125,89,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1174415643109,88,960496658020,11,Integer,1174416298328,114,number,numbers,?,255,204,102,1,1,false,true,?,false
+ 
+C, --- Box --- 
+ 
+B,1174415568812,87,false,?,false,false,585,249,120,153,1174415652859,90,Car,Cars,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1174415652859,90,960496657960,1,Oid,1174415652859,91,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1174415652859,90,1131484634992,109,Code,1174417281984,121,orientation,orientations,?,255,204,102,1,1,false,false,Horizontal,false
+I,1174415652859,90,960496658020,11,Integer,1174427530718,2,startRow,startRows,?,255,204,102,1,1,false,false,?,false
+I,1174415652859,90,960496658020,11,Integer,1174427533906,3,startColumn,startColumns,?,255,204,102,1,1,false,false,?,false
+I,1174415652859,90,960496658020,11,Integer,1174427542265,4,currentRow,currentRows,?,255,204,102,0,1,false,false,?,false
+I,1174415652859,90,960496658020,11,Integer,1174427547218,5,currentColumn,currentColumns,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1174415568812,87,false,?,false,true,274,47,120,169,1174415685562,94,CarModel,CarModels,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1174415685562,94,960496657960,1,Oid,1174415685562,95,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1174415685562,94,1131484634992,109,Code,1174415881703,102,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1174415685562,94,960496658020,11,Integer,1174415885359,103,length,lengths,?,255,204,102,1,1,false,false,?,false
+I,1174415685562,94,1131484634992,109,Code,1174427457609,1,colorName,?,?,255,204,102,0,1,false,false,?,false
+I,1174415685562,94,960496658020,11,Integer,1174415916187,104,red,reds,?,255,204,102,1,1,false,false,?,false
+I,1174415685562,94,960496658020,11,Integer,1174415917984,105,green,greens,?,255,204,102,1,1,false,false,?,false
+I,1174415685562,94,960496658020,11,Integer,1174415920062,106,blue,blues,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1174415568812,87,false,?,false,true,72,43,120,92,1174415701531,96,Area,Areas,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1174415701531,96,960496657960,1,Oid,1174415701531,97,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1174415701531,96,1131484634992,109,Code,1174416223343,113,code,codes,?,255,204,102,1,1,false,true,?,false
+ 
+C, === Lines === 
+ 
+L,1174415568812,87,1174415701531,96,1174415643109,88,false,false,false,0,N,false,parkings,true,NONE,NONE,NONE,1,1,true,area,true,NONE,NONE,NONE,1174415718109,98,?,?,?,153,102,0,true,false
+L,1174415568812,87,1174415643109,88,1174415652859,90,false,true,false,0,N,false,cars,true,NONE,NONE,NONE,1,1,true,parking,true,NONE,NONE,NONE,1174415728734,100,?,?,?,255,204,102,true,false
+L,1174415568812,87,1174415685562,94,1174415652859,90,false,false,false,0,N,false,cars,true,NONE,NONE,NONE,1,1,true,carModel,true,NONE,NONE,NONE,1174415731984,101,?,?,?,153,102,0,true,false

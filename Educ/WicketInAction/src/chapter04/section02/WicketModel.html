@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			These examples show how Wicket's standard models work.
+		</title>
+	</head>
+	<body>
+		<h2>4.2 A taste of the standard models</h2>
+		<p>These examples show how Wicket's standard models work.</p>
+		<div class="section">
+			<h3>4.2.1 Using the simple Model</h3>
+			<p>The following examples demonstrate the simple <code>Model</code>
+			class.</p>
+			<div class="example">
+				<h4>Static models</h4>
+				<table>
+					<colgroup><col style="width:60%" /><col style="width:40%" /></colgroup>
+					<thead><tr><th>Code</th><th>Result</th></tr></thead>
+					<tr>
+						<td><code>customer.getFirstName()</code></td>
+						<td wicket:id="firstname0"></td>
+					</tr>
+					<tr>
+						<td><code>customer.getLastName()</code></td>
+						<td wicket:id="lastname0"></td>
+					</tr>
+					<tr>
+						<td><code>customer.getAddress().getStreet()</code></td>
+						<td wicket:id="street0"></td>
+					</tr>
+					<thead><tr><th>Code</th><th>Result</th></tr></thead>
+					<tr>
+						<td><code>new Model(customer.getFirstName())</code></td>
+						<td wicket:id="firstname1"></td>
+					</tr>
+					<tr>
+						<td><code>new Model(customer.getLastName())</code></td>
+						<td wicket:id="lastname1"></td>
+					</tr>
+					<tr>
+						<td><code>new Model(customer.getAddress().getStreet())</code></td>
+						<td wicket:id="street1"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="example">
+				<h4>Dynamic versus static models</h4>
+				<p>The following examples show the difference between a static and
+				dynamic model. Notice how one model refreshes itself, while the other
+				remains constant.</p>
+				<table>
+					<tr>
+						<td>Static time:</td>
+						<td wicket:id="static"></td>
+					</tr>
+					<tr>
+						<td>Dynamic time:</td>
+						<td wicket:id="dynamic"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><a href="#" wicket:id="refresh">Refresh</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="example">
+				<h4>Working around the serialization problem using a <code>Model</code></h4>
+				<p>This example shows how to use <code>Model</code>s to work around serialization issues.</p>
+				<form wicket:id="myform">
+				<table>
+					<tr><td>Name</td><td><input type="text" wicket:id="name" /></td></tr>
+					<tr><td>Street</td><td><input type="text" wicket:id="street" /></td></tr>
+					<tr><td colspan="2"><input type="submit" value="Submit" /></td></tr>
+				</table>
+				</form> 
+			</div>
+		</div>
+		<div class="section">
+			<h3>4.2.2 Using PropertyModels for dynamic behavior</h3>
+			<p>The following examples demonstrate the <code>PropertyModel</code>
+			class.</p>
+			<div class="example">
+				<h4>Property models</h4>
+				<p>Click the links to see the values of our fields update, but not those in the previous section.</p>
+				<table>
+					<colgroup><col style="width:60%" /><col style="width:40%" /></colgroup>
+					<thead><tr><th>Code</th><th>Result</th></tr></thead>
+					<tr>
+						<td><code>new PropertyModel(customer, "firstName")</code></td>
+						<td wicket:id="firstname2"></td>
+					</tr>
+					<tr>
+						<td><code>new PropertyModel(customer, "lastName")</code></td>
+						<td wicket:id="lastname2"></td>
+					</tr>
+					<tr>
+						<td><code>new PropertyModel(customer,"address.street")</code></td>
+						<td wicket:id="street2"></td>
+					</tr>
+					<tr>
+						<td colspan="2">Switch customer: 
+							<input type="button" wicket:id="person1" value="John Doe" /> 
+							<input type="button" wicket:id="person2" value="Mister Smith" /></td>
+					</tr>
+				</table>
+			</div>
+			<div class="example">
+				<h4>Listing 4.2 Using PropertyModels to store form values</h4>
+				<p>The next example shows how to use <code>PropertyModel</code>s to store and retrieve form values.</p>
+				<form wicket:id="myform2">
+				<table>
+					<tr><td>Name</td><td><input type="text" wicket:id="name" /></td></tr>
+					<tr><td>Street</td><td><input type="text" wicket:id="street" /></td></tr>
+					<tr><td colspan="2"><input type="submit" value="Submit" /></td></tr>
+				</table>
+				</form> 
+			</div>
+		</div>
+		<div class="section">
+			<h3>4.2.3 Saving code with CompoundPropertyModels</h3>
+			<p>The following examples demonstrate the <code>CompoundPropertyModel</code>
+			class.</p>
+			<div class="example">
+				<h4>CompoundPropertymodel</h4>
+				<p>Click the links to see the values of our fields update, but not those in the top section.</p>
+				<table wicket:id="cpm1">
+					<colgroup><col style="width:60%" /><col style="width:40%" /></colgroup>
+					<thead><tr><th>Code</th><th>Result</th></tr></thead>
+					<tr>
+						<td><code>add(new Label("firstName"));</code></td>
+						<td wicket:id="firstName"></td>
+					</tr>
+					<tr>
+						<td><code>add(new Label("lastName"));</code></td>
+						<td wicket:id="lastName"></td>
+					</tr>
+					<tr>
+						<td><code>add(new Label("address.street"));</code></td>
+						<td wicket:id="address.street"></td>
+					</tr>
+					<tr>
+						<td colspan="2">Switch customer: 
+							<input type="button" wicket:id="person1" value="John Doe" /> 
+							<input type="button" wicket:id="person2" value="Mister Smith" /></td>
+					</tr>
+				</table>
+			</div>
+			<div class="example">
+				<h4>Listing 4.3 Using CompoundPropertyModel to store form values</h4>
+				<p>The next example shows how to use a <code>CompoundPropertyModel</code> to store 
+				and retrieve form values.</p>
+				<form wicket:id="myform3">
+				<table>
+					<tr><td>Name</td><td><input type="text" wicket:id="firstName" /></td></tr>
+					<tr><td>Street</td><td><input type="text" wicket:id="address.street" /></td></tr>
+					<tr><td colspan="2"><input type="submit" value="Submit" /></td></tr>
+				</table>
+				</form> 
+			</div>
+			<div class="example">
+				<h4>Listing 4.6 Using bind() for alternative bindings</h4>
+				<p>The next example shows how to use <code>CompoundPropertyModel#bind</code> to 
+					bind different expressions to the compound property model.</p>
+				<form wicket:id="myform4">
+				<table>
+					<tr><td>Name</td><td><input type="text" wicket:id="firstName" /></td></tr>
+					<tr><td>Street</td><td><input type="text" wicket:id="street" /></td></tr>
+					<tr><td colspan="2"><input type="submit" value="Submit" /></td></tr>
+				</table>
+				</form> 
+			</div>
+		</div>
+	</body>
+</html>

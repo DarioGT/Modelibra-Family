@@ -1,0 +1,54 @@
+<html>
+<body>
+<wicket:extend>
+	<div id="container">
+		<div id="content">
+			<div id="mainFull">			
+				<div wicket:id="feedback"></div>
+				<form wicket:id="form">
+					<h3>Register</h3>
+					<table>			    
+				        <tr>
+							<th>Username</th>
+							<td><input wicket:id="codeCustomer" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Password</th>
+							<td><input wicket:id="password" type="password" /></td>
+						</tr>
+						<tr>
+							<th>Retype Password</th>
+							<td><input wicket:id="passwordCheck" type="password" /></td>
+						</tr>
+						<tr>
+							<th>Last Name</th>
+							<td><input wicket:id="lastName" type="text" /></td>
+						</tr>
+						<tr>
+							<th>First Name</th>
+							<td><input wicket:id="firstName" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Email Address</th>
+							<td><input wicket:id="email" type="text" /></td>
+						</tr>
+						
+						<tr>
+							<th>Receive Email?</th>
+							<td><input wicket:id="receiveEmail" type="checkbox"/></td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<input type="submit" wicket:id="register" value="Register" /><br>
+								<input type="button" wicket:id="cancel" value="Cancel" />
+							</td>
+						</tr>
+					</table>
+				</form>		
+			</div> <!-- main -->
+		</div> <!-- content -->
+	</div> <!-- container -->
+</wicket:extend>
+</body>
+</html>

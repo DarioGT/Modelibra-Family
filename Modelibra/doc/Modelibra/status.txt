@@ -1,0 +1,95 @@
+Modelibra
+Created: 2007.01.03
+	
+Objectives
+
+  To use a domain and multiple models with an app.
+  To use main memory oid, id and unique indexes.
+  To develop a db persistence.
+  
+Done
+
+  To use a domain and multiple models with an app.
+  Restructuring of packages.
+  Indexes (not well tested).
+
+  Two new model config elements: 
+    persistenceRelativePath (for xml to replace db in dmConfig.properties)
+    persistenceConfig (for db config to have a db config per model)
+    
+  Two new neighbor config elements:
+    add, remove and update rules (referential constraints), 
+      so that a relational schema can be generated;
+      CASCADE could be used in future to support CASCADE in db4o
+  
+  db4o persistence (db4o-6.0-beta)
+    in future, do not forget to check for new persistence types (other than xml and db4o) 
+      in ModelConfig, Model and PersistentEntities
+      
+  Multiple domain models are supported.
+    Used already in migrating data from one domain model to another.
+    
+  migration from XML to Db4o
+    
+  migration from Db4o to XML
+  
+  Generate model configuration from ModelibraModeler.
+  
+  Separate (directory or db) specific data from type data (reusable data?)
+      (country names, country languages, member roles).
+      
+  Author for model.
+  
+  
+To do
+
+    Explain better that one-to-one relationship is one-to-many with
+      the max.cardinality of 1 on the  neighbor concept and not on the neighbor.
+
+    Explain better that Modelibra does not use explicit many-to-many relationships,
+      but several (2 or more) one-to-many relationships as in a relational model.
+    
+    Explain better that Modelibra supports the inheritance of concept definitions
+     (concept superclasses are abstract only or they come from a different domain model),
+      but not the inheritance of concept objects.
+      
+    Explain better that in Modelibra all the relationships are bi-directional,
+    
+    Empty space validation for String properties.
+    
+    JDBC persistence.
+
+    B-tree indexes (at least for oids and ids).
+    
+    A separate thread for persisting objects (db4o uses its own thread per tranaction).
+    
+    Copy a domain model.
+    
+    A log in XML about adds, removals and updates (different levels of details).
+    
+    Persistent properties (vs. transient)
+    
+    Derived properties 
+      (by copy from neighbor or by function; get: null only derivation or every time).
+    
+    Use Modelibra with domain model for the model config (use meta config).
+    
+    Action history redo.
+	
+	Add groups of members.
+	
+	Security roles.
+	
+	I18n directly in Modelibra (Modelibra session, locale).
+	
+	I18n of data content.
+
+	Add time to EasyDate.
+
+	
+	
+	
+	
+	
+
+		

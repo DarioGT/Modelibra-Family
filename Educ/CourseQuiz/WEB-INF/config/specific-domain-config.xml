@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1196702256688">
+		<code>Course</code>
+		<type>Specific</type>
+		<referenceModel>Reference</referenceModel>
+		
+		<i18n>false</i18n>
+		<signin>true</signin>
+    	<signinConcept>Member</signinConcept>
+    	<shortTextDefaultLength>48</shortTextDefaultLength>
+    	<pageBlockDefaultSize>16</pageBlockDefaultSize>
+    	<validateForm>false</validateForm>
+
+		<models>
+
+			<model oid="1176742903870">
+				<code>Quiz</code>
+				<extension>true</extension>
+				<extensionDomain>Course</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>Quiz</extensionModel>
+				
+				<concepts>
+
+					<concept oid="1176743084480">
+						<code>Test</code>
+						<extension>true</extension>
+						<extensionConcept>Test</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1176743093857">
+								<code>name</code>
+								<extension>true</extension>
+								<extensionProperty>name</extensionProperty>
+
+							</property>
+
+							<property oid="1176743097389">
+								<code>description</code>
+								<extension>true</extension>
+								<extensionProperty>description</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1176743111750">
+						<code>Question</code>
+						<extension>true</extension>
+						<extensionConcept>Question</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1176743324087">
+								<code>memberOid</code>
+								<extension>true</extension>
+								<extensionProperty>memberOid</extensionProperty>
+								
+								<essential>false</essential>
+							</property>
+
+							<property oid="1176743122799">
+								<code>number</code>
+								<extension>true</extension>
+								<extensionProperty>number</extensionProperty>
+								
+								<displayLength>8</displayLength>
+								<essential>false</essential>
+							</property>
+
+							<property oid="1176743128597">
+								<code>type</code>
+								<extension>true</extension>
+								<extensionProperty>type</extensionProperty>
+								
+								<validateType>true</validateType>
+								<validationType>QuestionTypes</validationType>
+								
+								<displayLength>8</displayLength>
+								<essential>false</essential>
+							</property>
+
+							<property oid="1176743130363">
+								<code>text</code>
+								<extension>true</extension>
+								<extensionProperty>text</extensionProperty>
+
+							</property>
+
+							<property oid="1176743133583">
+								<code>response</code>
+								<extension>true</extension>
+								<extensionProperty>response</extensionProperty>
+
+							</property>
+
+							<property oid="1176743137912">
+								<code>points</code>
+								<extension>true</extension>
+								<extensionProperty>points</extensionProperty>
+								
+								<displayLength>8</displayLength>
+							</property>
+
+							<property oid="1176743141476">
+								<code>creationDate</code>
+								<extension>true</extension>
+								<extensionProperty>creationDate</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1176743181618">
+						<code>Item</code>
+						<extension>true</extension>
+						<extensionConcept>Item</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1176743190042">
+								<code>number</code>
+								<extension>true</extension>
+								<extensionProperty>number</extensionProperty>
+
+								<displayLength>8</displayLength>
+							</property>
+
+							<property oid="1176743192293">
+								<code>text</code>
+								<extension>true</extension>
+								<extensionProperty>text</extensionProperty>
+
+							</property>
+
+							<property oid="1176743204607">
+								<code>correct</code>
+								<extension>true</extension>
+								<extensionProperty>correct</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1176743255484">
+						<code>Member</code>
+						<extension>true</extension>
+						<extensionConcept>Member</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1176743266564">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+								
+								<essential>false</essential>
+							</property>
+
+							<property oid="1176743269877">
+								<code>password</code>
+								<extension>true</extension>
+								<extensionProperty>password</extensionProperty>
+
+							</property>
+
+							<property oid="1176743276909">
+								<code>lastName</code>
+								<extension>true</extension>
+								<extensionProperty>lastName</extensionProperty>
+
+							</property>
+
+							<property oid="1176743280082">
+								<code>firstName</code>
+								<extension>true</extension>
+								<extensionProperty>firstName</extensionProperty>
+
+							</property>
+
+							<property oid="1176743286036">
+								<code>email</code>
+								<extension>true</extension>
+								<extensionProperty>email</extensionProperty>
+								
+								<essential>false</essential>
+							</property>
+
+							<property oid="1176743291334">
+								<code>receiveEmail</code>
+								<extension>true</extension>
+								<extensionProperty>receiveEmail</extensionProperty>
+
+							</property>
+
+							<property oid="1176743294320">
+								<code>role</code>
+								<extension>true</extension>
+								<extensionProperty>role</extensionProperty>
+
+							</property>
+
+							<property oid="1176743297133">
+								<code>startDate</code>
+								<extension>true</extension>
+								<extensionProperty>startDate</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1176743350745">
+						<code>Document</code>
+						<extension>true</extension>
+						<extensionConcept>Document</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1176745038704">
+								<code>testOid</code>
+								<extension>true</extension>
+								<extensionProperty>testOid</extensionProperty>
+
+							</property>
+
+							<property oid="1176744991669">
+								<code>fileName</code>
+								<extension>true</extension>
+								<extensionProperty>fileName</extensionProperty>
+
+							</property>
+
+							<property oid="1176744997217">
+								<code>uploadDate</code>
+								<extension>true</extension>
+								<extensionProperty>uploadDate</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+				
+				</concepts>
+		
+			</model>
+
+			<model oid="1176746269771">
+				<code>Reference</code>
+				<extension>false</extension>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/reference</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+						
+    			<concepts>
+	
+					<concept oid="1171894940420">
+				    	<code>CountryLanguage</code>
+				    	<extension>true</extension>
+				    	<extensionDomain>Dm</extensionDomain>
+				    	<extensionDomainType>Modelibra</extensionDomainType>
+    					<extensionModel>Reference</extensionModel>
+			        	<extensionConcept>CountryLanguage</extensionConcept>
+			        	
+				  	</concept>
+				  
+				  	<concept oid="1171894940520">
+				    	<code>SecurityRole</code>
+				   		<extension>true</extension>
+				   		<extensionDomain>Dm</extensionDomain>
+				   		<extensionDomainType>Modelibra</extensionDomainType>
+    					<extensionModel>Reference</extensionModel>
+			        	<extensionConcept>SecurityRole</extensionConcept>
+				  	</concept>
+				  	
+				  	<concept oid="1176746303134">
+						<code>QuestionType</code>
+						<entitiesCode>QuestionTypes</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1176746310605">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176746319184">
+								<code>type</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176746330779">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>510</maxLength>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+			    
+					</concept>		    
+				  	
+				</concepts>
+				
+			</model>
+   
+		</models>
+
+	</domain>
+		
+</domains>

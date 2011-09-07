@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manufacturers>
+  <manufacturer oid="1237315989160">
+    <manufacturerNumber>SonyHE</manufacturerNumber>
+    <name>Sony</name>
+    <websiteUrl>http://www.sony.com</websiteUrl>
+    <supportUrl>http://www.sony.com/support</supportUrl>
+    <contactEmail>contact@sony.com</contactEmail>
+    <contactName>Sony Public Relation</contactName>
+  </manufacturer>
+  <manufacturer oid="1237317351623">
+    <manufacturerNumber>SamsungHE</manufacturerNumber>
+    <name>Samsung</name>
+    <websiteUrl>http://www.samsung.com/</websiteUrl>
+    <supportUrl>http://www.samsung.com/ca/support/main/supportSupportMain.do</supportUrl>
+  </manufacturer>
+  <manufacturer oid="1237330067231">
+    <manufacturerNumber>AppleCE</manufacturerNumber>
+    <name>Apple</name>
+    <websiteUrl>http://www.apple.com/</websiteUrl>
+    <supportUrl>http://www.apple.com/support/</supportUrl>
+  </manufacturer>
+  <manufacturer oid="1237430010634">
+    <manufacturerNumber>HPLaptops</manufacturerNumber>
+    <name>Hewlett-Packard</name>
+    <websiteUrl>http://www.hp.ca</websiteUrl>
+    <contactName>Packard</contactName>
+  </manufacturer>
+  <manufacturer oid="1237698297770">
+    <manufacturerNumber>IntelCpu</manufacturerNumber>
+    <name>Intel</name>
+    <websiteUrl>http://www.intel.com</websiteUrl>
+  </manufacturer>
+  <manufacturer oid="1237707625712">
+    <manufacturerNumber>IntelMobo</manufacturerNumber>
+    <name>Intel</name>
+    <websiteUrl>http://www.intel.com</websiteUrl>
+  </manufacturer>
+  <manufacturer oid="1237726648828">
+    <manufacturerNumber>WD</manufacturerNumber>
+    <name>Western Digital</name>
+  </manufacturer>
+  <manufacturer oid="1237726836507">
+    <manufacturerNumber>Seagate</manufacturerNumber>
+    <name>Seagate</name>
+  </manufacturer>
+  <manufacturer oid="1237728495635">
+    <manufacturerNumber>xfx</manufacturerNumber>
+    <name>XFX</name>
+  </manufacturer>
+  <manufacturer oid="1238092607007">
+    <manufacturerNumber>MS-CE</manufacturerNumber>
+    <name>Microsoft</name>
+    <websiteUrl>http://www.microsoft.com</websiteUrl>
+    <supportUrl>http://www.microsoft.com/support</supportUrl>
+    <contactEmail>billy@microsoft.com</contactEmail>
+    <contactName>Bill Gates</contactName>
+  </manufacturer>
+</manufacturers>

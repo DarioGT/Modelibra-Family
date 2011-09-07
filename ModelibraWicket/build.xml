@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="ModelibraWicket" default="clean-build-test">
+	
+	<target name="start">
+		<tstamp/>
+		<available file="${basedir}/local.properties" 
+					property="local.properties.available"/>
+	</target>
+	                                                                                           
+	<target name="properties-local" 
+			if="local.properties.available" 
+			depends="start">
+		<echo message="Loading local properties file"/>
+		<property file="${basedir}/local.properties"/>
+	</target>
+	                                                                                           
+	<target name="properties" 
+			depends="properties-local">
+		<echo message="Loading build properties file"/>
+		<property file="antbuild.properties"/>
+	</target>	
+	
+	<target name="settings" depends="properties">	   
+		                 
+	    <echo message="******************************************"/>
+	    <echo message="Build Settings"/>
+	    <echo message="******************************************"/>	   
+	    
+		<echo message=" "/>
+			
+	    <echo message="build.dir		${build.dir}"/>
+	    <echo message="src.dir			${src.dir}"/>
+	    <echo message="classes.dir		${classes.dir}"/>
+	    <echo message="lib.dir			${lib.dir}"/>
+	    <echo message="jar.commit.dir	${jar.commit.dir}"/>
+	    <echo message="jar.test.dir		${jar.test.dir}"/>	    
+		
+	</target>
+	
+	<target name="classpath" depends="properties">
+		<path id="classpath">
+			<fileset dir="${lib.dir}" includes="**/*.jar"/>
+		</path>
+	</target>	
+	
+	<target name="clean" depends="properties">
+		<delete dir="${classes.dir}"/>		
+    </target>
+	
+	<target name="compile" depends="classpath,properties">
+		<mkdir dir="${classes.dir}"/>
+		<javac destdir="${classes.dir}" classpathref="classpath" debug="true">			
+			<src path="${src.dir}"/>			
+			<exclude name="dm/**"/>			
+		</javac>
+		<copy todir="${classes.dir}">
+			<fileset dir="${src.dir}">				
+				<exclude name="**/*.java"/>
+				<exclude name="dm/**"/>
+			</fileset>			
+		</copy>
+	</target>
+
+	<target name="jar-to-test" depends="compile">		
+		<jar destfile="${jar.test.dir}/${ant.project.name}.jar" basedir="${classes.dir}"/>		
+	</target>
+
+	<target name="jar-to-commit" depends="compile">
+		<jar destfile="${jar.commit.dir}/${ant.project.name}.jar" basedir="${classes.dir}"/>
+	</target>
+	
+	<target name="clean-build-test" depends="clean, jar-to-test"/>
+	
+	<target name="clean-build-commit" depends="clean, jar-to-commit"/>
+
+</project>

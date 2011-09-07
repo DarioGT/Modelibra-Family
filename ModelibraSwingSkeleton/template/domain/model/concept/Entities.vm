@@ -1,0 +1,71 @@
+#include ("template/ModelibraComment.txt")
+
+package $entitiespackagecode;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.modelibra.IDomainModel;
+
+/* ======= import internal parent entity class ======= */
+
+#if ($internalParentConfig)
+#set ($packageNeighborEntityClass = $internalParentConfig.getDestinationConceptConfig().getEntityClass())
+import $packageNeighborEntityClass;	
+#end
+
+/* ======= import external parent entity and entities classes ======= */
+
+#foreach ($neighborConfig in $externalParentConfigList) 
+	#set ($packageNeighborEntityClass = $neighborConfig.getDestinationConceptConfig().getEntityClass())
+	#set ($packageNeighborEntitiesClass = $neighborConfig.getDestinationConceptConfig().getEntitiesClass())
+	import $packageNeighborEntityClass;	
+	import $packageNeighborEntitiesClass;	
+#end
+
+/**
+ * $EntityCode specific entities.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $EntitiesCode extends Gen$EntitiesCode {
+	
+	private static final long serialVersionUID = ${serialNumber}L;
+
+	private static Log log = LogFactory.getLog(${EntitiesCode}.class);
+
+	/* ======= base constructor ======= */
+	
+	/**
+	 * Constructs $entitiesCode within the domain model.
+	 * 
+	 * @param model
+	 *            model
+	 */
+	public $EntitiesCode(IDomainModel model) {
+		super(model);
+	}
+	
+	/* ======= parent argument constructors ======= */
+	
+	#foreach ($neighborConfig in $parentConfigList) 
+		#set ($neighborCode = $neighborConfig.getCode()) 
+		#set ($NeighborCode = $neighborConfig.getNeighborName())   
+		#set ($NeighborEntityCode = $neighborConfig.getDestinationConceptConfig().getCode())
+	    /**
+		 * Constructs $entitiesCode for the $neighborCode parent.
+		 * 
+		 * @param $neighborCode
+		 *            $neighborCode
+		 */
+		public $EntitiesCode($NeighborEntityCode $neighborCode) {
+			super($neighborCode);
+		}
+	
+    #end
+    
+    /* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+
+}

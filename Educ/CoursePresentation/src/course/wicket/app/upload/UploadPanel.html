@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>
+
+    <form wicket:id="uploadForm">  
+            <table>
+                <caption>
+                    <wicket:message key = "upload.title"/>
+                </caption>
+			    <tr> 	        
+	                <th>
+	                    <wicket:message key = "upload.file"/>
+	                </th>
+	                &ensp;
+	                <td>
+	                    <input wicket:id="fileInput" type="file" size="80"/>
+	                </td>
+			    </tr>
+			    <tr> 	        
+	                <th>
+	  	                <input type="submit" value="&uarr;"/>
+	  	            </th>
+	                <td>
+	                    
+	                </td>
+			    </tr>
+	        </table>	    
+    </form>
+    
+    <div wicket:id="uploadFeedback"/>
+  
+</wicket:panel>
+
+</html>

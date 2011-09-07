@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<categories>
+  <category oid="1162133985304">
+    <name>Video</name>
+    <approved>false</approved>
+    <urls>
+      <url oid="1162134007634">
+        <name>Google Video</name>
+        <link>http://video.google.ca/</link>
+        <creationDate>2007-01-03</creationDate>
+        <approved>false</approved>
+      </url>
+    </urls>
+  </category>
+  <category oid="1173816644220">
+    <name>Framework</name>
+    <approved>true</approved>
+    <urls>
+      <url oid="1173816644237">
+        <name>Modelibra</name>
+        <link>http://drdb.fsa.ulaval.ca/modelibra/</link>
+        <description>Modelibra is a domain model framework for rapid application development. A domain model may be designed, generated, and validated as a web application. Modelibra uses the Wicket web framework for generic web components that are views of model concepts. The generic web components may be mixed with specific web components to develop a professional Wicket application.</description>
+        <creationDate>2007-03-13</creationDate>
+        <updateDate>2007-10-10</updateDate>
+        <approved>true</approved>
+      </url>
+      <url oid="1173816644254">
+        <name>Wicket</name>
+        <link>http://wicket.apache.org/</link>
+        <description>Component based Web framework.</description>
+        <creationDate>2007-03-13</creationDate>
+        <updateDate>2007-10-10</updateDate>
+        <approved>true</approved>
+      </url>
+      <url oid="1173907861072">
+        <name>Struts</name>
+        <link>http://struts.apache.org/</link>
+        <creationDate>2007-03-14</creationDate>
+        <approved>false</approved>
+      </url>
+      <url oid="1192203565102">
+        <name>JUnit</name>
+        <link>http://www.junit.org/home</link>
+        <creationDate>2007-10-12</creationDate>
+        <approved>false</approved>
+      </url>
+    </urls>
+  </category>
+  <category oid="1173816644270">
+    <name>Personal</name>
+    <approved>true</approved>
+    <urls>
+      <url oid="1173816644287">
+        <name>Dzenan Ridjanovic</name>
+        <link>http://drdb.fsa.ulaval.ca/dr/</link>
+        <creationDate>2007-03-13</creationDate>
+        <updateDate>2007-10-10</updateDate>
+        <approved>true</approved>
+      </url>
+    </urls>
+  </category>
+</categories>

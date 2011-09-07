@@ -1,0 +1,79 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1231169065132,200,CheeseStore,CheeseStores,sales,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1231169065132,200,false,?,false,true,27,25,128,92,1231169447719,201,Cart,Carts,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1231169447719,201,960496657960,1,Oid,1231169447720,202,oid,?,?,255,204,102,1,1,true,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1231169065132,200,false,?,false,true,335,449,128,124,1231169456719,203,Cheese,Cheeses,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1231169456719,203,960496657960,1,Oid,1231169456719,204,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1231169456719,203,1138035633296,1,Name,1231169568602,213,name,names,?,255,204,102,1,1,false,true,?,false
+I,1231169456719,203,1138035779453,2,Text,1231169571562,214,description,descriptions,?,255,204,102,1,1,false,false,?,false
+I,1231169456719,203,960496658020,7,Double,1231169573226,215,price,prices,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1231169065132,200,false,?,false,false,33,306,128,93,1231169481527,205,CartCheese,CartCheeses,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1231169481527,205,960496657960,1,Oid,1231169481527,206,oid,?,?,255,204,102,1,1,true,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1231169065132,200,false,?,false,true,344,132,128,140,1231169510951,207,Address,Addresses,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1231169510951,207,960496657960,1,Oid,1231169510951,208,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1231169510951,207,1131484582316,107,LongName,1231169523769,209,name,names,?,255,204,102,1,1,false,true,?,false
+I,1231169510951,207,1131484582316,107,LongName,1231169536601,210,street,streets,?,255,204,102,1,1,false,false,?,false
+I,1231169510951,207,1138035633296,1,Name,1231169538713,211,city,cities,?,255,204,102,1,1,false,false,?,false
+I,1231169510951,207,1131484634992,109,Code,1231169541737,212,zipcode,zipcodes,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1231169065132,200,false,?,false,true,500,32,128,128,1236777993733,1,Recipe,Recipes,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1236777993733,1,960496657960,1,Oid,1236777993733,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1236777993733,1,1131484582316,107,LongName,1236778014109,3,name,names,?,255,204,102,1,1,false,true,?,false
+I,1236777993733,1,1131484634992,109,Code,1236778037437,4,serves,servess,?,255,204,102,1,1,false,false,?,false
+I,1236777993733,1,1138035779453,2,Text,1236778266261,8,ingredients,ingredientss,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1231169065132,200,false,?,false,true,502,198,128,140,1237248523229,1,Discount,Discounts,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1237248523229,1,960496657960,1,Oid,1237248523229,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1237248523229,1,960496658020,7,Double,1237248563416,3,percentage,percentages,?,255,204,102,1,1,false,false,?,false
+I,1237248523229,1,1131484610357,108,Description,1237248567544,4,description,descriptions,?,255,204,102,0,1,false,false,?,false
+I,1237248523229,1,1137362490437,10,JDate,1237248574520,5,from,froms,?,255,204,102,1,1,false,false,?,false
+I,1237248523229,1,1137362490437,10,JDate,1237248578568,6,until,untils,?,255,204,102,1,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1231169065132,200,1231169510951,207,1231169447719,201,false,false,false,0,N,false,carts,true,NONE,NONE,NONE,0,1,false,address,true,NONE,NONE,NONE,1231169614847,216,?,?,?,153,102,0,true,false
+L,1231169065132,200,1231169447719,201,1231169481527,205,false,true,true,0,N,false,cartCheeses,true,NONE,NONE,NONE,1,1,true,cart,true,NONE,NONE,NONE,1231169636271,217,?,?,?,255,204,102,true,false
+L,1231169065132,200,1231169456719,203,1231169481527,205,false,false,true,0,N,false,cartCheeses,true,NONE,NONE,NONE,1,1,true,cheese,true,NONE,NONE,NONE,1231169686656,218,?,?,?,153,102,0,true,false
+L,1231169065132,200,1231169456719,203,1237248523229,1,false,false,false,0,N,false,discounts,true,NONE,NONE,NONE,1,1,false,cheese,true,NONE,NONE,NONE,1237248645106,7,?,?,?,153,102,0,true,false

@@ -1,0 +1,43 @@
+<wicket:panel>
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center">Name</th>
+        <th style="text-align:center">Value</th>
+        <th style="text-align:center">%</th>
+        <th style="text-align:center">Description</th>
+        <th style="text-align:center">Start</th>
+        <th style="text-align:center">Finish</th>
+        <th style="text-align:center">Postal Rebate</th>
+        <th style="text-align:center">Priority</th>
+        <th style="text-align:center">Action</th>
+      </tr>
+    </thead>
+    <form wicket:id="form">
+      <tbody>
+        <tr wicket:id="rebates">
+          <td><span wicket:id="rebateName">name</span></td>
+          <td><input type="text" wicket:id="rebateValue" size="5" class="smallInput"/></td>
+          <td><input type="checkbox" wicket:id="percentRebate" class="genericInput" /></td>
+          <td><input type="text" wicket:id="description"class="genericInput" /></td>
+          <td><span wicket:id="start" /></td>
+          <td><span wicket:id="finish" /></td>
+          <td><input type="checkbox" wicket:id="postalRebate" class="smallInput"/></td>
+          <td><input type="text" wicket:id="rebatePriority" size="1" class="genericInput"/></td>
+          <td><a href="#" wicket:id="remove">[remove]</a></td>
+        </tr>
+        <tr>
+          <td colspan="8">
+            <input type="submit" wicket:id="newButton" value="new" class="smallInput"/>
+            <input type="submit" wicket:id="updateButton" value="update" class="smallInput" />
+          </td>
+        </tr>
+        <tr>
+           <td colspan="8">
+             <span wicket:id="feedback">[any feedback here]</span>
+           </td>     
+        </tr>
+      </tbody>
+    </form>
+  </table>
+</wicket:panel>

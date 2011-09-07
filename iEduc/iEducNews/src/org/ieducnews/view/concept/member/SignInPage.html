@@ -1,0 +1,41 @@
+<html>
+<body>
+
+<wicket:extend>
+	<div id="divided_content">
+		<div class="section_title">Sign in</div>
+		<div id="main_text">
+			<div id="large_form">
+				<form wicket:id="signIn">
+			    	<span>account</span><br/> 
+			    	<input type="text" class="inputNormal" wicket:id="account"/><br/> 
+			    	<span>password</span><br/>
+			    	<input type="password" class="inputNormal" wicket:id="password"/><br/>
+			    	<input type="submit" value="sign in"/>
+			  	</form>
+			  </div>
+		</div>
+	</div>
+	
+	<div id="divided_content" class="div_border_left">
+		<div class="section_title">Create account</div>
+		<div id="main_text">
+			<div id="large_form">
+				<form id="large_form" wicket:id="signUp">
+			    	<span>account</span><br/> 
+			    	<input type="text" class="inputNormal" wicket:id="account"/><br/>
+			    	<span>password</span><br/>
+			    	<input type="password" class="inputNormal" wicket:id="password"/><br/>
+			    	<input type="submit" value="create"/>
+			  	</form>
+		  	</div>
+		</div>
+	</div>
+
+	<div id="main_text">
+		<div wicket:id="feedback" id="feedback"></div>
+	</div>
+</wicket:extend>
+
+</body>
+</html>

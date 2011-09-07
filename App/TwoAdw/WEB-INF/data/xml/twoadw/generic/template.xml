@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+  <template oid="1237786679873">
+    <name>Classic</name>
+    <directory>classic</directory>
+  </template>
+  <template oid="1237787608120">
+    <name>Black, Blue and Green</name>
+    <directory>bbg</directory>
+  </template>
+  <template oid="1237955051504">
+    <name>Harbor</name>
+    <directory>harbor</directory>
+  </template>
+</templates>

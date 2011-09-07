@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="ModelibraWicketProject" default="options">	
+	
+	<target name="options">
+			<echo message="Loading css option properties file"/>
+			<property file="option.properties"/>
+			<antcall target="copy-lib-dir"/>
+	</target>
+				
+	<target name="if-css">
+		<condition property="copy-css">
+			<equals arg1="${copy-css-dir}" arg2="true"/>
+		</condition>
+		<antcall target="copy-css-dir"/>
+	</target>
+	
+	<property name="from-css-dir" value="../ModelibraWicketCss/css"/>
+	<property name="to-css-dir" value="css"/>
+			
+	<target name="create-css-dir" if="copy-css">
+		<mkdir dir="${to-css-dir}"/>	
+	</target>
+		
+	<target name="copy-css-dir" depends="create-css-dir" if="copy-css">
+		<copy todir="${to-css-dir}">
+			<fileset dir="${from-css-dir}"/>
+		</copy> 
+	</target>
+
+	<property name="from-template-dir" value="../ModelibraWicketSkeleton/template"/>
+	<property name="to-template-dir" value="template"/>
+			
+	<target name="create-template-dir" depends="if-css">
+		<mkdir dir="${to-template-dir}"/>
+	</target>
+		
+	<target name="copy-template-dir" depends="create-template-dir">
+		<copy todir="${to-template-dir}">
+			<fileset dir="${from-template-dir}"/>
+		</copy>  
+	</target>
+	
+	<property name="from-lib-dir" value="../ModelibraWicketSkeleton/WEB-INF/lib"/>
+	<property name="to-lib-dir" value="WEB-INF/lib"/>
+		
+	<target name="create-lib-dir" depends="copy-template-dir">
+		<mkdir dir="${to-lib-dir}"/>
+	</target>
+	
+	<target name="copy-lib-dir" depends="create-lib-dir">
+		<copy todir="${to-lib-dir}">
+			<fileset dir="${from-lib-dir}"/>
+		</copy>  
+	</target>
+	
+</project>

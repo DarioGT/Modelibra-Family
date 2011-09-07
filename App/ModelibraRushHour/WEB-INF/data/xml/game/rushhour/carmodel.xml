@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<carModels>
+  <carModel oid="1174425458734">
+    <code>A</code>
+    <length>2</length>
+    <colorName>green</colorName>
+    <red>102</red>
+    <green>204</green>
+    <blue>153</blue>
+  </carModel>
+  <carModel oid="1174425497329">
+    <code>B</code>
+    <length>2</length>
+    <colorName>orange</colorName>
+    <red>255</red>
+    <green>204</green>
+    <blue>102</blue>
+  </carModel>
+  <carModel oid="1174425621580">
+    <code>C</code>
+    <length>2</length>
+    <colorName>cyan</colorName>
+    <red>0</red>
+    <green>255</green>
+    <blue>255</blue>
+  </carModel>
+  <carModel oid="1174425641378">
+    <code>D</code>
+    <length>2</length>
+    <colorName>light pink</colorName>
+    <red>255</red>
+    <green>153</green>
+    <blue>204</blue>
+  </carModel>
+  <carModel oid="1174425700316">
+    <code>E</code>
+    <length>2</length>
+    <colorName>dark magenta</colorName>
+    <red>102</red>
+    <green>0</green>
+    <blue>51</blue>
+  </carModel>
+  <carModel oid="1174425863270">
+    <code>F</code>
+    <length>2</length>
+    <colorName>dark green</colorName>
+    <red>0</red>
+    <green>153</green>
+    <blue>102</blue>
+  </carModel>
+  <carModel oid="1174425953959">
+    <code>G</code>
+    <length>2</length>
+    <colorName>gray</colorName>
+    <red>190</red>
+    <green>190</green>
+    <blue>190</blue>
+  </carModel>
+  <carModel oid="1174425992757">
+    <code>H</code>
+    <length>2</length>
+    <colorName>peach</colorName>
+    <red>255</red>
+    <green>153</green>
+    <blue>102</blue>
+  </carModel>
+  <carModel oid="1174426039289">
+    <code>I</code>
+    <length>2</length>
+    <colorName>light gray</colorName>
+    <red>211</red>
+    <green>211</green>
+    <blue>211</blue>
+  </carModel>
+  <carModel oid="1174426068868">
+    <code>J</code>
+    <length>2</length>
+    <colorName>brown</colorName>
+    <red>153</red>
+    <green>102</green>
+    <blue>0</blue>
+  </carModel>
+  <carModel oid="1174426261260">
+    <code>K</code>
+    <length>2</length>
+    <colorName>mustard</colorName>
+    <red>204</red>
+    <green>153</green>
+    <blue>0</blue>
+  </carModel>
+  <carModel oid="1174426364386">
+    <code>O</code>
+    <length>3</length>
+    <colorName>light yellow</colorName>
+    <red>255</red>
+    <green>255</green>
+    <blue>153</blue>
+  </carModel>
+  <carModel oid="1174426439871">
+    <code>P</code>
+    <length>3</length>
+    <colorName>magenta</colorName>
+    <red>153</red>
+    <green>51</green>
+    <blue>102</blue>
+  </carModel>
+  <carModel oid="1174426498747">
+    <code>Q</code>
+    <length>3</length>
+    <colorName>gray blue</colorName>
+    <red>102</red>
+    <green>153</green>
+    <blue>204</blue>
+  </carModel>
+  <carModel oid="1174426542467">
+    <code>R</code>
+    <length>3</length>
+    <colorName>deep sky blue</colorName>
+    <red>0</red>
+    <green>191</green>
+    <blue>255</blue>
+  </carModel>
+  <carModel oid="1174426609311">
+    <code>X</code>
+    <length>2</length>
+    <colorName>red</colorName>
+    <red>204</red>
+    <green>0</green>
+    <blue>51</blue>
+  </carModel>
+</carModels>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+
+	<h2>1.3 Have a quick bite of Wicket</h2>
+	<p>The following section shows some simple Wicket examples.</p>
+	<div class="section">
+		<h3>1.3.1 Hello World!</h3>
+		<p>The text below shows the obligatory Hello World example.</p>
+		<div class="example">
+			<h4 wicket:id="message">[text goes here]</h4>
+		</div>
+	</div>
+	<div class="section">
+		<h3>1.3.2 Having fun with links</h3>
+		<p>The following example introduces the <tt>Link</tt> component.</p>
+		<div class="example">
+			<a href="#" wicket:id="link">This link</a> has been clicked <span wicket:id="label">123</span> times.
+		</div>
+		<p>The following example introduces the <tt>AjaxFallbackLink</tt> component.</p>
+		<div class="example">
+			<a href="#" wicket:id="ajaxlink">This Ajax link</a> has been clicked <span wicket:id="ajaxlabel">123</span> times.
+		</div>
+	</div>
+	<div class="section">
+		<h3>1.3.3 The Wicket Echo application</h3>
+		<p>The following example introduces forms.</p>
+		<div class="example">
+			<h4>Echo example</h4> 
+			<form wicket:id="form"> 
+			    <input type="text" wicket:id="field" /> 
+			    <input type="submit" wicket:id="button" value="Set text" /> 
+			</form> 
+			<p wicket:id="echo">Fun Fun Fun</p> 
+		</div>
+	</div>
+
+</body>
+</html>
+

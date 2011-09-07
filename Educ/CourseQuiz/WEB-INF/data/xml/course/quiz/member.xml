@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<members>
+  <member oid="1146253298836">
+    <code>dr</code>
+    <password>dr</password>
+    <lastName>Riđanović</lastName>
+    <firstName>Dženan</firstName>
+    <email>dzenan.ridjanovic@fsa.ulaval.ca</email>
+    <receiveEmail>true</receiveEmail>
+    <role>admin</role>
+    <startDate>2006-08-27</startDate>
+    <documents>
+      <document oid="1198779803371">
+        <testOid>1156771693635</testOid>
+        <fileName>ModelibraSoftwareFamily.pdf</fileName>
+        <uploadDate>2007-12-27</uploadDate>
+      </document>
+    </documents>
+  </member>
+  <member oid="1176237531812">
+    <code>ogi</code>
+    <password>ogi</password>
+    <lastName>Ridjanovic</lastName>
+    <firstName>Ogden</firstName>
+    <email>ogi@hotmail.com</email>
+    <receiveEmail>false</receiveEmail>
+    <role>casual</role>
+    <startDate>2007-04-10</startDate>
+  </member>
+</members>

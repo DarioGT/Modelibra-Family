@@ -1,0 +1,282 @@
+http://vidmar.net/weblog/archive/2007/12/11/subversion-and-tortoisesvn-tips-and-tricks.aspx
+
+JavaForge
+
+http://www.javaforge.com/
+http://athleticsnyc.com/blog/entry/on-using-subversion-for-web-projects
+
+New project:
+
++ short project description
++ category of software
++ membership: public
+
+Members:
+
++ create a new role: anonymous
++ with Edit allow
+	SCM - Update  	 	Allows users to synchronize with the SCM repository
+	SCM - View 			Allow users to browser the SCM repository
++ in Roles & Groups:
+	assign the anonymous role to the anonymous group
+	assign the customer role to the anonymous group and the regular user
+	
+New Members:
+
+Assign  anonymous  		Developer - Extern  Anonymous JavaForge UserGroup
+Assign  renaud.closset  Developer - Extern
+Assign  kirlich  		Developer - Intern  Modelibra
+
+
+Modelibra on JavaForge
+
+http://www.javaforge.com/proj/summary.do?proj_id=1647
+
+http://svn.javaforge.com/svn/Modelibra
+anonymous
+anon
+
+
+    Subclipse does not collect or store username and password credentials when defining a repository. 
+    This is because the JavaHL and SVNKit client adapters are intelligent enough to prompt you for this 
+    information when they need to -- including when your password has changed.
+
+    You can also allow the adapter to cache this information and a common question is how do you delete 
+    this cached information so that you can be prompted again? We have an open request to have an API added 
+    to JavaHL so that we could provide a UI to do this. Currently, you have to manually delete the cache. 
+    The location of the cache varies based on the client adapter used.
+
+    JavaHL caches the information in the same location as the command line client -- in the Subversion 
+    runtime configuration area. On Windows this is located in %APPDATA%\Subversion\auth. On Linux and OSX 
+    it is located in ~/.subversion/auth. Just find and delete the file with the cached information.
+
+    SVNKit caches information in the Eclipse keyring. By default this is a file named .keyring that is stored 
+    in the root of the Eclipse configuration folder. Both of these values can be overriden with command line 
+    options. To clear the cache, you have to delete the file. Eclipse will create a new empty keyring when 
+    you restart.
+    
+    You can check which adapter you use at: Eclipse -> Window -> Preferences : Team -> SVN.
+
+
+Start a new ModelibraWicket project (Subversion properties)
+
++ export the ModelibraWicketSkeleton project without 
+	the css, template, classes, lib and logs directories 
+	to a new location outside the Modelibra workspace: 
+	File/Export.../General/File System 
+	(use the Create directory structure for files option)
++ rename the project directory to reflect your own project
++ rename the Eclipse project to your own project using an ordinary text editor
++ import the project into Eclipse
++ select the project and use the pop-up menu: Team/Share Project...
+	(use the SVN repository; share the project under the trunk directory)
++ do not share the empty classes directory
++ define by Team/Set Property... the svn:ignore property at the WEB-INF directory for 
+	the classes and logs directories
++ define the svn:externals property at the WEB-INF directory for the lib directory:
+	lib http://svn.javaforge.com/svn/Modelibra/trunk/ModelibraWicketSkeleton/WEB-INF/lib
++ commit by Team/Commit... local changes to the repository
++ update by Team/Update changes from the repository to the local version
++ define the svn:externals property at the project directory for 
+	the css and template directories:
+	css http://svn.javaforge.com/svn/Modelibra/trunk/ModelibraWicketCss/css
+	template http://svn.javaforge.com/svn/Modelibra/trunk/ModelibraWicketSkeleton/template	
++ commit by Team/Commit... local changes to the repository
++ update by Team/Update changes from the repository to the local version
++ design a domain model in ModelibraModeler and save it in the mm directory
++ generate the reusable-model-config.xml file 
+	(use the minimal configuration) 
+	from ModelibraModeler into the WEB-INF/config directory
++ refresh the project to examine the reusable-model-config.xml file
+	(improve the format if necessary)
++ check the dm.gen.dmConfig.properties file for code, data and web directories
+	(accept the the default values)
++ in the dm.gen.DmGenerator class change the DOMAIN_CODE constant to your domain code
+	(if not sure, check the reusable-model-config.xml file)
++ run the main method of the DmGenerator class as Java application
++ refresh the project to see the generated code, data and web xml configuration
++ in the generated Java classes 
+	use Ctrl-Shift O F S to clean imports, format the code and save it
++ if a concept was referenced as if it was an entry point,
+	add the specific get method to the specific model class
++ commit by Team/Commit... local changes to the repository
+	(Select all unversioned files)
++ update by Team/Update changes from the repository to the local version
++ run the main method of the Start class to start the Jetty server
++ check the WEB-INF/logs/info.html for info and error messages
++ use the Modelibra Wicket application in your browser: http://localhost:8081/
++ use the doc/spiral.txt to add your project notes
+
+
+MagicBoxes on JavaForge
+
+http://www.javaforge.com/proj/summary.do?proj_id=1795
+
+http://svn.javaforge.com/svn/mb
+anonymous
+anon
+
+Subversion on Eclipse: Subclipse
+
+http://subclipse.tigris.org/
+http://subclipse.tigris.org/faq.html
+http://ist.berkeley.edu/as/ag/tools/usage/subclipse-usage-tips.html
+http://open.ncsu.edu/se/tutorials/subclipse/
+http://www.slideshare.net/intellibitz/subversion-user-guide/
+http://svn.collab.net/subclipse/help/index.jsp
+http://www.nabble.com/Subversion-f68.html
+http://www.tagelin.com/tips/SubversionUserGuide/index.html
+http://svnbook.red-bean.com/
+https://sourceforge.net/docs/E09
+http://svn1clicksetup.tigris.org/
+
+
+
+Steps to Check Out the Modelibra software at JavaForge on Subversion
+
+Search for the Modelibra project at JavaForge.
+
+Click on the Documents tag of the Modelibra project and select the download directory to access various zip files of the Modelibra project. 
+Some of the zip files may not be up to date with respect to last versions of the Modelibra software. Also, not all of the available Modelibra 
+software is provided in the form of zip files. In addition, a zip file contains the complete corresponding software. If you want to update the 
+software on your computer by using only a difference between the version that you have locally and the version that is in the repository on a 
+remote server, use the Subversion software.
+
+In order to make commits, a programmer must be an internal developer of the Modelibra team. In order to become an internal developer, 
+a programmer must register as a JavaForge user and then join the Modelibra project. However, if you want to checkout the code and later 
+make incremental updates of your local code so that you have the latest version of the software, you do not need to register as a JavaForge user. 
+Use the anonymous user account with the anon password.
+
+You need to install the Eclipse plugin for Subversion (SVN) called Subclipse using Eclipse directly (no download, unzip, copy to, ...).
+
+Steps (for more details):
+
+    * Eclipse/Help/Software Updates/Find and Install...
+    * Search for new features to install/Next
+    * New Remote Site...
+    * Name: Subclipse 1.2.x; URL: http://subclipse.tigris.org/update_1.2.x
+    * You do not need the optional Integration: be sure to uncheck it and keep only the Subclipse plugin checked
+
+After the installation open two new perspectives in Eclipse.
+
+    * Window/Open Perspective/Other...
+    * SVN Repository Exploring
+    * Team Synchronizing
+
+In the SVN perspective connect to the Modelibra's repository.
+
+    * File/New/Other.../SVN/Checkout projects from SVN/Next
+    * Create a new repository location/Next
+    * URL: http://svn.javaforge.com/svn/Modelibra
+    * User name: anonymous
+    * Password: anon
+    * Open the trunk directory, select an Eclipse project and check it out (pop-up menu)
+
+Modelibra projects are in the trunc directory. DmEduc spirals are in the trunc/DmEduc directory.
+
+In the Team Synchronizing perspective, click on the Synchronize SVN (Workspace) button to see if there are changes in the source code 
+since your last visit. If there are changes click on the Incoming mode button to see the changes and use the Update menu item in the pop-up 
+menu to update your local version. Since you are not a developer you cannot make commits.
+In summary:
+
+Use Checkout... to get a project into Eclipse for the first time.
+
+Use Synchronize SVN (Workspace) to see if there are differences between your local version and the repository.
+
+Use Update in the Incoming Mode to update your local version by the last version in the repository. 
+
+
+SourceForge
+
+https://sourceforge.net/
+
+Domain Model Lite on SourceForge
+
+https://sourceforge.net/projects/dmventure/
+
+Domain Model Venture in SourceForge SVN (Subversion) Repository
+
+https://dmventure.svn.sourceforge.net/svnroot/dmventure
+
+About SVN on SourceForge
+
+https://sourceforge.net/svn/?group_id=165113
+
+Subclipse Tutorial
+
+http://open.ncsu.edu/se/tutorials/subclipse/
+
+About another SVN client software
+
+http://tortoisesvn.tigris.org/
+
+Books
+
+http://svnbook.red-bean.com/en/1.1/index.html
+
+Resources
+
+http://www.subversionary.org/
+
+
+For users that are not developers:
+
+You do not need to be a member at SourceForge.
+
+You need to install Eclipse plugin for Subversion called Subclipse using Eclipse directly 
+(no download, unzip, copy to, ...).
+
+Installation instructions
+
+http://subclipse.tigris.org/install.html
+
+Steps:
+
+1.Eclipse/Help/Software Updates/Find and Install...
+2.Search for new features to install/Next
+3.New Remote Site...
+4.Name: Subclipse 1.2.x; URL: http://subclipse.tigris.org/update_1.2.x
+5.You do not need org.eclipse.mylar.tasks.core (0.9.2)
+
+After the installation open two new perspectives in Eclipse.
+
+Steps:
+
+1.Window/Open Perspective/Other...
+2.SVN Repository Exploring
+3.Team Synchronizing
+
+In the SVN perspective connect to the dmventure repository.
+
+Steps:
+
+1.File/New/Other.../SVN/Checkout projects from SVN/Next
+2.Create a new repository location/Next
+3.URL: https://dmventure.svn.sourceforge.net/svnroot/dmventure
+4.Open the trunk directory, select a project and check it out (pop-up menu)
+
+Domain Model Venture projects are in the trunc directory. DmEduc spirals are in the trunc/educ directory. 
+In the trunc/swing directory you will find two projects made with Domain Model Lite and Java Swing GUI.
+
+In the Team Synchronizing perspective, click on the Synchronize SVN (Workspace) button to see if there are changes 
+in the source code since your last visit. If there are changes click on the Incoming mode button to see the changes 
+and use the Update menu item in the pop-up menu to update your local version. Since you are not a developer you cannot 
+make commits.
+
+In summary:
+
+Use Checkout... to get a project into Eclipse for the first time.
+
+Use Synchronize SVN (Workspace) to see if there are differences between 
+your local version and the repository.
+
+Use Update in the Incoming Mode to update your local version by the last 
+version in the repository.
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+
+http://www.apache.org/licenses/LICENSE-2.0
+http://www.gnu.org/
+http://www.gnu.org/licenses/gpl.html
+http://www.gnu.org/copyleft/lesser.html
+http://javarome.free.fr/net/Licence.html

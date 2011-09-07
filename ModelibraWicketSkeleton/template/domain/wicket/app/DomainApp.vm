@@ -1,0 +1,39 @@
+#include ("template/ModelibraComment.txt")
+
+package $domainwicketapppackagecode;
+
+import org.modelibra.wicket.app.DomainApp;
+
+import ${domainpackagecode}.$DomainCode;
+import ${domainpackagecode}.$DomainConfigCode;
+import ${domainpackagecode}.$PersistentDomainCode;
+
+/**
+ * $DomainCode domain web application.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $DomainAppCode extends DomainApp {
+
+	/**
+	 * Constructs the domain web application.
+	 */
+	public $DomainAppCode() {
+		super(new $PersistentDomainCode(new $DomainCode(new $DomainConfigCode().getDomainConfig())));
+	}
+
+	/**
+	 * Gets the $DomainCode domain.
+	 * 
+	 * @return $DomainCode domain
+	 */
+	public $DomainCode get$DomainCode() {
+		return ($DomainCode) super.getDomain();
+	}
+	
+	/* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+
+}

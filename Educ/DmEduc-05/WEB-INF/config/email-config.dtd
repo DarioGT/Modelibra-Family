@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT emails (email*)>
+
+<!ELEMENT email (code, toSendEmail, from, outServer, password)>
+<!ATTLIST link 
+	oid ID #REQUIRED
+>
+
+<!ELEMENT code (CDATA)>
+<!ELEMENT toSendEmail (CDATA)>
+<!ELEMENT from (CDATA)>
+<!ELEMENT outServer (CDATA)>
+<!ELEMENT password (CDATA)>
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+#include ("template/ModelibraComment.txt")
+
+package ${modelpackagecode};
+
+import java.util.Date;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.modelibra.IEntities;
+import org.modelibra.type.EasyDate;
+import org.modelibra.util.OutTester;
+
+import ${domainpackagecode}.$DomainTestCode;
+
+/* ======= import concepts ======= */
+
+#foreach ($conceptConfig in $conceptConfigList) 
+#set ($entryEntityClass = $conceptConfig.getEntityClass())
+#set ($entryEntitiesClass = $conceptConfig.getEntitiesClass())
+import $entryEntitiesClass;	
+import $entryEntityClass;
+#end
+
+/**
+ * $ModelCode model tests.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $ModelTestCode {
+
+	private static Log log = LogFactory.getLog(${ModelTestCode}.class);
+
+	private $ModelCode $modelCode;
+	
+	public $ModelTestCode() {
+		super();
+		try {
+			begin();
+		} catch (Exception e) {
+			log.error("Error in $ModelTestCode(): " + e.getMessage());
+		}
+	}
+
+	private void begin() throws Exception {
+		$modelCode = ${DomainTestCode}.getSingleton().get$DomainCode().get$ModelCode();
+	}
+	
+	public $ModelCode get$ModelCode() {
+		return $modelCode;
+	}
+	
+	private void end() {
+		${modelCode}.close();
+	}
+	
+	public void outputErrors(IEntities entities, String title) {
+		entities.getErrors().output(title);
+		entities.getErrors().empty();
+	}
+
+	public void outputMessage(String message) {
+		OutTester.outputText(message);
+	}
+
+	private void init$ModelCode() {
+#foreach ($entryConceptConfig in $entryConceptConfigList) 
+#set ($EntryEntitiesCode = $entryConceptConfig.getEntitiesCode())	
+		init$EntryEntitiesCode();
+#end
+	}
+	
+	/* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+	
+#foreach ($entryConceptConfig in $entryConceptConfigList) 
+#set ($EntryEntitiesCode = $entryConceptConfig.getEntitiesCode())	
+#set ($entryEntitiesCode = $entryConceptConfig.getEntitiesCodeWithFirstLetterAsLower())
+#set ($EntryEntityCode = $entryConceptConfig.getCode())
+	private void init$EntryEntitiesCode() {
+		outputMessage("??????? init$EntryEntitiesCode: creation of $EntryEntitiesCode ???????");
+
+		$EntryEntitiesCode $entryEntitiesCode = ${modelCode}.get$EntryEntitiesCode();
+		
+		outputErrors($entryEntitiesCode, "$EntryEntityCode Add Errors");
+	}	
+	
+#end
+
+	private void test01() {
+		outputMessage("??????? test01: test name ???????");
+	}
+
+	private void test() {
+		test01();
+	}
+
+	public static void main(String[] args) {
+		$ModelTestCode $modelTestCode = null;
+		try {
+			$modelTestCode = new $ModelTestCode();
+			if ($modelCode.isEmpty()) {
+				${modelTestCode}.init$ModelCode();
+			}
+			${modelTestCode}.test();
+		} catch (Exception e) {
+			log.error("Error in ${ModelTestCode}.main: " + e.getMessage());
+		} finally {
+			${modelTestCode}.end();
+		}
+	}
+
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<members>
+  <member oid="1194463980706">
+    <code>dr</code>
+    <password>dr</password>
+    <lastName>Ridjanovic</lastName>
+    <firstName>Dzenan</firstName>
+    <email>dzenan.ridjanovic@fsa.ulaval.ca</email>
+    <receiveEmail>true</receiveEmail>
+    <role>admin</role>
+    <startDate>2007-11-07</startDate>
+    <interests>
+      <interest oid="1194465573399">
+        <categoryOid>1193262901028</categoryOid>
+        <description>I am a professor...
+
+... and a software engineer.</description>
+      </interest>
+      <interest oid="1194468471244">
+        <categoryOid>1193171173850</categoryOid>
+        <description>My principal research area.</description>
+      </interest>
+      <interest oid="1194473655183">
+        <categoryOid>1194378838565</categoryOid>
+        <description>I teach over Internet.</description>
+      </interest>
+    </interests>
+  </member>
+  <member oid="1194464884727">
+    <code>admin</code>
+    <password>admin</password>
+    <lastName>Adminovic</lastName>
+    <firstName>Admin</firstName>
+    <email>admin.adminovic@gmail.com</email>
+    <receiveEmail>false</receiveEmail>
+    <role>admin</role>
+    <startDate>2007-11-07</startDate>
+    <interests>
+      <interest oid="1194575384343">
+        <categoryOid>1193171129084</categoryOid>
+        <description>That's what I do all day long.</description>
+      </interest>
+    </interests>
+  </member>
+  <member oid="1195574803515">
+    <code>guest</code>
+    <password>guest</password>
+    <lastName>Guest</lastName>
+    <firstName>Guest</firstName>
+    <email>guest@modelibra.org</email>
+    <receiveEmail>false</receiveEmail>
+    <role>casual</role>
+    <startDate>2007-11-20</startDate>
+  </member>
+  <member oid="1195588163504">
+    <code>vk</code>
+    <password>vk</password>
+    <lastName>Kirlich</lastName>
+    <firstName>Vedad</firstName>
+    <email>kirlich@gmail.com</email>
+    <receiveEmail>true</receiveEmail>
+    <role>regular</role>
+    <startDate>2007-11-20</startDate>
+  </member>
+</members>

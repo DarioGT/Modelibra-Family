@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket>
+
+<wicket:panel>
+
+	<table>
+	  	<caption>
+	  	    <span wicket:id = "conceptsName">
+	  	        Concepts Name
+	  	    </span>
+	  	</caption>
+    	<tr>
+	    	<th wicket:id = "propertyNameLabelListView">
+	    		<span wicket:id = "propertyName">
+	  	    		Property name
+	  	  		</span>
+	    	</th>    	
+	    	<th></th>
+	    	<th wicket:id = "neighborEmptyNameLabelListViewHead">
+	  	    	<span wicket:id = "neighborEmptyName">
+	  	    		Neighbor empty name
+	  	    	</span>	
+	  	  	</th>
+    	</tr>
+    	<tr wicket:id = "entityDisplayTableListView">
+    		<td wicket:id = "propertyValuePanelListView">
+        		<span wicket:id = "valuePanel">
+	  	    		Value panel
+	  	  		</span>
+      		</td>
+      		<td>
+		    	<a class = "button" wicket:id = "display">
+		    		<img src="css/img/edit-find.png" alt="Display"/>
+		    	</a>
+		    </td>
+		    <wicket:child/>
+		    <td wicket:id = "neighborNameLinkListView">
+		        <span class = "button">
+		  	  		<a wicket:id = "neighbor">
+		  	  			<img src="css/img/edit-find.png" alt="Display"/>
+			    	</a>
+			    	<span class = "marker" wicket:id = "neighborName">
+		  	    		Neighbor name
+		  	  		</span>
+		        </span>
+		    </td>
+    	</tr> 
+  	</table>
+  	<br/>
+  	<div class = "center">
+	  	<span class = "button" wicket:id = "blockNavigator"></span> 
+  	</div>
+  
+</wicket:panel>
+
+</html>

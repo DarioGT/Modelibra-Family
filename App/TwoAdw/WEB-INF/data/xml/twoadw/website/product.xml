@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+  <product oid="1237317226038">
+    <productNumber>LN52A550</productNumber>
+    <name>Samsung 52" 1080p LCD</name>
+    <shortDescription>Samsung 52" 1080p LCD HDTV** (LN52A550) - TwoAdw Exclusive</shortDescription>
+    <longDescription>They don't come much bigger than this. The 52" Samsung LN52A550 LCD HDTV assaults the senses with its Full HD 1080p resolution, blazing 5ms response time, 30,000 true contrast ratio and dazzling Wide Colour Enhancer that covers 72% of the colour gamut.
+
+Sight
+1080p offers up to six times the visual resolution of standard definition TVs, sharpening lines, details, and scenery. An 8-bit panel uses the Wide Colour Enhancer and covers 72% of the colour gamut. And a truly impressive 30,000 dynamic contrast ratio and 5ms response time brings out the deepest and brightest hues, while ensuring smooth, fluid on-screen movement. The end result is a visual experience that you see and feel.
+
+Sound
+Two 10 watt bottom-mounted speakers boast SRS TruSurround Technology which emulates the full effects of a true home theatre environment by accentuating high frequencies like dialog and deepening lows for more realistic aural atmosphere. For true high definition audio, simply connect to your home theatre system and enjoy the experience of being completely engulfed in perfectly balanced and precise audio.
+
+Source
+It’s also host to all the connectivity you need. Two rear and one side HDMI port lets you connect the latest and greatest in high definition technology. Blu-ray, HD cable/satellite, next generation game consoles, cameras, camcorders - you name it. The PC input even lets you connect your home PC and work on the big screen. And with the CEC (Consumer Electronic Control) you can control all your A/V through one HDMI cable and one remote.</longDescription>
+    <price>1899.99</price>
+    <startDate>2009-03-17</startDate>
+    <published>true</published>
+    <soldNumber>10000066</soldNumber>
+    <frontpage>true</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237347598213">
+        <manufacturerOid>1237317351623</manufacturerOid>
+        <partNumber>LN52A550</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productRebates>
+      <productRebate oid="1237378757922">
+        <rebateOid>1237378702199</rebateOid>
+      </productRebate>
+    </productRebates>
+    <specificationCategories>
+      <specificationCategory oid="1237319828999">
+        <name>Video Features</name>
+        <specifications>
+          <specification oid="1237319834372">
+            <title>Aspect Ratio</title>
+            <detail>16:9</detail>
+          </specification>
+          <specification oid="1237319877689">
+            <title>Contrast Ratio</title>
+            <detail>30,000:1</detail>
+          </specification>
+          <specification oid="1237319889088">
+            <title>Display Capabilities</title>
+            <detail>480p/720p/1080p</detail>
+          </specification>
+          <specification oid="1237319912417">
+            <title>Display Technology</title>
+            <detail>LCD</detail>
+          </specification>
+          <specification oid="1237319919760">
+            <title>Native Resolution</title>
+            <detail>1920 x 1080</detail>
+          </specification>
+          <specification oid="1237319943662">
+            <title>Refresh Rate</title>
+            <detail>60Hz</detail>
+          </specification>
+          <specification oid="1237319956006">
+            <title>Response Time</title>
+            <detail>5ms</detail>
+          </specification>
+          <specification oid="1237319970998">
+            <title>Screen Size</title>
+            <detail>52"</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237319988604">
+        <name>Audio Features</name>
+        <specifications>
+          <specification oid="1237319993197">
+            <title>Audio Enhancement</title>
+            <detail>SRS Trusurround XT</detail>
+          </specification>
+          <specification oid="1237320012428">
+            <title>Audio Output Jacks</title>
+            <detail>Yes</detail>
+          </specification>
+          <specification oid="1237320031994">
+            <title>Speaker Output Power</title>
+            <detail>10 Watts RMS x 2</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237320054258">
+        <name>Inputs/Outputs</name>
+        <specifications>
+          <specification oid="1237320058241">
+            <title>A/V (Composite) Inputs</title>
+            <detail>1 - Rear</detail>
+          </specification>
+          <specification oid="1237320070730">
+            <title>Cable Card Slot</title>
+            <detail>None</detail>
+          </specification>
+          <specification oid="1237320082490">
+            <title>Coaxial Cable Inputs</title>
+            <detail>1 - Rear</detail>
+          </specification>
+          <specification oid="1237320096778">
+            <title>Component Video Inputs</title>
+            <detail>2 - Rear</detail>
+          </specification>
+          <specification oid="1237320123347">
+            <title>HDMI Inputs</title>
+            <detail>2 - Rear, 1 - Side</detail>
+          </specification>
+          <specification oid="1237320142362">
+            <title>PC VGA Inputs</title>
+            <detail>1 - Rear</detail>
+          </specification>
+          <specification oid="1237320156386">
+            <title>S-Video Inputs</title>
+            <detail>1 - Rear</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237320175273">
+        <name>Product Details</name>
+        <specifications>
+          <specification oid="1237320181233">
+            <title>Depth with Stand</title>
+            <detail>42.4 cm</detail>
+          </specification>
+          <specification oid="1237320199393">
+            <title>Depth without Stand</title>
+            <detail>10.9 cm</detail>
+          </specification>
+          <specification oid="1237320213001">
+            <title>Height with Stand</title>
+            <detail>98.3 cm</detail>
+          </specification>
+          <specification oid="1237320223178">
+            <title>Height without Stand</title>
+            <detail>79.0 cm</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237320238554">
+        <name>Warranty</name>
+        <specifications>
+          <specification oid="1237320251345">
+            <title>Warranty Labour</title>
+            <detail>1 Year</detail>
+          </specification>
+          <specification oid="1237320262137">
+            <title>Warranty Parts</title>
+            <detail>1 Year</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237343956061">
+        <name>LN52A550</name>
+        <imageUrl96x96>/css-specific/images/LN52A550-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/LN52A550-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/LN52A550-FS.jpg</imageUrlFullSize>
+      </productImage>
+      <productImage oid="1237852329341">
+        <name>noimage</name>
+        <imageUrl96x96>/css-specific/images/noimage96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/noimage180.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1237321832516">
+        <commentText>I&amp;#039;ve had this TV for several months now and couldn&amp;#039;t be happier. Reference quality Blurays and the PS3 look stunning, and 1080p upconverted DVDs look really good too so no need to get rid of your old collection. Lots of inputs for HDMI and Component, with an HDMI on the side for easy plug and play access if needed. The screen and bezel are not glossy so it is suitable for rooms with more daylight and windows. I really like the USB port on the side to view pictures and have music playing in the background when company is over. Just load any USB key up with a bunch of nice 1080p pictures from online and some mp3s and you are good to go. I thought this was some sort of gimmick in the store but was pleasantly surprised at how easy it was to do. If I had one complaint about this TV it would be that there are a bunch of features designed specifically around the RF signal which don&amp;#039;t work if you use a cable box. It would have been nice to have the PIP for more than just the RF input.</commentText>
+        <commentTitle>Great TV, great value</commentTitle>
+        <creationDate>2009-03-17</creationDate>
+        <modificationDate>2009-03-17</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1237329625840">
+    <productNumber>MB531LL/A</productNumber>
+    <name>iPod Touch Black 16GB</name>
+    <shortDescription>Apple 2nd Gen iPod touch Black 16GB Model MB531LL/A</shortDescription>
+    <longDescription>The 16GB iPod Touch takes portable media into a new dimension with the addition of WiFi and theatrical widescreen capabilities! Touch's stunning 3.5" multi-touch screen lets you navigate quickly through the intuitive menu system to any of your media. The screen automatically re-orients itself, whichever way you're holding the iPod, so you choose the view you want.
+
+Browse and download from the WiFi iTunes Store, surf the Web using Safari, search using Yahoo! or Google, or watch videos on YouTube, anywhere you have WiFi access! The 8mm-thin Touch gives you up to 36 hours of music playback, or 6 hours of video with sound on a single charge. With the built-in speaker, you can even share the experience with a friend!
+
+The Touch uses flash memory, so it's unaffected by vibrations. It's a perfect choice for the gym, motorcycling, chooser any other active pursuit! Nike + iPod technology is built into the Touch, so it's all ready to give your workouts a boost, too. Big things really do come in small packages!</longDescription>
+    <price>289.99</price>
+    <startDate>2009-03-17</startDate>
+    <published>true</published>
+    <soldNumber>1034</soldNumber>
+    <frontpage>true</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237330130283">
+        <manufacturerOid>1237330067231</manufacturerOid>
+        <partNumber>MB531LL/A</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productRebates>
+      <productRebate oid="1237378763730">
+        <rebateOid>1237378734930</rebateOid>
+      </productRebate>
+    </productRebates>
+    <specificationCategories>
+      <specificationCategory oid="1237330151834">
+        <name>Size and Weight</name>
+        <specifications>
+          <specification oid="1237330239859">
+            <title>Height</title>
+            <detail>4.1 inches (110 mm)</detail>
+          </specification>
+          <specification oid="1237330249363">
+            <title>Width</title>
+            <detail>2.4 inches (61.8 mm)</detail>
+          </specification>
+          <specification oid="1237330259075">
+            <title>Depth</title>
+            <detail>0.33 inch (8.5 mm)</detail>
+          </specification>
+          <specification oid="1237330269604">
+            <title>Weight</title>
+            <detail>4.05 ounces (115 grams)</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237330279459">
+        <name>Display</name>
+        <specifications>
+          <specification oid="1237330288155">
+            <title>Type</title>
+            <detail>3.5-inch (diagonal) Multi-Touch color LCD</detail>
+          </specification>
+          <specification oid="1237330302548">
+            <title>Resolution</title>
+            <detail>320 by 480 pixels at 163 ppi</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237330328786">
+        <name>Capacity</name>
+        <specifications>
+          <specification oid="1237330335833">
+            <title>Size</title>
+            <detail>16GB</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237330373737">
+        <name>Audio</name>
+        <specifications>
+          <specification oid="1237330380593">
+            <title>Frequency response</title>
+            <detail>20Hz to 20,000Hz</detail>
+          </specification>
+          <specification oid="1237330395784">
+            <title>Audio formats supported</title>
+            <detail>AAC (16 to 320 Kbps), MP3 (16 to 320 Kbps), MP3 VBR, Audible (formats 2, 3, and 4), Apple Lossless, AIFF, and WAV</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237330437228">
+        <name>Battery</name>
+        <specifications>
+          <specification oid="1237330447197">
+            <title>Type</title>
+            <detail>Built-in rechargeable lithium ion battery</detail>
+          </specification>
+          <specification oid="1237330452589">
+            <title>Music playback time</title>
+            <detail>Up to 36 hours when fully charged</detail>
+          </specification>
+          <specification oid="1237330467102">
+            <title>Video playback time</title>
+            <detail>Up to 6 hours when fully charged</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237329684365">
+        <name>noimage</name>
+        <imageUrl96x96>/css-specific/images/MB531LL-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/MB531LL-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/MB531LL-FS.jpg</imageUrlFullSize>
+      </productImage>
+      <productImage oid="1237506815932">
+        <name>test</name>
+        <imageUrl96x96>/css-specific/images/noimage96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1237330511292">
+        <commentText>It&amp;#039;s so black and sleek, i want one.</commentText>
+        <commentTitle>Sleek</commentTitle>
+        <creationDate>2009-03-17</creationDate>
+        <modificationDate>2009-03-17</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1237385756588">
+    <productNumber>MB867CA</productNumber>
+    <name>iPod Shuffle 4GB 3rd Gen Silver</name>
+    <shortDescription>Apple 4GB 3rd Generation iPod Shuffle - Silver</shortDescription>
+    <longDescription>Releases 03 Apr/09. Only slightly larger than a house key, the new iPod Shuffle packs 4GB of storage, easier access to controls, multiple playlists, and a brand new feature called Voice Over that tells you the artist and song name, the playlist name, and even when the Shuffle is running low on battery power. It also comes complete with a sleek anodized aluminum finish and stainless steel clip.
+
+Store More
+Despite its compact 1.8" by 0.3" dimensions, the iPod Shuffle packs a whopping 4GBs of storage. That translates to roughly a thousand sounds in your pocket, every where you go. It also means multiple playlists, too. So you can pick the perfect playlist for the gym, the commute, or any other time you want to listen to music.
+
+Voice Over
+Want to know what you're listening to? Now Voice Over can tell you what the song name, artist, or playlists is, with the press of a button. Voice Over speaks 14 languages, too. So it's perfect for hearing the correct name and song title for your World Music collection.
+
+Easy Access Controls
+To keep the Shuffle small, Apple put the controls on the earbud cord instead of on the Shuffle itself, so you can control the volume or activate Voice over without taking attention away from whatever you're doing. The Shuffle also has three song settings: Shuffle, Straight, and Stop.</longDescription>
+    <price>99.99</price>
+    <startDate>2009-03-18</startDate>
+    <published>true</published>
+    <soldNumber>24</soldNumber>
+    <frontpage>true</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237385847818">
+        <manufacturerOid>1237330067231</manufacturerOid>
+        <partNumber>MB867C/A</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <specificationCategories>
+      <specificationCategory oid="1237386992753">
+        <name>Battery</name>
+        <specifications>
+          <specification oid="1237387029863">
+            <title>Type</title>
+            <detail>Rechargeable Lithium Polymer</detail>
+          </specification>
+          <specification oid="1237387043413">
+            <title>Life</title>
+            <detail>Up To 10 Hours</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237387116526">
+        <name>Memory</name>
+        <specifications>
+          <specification oid="1237387123149">
+            <title>Type</title>
+            <detail>Internal Flash</detail>
+          </specification>
+          <specification oid="1237387155170">
+            <title>Size</title>
+            <detail>4GB</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237603632453">
+        <name>564</name>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237385830971">
+        <name>MB867CA</name>
+        <imageUrl96x96>/css-specific/images/MB867CA-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/MB867CA-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/MB867CA-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1240368531690">
+        <commentText>1 button to rule them all</commentText>
+        <commentTitle>Beware.. only 1 button!</commentTitle>
+        <creationDate>2009-04-21</creationDate>
+        <modificationDate>2009-04-21</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1237429554562">
+    <productNumber>FT313UA</productNumber>
+    <name>HP Mini N270 10.2"</name>
+    <shortDescription>HP Mini 10.2" with Intel Atom N270 1.60GHz Netbook</shortDescription>
+    <longDescription>With HP's 1035NR Mini laptop, power and mobility go hand in hand. This super-compact 10.2" laptop weighs in at a feather-lite 1.02kg and packs a specially designed Intel Atom N270 processor with 1GB system memory for fast performance everywhere. It's also home to a 60GB hard drive, wireless connectivity, and a 2-in-1 memory card reader that makes it easy to transfer your media to and from your portable devices.
+
+* Enjoy robust mobile performance for your day to day tasks with Intel Atom N270 processing and 1GB system memory.
+
+* Store hours of music and video, along with thousands of pictures on the 60GB hard drive.
+
+* View your content with detail and clarity on the compact 10.1" WSVGA LED display with a 1024 x 600 pixel resolution.
+
+* Video chat, record footage, and take still pictures with the built-in webcam.
+
+* Surf the net, chat, and check and send email in any wireless hotspot with 802.11b/g wireless connectivity.
+
+* Bluetooth wireless lets you connect and wirelessly transfer data to and from your Bluetooth-enabled devices.
+
+* This model comes equipped with Windows XP Home Edition with Service Pack 3.</longDescription>
+    <price>499.99</price>
+    <startDate>2009-03-18</startDate>
+    <published>true</published>
+    <soldNumber>31</soldNumber>
+    <frontpage>true</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237430365993">
+        <manufacturerOid>1237430010634</manufacturerOid>
+        <partNumber>FT313UA#ABA</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productRebates>
+      <productRebate oid="1238180513778">
+        <rebateOid>1237378702199</rebateOid>
+      </productRebate>
+      <productRebate oid="1238180518279">
+        <rebateOid>1237386831121</rebateOid>
+      </productRebate>
+    </productRebates>
+    <specificationCategories>
+      <specificationCategory oid="1237430111794">
+        <name>Base Features</name>
+        <specifications>
+          <specification oid="1237430138681">
+            <title>Hard Drive Speed</title>
+            <detail>4200rpm</detail>
+          </specification>
+          <specification oid="1237430145617">
+            <title>Hard Drive Capacity</title>
+            <detail>60GB</detail>
+          </specification>
+          <specification oid="1237430165209">
+            <title>Processor Speed</title>
+            <detail>1.6GHz</detail>
+          </specification>
+          <specification oid="1237430179465">
+            <title>Processor Model</title>
+            <detail>Intel Atom N270</detail>
+          </specification>
+          <specification oid="1237430196104">
+            <title>RAM Memory</title>
+            <detail>1GB DDR2</detail>
+          </specification>
+          <specification oid="1237430212634">
+            <title>Screen Size</title>
+            <detail>10.2"</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237430227432">
+        <name>Graphics</name>
+        <specifications>
+          <specification oid="1237430235896">
+            <title>Graphics Chipset</title>
+            <detail>Intel Graphics Media Accelerator 950</detail>
+          </specification>
+          <specification oid="1237430251103">
+            <title>Integrated Video Memory</title>
+            <detail>Yes, up to 128meg</detail>
+          </specification>
+          <specification oid="1237430274118">
+            <title>Native Screen Resolution</title>
+            <detail>1024 x 600</detail>
+          </specification>
+          <specification oid="1237430291894">
+            <title>Video Memory</title>
+            <detail>128MB maximum</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237861702525">
+        <name>Screen</name>
+        <specifications>
+          <specification oid="1237861740385">
+            <title>Type</title>
+            <detail>LCD</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237429971276">
+        <name>noimage</name>
+        <imageUrl96x96>/css-specific/images/FT313UA-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/FT313UA-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/FT313UA-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1240368457164">
+        <commentText>Really cute and rubust netbook.</commentText>
+        <commentTitle>Cute</commentTitle>
+        <creationDate>2009-04-21</creationDate>
+        <modificationDate>2009-04-21</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1237613011667">
+    <productNumber>LN32A450</productNumber>
+    <name>Samsung 32" Flat-Panel LCD</name>
+    <shortDescription>Samsung 32" Flat-Panel LCD HDTV** (LN32A450)</shortDescription>
+    <longDescription>This 32" Samsung LCD HDTV boasts high-end specifications with sleek styling to match. It's capable of outputting a gorgeous 720p resolution with an admirably fast 6ms response time, and a 10,000:1 true contrast ratio - offering a surprisingly vivid viewing experience in a mid-size display.
+
+With a slew of impressive specs on this 32" LCD TV, you'll enjoy gaming, movies and sports at new and detailed levels. The HD 720p image resolution ensures remarkable detail in all your visual content, while a 10,000:1 dynamic contrast ratio deepens black colours and enlivens whites. The 6ms response time displays all moving video with smooth fluidity.
+
+It's also home to a host of connection options that let you enjoy the latest high definition technology. It has 2 HDMI ports, 2 HD component ports - even a PC port, allowing you to connect your computer and enjoy working on a widescreen display. Furthermore, its ATSC tuner lets you tune into any unencrypted high definition programming that may be available in your area.
+
+Its sleek, slim form factor lets you display it almost anywhere, with a minimal footprint, and you can easily mount it to your wall with VESA mounting standards.</longDescription>
+    <price>579.99</price>
+    <startDate>2009-03-21</startDate>
+    <published>true</published>
+    <soldNumber>1</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237613287971">
+        <manufacturerOid>1237317351623</manufacturerOid>
+        <partNumber>LN32A450C1DXZC</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <specificationCategories>
+      <specificationCategory oid="1237714289435">
+        <name>Size</name>
+        <specifications>
+          <specification oid="1237714496046">
+            <title>width</title>
+            <detail>32"</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237714493886">
+        <name>Panel</name>
+        <specifications>
+          <specification oid="1237714640260">
+            <title>Type</title>
+            <detail>LCD</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237714636033">
+        <name>Audio</name>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237613269275">
+        <name>LN32A450C1DXZC</name>
+        <imageUrl96x96>/css-specific/images/LN32A450C1DXZC-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/LN32A450C1DXZC-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/LN32A450C1DXZC-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+  </product>
+  <product oid="1237725768427">
+    <productNumber>MB466LL</productNumber>
+    <name>Apple MacBook 13.3"  2.0GHz</name>
+    <shortDescription>Apple MacBook 13.3" Intel Core 2 Duo 2.0GHz Laptop</shortDescription>
+    <longDescription>We're not sure what we like more</longDescription>
+    <price>1499.95</price>
+    <startDate>2009-03-22</startDate>
+    <published>true</published>
+    <soldNumber>15</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237725861258">
+        <manufacturerOid>1237330067231</manufacturerOid>
+        <partNumber>MB466LL</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productRebates>
+      <productRebate oid="1237911985992">
+        <rebateOid>1237386831121</rebateOid>
+      </productRebate>
+    </productRebates>
+    <specificationCategories>
+      <specificationCategory oid="1237725864469">
+        <name>Components</name>
+        <specifications>
+          <specification oid="1237725891410">
+            <title>Processor Type</title>
+            <detail>Intel Core 2 Duo</detail>
+          </specification>
+          <specification oid="1237725903907">
+            <title>Screen Size</title>
+            <detail>13.3 Inches</detail>
+          </specification>
+          <specification oid="1237725918041">
+            <title>RAM</title>
+            <detail>2GB</detail>
+          </specification>
+          <specification oid="1237725928270">
+            <title>Hard Drive</title>
+            <detail>160GB 5400RPM</detail>
+          </specification>
+          <specification oid="1237725938233">
+            <title>Optical Drives</title>
+            <detail>8X SuperDrive</detail>
+          </specification>
+          <specification oid="1237725952665">
+            <title>Graphics</title>
+            <detail>NVIDIA GeForce 9400M</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237725816930">
+        <name>MB466LL</name>
+        <imageUrl96x96>/css-specific/images/MB466LL-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/MB466LL-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/MB466LL-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1240368671972">
+        <commentText>How can you charge that much for a 13.3&amp;quot; netbook :S This is beyond me.</commentText>
+        <commentTitle>It&amp;#039;s nice.. but pricey.</commentTitle>
+        <creationDate>2009-04-21</creationDate>
+        <modificationDate>2009-04-21</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1237726083784">
+    <productNumber>MB543LL</productNumber>
+    <name>MacBook Air 1.6GHz</name>
+    <shortDescription>Apple MacBook Air Intel Core 2 Duo 1.6GHz Laptop</shortDescription>
+    <price>1999.99</price>
+    <startDate>2009-03-22</startDate>
+    <published>true</published>
+    <soldNumber>2</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237726185008">
+        <manufacturerOid>1237330067231</manufacturerOid>
+        <partNumber>MB543LL</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productImages>
+      <productImage oid="1237726152873">
+        <name>MB543LL</name>
+        <imageUrl96x96>/css-specific/images/MB543LL-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/MB543LL-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/MB543LL-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+  </product>
+  <product oid="1237726571828">
+    <productNumber>WD3000HLFS</productNumber>
+    <name>VelociRaptor 300GB 10000 RPM</name>
+    <shortDescription>Western Digital VelociRaptor WD3000HLFS 300GB 10000 RPM 16MB Cache SATA 3.0Gb/s Hard Drive - OEM</shortDescription>
+    <longDescription>Rotary Acceleration Feed Forward (RAFF) - Optimizes operation and performance when the drives are used in vibration-prone, multi-drive chassis.
+NoTouch ramp load technology - The recording head never touches the disk media ensuring significantly less wear to the recording head and media as well as better drive protection in transit.</longDescription>
+    <price>189.97</price>
+    <startDate>2009-03-22</startDate>
+    <published>true</published>
+    <soldNumber>41</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237726676979">
+        <manufacturerOid>1237726648828</manufacturerOid>
+        <partNumber>WD3000HLFS</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <specificationCategories>
+      <specificationCategory oid="1237726678377">
+        <name>Performance</name>
+        <specifications>
+          <specification oid="1237726691106">
+            <title>Interface</title>
+            <detail>SATA 3.0Gb/s</detail>
+          </specification>
+          <specification oid="1237726704490">
+            <title>Capacity</title>
+            <detail>300GB</detail>
+          </specification>
+          <specification oid="1237726715221">
+            <title>RPM</title>
+            <detail>10000 RPM</detail>
+          </specification>
+          <specification oid="1237726725054">
+            <title>Cache</title>
+            <detail>16MB</detail>
+          </specification>
+          <specification oid="1237726733921">
+            <title>Average Latency</title>
+            <detail>5.5ms</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237726689290">
+        <name>Physical Spec</name>
+        <specifications>
+          <specification oid="1237726755410">
+            <title>Form Factor</title>
+            <detail>3.5"</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237726618598">
+        <name>WD3000HLFS</name>
+        <imageUrl96x96>/css-specific/images/WD3000HLFS-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/WD3000HLFS-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/WD3000HLFS-FS.jpg</imageUrlFullSize>
+      </productImage>
+      <productImage oid="1237852148263">
+        <name>noimage</name>
+        <imageUrl96x96>/css-specific/images/noimage96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/noimage180.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1240368234956">
+        <commentText>I just put 2 of thoses in raid 0.. wow the speed is just amazing!!!</commentText>
+        <commentTitle>Raid 0</commentTitle>
+        <creationDate>2009-04-21</creationDate>
+        <modificationDate>2009-04-21</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1237727112462">
+    <productNumber>ST31500341AS</productNumber>
+    <name>Barracuda 1.5TB 7200 RPM 32MB</name>
+    <shortDescription>Seagate Barracuda 7200.11 ST31500341AS 1.5TB 7200 RPM 32MB Cache SATA 3.0Gb/s Hard Drive (bare drive) - OEM</shortDescription>
+    <longDescription>Seagate has long been both an innovator and a crowd-pleaser in terms of data storage technology. The new ST31500341AS is the latest in a long line of Barracuda drives, with a storage and speed seldom seen. Designed with noise- suppression engineering and state-of-the-art speed and power this 1.5 TB powerhouse offers a brilliant combination of technology and low cost of ownership. Idling at only eight watts, this drive delivers up to 43% power savings over earlier generations without sacrificing performance.
+
+When supported by the latest firmware updates, downloadable from Seagate once you've purchased your drive, this spectacular unit offers the best of both worlds -- top performance and a very small eco-footprint, so you know you have an industry leader AND are doing something good for the environment.</longDescription>
+    <price>162.99</price>
+    <startDate>2009-03-22</startDate>
+    <published>true</published>
+    <soldNumber>5</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237727220309">
+        <manufacturerOid>1237726836507</manufacturerOid>
+        <partNumber>ST31500341AS</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <specificationCategories>
+      <specificationCategory oid="1240368712956">
+        <name>Capacity</name>
+        <specifications>
+          <specification oid="1240368737821">
+            <title>Size</title>
+            <detail>1.5 Terrabyte</detail>
+          </specification>
+          <specification oid="1240368750989">
+            <title>Speed</title>
+            <detail>7200 rpm</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237727165840">
+        <name>ST31500341AS</name>
+        <imageUrl96x96>/css-specific/images/ST31500341AS-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/ST31500341AS-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/ST31500341AS-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1240368805588">
+        <commentText>Seagate = reliable, good service and good perf/price.
+You can&amp;#039;t go wrong with this one.</commentText>
+        <commentTitle>The kind performance/price</commentTitle>
+        <creationDate>2009-04-21</creationDate>
+        <modificationDate>2009-04-21</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1237727434825">
+    <productNumber>Q8200R</productNumber>
+    <name>Core 2 Quad Q8200 2.33GHz 4MB</name>
+    <shortDescription>Intel Core 2 Quad Q8200 2.33GHz 4MB L2 Cache LGA 775 95W Quad-Core Processor - Retail</shortDescription>
+    <price>216.99</price>
+    <startDate>2009-03-22</startDate>
+    <published>true</published>
+    <soldNumber>6541635</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237727612454">
+        <manufacturerOid>1237698297770</manufacturerOid>
+        <partNumber>Q8200R</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <specificationCategories>
+      <specificationCategory oid="1237727616633">
+        <name>CPU Socket Type</name>
+        <specifications>
+          <specification oid="1237727633681">
+            <title>CPU Socket Type</title>
+            <detail>LGA 775</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237727630376">
+        <name>Tech Spec</name>
+        <specifications>
+          <specification oid="1237727658310">
+            <title>Multi-Core</title>
+            <detail>Quad-Core</detail>
+          </specification>
+          <specification oid="1237727668816">
+            <title>Operating Frequency</title>
+            <detail>2.33GHz</detail>
+          </specification>
+          <specification oid="1237727682202">
+            <title>FSB</title>
+            <detail>1333MHz</detail>
+          </specification>
+          <specification oid="1237727691211">
+            <title>L2 Cache</title>
+            <detail>4MB</detail>
+          </specification>
+          <specification oid="1237727700294">
+            <title>Manufacturing Tech</title>
+            <detail>45 nm</detail>
+          </specification>
+          <specification oid="1237727710387">
+            <title>64 bit Support</title>
+            <detail>Yes</detail>
+          </specification>
+          <specification oid="1237727723464">
+            <title>Voltage</title>
+            <detail>0.85V – 1.3625V</detail>
+          </specification>
+          <specification oid="1237727733454">
+            <title>Thermal Power</title>
+            <detail>95W</detail>
+          </specification>
+          <specification oid="1237727745263">
+            <title>Cooling Device</title>
+            <detail>Heatsink and Fan included</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237727500288">
+        <name>Q8200R</name>
+        <imageUrl96x96>/css-specific/images/Q8200R-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/Q8200R-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/Q8200R-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1240367849976">
+        <commentText>This is a retail box, so it contain a default heatsink.</commentText>
+        <commentTitle>Beware!</commentTitle>
+        <creationDate>2009-04-21</creationDate>
+        <modificationDate>2009-04-21</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1237727998298">
+    <productNumber>HD485XYDFC</productNumber>
+    <name>XFX Radeon HD 4850 625MHZ 512MB</name>
+    <shortDescription>XFX Radeon HD 4850 625MHZ 512MB 1.99GHZ DDR3 PCI-E Dual DVI-I HDCP HDTV Out Video Card</shortDescription>
+    <longDescription>Featuring a full TeraFLOP of compute power, the XFX Radeon HD 4850 is true power player. The single slot design enables easy three- and four-way CrossFire assembly. Play the most intense games with a graphics card that knows how to conserve energy while delivering optimum performance.
+KEY FEATURES
+• TeraScale Graphics Engine
+• Unified Superscalar Shader Architecture
+• DDR3 Memory
+• Accelerated Video Transcoding (AVT)
+• Dynamic Power Management
+• 800 Stream Processing Units
+• ATI PowerPlay™ Technology
+• ATI CrossFireX
+• DirectX 10.1 Support
+• HDCP Capable</longDescription>
+    <price>206.25</price>
+    <startDate>2009-03-22</startDate>
+    <published>true</published>
+    <soldNumber>32</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1237728511539">
+        <manufacturerOid>1237728495635</manufacturerOid>
+        <partNumber></partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productRebates>
+      <productRebate oid="1237867765689">
+        <rebateOid>1237867729742</rebateOid>
+      </productRebate>
+    </productRebates>
+    <specificationCategories>
+      <specificationCategory oid="1237728534602">
+        <name>Bus</name>
+        <specifications>
+          <specification oid="1237728565400">
+            <title>Type</title>
+            <detail>PCI-E 2.0</detail>
+          </specification>
+          <specification oid="1237728570415">
+            <title>GPU Clock</title>
+            <detail>625 Mhz</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237728559953">
+        <name>Memory</name>
+        <specifications>
+          <specification oid="1237728590120">
+            <title>Bus</title>
+            <detail>256</detail>
+          </specification>
+          <specification oid="1237728598164">
+            <title>Type</title>
+            <detail>DDR3</detail>
+          </specification>
+          <specification oid="1237728607787">
+            <title>Size</title>
+            <detail>512 MB</detail>
+          </specification>
+          <specification oid="1237728616508">
+            <title>Speed</title>
+            <detail>1990 Mhz</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1237728588055">
+        <name>Package Contents</name>
+        <specifications>
+          <specification oid="1237728637774">
+            <title>Contents</title>
+            <detail>DVI Adapter, HDTV Component Adapter, 6 Pin Y Power Cable</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1237728057588">
+        <name>HD485XYDFC</name>
+        <imageUrl96x96>/css-specific/images/HD485XYDFC-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/HD485XYDFC-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/HD485XYDFC-FS.jpg</imageUrlFullSize>
+      </productImage>
+      <productImage oid="1237728415505">
+        <name>HD485XYDFC2</name>
+        <imageUrl96x96>/css-specific/images/HD485XYDFC2-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/HD485XYDFC2-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/HD485XYDFC2-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1240368378732">
+        <commentText>Score really high for the price.. check the benchs at tomshardware.</commentText>
+        <commentTitle>Incredible performance for the price!</commentTitle>
+        <creationDate>2009-04-21</creationDate>
+        <modificationDate>2009-04-21</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1238091046972">
+    <productNumber>KDL52S4100</productNumber>
+    <name>Sony Bravia 52" 1080p</name>
+    <shortDescription>Sony Bravia 52" 1080p Flat-Panel LCD HDTV (KDL52S4100)</shortDescription>
+    <longDescription>Sony's BRAVIA KDL52S4100 delivers 52 inches of Full HD 1080p bliss. It features the BRAVIA Engine which boasts specs like a 8ms response time and a 3,000:1 true contrast ratio. So no matter what you're into, the KDL52S4100 brings it to you with incredible detail, clarity and colour.
+
+ Important specs at a glance:
+
+    * Full HD 1080p resolution (1920 x 1080)
+    * 8ms response time
+    * 3,000:1 true contrast ratio
+    * 3 HDMI inputs, 2 component inputs, 1 PC input
+    * **Requires HDTV Source
+
+
+
+What we like about the KDL52S4100:
+This Sony BRAVIA LCD HDTV is 24p True Cinema capable. Most movies are recorded in 24p, so you'll see Blu-ray movies the way they were intended to be seen; with natural-looking footage that's crystal clear and smooth moving.</longDescription>
+    <price>1999.99</price>
+    <startDate>2009-03-26</startDate>
+    <published>true</published>
+    <soldNumber>100</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1238091290206">
+        <manufacturerOid>1237315989160</manufacturerOid>
+        <partNumber>KDL52S4100</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <specificationCategories>
+      <specificationCategory oid="1238091450177">
+        <name>Video Features</name>
+        <specifications>
+          <specification oid="1238091458922">
+            <title>Aspect Ratio</title>
+            <detail>Widescreen (16:9)</detail>
+          </specification>
+          <specification oid="1238091471791">
+            <title>Colour Gamut</title>
+            <detail>72%</detail>
+          </specification>
+          <specification oid="1238091482834">
+            <title>Comb Filter</title>
+            <detail>3D</detail>
+          </specification>
+          <specification oid="1238091492024">
+            <title>Contrast Ratio</title>
+            <detail>3,000:1</detail>
+          </specification>
+          <specification oid="1238091505023">
+            <title>Display Technology</title>
+            <detail>LCD</detail>
+          </specification>
+          <specification oid="1238091514538">
+            <title>Response Time</title>
+            <detail>8ms</detail>
+          </specification>
+          <specification oid="1238091524097">
+            <title>Screen Size</title>
+            <detail>52"</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1238091458920">
+        <name>Audio Features</name>
+        <specifications>
+          <specification oid="1238091540163">
+            <title>Audio Enhancement</title>
+            <detail>Dolby Digital, MTS Stereo System</detail>
+          </specification>
+          <specification oid="1238091551641">
+            <title>Auto Volume Correction</title>
+            <detail>Yes</detail>
+          </specification>
+          <specification oid="1238091563161">
+            <title>Speaker Output Power</title>
+            <detail>10 Watts x 2</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1238091540160">
+        <name>Inputs/Outputs</name>
+        <specifications>
+          <specification oid="1238091589995">
+            <title>A/V (Composite) Inputs</title>
+            <detail>1 - Side, 1 - Rear</detail>
+          </specification>
+          <specification oid="1238091600627">
+            <title>Cable Card Slot</title>
+            <detail>No</detail>
+          </specification>
+          <specification oid="1238091610829">
+            <title>Coaxial Cable Inputs</title>
+            <detail>1 - Rear</detail>
+          </specification>
+          <specification oid="1238091620175">
+            <title>Component Video Inputs</title>
+            <detail>2 - Rear</detail>
+          </specification>
+          <specification oid="1238091631307">
+            <title>HDMI Inputs</title>
+            <detail>1 - Side, 2 - Rear</detail>
+          </specification>
+          <specification oid="1238091644245">
+            <title>PC Audio Inputs</title>
+            <detail>1 - Rear</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1238091589991">
+        <name>Warranty</name>
+        <specifications>
+          <specification oid="1238091666601">
+            <title>Labour</title>
+            <detail>1 Year</detail>
+          </specification>
+          <specification oid="1238091676818">
+            <title>Parts</title>
+            <detail>1 Year</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1238091260220">
+        <name>noimage</name>
+        <imageUrl96x96>/css-specific/images/KDL52S4100-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/KDL52S4100-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/KDL52S4100-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+    <productComments>
+      <productComment oid="1240368130627">
+        <commentText>Really nice contrast for an Lcd.</commentText>
+        <commentTitle>Nice TV!</commentTitle>
+        <creationDate>2009-04-21</creationDate>
+        <modificationDate>2009-04-21</modificationDate>
+        <published>true</published>
+      </productComment>
+    </productComments>
+  </product>
+  <product oid="1238091867537">
+    <productNumber>MB528C</productNumber>
+    <name>iPod Touch 8GB 2nd Generation</name>
+    <shortDescription>Apple 8GB 2nd Generation iPod Touch</shortDescription>
+    <longDescription>It's just like before, only way better. The new 8GB iPod Touch feels thinner and sleeker, crafted from contoured stainless steel. It now features a built-in speaker, integrated volume controls, an enhanced user interface, and an environmentally-friendly design. To top it off, the iPod Touch can now access tons of new content from the App Store
+
+ Limited quantities available. Products ordered online will be ship on a first-come, first-served basis.
+
+Nothing was taken away – just improved or added. The new iPod Touch does everything it did before, but better. Its sleek and thin feel make it an even better portable companion. With the new built-in speaker, gone are the days of solitary music enjoyment. The interface has been cleaned up to produce a better response, refined graphics, and a cleaner user interface.
+
+The 8GB hard drive lets you store 1,750 songs or 10 hours of video to bring with you where ever you go. That’s a lot of content. Speaking of which, the Touch now has full access to the App Store where you can shop for and download games and applications to your heart’s content – many of them free! And with the iPod Touch’s one-of-kind accelerometer, Multi-Touch display and 3D graphics, gaming just got a whole lot more fun.
+
+Other cool features include Nike+iPod built in, so you can sync the iPod Touch to your running routine without an external transponder. A new feature called Genius helps to build playlists that make sense. The battery now boasts 36 hours of audio playback and 16 hours of video playback. Finally – and most importantly – the iPod Touch uses a highly-recyclable environmentally-friendly design that has drastically reduced toxic chemicals from the production process.</longDescription>
+    <price>229.99</price>
+    <startDate>2009-03-26</startDate>
+    <published>true</published>
+    <soldNumber>0</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1238091969837">
+        <manufacturerOid>1237330067231</manufacturerOid>
+        <partNumber>MB528C</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productImages>
+      <productImage oid="1238091937629">
+        <name>noimage</name>
+        <imageUrl96x96>/css-specific/images/MB528C-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/MB528C-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/MB528C-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+  </product>
+  <product oid="1238092204697">
+    <productNumber>MB903C</productNumber>
+    <name>iPod nano 16GB 4th Generation - Silver</name>
+    <shortDescription>Apple 16GB 4th Generation iPod nano - Silver</shortDescription>
+    <longDescription>That nano has been revolutionized again. The new glass and aluminum curved oval design will turn heads with both its appearance and abundance of new features. 16GB of storage lets you bring more music, video and pictures with you. It includes an accelerometer, the cool shake-to-shuffle feature, and best of all, it’s environmentally friendly. It’s also available in just about every colour of the rainbow.
+
+New Design
+Apple takes design seriously, and that’s never been truer than with the new iPod nano. Smaller and sleeker than ever before, the nano crowns itself as the sexiest product Apple has ever made. It features a cool curved aluminum and glass body that’s available in almost every colour of the rainbow: pink, orange, yellow, green, blue, and purple. It’s environmentally-friendly too; removing toxins like arsenic, BFR, PVC, and mercury from the production process make it highly-recyclable.
+
+New Features
+The new nano is packed with a slew of exciting new features. Taking cue from its sibling, the iPod Touch, it now includes an accelerometer that transitions to Cover Flow mode when turned sideways. Don’t feel like listening to the song that’s playing? Just shake the nano to change things up. You’ll enjoy easier menus, better device navigation, and enhanced graphics with the improved user interface. And to top it off, the new Genius function helps you create playlists that make sense.
+
+More Storage Than Before
+With 16GB storage, the new iPod nano gives you even more room for all your favourite media. Rock out to hours of music, pass the time on the treadmill with your favourite videos, and share thousands of your pictures with friends and family.</longDescription>
+    <price>199.99</price>
+    <startDate>2009-03-26</startDate>
+    <published>true</published>
+    <soldNumber>0</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1238092312619">
+        <manufacturerOid>1237330067231</manufacturerOid>
+        <partNumber>MB903C</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productRebates>
+      <productRebate oid="1238180545437">
+        <rebateOid>1237386831121</rebateOid>
+      </productRebate>
+    </productRebates>
+    <specificationCategories>
+      <specificationCategory oid="1238092317125">
+        <name>Battery</name>
+        <specifications>
+          <specification oid="1238092328149">
+            <title>Life</title>
+            <detail>Up To 24 Hours Music, 4 Hours Video</detail>
+          </specification>
+          <specification oid="1238092338319">
+            <title>Charge Time</title>
+            <detail>Fast: 1.5 Hours (80%), Full: 3 Hours</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+      <specificationCategory oid="1238092328148">
+        <name>Display</name>
+        <specifications>
+          <specification oid="1238092357226">
+            <title>Size</title>
+            <detail>2 inches</detail>
+          </specification>
+        </specifications>
+      </specificationCategory>
+    </specificationCategories>
+    <productImages>
+      <productImage oid="1238092275895">
+        <name>noimage</name>
+        <imageUrl96x96>/css-specific/images/MB903C-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/MB903C-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/imagesMB903C-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+  </product>
+  <product oid="1238092516722">
+    <productNumber>69916J</productNumber>
+    <name>Zune 16GB - Black</name>
+    <shortDescription>Microsoft Zune 16GB Portable Media Player (WHA-00002) - Black</shortDescription>
+    <longDescription>Boasting a wafer-thin profile, 16GB of storage, intuitive touch controls and a host of totally unique features, the Zune is taking Canada by storm. With new and amazing features like Wireless Sync, Zune-to-Zune sharing, and more, there's nothing else out there like it
+
+FEATURES:
+
+    * A glass 1.8" colour screen resists nicks and scratches.
+    * View media in a vertical or horizontal format.
+    * Kiss scrolling goodbye with the Zune touch pad and browse through your media quickly.
+    * Get one-touch access to local FM stations while advanced audio displays the name of the current song.
+    * Link to your wireless home network to refresh playlists, podcasts and more.
+    * Choose from a selection of fun games to play on the go or to compete wirelessly with nearby Zune players.
+    * Share without cables and send music, pictures and audio podcasts.
+    * Zune Social is the online community that keeps you connected to friends and artists.
+    * You can even plug your Zune into an XBOX 360 to customize the soundtrack of your favourite games (XBOX 360 sold separately).</longDescription>
+    <price>179.99</price>
+    <startDate>2009-03-26</startDate>
+    <published>true</published>
+    <soldNumber>0</soldNumber>
+    <frontpage>false</frontpage>
+    <productManufacturers>
+      <productManufacturer oid="1238092686952">
+        <manufacturerOid>1238092607007</manufacturerOid>
+        <partNumber>69916J</partNumber>
+      </productManufacturer>
+    </productManufacturers>
+    <productImages>
+      <productImage oid="1238092578307">
+        <name>noimage</name>
+        <imageUrl96x96>/css-specific/images/69916J-96.jpg</imageUrl96x96>
+        <imageUrl180x130>/css-specific/images/69916J-180.jpg</imageUrl180x130>
+        <imageUrlFullSize>/css-specific/images/69916J-FS.jpg</imageUrlFullSize>
+      </productImage>
+    </productImages>
+  </product>
+</products>

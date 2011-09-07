@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<addresses>
+  <address oid="1231199190731">
+    <name>Dzenan Ridjanovic</name>
+    <street>632 Charron</street>
+    <city>Quebec</city>
+    <zipcode>G1X 3L6</zipcode>
+  </address>
+  <address oid="1233774256487">
+    <name>Tom Jones</name>
+    <street>11 Street</street>
+    <city>Mineapolis</city>
+    <zipcode>11224</zipcode>
+  </address>
+  <address oid="1233774587812">
+    <name>Vedad Kirlic</name>
+    <street>34 Cesma</street>
+    <city>Sarajevo</city>
+    <zipcode>71000</zipcode>
+  </address>
+  <address oid="1233788229163">
+    <name>Pierre</name>
+    <street>33 Rue</street>
+    <city>Quebec</city>
+    <zipcode>G1X 3L6</zipcode>
+  </address>
+</addresses>

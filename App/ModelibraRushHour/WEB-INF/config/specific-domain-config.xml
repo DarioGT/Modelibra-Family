@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1174415547218">
+		<code>Game</code>
+		<type>Specific</type>
+	    
+		<models>
+
+			<model oid="1174415568899">
+				<code>RushHour</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/game/rushhour</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1174415643197">
+						<code>Parking</code>
+						<entitiesCode>Parkings</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1174415718207">
+								<code>areaOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>area</referenceNeighbor>
+								
+								<essential>false</essential>
+							</property>
+							<property oid="1174416298442">
+								<code>number</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1174415728834">
+								<code>cars</code>
+								<destinationConcept>Car</destinationConcept>
+								<inverseNeighbor>parking</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1174415718207">
+								<code>area</code>
+								<destinationConcept>Area</destinationConcept>
+								<inverseNeighbor>parkings</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1174415652949">
+						<code>Car</code>
+						<entitiesCode>Cars</entitiesCode>
+			    
+						<properties>
+							<property oid="1174415732085">
+								<code>carModelOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>carModel</referenceNeighbor>
+								
+								<essential>false</essential>
+							</property>
+							<property oid="1174417282105">
+								<code>orientation</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>Horizontal</defaultValue>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1174427530720">
+								<code>startRow</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1174427533909">
+								<code>startColumn</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1174427542269">
+								<code>currentRow</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1174427547223">
+								<code>currentColumn</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1174415728834">
+								<code>parking</code>
+								<destinationConcept>Parking</destinationConcept>
+								<inverseNeighbor>cars</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1174415732085">
+								<code>carModel</code>
+								<destinationConcept>CarModel</destinationConcept>
+								<inverseNeighbor>cars</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1174415685656">
+						<code>CarModel</code>
+						<entitiesCode>CarModels</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1174415881805">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1174415885462">
+								<code>length</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1174427457610">
+								<code>colorName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1174415916291">
+								<code>red</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1174415918089">
+								<code>green</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1174415920168">
+								<code>blue</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1174415732085">
+								<code>cars</code>
+								<destinationConcept>Car</destinationConcept>
+								<inverseNeighbor>carModel</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1174415701627">
+						<code>Area</code>
+						<entitiesCode>Areas</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1174416223456">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1174415718207">
+								<code>parkings</code>
+								<destinationConcept>Parking</destinationConcept>
+								<inverseNeighbor>area</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+    
+		</models>
+
+	</domain>
+		
+</domains>

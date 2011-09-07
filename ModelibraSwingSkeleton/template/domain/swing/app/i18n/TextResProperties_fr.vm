@@ -1,0 +1,142 @@
+about=� propos de
+aboutTitle=� propos de
+accepted=Accept�
+add=Ajouter
+addNot=* Add was not successful.
+appTitle=Application de Modelibra Swing
+arrangeEntities=Arranger les concepts
+attach=Rattacher
+author=Auteur
+baseType=Classe de base
+close=Fermer
+colorChoice=Color Choice
+colorEntities=Colorer les concepts
+concept=Concept
+concepts=Concepts
+createEntities=Cr�er des concepts
+deleteSelectedEntities=Supprimer les concepts s�lectionn�s
+deselectEntities=D�s�lectionner les concepts
+decreaseHeightSelectedEntities=Diminuer la hauteur des concepts s�lectionn�s
+decreaseWidthSelectedEntities=Diminuer largeur des concepts s�lectionn�s
+decreaseSizeSelectedEntities=Diminuer la taille des concepts s�lectionn�s
+description=Description
+dictionary=Dictionnaire
+domain=Domaine
+domains=Domaines
+edit=�dition
+entityTip=Cr�er un concept.
+entry=Point d'entr�e
+exit=Sortie
+file=Fichier
+fileExists=Le fichier existe!
+findEntity=Chercher un concept
+generation=G�n�ration des concepts
+help=Aide
+hideSelectedEntities=Cacher les concepts s�lectionn�s
+id=Id
+increaseHeightSelectedEntities=Augmenter la hauteur des concepts s�lectionn�s
+increaseWidthSelectedEntities=Augmenter la largeur des concepts s�lectionn�s
+increaseSizeSelectedEntities=Augmenter la taille des concepts s�lectionn�s
+increment=Incr�ment
+init=Valeur initiale
+internal=Interne
+length=Longueur
+lookup=Rechercher
+model=Mod�le
+models=Mod�les
+name=Nom
+neighbor=Voisin
+neighborName=voisin
+neighbors=Voisins
+number=Num�ro
+new=Nouveau
+no=Non
+open=Ouvrir
+property=Propri�t�
+propertyName=propri�t�
+properties=Propri�t�s
+random=Fait au hasard
+remove=Supprimer
+replaceFile=Voulez vous remplacer le fichier?
+rshipTip=S�lectionner une relation.
+save=Sauvegarder
+saveAs=Sauvegarder sous
+search=Recherche
+selectDirectory=S�lectionner le r�pertoire
+selectEntities=S�lectionner les concepts
+selectFile=S�lectionner le fichier
+selectTip=S�lectionner un concept.
+showHiddenEntities=Montrer les concepts cach�s
+type=Type
+types=Types
+undo=D�faire
+value=Valeur obligatoire
+view=Vue
+yes=Oui
+zoomIn=Zoom In
+zoomOut=Zoom Out
+
+Concept=Concept
+Concept.name=Entry Concept Name
+
+Domain=Domain
+Domain.name=Domain Name
+Domain.type=Domain Type
+Domains=Domains
+
+Model=Domain Model
+Model.name=Domain Model Name
+Model.entries=Domain Model Entries
+Models=Domain Models
+
+$DomainCode=$DomainCode  
+${DomainCode}.title=$DomainCode Domain
+${DomainCode}.description=Modelibra - $DomainCode Domain Models.
+
+#foreach ($modelConfig in $modelConfigList) 
+#set ($ModelCode = $modelConfig.getCode())
+#set ($conceptConfigList = $modelConfig.getConceptsConfig().getConceptConfigList())
+
+$ModelCode=$ModelCode
+${ModelCode}.title=$ModelCode Model
+${ModelCode}.description=Modelibra - $DomainCode Domain - $ModelCode Model
+#foreach ($conceptConfig in $conceptConfigList) 
+#set ($EntityCode = $conceptConfig.getCode())
+#set ($EntitiesCode = $conceptConfig.getEntitiesCode())
+#set ($propertyConfigList = $conceptConfig.getPropertiesConfig().getPropertyConfigList())
+#set ($neighborConfigList = $conceptConfig.getNeighborsConfig().getNeighborConfigList())
+		
+$EntityCode=$EntityCode
+$EntitiesCode=$EntitiesCode
+#if ($conceptConfig.getUniqueConfig().isNotEmpty())     
+${EntityCode}.id=$EntityCode identifier: $conceptConfig.getUniqueConfig().getCodes()
+${EntityCode}.id.unique=$EntityCode identifier $conceptConfig.getUniqueConfig().getCodes() is not unique.
+#end
+#foreach ($propertyConfig in $propertyConfigList) 
+#set ($propertyCode = $propertyConfig.getCode())	
+#set ($PropertyCode = $propertyConfig.getPropertyName()) 
+${EntityCode}.$propertyCode=$PropertyCode
+#if ($propertyConfig.isRequired())     
+${EntityCode}.${propertyCode}.required=$PropertyCode is required.
+#end
+#if ($propertyConfig.isMaxLength())     
+${EntityCode}.${propertyCode}.length=$PropertyCode is longer than $propertyConfig.getMaxLengthInt().
+#end
+#if ($propertyConfig.isValidateType())     
+${EntityCode}.${propertyCode}.validation=$PropertyCode is not a valid $propertyConfig.getValidationType() value.
+#end 
+#end
+#foreach ($neighborConfig in $neighborConfigList) 
+#set ($neighborCode = $neighborConfig.getCode())
+#set ($NeighborCode = $neighborConfig.getNeighborName()) 
+${EntityCode}.$neighborCode=$NeighborCode
+#end
+#end
+#end
+
+
+
+
+
+
+

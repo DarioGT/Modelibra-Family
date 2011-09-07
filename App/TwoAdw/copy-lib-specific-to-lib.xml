@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="TwoAddProject" default="copy-lib-specific-dir">	
+	
+	<property name="from-lib-dir" value="WEB-INF/lib-specific"/>
+	<property name="to-lib-dir" value="WEB-INF/lib"/>
+	
+	<target name="copy-lib-specific-dir">
+		<copy todir="${to-lib-dir}">
+			<fileset dir="${from-lib-dir}"/>
+		</copy>  
+	</target>
+	
+</project>

@@ -1,0 +1,1850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<presentations>
+  <presentation oid="1143127996590">
+    <code>urls00</code>
+    <title>Introduction</title>
+    <author>Dzenan Ridjanovic</author>
+    <creationDate>2006.03.23</creationDate>
+    <objective>The objective of this spiral is to introduce Modelibra and Wicket frameworks. More specifically, the objective is to define a simple domain model with only one concept and to create a simple web application based on the model that will display the concept data.</objective>
+    <slides>
+      <slide oid="1143128050638">
+        <number>1</number>
+        <title>Objective</title>
+        <subTitle>Modelibra &amp; Wicket</subTitle>
+        <purpose>The objective is to introduce Modelibra and Wicket frameworks by defining a simple domain model and creating a minimal web application.</purpose>
+        <points>
+          <point oid="1143128936093">
+            <number>1</number>
+            <text>The objective is to introduce Modelibra and Wicket frameworks by defining a simple domain model and creating a minimal web application.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1143128971063">
+        <number>2</number>
+        <title>Frameworks</title>
+        <subTitle>Concepts</subTitle>
+        <points>
+          <point oid="1143128982689">
+            <number>1</number>
+            <text>Framework is a base for developing software faster and better in a specific domain.</text>
+          </point>
+          <point oid="1143129015737">
+            <number>2</number>
+            <text>Pattern is a reusable design and code for a specific problem in a certain context.</text>
+          </point>
+          <point oid="1143129051613">
+            <number>3</number>
+            <text>Model View Controller (MVC) is one of the most popular design patterns.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1143726844357">
+        <number>3</number>
+        <title>Dynamic Web Applications</title>
+        <subTitle>Model &amp; Views</subTitle>
+        <points>
+          <point oid="1143726868671">
+            <number>1</number>
+            <text>A web application has two major parts: a model of data in a certain domain and data views presented in web pages. Web pages are constructed dynamically, on a server, based on different data and then sent to a client browser.</text>
+          </point>
+          <point oid="1143726980234">
+            <number>2</number>
+            <text>Two frameworks, Modelibra and Wicket, are used to develop web applications in a productive way.</text>
+          </point>
+          <point oid="1143727039485">
+            <number>3</number>
+            <text>Modelibra is a domain model Java framework. A domain model is a model of specific domain classes that describe the core data and their behavior.</text>
+          </point>
+          <point oid="1143727101236">
+            <number>4</number>
+            <text>Wicket is a web application framework for creating dynamic web pages by using web components. It uses only two technologies: Java and HTML.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1143727177394">
+        <number>4</number>
+        <title>Configurations</title>
+        <subTitle>Web &amp; Model</subTitle>
+        <points>
+          <point oid="1143727247816">
+            <number>1</number>
+            <text>Web application configuration file: web.xml.</text>
+          </point>
+          <point oid="1143727283271">
+            <number>2</number>
+            <text>Modelibra configuration file: dm-config.xml</text>
+          </point>
+          <point oid="1143727315928">
+            <number>3</number>
+            <text>Jetty configuration file: jetty-config.xml.</text>
+          </point>
+          <point oid="1143727367851">
+            <number>4</number>
+            <text>Java Start class to start Jetty.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1143727403211">
+        <number>5</number>
+        <title>Domain Model</title>
+        <subTitle>Basics</subTitle>
+        <points>
+          <point oid="1143727413946">
+            <number>1</number>
+            <text>Domain model: Concept (entity, entities), concept properties, concept neighbors, concept identifiers (oid, unique).</text>
+          </point>
+          <point oid="1143727539869">
+            <number>2</number>
+            <text>In this spiral, the domain model has only one concept: Url.</text>
+          </point>
+          <point oid="1143727592169">
+            <number>3</number>
+            <text>Main memory model.</text>
+          </point>
+          <point oid="1143727605889">
+            <number>4</number>
+            <text>Model persistency (xml, db).</text>
+          </point>
+          <point oid="1143727625531">
+            <number>5</number>
+            <text>Magic Models to design domain models.</text>
+          </point>
+          <point oid="1143727648485">
+            <number>6</number>
+            <text>Modelibra Domain application (Model) to configure domain models.</text>
+          </point>
+          <point oid="1143727734739">
+            <number>7</number>
+            <text>Model configuration: dm-config.xml, dm-config.dtd.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1143727795068">
+        <number>6</number>
+        <title>Model Classes</title>
+        <subTitle>Model, Entity &amp; Entities</subTitle>
+        <points>
+          <point oid="1143727806491">
+            <number>1</number>
+            <text>Default configuration context: dmConfig.properties.</text>
+          </point>
+          <point oid="1143728248050">
+            <number>2</number>
+            <text>Model "database": UrlsDb.</text>
+          </point>
+          <point oid="1143727927117">
+            <number>3</number>
+            <text>Url concept entity class: Url.
+Url concept entities class: Urls.</text>
+          </point>
+          <point oid="1143728047528">
+            <number>4</number>
+            <text>Simple tests: UrlsDb.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1143728493439">
+        <number>7</number>
+        <title>View Classes</title>
+        <subTitle>Java, XHTML &amp; CSS</subTitle>
+        <points>
+          <point oid="1143728503799">
+            <number>1</number>
+            <text>Application class: UrlsApp.</text>
+          </point>
+          <point oid="1143728583097">
+            <number>2</number>
+            <text>Application configuration: web.xml, dm-config.xml.</text>
+          </point>
+          <point oid="1143728648035">
+            <number>3</number>
+            <text>Application home page: HoemPage.</text>
+          </point>
+          <point oid="1143728677427">
+            <number>4</number>
+            <text>Wicket model vs. Modelibra model.</text>
+          </point>
+          <point oid="1143728706756">
+            <number>5</number>
+            <text>Java class vs. Java class html. 
+Wicket ids to link Java class components with the Java class html page elements.</text>
+          </point>
+          <point oid="1143728790197">
+            <number>6</number>
+            <text>Request/response cycle.
+index.html</text>
+          </point>
+          <point oid="1143728820448">
+            <number>7</number>
+            <text>XHTML</text>
+          </point>
+          <point oid="1143728826855">
+            <number>8</number>
+            <text>CSS</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1143728840512">
+        <number>8</number>
+        <title>Next Spiral</title>
+        <subTitle>urls01: Web Page Links</subTitle>
+      </slide>
+    </slides>
+  </presentation>
+  <presentation oid="1144324966202">
+    <code>urls01</code>
+    <title>Web Page Links</title>
+    <author>Dzenan Ridjanovic</author>
+    <creationDate>2006.04.06</creationDate>
+    <objective>The objective of this web application spiral, urls01, is to introduce different types of web page links so that our application may have more than one web page. At the same time, the look of the web pages is improved using the CSS (Cascading Style Sheets) definitions.</objective>
+    <slides>
+      <slide oid="1144325069222">
+        <number>1</number>
+        <title>Spiral</title>
+        <subTitle>Objective</subTitle>
+        <points>
+          <point oid="1144325088176">
+            <number>1</number>
+            <text>The objective of this web application spiral, urls01, is to introduce different types of web page links so that our application may have more than one web page. At the same time, the look of the web pages is improved using the CSS (Cascading Style Sheets) definitions.</text>
+          </point>
+          <point oid="1144325097974">
+            <number>2</number>
+            <text>Each url in the list has an external (to this application) web page link, the page short description and the Display link that displays, in a new page called UrlPage, all url properties: link, description and the new category property. A user may follow the url link to display the external web page, or to return to the home page.</text>
+          </point>
+          <point oid="1144325132881">
+            <number>3</number>
+            <text>As in the previous spiral, the urls are loaded from the xml file. A user still can neither add new urls nor modify the existing ones.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144325175929">
+        <number>2</number>
+        <title>Spiral</title>
+        <subTitle>Initial Changes</subTitle>
+        <purpose>How to start a new spiral.</purpose>
+        <points>
+          <point oid="1144325217915">
+            <number>1</number>
+            <text>The urls00 spiral is copied outside of Eclipse and its name is changed in the copied version to urls01.</text>
+          </point>
+          <point oid="1144325244837">
+            <number>2</number>
+            <text>Before the project is imported, the Eclipse  .project file is opened with a text editor and the project name is modified to urls01.</text>
+          </point>
+          <point oid="1144325267354">
+            <number>3</number>
+            <text>Within Eclipse, after the project is imported, the links00.txt is selected and from the pop-up menu the Refactor/Rename... choice is used to rename the file to links01.txt. Similarly, urls01.txt is updated to urls02.txt.</text>
+          </point>
+          <point oid="1144325377011">
+            <number>4</number>
+            <text>In jetty-config.xml, the first call application argument is changed to /urls01.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144325849840">
+        <number>3</number>
+        <title>Home Page</title>
+        <subTitle>Anonymous Class</subTitle>
+        <points>
+          <point oid="1144325859904">
+            <number>1</number>
+            <text>The HomePage class is modified to have less code without loosing functionality.</text>
+          </point>
+          <point oid="1144325961546">
+            <number>2</number>
+            <text>A Java anonymous class is used to construct the ListView component that is then added to the page.</text>
+          </point>
+          <point oid="1144325970312">
+            <number>3</number>
+            <text>An anonymous class is essentially a local (inner) class without a name.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144326071660">
+        <number>4</number>
+        <title>Home Page</title>
+        <subTitle>List View</subTitle>
+        <points>
+          <point oid="1144326129195">
+            <number>1</number>
+            <text>The populateItem method implements the corresponding abstract method in the Wicket ListView class.</text>
+          </point>
+          <point oid="1144326154509">
+            <number>2</number>
+            <text>First, the url object is extracted from the list item.</text>
+          </point>
+          <point oid="1144326176619">
+            <number>3</number>
+            <text>Second, the Wicket ExternalLink and Label components are created and added to the list item.</text>
+          </point>
+          <point oid="1144326190495">
+            <number>4</number>
+            <text>Third, a page link, that is bookmarkable by a web browser, is created. 
+
+The page link has the selected url oid parameter. This parameter will be used, when a user clicks on the link, in the UrlDisplayPage class to obtain the url.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144326436516">
+        <number>5</number>
+        <title>Link</title>
+        <subTitle>External Link</subTitle>
+        <points>
+          <point oid="1144326456095">
+            <number>1</number>
+            <text>The ExternalLink component represents a simple anchor link 
+
+&lt;a href = "http://url"&gt; body &lt;/a&gt;
+
+pointing to any URL.</text>
+          </point>
+          <point oid="1144326524380">
+            <number>2</number>
+            <text>ExternalLink is used for links to destinations outside of Wicket.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144326610320">
+        <number>6</number>
+        <title>External Link</title>
+        <subTitle>Constructor Arguments</subTitle>
+        <points>
+          <point oid="1144326636711">
+            <number>1</number>
+            <text>The external link constructor has three arguments.</text>
+          </point>
+          <point oid="1144326655118">
+            <number>2</number>
+            <text>The first one, "link", is the component id that is used to link the component with the anchor a element in the corresponding HTML page 
+
+&lt;a wicket:id = "link"&gt; Link &lt;/a&gt;.</text>
+          </point>
+          <point oid="1144326679916">
+            <number>3</number>
+            <text>The second argument is the link URL (href attribute).</text>
+          </point>
+          <point oid="1144326694480">
+            <number>4</number>
+            <text>The third argument is the link display text (&lt;a&gt; element body label).</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144326780700">
+        <number>7</number>
+        <title>Link</title>
+        <subTitle>Bookmarkable Page Link</subTitle>
+        <points>
+          <point oid="1144326809638">
+            <number>1</number>
+            <text>The BookmarkablePageLink component creates a stable link which can be cached in a web browser and used at a later time.</text>
+          </point>
+          <point oid="1144326833577">
+            <number>2</number>
+            <text>As almost all other Wicket components it has its id: "urlDisplay" (the constructor`s first argument).</text>
+          </point>
+          <point oid="1144326947329">
+            <number>3</number>
+            <text>The second argument is the page class to link to: UrlDisplayPage.class.</text>
+          </point>
+          <point oid="1144326975705">
+            <number>4</number>
+            <text>The BookmarkablePageLink object may have one or more web page request parameters (String, int, long) that are set by the setParameter method. When a user clicks on the link, the web page represented by the UrlDisplayPage class will be shown.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144327028549">
+        <number>8</number>
+        <title>Java</title>
+        <subTitle>Final Keyword</subTitle>
+        <points>
+          <point oid="1144327195603">
+            <number>1</number>
+            <text>The final keyword can be applied to four Java concepts:</text>
+          </point>
+          <point oid="1144327217995">
+            <number>2</number>
+            <text>1. variables: a final variable can be set only once.</text>
+          </point>
+          <point oid="1144327237746">
+            <number>3</number>
+            <text>2. fields: a final field can be set only once, by a constructor of the class which defines it.</text>
+          </point>
+          <point oid="1144327273794">
+            <number>4</number>
+            <text>3. methods: a final method cannot be overridden.</text>
+          </point>
+          <point oid="1144327289217">
+            <number>5</number>
+            <text>4. classes: a final class cannot be extended.</text>
+          </point>
+          <point oid="1144327316171">
+            <number>6</number>
+            <text>The final keyword limits defaults, for example, the ability to override a method.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144327488234">
+        <number>9</number>
+        <title>Page</title>
+        <subTitle>Url Display</subTitle>
+        <points>
+          <point oid="1144327509798">
+            <number>1</number>
+            <text>As a class that represents a bookmarkable web page, the UrlDisplayPage constructor has one argument for PageParameters.</text>
+          </point>
+          <point oid="1144327614861">
+            <number>2</number>
+            <text>The oid number, set in the populateItem method, is retrieved from parameters by the getLong method using the "oid" parameter name.</text>
+          </point>
+          <point oid="1144327620878">
+            <number>3</number>
+            <text>Based on the oid number, the url objects is obtained from the application domain model entry and passed as an argument to the createComponents  method.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144327662254">
+        <number>10</number>
+        <title>Url Display</title>
+        <subTitle>Page Components</subTitle>
+        <points>
+          <point oid="1144327680958">
+            <number>1</number>
+            <text>The page has four components: the home page link, the category and description labels, and the external link.</text>
+          </point>
+          <point oid="1144327730006">
+            <number>2</number>
+            <text>Since UrlDisplayPage extends the Wicket WebPage component, the home link is obtained by the inherited homePageLink method.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144327770210">
+        <number>11</number>
+        <title>Wicket</title>
+        <subTitle>Application</subTitle>
+        <points>
+          <point oid="1144327782852">
+            <number>1</number>
+            <text>For each web application concept Wicket has a corresponding component.</text>
+          </point>
+          <point oid="1144327806243">
+            <number>2</number>
+            <text>A web application has pages and one of them is the home page.</text>
+          </point>
+          <point oid="1144327833572">
+            <number>3</number>
+            <text>A web page may be composed of text (labels), links, data in a list view, and other components.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144327874622">
+        <number>12</number>
+        <title>Wicket</title>
+        <subTitle>Components</subTitle>
+        <points>
+          <point oid="1144327899110">
+            <number>1</number>
+            <text>For each web application concept, Wicket has a component in a form of a Java class.</text>
+          </point>
+          <point oid="1144327963001">
+            <number>2</number>
+            <text>For a web application there is WebApplication.</text>
+          </point>
+          <point oid="1144327995955">
+            <number>3</number>
+            <text>For a web page, there is WebPage.</text>
+          </point>
+          <point oid="1144328003238">
+            <number>4</number>
+            <text>For a text label, there is Label.</text>
+          </point>
+          <point oid="1144328011848">
+            <number>5</number>
+            <text>For an external link, there is ExternalLink.</text>
+          </point>
+          <point oid="1144328019865">
+            <number>6</number>
+            <text>For a list view of data, there is ListView.</text>
+          </point>
+          <point oid="1144328025241">
+            <number>7</number>
+            <text>You cannot find more natural correspondence between web application concepts and web framework components.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144328068148">
+        <number>13</number>
+        <title>Wicket</title>
+        <subTitle>Model</subTitle>
+        <points>
+          <point oid="1144328079852">
+            <number>1</number>
+            <text>A Wicket component has an identifier (id) that is used to establish a correspondence between the component and HTML element where the component value(s) will be displayed.</text>
+          </point>
+          <point oid="1144328097837">
+            <number>2</number>
+            <text>The component value comes from the component model.</text>
+          </point>
+          <point oid="1144328119573">
+            <number>3</number>
+            <text>The simplest case is a Label with a static String model:
+
+new Label("category", "Framework")</text>
+          </point>
+          <point oid="1144328199730">
+            <number>4</number>
+            <text>A Label with a dynamic model is created by
+
+new Label("category", url.getCategory())
+
+The "category" text is the label id, and the String return of the url.getCategory() method is the label model.</text>
+          </point>
+          <point oid="1144328243108">
+            <number>5</number>
+            <text>The category id is found in the corresponding HTML file within the table td element.
+
+&lt;td wicket:id = "category"&gt;
+  Category
+&lt;/td&gt;</text>
+          </point>
+          <point oid="1144328266718">
+            <number>6</number>
+            <text>Wicket uses the component model to replace the corresponding (based on the component id) element body with the model value. Thus, the Category text will be replaced by whatever getCategory()  returns.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144328293610">
+        <number>14</number>
+        <title>Model</title>
+        <subTitle>Interface</subTitle>
+        <points>
+          <point oid="1144328309580">
+            <number>1</number>
+            <text>Wicket model must implement wicket.model.IModel.</text>
+          </point>
+          <point oid="1144328327612">
+            <number>2</number>
+            <text>Some components have a convenience constructor that creates a proper model for you.</text>
+          </point>
+          <point oid="1144328350629">
+            <number>3</number>
+            <text>With the Label class, you can just provide a string, which is then wrapped into a simple model for the label to use.</text>
+          </point>
+          <point oid="1144328364645">
+            <number>4</number>
+            <text>The label model may be constructed explicitly as in
+
+new Label("linkId", new PropertyModel(url, "link"))
+  
+In this case, the Label component will replace the body of the tag, it is attached to, with the link property of the given url object.</text>
+          </point>
+          <point oid="1144328420052">
+            <number>5</number>
+            <text>The PropertyModel class is a part of the wicket.model package. PropertytModel implements wicket.model.IModel.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144328534460">
+        <number>15</number>
+        <title>Property</title>
+        <subTitle>Model</subTitle>
+        <points>
+          <point oid="1144328572150">
+            <number>1</number>
+            <text>The PropertyModel class  is used to dynamically access a model using an OGNL expression.</text>
+          </point>
+          <point oid="1144328600964">
+            <number>2</number>
+            <text>A property name is a simple OGNL expression.</text>
+          </point>
+          <point oid="1144328605996">
+            <number>3</number>
+            <text>OGNL stands for Object Graph Navigation Language (http://www.ognl.org/). 
+
+It is an expression and binding language for getting and setting properties of Java objects.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144331630238">
+        <number>16</number>
+        <title>Modelibra</title>
+        <subTitle>Model</subTitle>
+        <points>
+          <point oid="1144331655364">
+            <number>1</number>
+            <text>Wicket and Modelibra use POJO objects. POJO is an acronym for Plain Old Java Object. The name is used to emphasize that the object in question is not somehow special but an ordinary Java Object</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144331752333">
+        <number>17</number>
+        <title>Model</title>
+        <subTitle>Changes</subTitle>
+        <points>
+          <point oid="1144331768600">
+            <number>1</number>
+            <text>The link property has a new type. It is not any more String but java.net.URL.</text>
+          </point>
+          <point oid="1144331797820">
+            <number>2</number>
+            <text>The link property must be configured properly in the dm-config.xml file.</text>
+          </point>
+          <point oid="1144331843227">
+            <number>3</number>
+            <text>The Url class has a new property, category, with the corresponding get and set methods.</text>
+          </point>
+          <point oid="1144331868572">
+            <number>4</number>
+            <text>The dm-config.xml configuration is updated to include the new property description.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144331902667">
+        <number>18</number>
+        <title>Application View</title>
+        <subTitle>Presentation</subTitle>
+        <points>
+          <point oid="1144331971638">
+            <number>1</number>
+            <text>The HTML home page displays data in a nicer way by using the app.css file that is located in the application root directory (urls01).</text>
+          </point>
+          <point oid="1144331987202">
+            <number>2</number>
+            <text>The reference to the CSS file is made by the link element within the head element.</text>
+          </point>
+          <point oid="1144331999093">
+            <number>3</number>
+            <text>Both external and internal links are handled by the HTML &lt;a&gt; tag.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144332036550">
+        <number>19</number>
+        <title>Presentation</title>
+        <subTitle>CSS</subTitle>
+        <points>
+          <point oid="1144332049910">
+            <number>1</number>
+            <text>A cascading style sheet (CSS) is made up of style rules that tell a browser how to present a web page.</text>
+          </point>
+          <point oid="1144332064973">
+            <number>2</number>
+            <text>The div element is used to make a reference to a CSS class definition and to determine the scope of the definition. The div element defines a block of HTML. It is commonly used to apply CSS to a page section.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144332115568">
+        <number>20</number>
+        <title>CSS</title>
+        <subTitle>Rules</subTitle>
+        <points>
+          <point oid="1144332129194">
+            <number>1</number>
+            <text>A CSS rule is made up of a selector, here box-title, and the style to be applied to the selector. The style is defined by properties. A property takes a value that describes how the selector should be presented.</text>
+          </point>
+          <point oid="1144332168398">
+            <number>2</number>
+            <text>Any HTML element is a possible CSS selector. The selector is simply the element that is linked to a particular style.</text>
+          </point>
+          <point oid="1144332210477">
+            <number>3</number>
+            <text>A simple selector can have different classes, thus allowing the same element to have different styles. For example, a home page may have different formatting from other web  pages.</text>
+          </point>
+          <point oid="1144332216697">
+            <number>4</number>
+            <text>Classes may also be declared without an associated HTML element.</text>
+          </point>
+          <point oid="1144332272216">
+            <number>5</number>
+            <text>A good practice is to name classes according to their function rather than their appearance.</text>
+          </point>
+          <point oid="1144332297748">
+            <number>6</number>
+            <text>Contextual selectors are two or more simple selectors separated by white space. These selectors can be assigned normal properties and, due to the rules of cascading order, they will take precedence over simple selectors.</text>
+          </point>
+          <point oid="1144332316827">
+            <number>7</number>
+            <text>In order to decrease repetitious statements within style sheets, grouping of selectors and declarations is allowed.</text>
+          </point>
+          <point oid="1144332431859">
+            <number>8</number>
+            <text>Pseudo-classes are special "classes" that are automatically recognized by CSS-supporting browsers. Pseudo-classes distinguish among different element types (e.g., visited links and active links represent two types of anchors).</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144844553450">
+        <number>21</number>
+        <title>Next Spiral</title>
+        <subTitle>urls02: Page Decomposition</subTitle>
+      </slide>
+    </slides>
+  </presentation>
+  <presentation oid="1144686081980">
+    <code>urls02</code>
+    <title>Page Decomposition</title>
+    <author>Dzenan Ridjanovic</author>
+    <creationDate>2006.04.10</creationDate>
+    <objective>The objective of this spiral is to design web pages from panels and panels from Wicket components or from components inherited from Wicket components. A panel is a page section.</objective>
+    <slides>
+      <slide oid="1144686209765">
+        <number>1</number>
+        <title>Spiral</title>
+        <subTitle>Objective</subTitle>
+        <points>
+          <point oid="1144686227032">
+            <number>1</number>
+            <text>The objective of this spiral is to design web pages from panels and panels from Wicket components or from components inherited from Wicket components. A panel is a page section.</text>
+          </point>
+          <point oid="1144686259486">
+            <number>2</number>
+            <text>Object-oriented programming is often touted as promoting software reuse. There are two basic techniques that make object-oriented software more reusable: decomposition and inheritance.
+
+Decomposition provides modularity and information-hiding and inheritance promotes code reuse, since code shared by several classes can be placed in their common superclass.</text>
+          </point>
+          <point oid="1144688962869">
+            <number>3</number>
+            <text>A specific web page, which extends the Wicket WebPage component, is decomposed into specific panels, and panels are decomposed into Wicket components. If a Wicket component does not provide exactly what we want, we may create our own component that inherits the component common behavior and adds some specific details needed in our application. In the same way, a specific page panel class extends the Wicket Panel component and adds some specific properties.</text>
+          </point>
+          <point oid="1144689178745">
+            <number>4</number>
+            <text>An inheritance hierarchy may have several levels providing even an inheritance tree. A node from the tree is then reused in different contexts, either pages or page panels.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144689340732">
+        <number>2</number>
+        <title>Spiral</title>
+        <subTitle>Consulting Urls</subTitle>
+        <points>
+          <point oid="1144689357951">
+            <number>1</number>
+            <text>There are now two different ways of consulting urls.</text>
+          </point>
+          <point oid="1144689387141">
+            <number>2</number>
+            <text>The first way, from the previous spiral, is a list of urls from which a single url may be displayed in a new page by using the Display link.</text>
+          </point>
+          <point oid="1144689425205">
+            <number>3</number>
+            <text>The second way is a list of urls with an additional link, Url, to show the selected url within the same page.</text>
+          </point>
+          <point oid="1144689487097">
+            <number>4</number>
+            <text>In order to make those two similar but different views of consulting urls, both (de)composition and
+inheritance will be used. In this way, common things are reused in different contexts. This will produce quite a few small classes, but each one with a clear design pattern. Program components must be designed for reusability. The price to pay is more effort to produce components, but the reusability payoff is much more important.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144689988726">
+        <number>3</number>
+        <title>Urls</title>
+        <subTitle>Home Page</subTitle>
+        <points>
+          <point oid="1144690012493">
+            <number>1</number>
+            <text>HomePage has three links: the home page link, the link that displays a table of urls, and the link that displays a table of urls with a possibility to display in full details the selected url.</text>
+          </point>
+          <point oid="1144690047587">
+            <number>2</number>
+            <text>Since the home page link references the same page where it is added as a page component, by default, the link is active. To make it inactive (to be displayed as italics text), the setAutoEnable method is used.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144690112198">
+        <number>4</number>
+        <title>Page Decomposition</title>
+        <subTitle>Url Selection</subTitle>
+        <points>
+          <point oid="1144690134074">
+            <number>1</number>
+            <text>The UrlDisplaySelectionTablePage class is composed of two panels: UrlDisplaySelectionTablePanel and UrlDisplayPanel.</text>
+          </point>
+          <point oid="1144690218059">
+            <number>2</number>
+            <text>Visually, the page is divided into two sections. On the left, there is a list of urls and on the right the selected url. A url is selected by clicking on the corresponding Url link. When the list is displayed for the first time, the first url in the list is shown.</text>
+          </point>
+          <point oid="1144690787810">
+            <number>3</number>
+            <text>The default constructor obtains the urls and the first url, and passes those two objects to the createComponents private method. Without the empty list exception case, there would be only three lines of code for three components: the home page link, the  UrlDisplaySelectionTablePanel component and the UrlDisplayPanel component.</text>
+          </point>
+          <point oid="1144690805952">
+            <number>4</number>
+            <text>When there are no urls, i.e., when the urls object is empty, the first url is null. In that case, the UrlDisplayPanel component must be constructed and added to the page, but it is made invisible.</text>
+          </point>
+          <point oid="1144690851906">
+            <number>5</number>
+            <text>The corresponding UrlDisplaySelectionTablePage.html page is trivial.</text>
+          </point>
+          <point oid="1144690914082">
+            <number>6</number>
+            <text>The special space character (&amp;ensp;) is used to enforce one space before the "button" look a like link. The left-column and the right-column CSS classes present two components in a two column page template. The float property is used to align the two columns.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144690992005">
+        <number>5</number>
+        <title>CSS</title>
+        <subTitle>Page Sections</subTitle>
+        <points>
+          <point oid="1144691009224">
+            <number>1</number>
+            <text>The major promise that came with CSS was that we would no longer use tables for page layouts, and would instead control the positions and dimensions of page elements by div elements and div classes that apply float and other properties.</text>
+          </point>
+          <point oid="1144691024757">
+            <number>2</number>
+            <text>The div tag is a block level element that can contain almost anything. Block level elements are used to format whole blocks of text. They default to 100% of the available screen width and add line breaks between each other and they will stack up underneath one another unless you position them in some way.</text>
+          </point>
+          <point oid="1144691057242">
+            <number>3</number>
+            <text>The simplest way to align page sections is to use the CSS float property. You can float any element left or right, and it will align itself over to the side of whatever element it is contained within.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144691163025">
+        <number>6</number>
+        <title>Page Decomposition</title>
+        <subTitle>Url Display</subTitle>
+        <points>
+          <point oid="1144691212198">
+            <number>1</number>
+            <text>The UrlDisplayPage class is decomposed into two components: the home page link and the url display panel.</text>
+          </point>
+          <point oid="1144691303684">
+            <number>2</number>
+            <text>Both UrlDisplaySelectionTablePage and UrlDisplayPage reuse the UrlDisplayPanel component.</text>
+          </point>
+          <point oid="1144691341091">
+            <number>3</number>
+            <text>The page decomposition into panels and some simple components, such as page links, produces small page classes and small HTML pages, which can be easily programmed, explained, maintained and even reused.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144691362857">
+        <number>7</number>
+        <title>Panel Decomposition</title>
+        <subTitle>Panel Sections</subTitle>
+        <points>
+          <point oid="1144691421530">
+            <number>1</number>
+            <text>Page specific panels extend the Wicket Panel component. When there are similar but different page panels, they may inherit from each other to create even a tree of reusable panels.</text>
+          </point>
+          <point oid="1144691436641">
+            <number>2</number>
+            <text>A panel will inherit from another panel if it contains exactly the same components as the inheritance parent with a few additional components specific to the inheritance child. Those additional components may be Wicket predefined components and/or other specific components that can also be panels.</text>
+          </point>
+          <point oid="1144691490220">
+            <number>3</number>
+            <text>For example, the UrlDisplayTablePanel inherits from Panel and has only one specific UrlDisplayTableListView component.</text>
+          </point>
+          <point oid="1144691496533">
+            <number>4</number>
+            <text>The UrlDisplayTableListView extends the Wicket ListView class. It specializes the Wicket component by adding two other Wicket components: ExternalLink and  BookmarkablePageLink.</text>
+          </point>
+          <point oid="1144691617722">
+            <number>5</number>
+            <text>The UrlDisplayTableListView constructor has the component id and urls parameters. The id and the list of urls are passed as arguments to the ListView  constructor.</text>
+          </point>
+          <point oid="1144691683488">
+            <number>6</number>
+            <text>Since the list contains url objects, the list item (row) is casted back to Url that is then used to create and add two links to the item.</text>
+          </point>
+          <point oid="1144691709974">
+            <number>7</number>
+            <text>This time, the url category is not shown, neither the external link URL. Instead, the url short description is displayed as the external link. The org.dmlite.util.text.TextHandler utility class from Modelibra is used to extract the first 60 description characters.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144691823912">
+        <number>8</number>
+        <title>Panel</title>
+        <subTitle>Markup</subTitle>
+        <points>
+          <point oid="1144691836429">
+            <number>1</number>
+            <text>The Wicket Panel class has its own HTML markup. If a panel is reused in different pages, the one and only one panel markup is reused as well.</text>
+          </point>
+          <point oid="1144691845071">
+            <number>2</number>
+            <text>The panel markup starts with
+
+&lt;html xmlns:wicket&gt;
+
+&lt;wicket:panel&gt;
+
+and ends with
+
+&lt;/wicket:panel&gt; .
+
+&lt;/html&gt;</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144692319262">
+        <number>9</number>
+        <title>Panel Decomposition</title>
+        <subTitle>Url Display</subTitle>
+        <points>
+          <point oid="1144692338654">
+            <number>1</number>
+            <text>The UrlDisplayPanel inherits from Panel and has three Wicket components: Label, ExternalLink and MultiLineLabel. If the given url is null, the components will not be created, but the empty panel will be.</text>
+          </point>
+          <point oid="1144692382202">
+            <number>2</number>
+            <text>The MultiLineLabel is a new Wicket component. Unlike Label it shows text that spans multiple lines by inserting line breaks (&lt;br&gt; elements) for newlines and paragraph markers (&lt;p&gt; elements) for sequences of more than one newline.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144692451078">
+        <number>10</number>
+        <title>Panel Decomposition</title>
+        <subTitle>Url Selection</subTitle>
+        <points>
+          <point oid="1144692470594">
+            <number>1</number>
+            <text>The UrlDisplaySelectionTablePanel class has only one specific component, the UrlDisplaySelectionTableListView list view.</text>
+          </point>
+          <point oid="1144692558033">
+            <number>2</number>
+            <text>The UrlDisplaySelectionTableListView extends the specific UrlDisplayTableListView class and adds a link to the UrlDisplaySelectionTablePage page, the same page where the UrlDisplaySelectionTablePanel panel is located.</text>
+          </point>
+          <point oid="1144692613268">
+            <number>3</number>
+            <text>The super keyword in the UrlDisplaySelectionTableListView constructor is used to first populate the item by the inheritance parent populateItem method. Then the link to UrlDisplaySelectionTablePage is added to the item. The link is a convenience static method in the UrlDisplaySelectionTablePage class that returns a link to UrlDisplaySelectionTablePage.</text>
+          </point>
+          <point oid="1144692640707">
+            <number>4</number>
+            <text>The Wicket PageLink component has a constructor that uses the IPageLink interface as the second argument for constructing a page lazily. When a user clicks on the link, a new page will be created at that time by the getPage method of the IPageLink interface. The anonymous class implements the two interface methods. The getPageIdentity method returns the page class.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1144844595891">
+        <number>11</number>
+        <title>Next Spiral</title>
+        <subTitle>urls03: Data Updates</subTitle>
+      </slide>
+    </slides>
+  </presentation>
+  <presentation oid="1161350313898">
+    <code>cisse2006</code>
+    <title>Rapid Development of Web Applications with Web Components</title>
+    <author>Dzenan Ridjanovic</author>
+    <organisation>Université Laval</organisation>
+    <creationDate>2006.10.20</creationDate>
+    <objective>To give a presentation of 15 minutes at the CISSE 2006 Web Conference.</objective>
+    <description>This paper provides a brief overview of two frameworks, Modelibra and ModelibraWicket, which are used to develop dynamic web applications in a relatively short amount of time. Modelibra is a framework that facilitates the definition and the use of domain models in Java. ModelibraWicket is a rapid application development framework that uses Modelibra for domain models and Wicket for application views. Wicket is a web framework that provides web components to construct, in an object oriented way, web concepts, such as web pages and page sections. ModelibraWicket interprets the application model and creates default web pages based on the model.</description>
+    <slides>
+      <slide oid="1161527094247">
+        <number>0</number>
+        <title>Domain Model Driven Development of Web Applications</title>
+        <subTitle>Dzenan Ridjanovic</subTitle>
+        <purpose>The 6th OOPSLA Workshop on Domain-Specific Modeling</purpose>
+        <points>
+          <point oid="1161527393269">
+            <number>3</number>
+            <text>Modelibra framework.</text>
+          </point>
+          <point oid="1161528021895">
+            <number>4</number>
+            <text>ModelibraWicket web framework.</text>
+          </point>
+          <point oid="1161528045724">
+            <number>5</number>
+            <text>Java and Wicket web framework used for development.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1161350459321">
+        <number>1</number>
+        <title>Modelibra</title>
+        <subTitle>Motivation</subTitle>
+        <purpose>To explain why I have developed the Modelibra (Modelibra) framework.</purpose>
+        <points>
+          <point oid="1161350606884">
+            <number>1</number>
+            <text>As a professor I, and my students, develop software (mostly web applications). I needed something easy to learn and use in order to represent application (domain) models in Java.</text>
+          </point>
+          <point oid="1161350775448">
+            <number>2</number>
+            <text>I wanted to be able to install and run a student's project quickly.</text>
+          </point>
+          <point oid="1161527501681">
+            <number>3</number>
+            <text>I wished my students spent less time programming and more time responding to what users want.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1161350959989">
+        <number>2</number>
+        <title>Modelibra</title>
+        <subTitle>Objectives</subTitle>
+        <purpose>To focus on the essence of Modelibra.</purpose>
+        <points>
+          <point oid="1161351043959">
+            <number>1</number>
+            <text>Domain model configuration in XML.</text>
+          </point>
+          <point oid="1161351122444">
+            <number>2</number>
+            <text>Model configuration use as a domain model.</text>
+          </point>
+          <point oid="1161351192367">
+            <number>3</number>
+            <text>Default context for a new domain model.</text>
+          </point>
+          <point oid="1161351275212">
+            <number>4</number>
+            <text>Default XML persistence of domain objects.</text>
+          </point>
+          <point oid="1161488084582">
+            <number>5</number>
+            <text>Complete domain model available in main memory.</text>
+          </point>
+          <point oid="1161360188805">
+            <number>6</number>
+            <text>Domain model entry points  (concepts).</text>
+          </point>
+          <point oid="1161360291041">
+            <number>7</number>
+            <text>Traversal of objects from entry concepts by following relationships.</text>
+          </point>
+          <point oid="1161360384636">
+            <number>8</number>
+            <text>Selection and ordering of objects.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1161360798571">
+        <number>3</number>
+        <title>Domain Model</title>
+        <subTitle>Basics</subTitle>
+        <purpose>To explain what a domain model is in Modelibra.</purpose>
+        <points>
+          <point oid="1161361049057">
+            <number>1</number>
+            <text>A domain model is a representation of user concepts, concept properties and relationships between concepts.</text>
+            <url>http://localhost/ppp02/doc/DomainModel.pdf</url>
+          </point>
+          <point oid="1161361110261">
+            <number>2</number>
+            <text>A domain model is represented in Modelibra as the DomainModel Java class that implements the IDomainModel interface.</text>
+            <url>http://localhost/ppp02/doc/IDomainModel.pdf</url>
+          </point>
+          <point oid="1161361358252">
+            <number>3</number>
+            <text>A domain model concept is described by its properties and neighbors. The oid property is mandatory. It is used as an artificial identifier and is managed by Modelibra. In addition, a concept may have at most one user oriented identifier (id) that consists of the concept properties and/or neighbors.</text>
+          </point>
+          <point oid="1161361506037">
+            <number>4</number>
+            <text>A concept is represented in Modelibra as two Java classes, one for Entity and the other for Entities (or OrderedEntities if an order of entities is important).</text>
+          </point>
+          <point oid="1162324396854">
+            <number>5</number>
+            <text>The Entity class implements the IEntity interface.</text>
+            <url>http://localhost/ppp02/doc/IEntity.pdf</url>
+          </point>
+          <point oid="1162324410011">
+            <number>6</number>
+            <text>The Entities class implements the IEntities interface.</text>
+            <url>http://localhost/ppp02/doc/IEntities.pdf</url>
+          </point>
+          <point oid="1161361546913">
+            <number>7</number>
+            <text>A domain model has a few concepts that are entry points. The access to concept entities is provided only through the entry points.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1161484983701">
+        <number>4</number>
+        <title>ModelibraWicket</title>
+        <subTitle>Motivation</subTitle>
+        <purpose>To explain the need for dmRad.</purpose>
+        <points>
+          <point oid="1161485062483">
+            <number>1</number>
+            <text>A default web application for the given domain model.</text>
+          </point>
+          <point oid="1161485161906">
+            <number>2</number>
+            <text>A domain model default web application is the best way to validate the domain model.</text>
+          </point>
+          <point oid="1161528245852">
+            <number>3</number>
+            <text>Web components for a specific page composition.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1161485251345">
+        <number>5</number>
+        <title>ModelibraWicket</title>
+        <subTitle>Objectives</subTitle>
+        <points>
+          <point oid="1161485338440">
+            <number>1</number>
+            <text>The domain model configuration as a driving force.</text>
+          </point>
+          <point oid="1161485435926">
+            <number>2</number>
+            <text>The domain model configuration with some basic view presentation properties.</text>
+          </point>
+          <point oid="1161528553897">
+            <number>3</number>
+            <text>Web components tightly linked to a domain model.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1161485540974">
+        <number>6</number>
+        <title>ModelibraWicket</title>
+        <subTitle>Basics</subTitle>
+        <points>
+          <point oid="1161485561647">
+            <number>1</number>
+            <text>The domain model configuration is used to find the model entry points and to provide a web page for each entry point, either for the display or for the update of data.</text>
+            <url>http://localhost/ppp02/doc/ModelXmlConfiguration.pdf</url>
+          </point>
+          <point oid="1161485873694">
+            <number>2</number>
+            <text>An entry point is a collection of entities and it is presented in a web page as a table, a list, or a slide show of entities.</text>
+          </point>
+          <point oid="1161485918383">
+            <number>3</number>
+            <text>The traversal of the domain model is done by navigating from an entry entity to neighbor entities following the parent-child neighbor directions.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1161485962150">
+        <number>7</number>
+        <title>ModelibraWicket</title>
+        <subTitle>Web Components</subTitle>
+        <points>
+          <point oid="1161485988479">
+            <number>1</number>
+            <text>ModelibraWicket has a collection of web components that may be easily reused in specific web applications to display or update entities.</text>
+            <url>http://localhost/ppp02/doc/WebComponents.pdf</url>
+          </point>
+          <point oid="1161486416091">
+            <number>2</number>
+            <text>Web components have an intimate knowledge of the domain model.</text>
+          </point>
+          <point oid="1161486489545">
+            <number>3</number>
+            <text>Web components use the Wicket web framework for the basic components.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1161487705978">
+        <number>8</number>
+        <title>Modelibra &amp; ModelibraWicket</title>
+        <subTitle>Future Work</subTitle>
+        <points>
+          <point oid="1161538708675">
+            <number>0</number>
+            <text>Code generation of domain model configuration and specific Java classes.</text>
+          </point>
+          <point oid="1161487907186">
+            <number>1</number>
+            <text>Object database persistence with db4o has already been done. Relational database persistence is in making using JDBC directly.</text>
+          </point>
+          <point oid="1161487987500">
+            <number>2</number>
+            <text>More web components.</text>
+          </point>
+          <point oid="1161538784225">
+            <number>3</number>
+            <text>Developing ModelibraWicket for Java Swing.</text>
+          </point>
+        </points>
+      </slide>
+    </slides>
+  </presentation>
+  <presentation oid="1197313228018">
+    <code>cisse2007</code>
+    <title>Modelibra Software Family</title>
+    <author>Dzenan Ridjanovic</author>
+    <organisation>Modelibra</organisation>
+    <creationDate>2007.12.10</creationDate>
+    <objective>To provide an introduction to the Modelibra family of frameworks and tools.</objective>
+    <description>Modelibra is a domain model framework for rapid application development. A domain model may be designed, generated, and validated as a web application. Modelibra uses the Wicket web framework for generic web components that are views of model concepts. The generic web components may be mixed with specific web components to develop a professional Wicket application.</description>
+    <slides>
+      <slide oid="1197313278628">
+        <number>1</number>
+        <title>Modelibra Software Family</title>
+        <points>
+          <point oid="1197313397285">
+            <number>1</number>
+            <text>Dzenan Ridjanovic</text>
+            <url>http://drdb.fsa.ulaval.ca/dr/</url>
+          </point>
+          <point oid="1198009052238">
+            <number>2</number>
+            <text>Modelibra</text>
+            <url>http://www.modelibra.org/</url>
+          </point>
+          <point oid="1198009198039">
+            <number>3</number>
+            <text>CISSE 2007 Web Only Conference</text>
+            <url>http://www.cisse2007online.org/</url>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197313831744">
+        <number>2</number>
+        <title>About Modelibra</title>
+        <points>
+          <point oid="1197313874836">
+            <number>1</number>
+            <text>Open Source Software</text>
+          </point>
+          <point oid="1197313913493">
+            <number>2</number>
+            <text>Domain Models</text>
+          </point>
+          <point oid="1197313922085">
+            <number>3</number>
+            <text>Dynamic Web Applications</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197315236443">
+        <number>3</number>
+        <title>Open Source Software</title>
+        <points>
+          <point oid="1197315249933">
+            <number>1</number>
+            <text>Team Work</text>
+          </point>
+          <point oid="1197315265711">
+            <number>2</number>
+            <text>Software Repository</text>
+          </point>
+          <point oid="1197315273639">
+            <number>3</number>
+            <text>Quality Assurance</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197315631376">
+        <number>4</number>
+        <title>Domain Models</title>
+        <points>
+          <point oid="1197315647964">
+            <number>1</number>
+            <text>Software Backbone</text>
+          </point>
+          <point oid="1197315676039">
+            <number>2</number>
+            <text>User Concepts:
+Concept Properties,
+Concept Neighbors</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197316143654">
+        <number>5</number>
+        <title>Dynamic Web Applications</title>
+        <points>
+          <point oid="1197316153752">
+            <number>1</number>
+            <text>Client Software vs. Server Software</text>
+          </point>
+          <point oid="1197316175695">
+            <number>2</number>
+            <text>Java, XHTML &amp; CSS</text>
+          </point>
+          <point oid="1197316183984">
+            <number>3</number>
+            <text>Web Components</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197316207926">
+        <number>6</number>
+        <title>Modelibra Software Family</title>
+        <points>
+          <point oid="1197316243865">
+            <number>1</number>
+            <text>ModelibraModeler</text>
+          </point>
+          <point oid="1197316254196">
+            <number>2</number>
+            <text>ModelibraWicketSkeleton</text>
+          </point>
+          <point oid="1197316263410">
+            <number>3</number>
+            <text>Modelibra</text>
+          </point>
+          <point oid="1197316271455">
+            <number>4</number>
+            <text>ModelibraWicket</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197316357730">
+        <number>8</number>
+        <title>ModelibraModeler</title>
+        <points>
+          <point oid="1197316378755">
+            <number>1</number>
+            <text>Graphical Design Tool</text>
+          </point>
+          <point oid="1197316396054">
+            <number>2</number>
+            <text>Code Generation</text>
+          </point>
+          <point oid="1197316404487">
+            <number>3</number>
+            <text>Domain Model XML Configuration</text>
+          </point>
+          <point oid="1197316413838">
+            <number>4</number>
+            <text>Relational Database Schema</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197316593125">
+        <number>9</number>
+        <title>Graphical Model</title>
+        <purpose>To display the WebLink model.</purpose>
+        <points>
+          <point oid="1197316651582">
+            <number>1</number>
+            <text>Here, we need an image of the WebLink model.</text>
+            <image>upload/WebLinkModel.jpg</image>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197316689048">
+        <number>10</number>
+        <title>ModelibraWicketSkeleton</title>
+        <points>
+          <point oid="1197316707497">
+            <number>1</number>
+            <text>Eclipse Project</text>
+          </point>
+          <point oid="1197316739915">
+            <number>2</number>
+            <text>Modelibra &amp; ModelibraWicket Libraries</text>
+          </point>
+          <point oid="1197316768707">
+            <number>3</number>
+            <text>CSS</text>
+          </point>
+          <point oid="1197316778136">
+            <number>4</number>
+            <text>Code Generation Templates</text>
+          </point>
+          <point oid="1197316786050">
+            <number>5</number>
+            <text>Domain Model Configuration</text>
+          </point>
+          <point oid="1197316796949">
+            <number>6</number>
+            <text>Code Generation Context</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197316814903">
+        <number>11</number>
+        <title>Modelibra</title>
+        <points>
+          <point oid="1197316824594">
+            <number>1</number>
+            <text>Java 6</text>
+          </point>
+          <point oid="1197316848975">
+            <number>2</number>
+            <text>Domain Classes</text>
+          </point>
+          <point oid="1197316867618">
+            <number>3</number>
+            <text>Model Classes</text>
+          </point>
+          <point oid="1197316876108">
+            <number>4</number>
+            <text>Concept Classes</text>
+          </point>
+          <point oid="1197316885938">
+            <number>5</number>
+            <text>Generic vs. Specific Classes</text>
+          </point>
+          <point oid="1197316895683">
+            <number>6</number>
+            <text>Configuration Classes</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197316912149">
+        <number>12</number>
+        <title>Modelibra Model</title>
+        <points>
+          <point oid="1197316927105">
+            <number>1</number>
+            <text>Domain Model Configuration</text>
+          </point>
+          <point oid="1197316955536">
+            <number>2</number>
+            <text>Meta Model</text>
+          </point>
+          <point oid="1197316963762">
+            <number>3</number>
+            <text>Model Entry Points</text>
+          </point>
+          <point oid="1197316971450">
+            <number>4</number>
+            <text>Entities vs. Entity</text>
+          </point>
+          <point oid="1197316980464">
+            <number>5</number>
+            <text>Retrieval, Selection &amp; Order</text>
+          </point>
+          <point oid="1197316989247">
+            <number>6</number>
+            <text>Add, Update, Remove</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317013855">
+        <number>13</number>
+        <title>Modelibra Persistency</title>
+        <points>
+          <point oid="1197317023268">
+            <number>1</number>
+            <text>Main Memory Restriction</text>
+          </point>
+          <point oid="1197317037508">
+            <number>2</number>
+            <text>Persistency Layer</text>
+          </point>
+          <point oid="1197317046560">
+            <number>3</number>
+            <text>XML Data Files</text>
+          </point>
+          <point oid="1197317057631">
+            <number>4</number>
+            <text>JDBC Relational Database</text>
+          </point>
+          <point oid="1197317067355">
+            <number>5</number>
+            <text>db4o Object Database</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317197061">
+        <number>14</number>
+        <title>Modelibra Performance</title>
+        <points>
+          <point oid="1197317213498">
+            <number>1</number>
+            <text>Load vs. Save</text>
+          </point>
+          <point oid="1197317234308">
+            <number>2</number>
+            <text>Main Memory Indexes</text>
+          </point>
+          <point oid="1197317244088">
+            <number>3</number>
+            <text>Add, Update, Remove</text>
+          </point>
+          <point oid="1197317255454">
+            <number>4</number>
+            <text>Retrieval &amp; Selection</text>
+          </point>
+          <point oid="1197317270174">
+            <number>5</number>
+            <text>Actions vs. Transactions</text>
+          </point>
+          <point oid="1197317280022">
+            <number>6</number>
+            <text>PolePosition Benchmark</text>
+          </point>
+          <point oid="1197317289541">
+            <number>7</number>
+            <text>Session &amp; Undo</text>
+          </point>
+          <point oid="1197317298354">
+            <number>8</number>
+            <text>Export &amp; Synchronization</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317340937">
+        <number>15</number>
+        <title>ModelibraWicket</title>
+        <points>
+          <point oid="1197317353395">
+            <number>1</number>
+            <text>Wicket Web Framework</text>
+          </point>
+          <point oid="1197317385916">
+            <number>2</number>
+            <text>Wicket Model</text>
+          </point>
+          <point oid="1197317395442">
+            <number>3</number>
+            <text>ModelibraWicket Component Framework</text>
+          </point>
+          <point oid="1197317405303">
+            <number>4</number>
+            <text>ModelibraWicket Knows Domain Model</text>
+          </point>
+          <point oid="1197317416560">
+            <number>5</number>
+            <text>Generic Programming</text>
+          </point>
+          <point oid="1197317426072">
+            <number>6</number>
+            <text>Default Web Application</text>
+          </point>
+          <point oid="1197317435845">
+            <number>7</number>
+            <text>Web Component Model</text>
+          </point>
+          <point oid="1197317444991">
+            <number>8</number>
+            <text>Web Component View</text>
+          </point>
+          <point oid="1197317454257">
+            <number>9</number>
+            <text>XHTML Code</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317493256">
+        <number>16</number>
+        <title>Web Component Context</title>
+        <points>
+          <point oid="1197317511295">
+            <number>1</number>
+            <text>Web Page:</text>
+          </point>
+          <point oid="1197317527581">
+            <code>DmEducApp dmEducApp = (DmEducApp) getApplication();
+DmEduc dmEduc = dmEducApp.getDmEduc();
+WebLink webLink = dmEduc.getWebLink();</code>
+            <number>2</number>
+            <text>Web component model context code.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317628518">
+        <number>17</number>
+        <title>Web Component Model</title>
+        <points>
+          <point oid="1197317639070">
+            <code>ViewModel commentsModel = new ViewModel(webLink);
+Comments comments = webLink.getComments();
+commentsModel.setEntities(comments);</code>
+            <number>1</number>
+            <text>Web component view model code.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317708133">
+        <number>18</number>
+        <title>Web Component View</title>
+        <points>
+          <point oid="1197317726986">
+            <code>View commentsView = new View();
+commentsView.setWicketId(“commentTable”);</code>
+            <number>1</number>
+            <text>Web component view code.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317793269">
+        <number>19</number>
+        <title>Web Component HTML</title>
+        <points>
+          <point oid="1197317813132">
+            <code>&lt;div wicket:id = “commentTable”&gt;Dynamic data.&lt;/div&gt;</code>
+            <number>1</number>
+            <text>Web component HTML code.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317866719">
+        <number>20</number>
+        <title>Web Component</title>
+        <purpose>To show visually the Comments web component.</purpose>
+        <points>
+          <point oid="1197317910315">
+            <number>1</number>
+            <text>Here, the Comments web component image should be shown.</text>
+            <image>upload/CommentsWebComponent.png</image>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197317954972">
+        <number>21</number>
+        <title>Modelibra Productivity</title>
+        <points>
+          <point oid="1197317963877">
+            <number>1</number>
+            <text>Graphical Domain Model</text>
+          </point>
+          <point oid="1197317994721">
+            <number>2</number>
+            <text>Code Generation</text>
+          </point>
+          <point oid="1197318005509">
+            <number>3</number>
+            <text>Generic vs. Specific Code</text>
+          </point>
+          <point oid="1197318017029">
+            <number>4</number>
+            <text>Default XML Data File Persistency</text>
+          </point>
+          <point oid="1197318029234">
+            <number>5</number>
+            <text>No Installation</text>
+          </point>
+          <point oid="1197318041823">
+            <number>6</number>
+            <text>No Changes For Relational and Object Db</text>
+          </point>
+          <point oid="1197318054092">
+            <number>7</number>
+            <text>Rich API</text>
+          </point>
+          <point oid="1197318064653">
+            <number>8</number>
+            <text>Default Web Application</text>
+          </point>
+          <point oid="1197318074410">
+            <number>9</number>
+            <text>Model Validation by Use</text>
+          </point>
+          <point oid="1197318085073">
+            <number>10</number>
+            <text>Web Components Know Domain Model</text>
+          </point>
+          <point oid="1197318095781">
+            <number>11</number>
+            <text>Modelibra Performance</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197318128029">
+        <number>22</number>
+        <title>Modelibra Future</title>
+        <points>
+          <point oid="1197318139363">
+            <number>1</number>
+            <text>ModelibraSwing</text>
+          </point>
+          <point oid="1197318171155">
+            <number>2</number>
+            <text>Modelibra &amp; JHotDraw for ModelibraModeler</text>
+          </point>
+          <point oid="1197318190935">
+            <number>3</number>
+            <text>Performance Benchmarking with p-unit</text>
+          </point>
+          <point oid="1197318204681">
+            <number>4</number>
+            <text>Lazy Loading</text>
+          </point>
+          <point oid="1197318218770">
+            <number>5</number>
+            <text>Hibernate Persistency</text>
+          </point>
+          <point oid="1197318233498">
+            <number>6</number>
+            <text>Distributed Model with Terracotta</text>
+          </point>
+          <point oid="1197318247609">
+            <number>7</number>
+            <text>Catalog of Web Applications</text>
+          </point>
+          <point oid="1197318269472">
+            <number>8</number>
+            <text>Catalog of Concepts</text>
+          </point>
+          <point oid="1197318296584">
+            <number>9</number>
+            <text>Catalog of Web Components</text>
+          </point>
+          <point oid="1197318309643">
+            <number>10</number>
+            <text>AJAX Web Components</text>
+          </point>
+          <point oid="1197318321171">
+            <number>11</number>
+            <text>View XML Configuration</text>
+          </point>
+        </points>
+      </slide>
+    </slides>
+  </presentation>
+  <presentation oid="1176456557439">
+    <code>update</code>
+    <title>Application Update</title>
+    <author>Vedad Kirlic</author>
+    <organisation>Modelibra</organisation>
+    <creationDate>2007.12.13</creationDate>
+    <objective>To explain new application features</objective>
+    <slides>
+      <slide oid="1197569884980">
+        <number>1</number>
+        <title>Displaying Multiline Points</title>
+        <subTitle>by Using Presentation Editor</subTitle>
+        <points>
+          <point oid="1987568536644">
+            <number>1</number>
+            <text>Formatted text.</text>
+            <explanation>This is the first line.
+This should be in the second line.
+
+And this should be in new paragraph. Use WebDeveloper plugin for Firefox and Outline-&gt;Current Element to check.</explanation>
+          </point>
+          <point oid="1197568554192">
+            <number>2</number>
+            <text>This is achieved by using MultiLineLabel. Unlike Label, MultiLineLabel shows text that spans multiple lines by inserting line breaks (BR tags) for newlines and paragraph markers (P tags) for sequences of more than one newline.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197756987905">
+        <number>2</number>
+        <title>Displaying code snippets</title>
+        <points>
+          <point oid="1197987989512">
+            <number>1</number>
+            <text>If MultiLine label component is matched with HTML pre tag in HTML template, that preserves whitespace, which is convenient for code snippets.</text>
+          </point>
+          <point oid="1197987978078">
+            <number>2</number>
+            <text>However there is a problem with HTML pre tag in case text line exceeds the container width it goes out. Check the following link for css solution which is unfortunately not valid css</text>
+          </point>
+          <point oid="1198798772341">
+            <number>3</number>
+            <text>Wrapping Text Inside PRE HTML Tags</text>
+            <url>http://www.longren.org/2006/09/27/wrapping-text-inside-pre-tags/</url>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197757032811">
+        <number>3</number>
+        <title>Escaping Model Strings</title>
+        <points>
+          <point oid="1197757176953">
+            <number>1</number>
+            <text>Wicket escapes by default, so if you enter &lt;i&gt;italic text&lt;/i&gt; You get the same display text.
+
+Using
+
+setEscapeModelStrings(false);
+
+prevents escaping.</text>
+          </point>
+          <point oid="1197757524217">
+            <number>2</number>
+            <text>With this it is possible to allow users to do some basic text formating.
+
+&lt;i&gt;Try to use setEscapeModelStrings(false); for MultiLineLabel in PointDisplayTableListView, and this text should be italic&lt;/i&gt;</text>
+          </point>
+          <point oid="1197757918599">
+            <number>3</number>
+            <text>However, this should be allowed only for text properties that pass some validation to prevent user entering some malicious code (javascript, spam links...). i.e allow just b and i tags</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197760222095">
+        <number>4</number>
+        <title>Excluding slide from listview if subtitle is null</title>
+        <points>
+          <point oid="1197760330018">
+            <number>1</number>
+            <text>Change in ChildPropertyDisplayListListView</text>
+          </point>
+          <point oid="1197838065916">
+            <code>Object childProperty = childEntity.getProperty(childPropertyCode);
+if (childProperty != null) {
+    //execute old code
+} else {
+    childPropertyPanel = new EmptyPanel(childView.getWicketId());
+    childPropertyPanel.setVisible(false);
+}</code>
+            <number>2</number>
+            <text>Change in ChildPropertyDisplayListListView</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197831678918">
+        <number>5</number>
+        <title>Programming Code</title>
+        <points>
+          <point oid="1197831696943">
+            <number>1</number>
+            <text>Programming Code:</text>
+          </point>
+          <point oid="1197831720051">
+            <code>else if (point.getImage() != null) {
+    add(new ContextImage("propertyValue", 
+        new PropertyModel(point, "image")));
+}</code>
+            <number>2</number>
+            <text>When a point is an image.</text>
+          </point>
+          <point oid="1197843310931">
+            <code>&lt;!ELEMENT domain (code, type, packageCode?, abstraction?, defaultConstruct?, packagePrefix?, referenceModel?, i18n?, signin?, signinConcept?, shortTextDefaultLength?, pageBlockDefaultSize?, validateForm?, confirmRemove?, models?)&gt;</code>
+            <number>3</number>
+            <text>Long line of code.</text>
+          </point>
+          <point oid="1197843546104">
+            <code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+		
+&lt;html xmlns:wicket="http://wicket.sourceforge.net/"&gt;
+
+&lt;head&gt;
+	&lt;title&gt;Course Presentation Home Page&lt;/title&gt;
+	&lt;meta name="author" content="Dzenan Ridjanovic" /&gt;	
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class="north"&gt;
+    &lt;img src="img/blackboard.jpg" border="0" alt="PPP" /&gt;
+    &lt;span class="app-title"&gt;
+        Public Point Presentation
+    &lt;/span&gt;
+&lt;/div&gt;
+
+	&lt;div wicket:id="homePageMenuSection"&gt;
+		To be replaced dynamically by the menu of links.
+	&lt;/div&gt;
+
+	&lt;div class="content"&gt;  
+		&lt;div wicket:id="presentationTableSection"&gt;
+			To be replaced dynamically by the table
+                        of presentations.
+		&lt;/div&gt;      
+	&lt;/div&gt;	
+  	
+&lt;/body&gt;
+
+&lt;/html&gt;</code>
+            <number>4</number>
+            <text>HTML code.</text>
+          </point>
+        </points>
+      </slide>
+      <slide oid="1197831917606">
+        <number>6</number>
+        <title>Display Image</title>
+        <points>
+          <point oid="1197831935262">
+            <number>1</number>
+            <text>Domain Model</text>
+          </point>
+          <point oid="1197831949128">
+            <number>2</number>
+            <text>CourseLecture model in ModelibraModeler.</text>
+            <image>/img/LectureModel.png</image>
+          </point>
+        </points>
+      </slide>
+    </slides>
+  </presentation>
+</presentations>

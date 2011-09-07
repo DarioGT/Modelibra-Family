@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metaTypes>
+  <metaType oid="1236446770310">
+    <code>Name</code>
+    <base>String</base>
+    <length>32</length>
+  </metaType>
+  <metaType oid="1236446834264">
+    <code>Count</code>
+    <base>int</base>
+  </metaType>
+  <metaType oid="1236446857599">
+    <code>Title</code>
+    <base>String</base>
+    <length>64</length>
+  </metaType>
+</metaTypes>

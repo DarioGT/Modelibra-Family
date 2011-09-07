@@ -1,0 +1,29 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 05
+Title: Reflexive and Optional One-to-many Relationships
+Created: 2007.02.19
+Updated: 2007.11.06
+
+Objective
+
+    To introduce reflexive and optional one-to-many relationships.
+    
+Concepts
+
+	reflexive one-to-many relationship
+	optional one-to-many relationship
+	
+	code generation
+		
+	tests
+	
+Changes
+
+	WebLink.getUrls
+	Removed Categories.getCategoryByName
+	Removed Urls.getUrlByName
+	Categories specific code from DmEduc-04
+	Comments specific code from DmEduc-04
+	Urls specific code from DmEduc-04
+	Url specific code from DmEduc-04

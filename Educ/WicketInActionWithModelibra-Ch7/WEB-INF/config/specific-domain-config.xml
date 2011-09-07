@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1231088671635">
+		<code>Sales</code>
+		<type>Specific</type>
+
+		<models>
+
+			<model oid="1231169065332">
+				<code>CheeseStore</code>
+				<extension>true</extension>
+				<extensionDomain>Sales</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>CheeseStore</extensionModel>
+				
+				<concepts>
+
+					<concept oid="1231169447920">
+						<code>Cart</code>
+						<extension>true</extension>
+						<extensionConcept>Cart</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1231169615063">
+								<code>addressOid</code>
+								<extension>true</extension>
+								<extensionProperty>addressOid</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1231169456922">
+						<code>Cheese</code>
+						<extension>true</extension>
+						<extensionConcept>Cheese</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1231169568815">
+								<code>name</code>
+								<extension>true</extension>
+								<extensionProperty>name</extensionProperty>
+
+							</property>
+
+							<property oid="1231169571776">
+								<code>description</code>
+								<extension>true</extension>
+								<extensionProperty>description</extensionProperty>
+
+							</property>
+
+							<property oid="1231169573441">
+								<code>price</code>
+								<extension>true</extension>
+								<extensionProperty>price</extensionProperty>
+								
+								<displayLength>8</displayLength>
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1231169481732">
+						<code>CartCheese</code>
+						<extension>true</extension>
+						<extensionConcept>CartCheese</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1231169686874">
+								<code>cheeseOid</code>
+								<extension>true</extension>
+								<extensionProperty>cheeseOid</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1231169511158">
+						<code>Address</code>
+						<extension>true</extension>
+						<extensionConcept>Address</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1231169523978">
+								<code>name</code>
+								<extension>true</extension>
+								<extensionProperty>name</extensionProperty>
+
+							</property>
+
+							<property oid="1231169536811">
+								<code>street</code>
+								<extension>true</extension>
+								<extensionProperty>street</extensionProperty>
+
+							</property>
+
+							<property oid="1231169538924">
+								<code>city</code>
+								<extension>true</extension>
+								<extensionProperty>city</extensionProperty>
+
+							</property>
+
+							<property oid="1231169541949">
+								<code>zipcode</code>
+								<extension>true</extension>
+								<extensionProperty>zipcode</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1236779109373">
+						<code>Recipe</code>
+						<extension>true</extension>
+						<extensionConcept>Recipe</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1236779109369">
+								<code>name</code>
+								<extension>true</extension>
+								<extensionProperty>name</extensionProperty>
+
+							</property>
+
+							<property oid="1236779109370">
+								<code>serves</code>
+								<extension>true</extension>
+								<extensionProperty>serves</extensionProperty>
+
+							</property>
+
+							<property oid="1236779109371">
+								<code>ingredients</code>
+								<extension>true</extension>
+								<extensionProperty>ingredients</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+				
+				</concepts>
+		
+			</model>
+   
+		</models>
+
+	</domain>
+		
+</domains>

@@ -1,0 +1,37 @@
+<html>
+<body>
+<wicket:extend>
+	<div id="container">
+		<div id="content">
+		<div id="mainFull">
+			<div id="invoice">
+				<div wicket:id="cart"></div>
+			</div> <!-- invoice -->
+			<br>
+			<a wicket:id="customerInfo"><span class="arrowRight"></span>Please Login or Register to Checkout</a>
+			<br>
+			
+			<form wicket:id="form">
+				<h3>Shipping Address</h3>
+				<select wicket:id="addressChoice">
+					<option>Hard</option><option>Soft</option>
+				</select>
+				<input wicket:id="select" type="submit" value="Select" class="genericInput"/>
+			</form>
+			<br>
+			
+			
+			<a wicket:id="addressInfo"><span class="arrowRight"></span>Please ADD or CHOOSE an Address to Checkout</a>
+			
+			<form wicket:id="formCheckout">
+				<h3>Checkout</h3>
+				<input wicket:id="cancel" type="button" value="Cancel" class="genericInput"/>
+				<input wicket:id="checkout" type="submit" value="Checkout" class="genericInput"/>
+			</form>
+			<br>
+		</div> <!-- main -->	
+		</div> <!-- content -->
+	</div> <!-- container -->
+</wicket:extend>
+</body>
+</html>

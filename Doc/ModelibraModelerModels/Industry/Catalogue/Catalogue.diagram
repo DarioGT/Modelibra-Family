@@ -1,0 +1,158 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1227645141475,89,Catalogue,Catalogues,industry.catalogue,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,400,800
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,true,10,15,148,344,1227645519224,90,Manufacturer,Manufacturers,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1227645519224,90,960496657960,1,Oid,1227645519224,91,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227645519224,90,1138035633296,1,Name,1227645529097,92,name,names,?,255,204,102,1,1,false,true,?,false
+I,1227645519224,90,1141774778531,1,ShortText,1227646411167,132,marketingPhrase,marketingPhrases,?,255,204,102,0,1,false,false,?,false
+I,1227645519224,90,1131484582316,107,LongName,1227645583946,93,fullName,fullNames,?,255,204,102,0,1,false,false,?,false
+I,1227645519224,90,1131484582316,107,LongName,1227645596954,94,street,streets,?,255,204,102,1,1,false,false,?,false
+I,1227645519224,90,1138035633296,1,Name,1227645618026,95,city,cities,?,255,204,102,1,1,false,false,?,false
+I,1227645519224,90,1131484634992,109,Code,1227645624970,96,postalCode,postalCodes,?,255,204,102,1,1,false,false,?,false
+I,1227645519224,90,1131484634992,109,Code,1227645651290,98,tel,tels,?,255,204,102,1,1,false,false,?,false
+I,1227645519224,90,1131484634992,109,Code,1227645653498,99,fax,faxes,?,255,204,102,0,1,false,false,?,false
+I,1227645519224,90,1131484746612,110,Email,1227645658154,100,email,emails,?,255,204,102,1,1,false,false,?,false
+I,1227645519224,90,1131484778208,111,Url,1227645660666,101,webLink,webLinks,?,255,204,102,0,1,false,false,?,false
+I,1227645519224,90,1138035633296,1,Name,1227645674733,102,contactPerson,contactPersons,?,255,204,102,1,1,false,false,?,false
+I,1227645519224,90,1131484582316,107,LongName,1227647393187,165,contactStatus,contactStatuss,?,255,204,102,0,1,false,false,?,false
+I,1227645519224,90,1131484610357,108,Description,1227645689626,103,description,descriptions,?,255,204,102,0,1,false,false,?,false
+I,1227645519224,90,960496658020,11,Integer,1227645795131,111,employeeCount,employeeCounts,?,255,204,102,1,1,false,false,?,false
+I,1227645519224,90,960496658020,11,Integer,1227645810507,112,foundingYear,foundingYears,?,255,204,102,1,1,false,false,?,false
+I,1227645519224,90,1141774778531,1,ShortText,1227645828059,113,ownershipStructure,ownershipStructures,?,255,204,102,0,1,false,false,?,false
+I,1227645519224,90,1141774778531,1,ShortText,1227645849051,114,legalStatus,legalStatuss,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,true,494,670,142,102,1227645713567,104,ProductCategory,ProductCategories,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1227645713567,104,960496657960,1,Oid,1227645713567,105,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227645713567,104,1138035633296,1,Name,1227645725930,106,name,names,?,255,204,102,1,1,false,true,?,false
+I,1227645713567,104,1131484610357,108,Description,1227646637775,140,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,false,119,555,157,68,1227645733846,107,ProductionOutput,ProductionOutputs,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1227645733846,107,960496657960,1,Oid,1227645733846,108,oid,?,?,255,204,102,1,1,true,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,true,660,90,128,99,1227645904502,115,Country,Countries,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1227645904502,115,960496657960,1,Oid,1227645904502,116,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227645904502,115,1138035633296,1,Name,1227645912699,117,name,names,?,255,204,102,1,1,false,true,?,false
+I,1227645904502,115,1131484778208,111,Url,1227647592932,168,webLink,webLinks,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,false,332,12,128,69,1227645918350,118,Export,Exports,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1227645918350,118,960496657960,1,Oid,1227645918350,119,oid,?,?,255,204,102,1,1,true,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,true,503,461,128,98,1227645961347,122,Material,Materials,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1227645961347,122,960496657960,1,Oid,1227645961347,123,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227645961347,122,1138035633296,1,Name,1227647567956,167,name,names,?,255,204,102,1,1,false,true,?,false
+I,1227645961347,122,1131484610357,108,Description,1227646902832,152,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,false,324,306,147,67,1227646028077,126,ProductionInput,ProductionInputs,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1227646028077,126,960496657960,1,Oid,1227646028077,127,oid,?,?,255,204,102,1,1,true,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,false,7,634,128,135,1227646457107,133,Image,Images,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1227646457107,133,960496657960,1,Oid,1227646457107,134,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227646457107,133,1138035633296,1,Name,1227646485294,135,name,names,?,255,204,102,1,1,false,true,?,false
+I,1227646457107,133,1131484778208,111,Url,1227646488174,136,file,files,?,255,204,102,1,1,false,false,?,false
+I,1227646457107,133,1146828554640,178,Logic,1227646585471,137,logo,logos,?,255,204,102,1,1,false,false,false,false
+I,1227646457107,133,1165588406062,81,Note,1227646598271,138,note,notes,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,true,654,655,128,116,1227646760807,142,Certificate,Certificates,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1227646760807,142,960496657960,1,Oid,1227646760807,143,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227646760807,142,1138035633296,1,Name,1227646771360,144,name,names,?,255,204,102,1,1,false,true,?,false
+I,1227646760807,142,1131484610357,108,Description,1227646779904,145,description,descriptions,?,255,204,102,0,1,false,false,?,false
+I,1227646760807,142,1131484778208,111,Url,1227646785696,146,webLink,webLinks,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,false,282,460,128,84,1227646837799,147,Expertise,Expertises,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1227646837799,147,960496657960,1,Oid,1227646837799,148,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227646837799,147,960496658020,11,Integer,1227646888962,151,fromYear,fromYears,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,false,659,444,128,98,1227646948207,153,Investor,Investors,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1227646948207,153,960496657960,1,Oid,1227646948207,154,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227646948207,153,1138035633296,1,Name,1227646973601,155,name,names,?,255,204,102,1,1,false,true,?,false
+I,1227646948207,153,1131484778208,111,Url,1227646977332,156,webLink,webLinks,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1227645141475,89,false,?,false,false,521,189,128,120,1227647033574,158,Investment,Investments,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1227647033574,158,960496657960,1,Oid,1227647033575,159,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1227647033574,158,960496658020,11,Integer,1227647061553,160,fromYear,fromYears,?,255,204,102,0,1,false,false,?,false
+I,1227647033574,158,960496658020,11,Integer,1227647070017,161,amount,amounts,?,255,204,102,0,1,false,false,?,false
+I,1227647033574,158,1131484634992,109,Code,1227648575388,169,unit,units,?,255,204,102,0,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1227645141475,89,1227645519224,90,1227645918350,118,false,true,true,0,N,false,exports,true,NONE,NONE,NONE,1,1,true,manufacturer,true,NONE,NONE,NONE,1227645929391,120,?,?,?,255,204,102,true,false
+L,1227645141475,89,1227645904502,115,1227645918350,118,false,false,true,0,N,false,exports,true,NONE,NONE,NONE,1,1,true,country,true,NONE,NONE,NONE,1227645932846,121,?,?,?,153,102,0,true,false
+L,1227645141475,89,1227645519224,90,1227646028077,126,false,true,true,0,N,false,productionInputs,true,NONE,NONE,NONE,1,1,true,manufacturer,true,NONE,NONE,NONE,1227646135635,128,?,?,?,255,204,102,true,false
+L,1227645141475,89,1227645519224,90,1227645733846,107,false,true,true,0,N,false,productionOutputs,true,NONE,NONE,NONE,1,1,true,manufacturer,true,NONE,NONE,NONE,1227646143707,130,?,?,?,255,204,102,true,false
+L,1227645141475,89,1227645519224,90,1227646457107,133,false,true,false,0,N,false,images,true,NONE,NONE,NONE,1,1,true,manufacturer,true,NONE,NONE,NONE,1227646607821,139,?,?,?,255,204,102,true,false
+L,1227645141475,89,1227645713567,104,1227645733846,107,false,false,true,0,N,false,productionOutputs,true,NONE,NONE,NONE,1,1,true,productCategory,true,NONE,NONE,NONE,1227646643595,141,?,?,?,153,102,0,true,false
+L,1227645141475,89,1227645519224,90,1227646837799,147,false,true,true,0,N,false,expertises,true,NONE,NONE,NONE,1,1,true,manufacturer,true,NONE,NONE,NONE,1227646873319,149,?,?,?,255,204,102,true,false
+L,1227645141475,89,1227646760807,142,1227646837799,147,false,false,true,0,N,false,expertises,true,NONE,NONE,NONE,1,1,true,certificate,true,NONE,NONE,NONE,1227646878710,150,?,?,?,153,102,0,true,false
+L,1227645141475,89,1227645904502,115,1227646948207,153,false,true,false,0,N,false,investors,true,NONE,NONE,NONE,1,1,false,country,true,NONE,NONE,NONE,1227646990503,157,?,?,?,255,204,102,true,false
+L,1227645141475,89,1227645519224,90,1227647033574,158,false,true,true,0,N,false,investments,true,NONE,NONE,NONE,1,1,true,manufacturer,true,NONE,NONE,NONE,1227647075862,162,?,?,?,255,204,102,true,false
+L,1227645141475,89,1227646948207,153,1227647033574,158,false,false,true,0,N,false,investments,true,NONE,NONE,NONE,1,1,true,investor,true,NONE,NONE,NONE,1227647080255,163,?,?,?,153,102,0,true,false
+L,1227645141475,89,1227645904502,115,1227645519224,90,false,false,false,0,N,false,manufacturers,true,NONE,NONE,NONE,1,1,false,country,true,NONE,NONE,NONE,1227647121862,164,?,?,?,153,102,0,true,false
+L,1227645141475,89,1227645961347,122,1227646028077,126,false,false,true,0,N,false,productionInputs,true,NONE,NONE,NONE,1,1,true,material,true,NONE,NONE,NONE,1227647462823,166,?,?,?,153,102,0,true,false

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<db-config>
+
+  <!-- MySQL -->
+  <db>
+    <type>sql</type>
+    <dbms>mySql</dbms>
+    <database>jdbc:mysql://localhost/dblite01</database>
+    <driver>org.gjt.mm.mysql.Driver</driver>
+    <login>dr</login>
+    <password>dr</password>
+  </db>
+
+  <!-- Connexions count -->
+  <connection>
+    <min>4</min>
+    <max>8</max>
+    <!-- Wait 10 seconds before raising an exception. -->
+    <max-wait>10</max-wait>
+  </connection>
+
+</db-config>

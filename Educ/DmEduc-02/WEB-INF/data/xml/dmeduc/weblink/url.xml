@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urls>
+  <url oid="1170444011028">
+    <link>http://drdb.fsa.ulaval.ca/</link>
+    <description>My home page.</description>
+    <creationDate>2007-02-02</creationDate>
+    <updateDate>2007-07-02</updateDate>
+    <approved>true</approved>
+    <category>Personal</category>
+  </url>
+  <url oid="1170444011092">
+    <link>http://wicket.apache.org/</link>
+    <description>Component based Web framework.</description>
+    <creationDate>2007-02-02</creationDate>
+    <updateDate>2007-09-14</updateDate>
+    <approved>true</approved>
+    <category>Framework</category>
+  </url>
+  <url oid="1170459031724">
+    <link>http://en.wikipedia.org/wiki/Software_framework</link>
+    <description>A software framework is a reusable design for a software system (or subsystem). This is expressed as a set of abstract classes and the way their instances collaborate for a specific type of software (Johnson and Foote 1988; Deutsch 1989). All software frameworks are object-oriented designs. Although designs don't have to be implemented in an object-oriented language, they usually are.</description>
+    <creationDate>2007-02-02</creationDate>
+    <approved>true</approved>
+    <category>Framework</category>
+  </url>
+  <url oid="1170866726819">
+    <link>http://www.joelonsoftware.com/</link>
+    <description>I'm your host, Joel Spolsky, a software developer in New York City. Since 2000, I've been writing about software development, management, business, and the Internet on this site.</description>
+    <creationDate>2007-02-07</creationDate>
+    <updateDate>2007-09-14</updateDate>
+    <approved>true</approved>
+    <category>Personal</category>
+  </url>
+  <url oid="1170869079259">
+    <link>http://www.film.com/</link>
+    <creationDate>2007-02-07</creationDate>
+    <approved>false</approved>
+    <category>Video</category>
+  </url>
+  <url oid="1170869181400">
+    <link>http://www.youtube.com/</link>
+    <creationDate>2007-02-07</creationDate>
+    <approved>true</approved>
+    <category>Video</category>
+  </url>
+  <url oid="1170869232667">
+    <link>http://www-cs-faculty.stanford.edu/~uno/index.html</link>
+    <description>Donald E. Knuth, Professor Emeritus of The Art of Computer Programming at Stanford University, welcomes you to his home page.</description>
+    <creationDate>2007-02-07</creationDate>
+    <approved>true</approved>
+    <category>Personal</category>
+  </url>
+  <url oid="1170869442230">
+    <link>http://softarc.blogspot.com/</link>
+    <description>The Art and Craft of Great Software Architecture and Development</description>
+    <creationDate>2007-02-07</creationDate>
+    <updateDate>2007-09-14</updateDate>
+    <approved>false</approved>
+    <category>Personal</category>
+  </url>
+  <url oid="1170885337045">
+    <link>http://struts.apache.org/</link>
+    <description>The Apache Struts Project is the open source community that creates and maintains the Apache Struts framework. The project consists of a diverse group of volunteers who share common values regarding collaborative, community-based open source development. The Apache Struts Project is proud to share these values with our parent organization: The Apache Software Foundation.</description>
+    <creationDate>2007-02-07</creationDate>
+    <updateDate>2007-02-08</updateDate>
+    <approved>true</approved>
+    <category>Framework</category>
+  </url>
+  <url oid="1170962151607">
+    <link>http://joel.reddit.com/</link>
+    <creationDate>2007-02-08</creationDate>
+    <approved>false</approved>
+    <category>Links</category>
+  </url>
+  <url oid="1171038305313">
+    <link>http://www.dzone.com/</link>
+    <description>Latest front page links.</description>
+    <creationDate>2007-02-09</creationDate>
+    <updateDate>2007-02-09</updateDate>
+    <approved>true</approved>
+    <category>Links</category>
+  </url>
+</urls>

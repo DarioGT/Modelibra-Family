@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<countryLanguages>
+  <countryLanguage oid="1240138892182">
+    <code>en</code>
+    <language>English</language>
+  </countryLanguage>
+  <countryLanguage oid="1240138906488">
+    <code>fr</code>
+    <language>Français</language>
+  </countryLanguage>
+</countryLanguages>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket>
+
+<wicket:panel>
+  
+  <form wicket:id = "keywordSelectionForm">
+	  <table>
+		  <caption wicket:id = "title">
+		    Title
+		  </caption>	  
+		  <tr>
+		    <th>
+		        <wicket:message key = "select.keyword"/>
+		    </th>
+		    <th>
+		        <wicket:message key = "select.switch"/>
+		    </th>
+	    </tr>
+	    <tr>
+	      <td>
+	        <input wicket:id = "keywords" type = "text" size = "32"/>
+	      </td>
+	      <td>
+	      	<input wicket:id = "and" type="checkbox"/>
+        </td>
+	    </tr>
+	    <tr>
+	      <td>
+	        <input type = "submit" value = "Select"/>
+	      </td>
+	      <td>
+	    	<input type = "reset" value = "Reset"/>
+	      </td>
+	  	</tr>
+	  </table>
+  </form>
+  
+</wicket:panel>
+
+</html>
+

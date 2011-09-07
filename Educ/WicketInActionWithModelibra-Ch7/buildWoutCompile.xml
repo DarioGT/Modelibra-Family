@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="war" name="Wicket in Action Examples" basedir=".">
+    <property name="final.name" value="wicket-in-action"/>
+    <property name="src.main.dir" value="src/main/java"/>
+    <property name="src.resources.dir" value="src/main/resources"/>
+    <property name="src.test.dir" value="src/test/java"/>
+    <property name="src.web.dir" value="src/main/webapp"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="build.dir" value="target"/>
+    <property name="build.main.classes" value="${build.dir}/classes"/>
+    <property name="build.test.classes"
+              value="${build.dir}/test-classes"/>
+    <property name="build.test.reports"
+              value="${build.dir}/test-reports"/>
+    <property name="build.reports.dir"
+              value="${build.dir}/reports"/>
+    <path id="build.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}" failonerror="false"/>
+        <delete file="${final.name}.war" failonerror="false"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+    </target>
+
+    <target name="test" depends="init">
+        <mkdir dir="${build.test.reports}"/>
+        <junit dir="./" failureproperty="test.failure"
+                printSummary="yes" fork="true" haltonerror="true">
+            <sysproperty key="basedir" value="."/>
+            <formatter type="xml"/>
+            <classpath>
+                <path refid="build.classpath"/>
+                <pathelement path="${build.main.classes}"/>
+                <pathelement path="${build.test.classes}"/>
+            </classpath>
+            <batchtest todir="${build.test.reports}">
+                <fileset dir="${src.test.dir}">
+                    <include name="**/*Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+
+        <mkdir dir="${build.reports.dir}"/>
+        <junitreport todir="${build.reports.dir}">
+            <fileset dir="${build.test.reports}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${build.reports.dir}"/>
+        </junitreport>
+    </target>
+
+    <target name="war" depends="test">
+        <war destfile="${build.dir}/${final.name}.war"
+             webxml="${src.web.dir}/WEB-INF/web.xml">
+            <lib dir="lib">
+                <exclude name="jetty*.jar"/>
+                <exclude name="servlet*.jar"/>
+                <exclude name="junit*.jar"/>
+            </lib>
+            <classes dir="${build.main.classes}"/>
+            <fileset dir="${src.web.dir}">
+                <include name="**/*"/>
+                <exclude name="**/web.xml"/>
+            </fileset>
+        </war>
+    </target>
+
+    <target name="run" depends="war">
+        <java classname="wicket.in.action.Start" fork="true">
+            <classpath>
+                <path refid="build.classpath"/>
+                <pathelement path="${build.main.classes}"/>
+                <pathelement path="${build.test.classes}"/>
+            </classpath>
+        </java>
+    </target>
+</project>

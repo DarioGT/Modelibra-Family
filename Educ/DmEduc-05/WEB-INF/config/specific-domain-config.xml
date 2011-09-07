@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1189989374359">
+		<code>DmEduc</code>
+		<type>Specific</type>
+
+		<models>
+
+			<model oid="1171894920489">
+				<code>WebLink</code>
+				<extension>true</extension>
+				<extensionDomain>DmEduc</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>WebLink</extensionModel>
+				
+				<concepts>
+
+					<concept oid="1171894920490">
+						<code>Url</code>
+						<extension>true</extension>
+						<extensionConcept>Url</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1171894920492">
+								<code>name</code>
+								<extension>true</extension>
+								<extensionProperty>name</extensionProperty>
+
+							</property>
+
+							<property oid="1171894920493">
+								<code>link</code>
+								<extension>true</extension>
+								<extensionProperty>link</extensionProperty>
+
+							</property>
+
+							<property oid="1171894920494">
+								<code>description</code>
+								<extension>true</extension>
+								<extensionProperty>description</extensionProperty>
+
+							</property>
+
+							<property oid="1171894920495">
+								<code>creationDate</code>
+								<extension>true</extension>
+								<extensionProperty>creationDate</extensionProperty>
+
+							</property>
+
+							<property oid="1171894920496">
+								<code>updateDate</code>
+								<extension>true</extension>
+								<extensionProperty>updateDate</extensionProperty>
+								
+								<update>false</update>
+							</property>
+
+							<property oid="1171894920497">
+								<code>approved</code>
+								<extension>true</extension>
+								<extensionProperty>approved</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1171894920498">
+						<code>Comment</code>
+						<extension>true</extension>
+						<extensionConcept>Comment</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1171894920500">
+								<code>text</code>
+								<extension>true</extension>
+								<extensionProperty>text</extensionProperty>
+
+							</property>
+
+							<property oid="1171894920501">
+								<code>source</code>
+								<extension>true</extension>
+								<extensionProperty>source</extensionProperty>
+
+							</property>
+
+							<property oid="1171894920502">
+								<code>creationDate</code>
+								<extension>true</extension>
+								<extensionProperty>creationDate</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1171894920503">
+						<code>Category</code>
+						<extension>true</extension>
+						<extensionConcept>Category</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1171894920505">
+								<code>name</code>
+								<extension>true</extension>
+								<extensionProperty>name</extensionProperty>
+
+							</property>
+
+							<property oid="1171894920506">
+								<code>description</code>
+								<extension>true</extension>
+								<extensionProperty>description</extensionProperty>
+
+							</property>
+
+							<property oid="1171894920523">
+								<code>approved</code>
+								<extension>true</extension>
+								<extensionProperty>approved</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1171896744338">
+						<code>Question</code>
+						<extension>true</extension>
+						<extensionConcept>Question</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1171896759590">
+								<code>categoryOid</code>
+								<extension>true</extension>
+								<extensionProperty>categoryOid</extensionProperty>
+												
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+
+							<property oid="1171896834670">
+								<code>number</code>
+								<extension>true</extension>
+								<extensionProperty>number</extensionProperty>	
+								
+								<required>false</required>					
+
+								<update>false</update>
+								<displayLength>8</displayLength>				
+							</property>
+
+							<property oid="1171896840936">
+								<code>type</code>
+								<extension>true</extension>
+								<extensionProperty>type</extensionProperty>
+
+							</property>
+
+							<property oid="1171896881469">
+								<code>text</code>
+								<extension>true</extension>
+								<extensionProperty>text</extensionProperty>
+
+							</property>
+
+							<property oid="1171896883955">
+								<code>response</code>
+								<extension>true</extension>
+								<extensionProperty>response</extensionProperty>
+
+							</property>
+
+							<property oid="1171896850484">
+								<code>creationDate</code>
+								<extension>true</extension>
+								<extensionProperty>creationDate</extensionProperty>
+
+							</property>
+
+							<property oid="1171897384346">
+								<code>points</code>
+								<extension>true</extension>
+								<extensionProperty>points</extensionProperty>
+
+								<displayLength>8</displayLength>	
+							</property>
+					
+						</properties>
+						
+					</concept>
+				
+				</concepts>
+		
+			</model>
+   
+		</models>
+
+	</domain>
+		
+</domains>

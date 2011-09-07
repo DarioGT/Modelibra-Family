@@ -1,0 +1,18 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 02
+Title: Model as a Web Application
+Created: 2006.01.11
+Updated: 2007.09.24
+ 
+Objective
+
+    To make the single concept persistent model alive with ModelibraWicket.
+    (To make a web application based on the domain model.)
+    
+Concepts
+
+	ModelibraWicket
+	Modelibra configuration for ModelibraWicket
+	post actions
+		postUpdate

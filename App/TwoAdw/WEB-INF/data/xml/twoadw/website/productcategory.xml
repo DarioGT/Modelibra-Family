@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<productCategories>
+  <productCategory oid="1237317045750">
+    <categoryNumber>Ele</categoryNumber>
+    <categoryName>Electronics</categoryName>
+    <description>Home Electronics</description>
+    <imageUrl180x130>/css-specific/images/samsung-plasma.jpg</imageUrl180x130>
+    <published>true</published>
+    <startDate>2009-03-17</startDate>
+    <productCategories>
+      <productCategory oid="1237317126893">
+        <categoryNumber>TV</categoryNumber>
+        <categoryName>Televisions</categoryName>
+        <description>Television Plasma, LCD, DLP, CRT.</description>
+        <imageUrl180x130>/css-specific/images/samsung-plasma.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+        <assignProductCategories>
+          <assignProductCategory oid="1237317634291">
+            <productOid>1237317226038</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1237613103239">
+            <productOid>1237613011667</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1238091258074">
+            <productOid>1238091046972</productOid>
+          </assignProductCategory>
+        </assignProductCategories>
+      </productCategory>
+      <productCategory oid="1237329461972">
+        <categoryNumber>HA</categoryNumber>
+        <categoryName>Home Audio</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+      <productCategory oid="1237329482757">
+        <categoryNumber>GPS</categoryNumber>
+        <categoryName>GPS &amp; Accessories</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+      <productCategory oid="1237329525972">
+        <categoryNumber>Headphones</categoryNumber>
+        <categoryName>Headphones</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+      <productCategory oid="1237329549835">
+        <categoryNumber>PA</categoryNumber>
+        <categoryName>Portable Audio</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+        <assignProductCategories>
+          <assignProductCategory oid="1237329684312">
+            <productOid>1237329625840</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1238091916917">
+            <productOid>1238091867537</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1238092054892">
+            <productOid>1237385756588</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1238092274406">
+            <productOid>1238092204697</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1238092576745">
+            <productOid>1238092516722</productOid>
+          </assignProductCategory>
+        </assignProductCategories>
+      </productCategory>
+      <productCategory oid="1237329579531">
+        <categoryNumber>Projectors</categoryNumber>
+        <categoryName>Projectors</categoryName>
+        <description></description>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+    </productCategories>
+    <assignProductCategories>
+      <assignProductCategory oid="1237318959633">
+        <productOid>1237317226038</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1237330005291">
+        <productOid>1237329625840</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1237385827002">
+        <productOid>1237385756588</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1237613103246">
+        <productOid>1237613011667</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1238091258078">
+        <productOid>1238091046972</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1238091916923">
+        <productOid>1238091867537</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1238092274410">
+        <productOid>1238092204697</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1238092576750">
+        <productOid>1238092516722</productOid>
+      </assignProductCategory>
+    </assignProductCategories>
+  </productCategory>
+  <productCategory oid="1237328966627">
+    <categoryNumber>CH</categoryNumber>
+    <categoryName>Computer Hardware</categoryName>
+    <description>Pieces of hardware to upgrade or build a new computer.</description>
+    <imageUrl180x130>/css-specific/images/computerparts.jpg</imageUrl180x130>
+    <published>true</published>
+    <startDate>2009-03-17</startDate>
+    <productCategories>
+      <productCategory oid="1237329235017">
+        <categoryNumber>mem</categoryNumber>
+        <categoryName>Memory</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+      <productCategory oid="1237329256489">
+        <categoryNumber>HD</categoryNumber>
+        <categoryName>Hard Drives</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+        <assignProductCategories>
+          <assignProductCategory oid="1237726616885">
+            <productOid>1237726571828</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1237727156372">
+            <productOid>1237727112462</productOid>
+          </assignProductCategory>
+        </assignProductCategories>
+      </productCategory>
+      <productCategory oid="1237329272464">
+        <categoryNumber>VC</categoryNumber>
+        <categoryName>Video Cards</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+        <assignProductCategories>
+          <assignProductCategory oid="1237728055538">
+            <productOid>1237727998298</productOid>
+          </assignProductCategory>
+        </assignProductCategories>
+      </productCategory>
+      <productCategory oid="1237329286890">
+        <categoryNumber>CPU</categoryNumber>
+        <categoryName>CPU Processors</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+        <assignProductCategories>
+          <assignProductCategory oid="1237727496131">
+            <productOid>1237727434825</productOid>
+          </assignProductCategory>
+        </assignProductCategories>
+      </productCategory>
+      <productCategory oid="1237329312313">
+        <categoryNumber>Monitors</categoryNumber>
+        <categoryName>Monitors</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+      <productCategory oid="1237329325465">
+        <categoryNumber>PS</categoryNumber>
+        <categoryName>Power Supplies</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+      <productCategory oid="1237329347258">
+        <categoryNumber>InputDevices</categoryNumber>
+        <categoryName>Input Devices</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+      <productCategory oid="1237329362114">
+        <categoryNumber>Enclosure</categoryNumber>
+        <categoryName>Enclosure</categoryName>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+      <productCategory oid="1237329386035">
+        <categoryNumber>CD</categoryNumber>
+        <categoryName>CD/DVD Burners</categoryName>
+        <description></description>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-17</startDate>
+      </productCategory>
+    </productCategories>
+    <assignProductCategories>
+      <assignProductCategory oid="1237726616889">
+        <productOid>1237726571828</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1237727156377">
+        <productOid>1237727112462</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1237727496136">
+        <productOid>1237727434825</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1237728055551">
+        <productOid>1237727998298</productOid>
+      </assignProductCategory>
+    </assignProductCategories>
+  </productCategory>
+  <productCategory oid="1237329153497">
+    <categoryNumber>CL</categoryNumber>
+    <categoryName>Computer and Laptops</categoryName>
+    <description>Computer and Laptops of all kinds.</description>
+    <imageUrl180x130>/css-specific/images/PCsLaptops.jpg</imageUrl180x130>
+    <published>true</published>
+    <startDate>2009-03-17</startDate>
+    <productCategories>
+      <productCategory oid="1237396707225">
+        <categoryNumber>Laptop</categoryNumber>
+        <categoryName>Laptops</categoryName>
+        <description>Laptops of all kinds.</description>
+        <imageUrl180x130>/css-specific/images/noimage180.jpg</imageUrl180x130>
+        <published>true</published>
+        <startDate>2009-03-18</startDate>
+        <assignProductCategories>
+          <assignProductCategory oid="1237429780376">
+            <productOid>1237429554562</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1237725813490">
+            <productOid>1237725768427</productOid>
+          </assignProductCategory>
+          <assignProductCategory oid="1237726145092">
+            <productOid>1237726083784</productOid>
+          </assignProductCategory>
+        </assignProductCategories>
+      </productCategory>
+    </productCategories>
+    <assignProductCategories>
+      <assignProductCategory oid="1237429780382">
+        <productOid>1237429554562</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1237725813497">
+        <productOid>1237725768427</productOid>
+      </assignProductCategory>
+      <assignProductCategory oid="1237726145099">
+        <productOid>1237726083784</productOid>
+      </assignProductCategory>
+    </assignProductCategories>
+  </productCategory>
+  <productCategory oid="1237429462951">
+    <categoryNumber>Software</categoryNumber>
+    <categoryName>Software</categoryName>
+    <description>Software from Operating Systems to a simple zip tool.</description>
+    <imageUrl180x130>/css-specific/images/software.jpg</imageUrl180x130>
+    <published>true</published>
+    <startDate>2009-03-18</startDate>
+  </productCategory>
+</productCategories>

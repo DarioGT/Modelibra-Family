@@ -1,0 +1,28 @@
+#include ("template/ModelibraComment.txt")
+
+package ${domainpackagecode};
+
+import org.modelibra.persistency.PersistentDomain;
+
+/**
+ * Creates the persistent domain.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $PersistentDomainCode extends PersistentDomain {
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Constructs the persistent domain.
+	 */
+	public $PersistentDomainCode($DomainCode $domainCode) {
+		super($domainCode);
+	}
+	
+	/* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+
+}

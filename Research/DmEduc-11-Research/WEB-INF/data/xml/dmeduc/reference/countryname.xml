@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<countryNames>
+  <countryName oid="1160065956250">
+    <code>AF</code>
+    <country>AFGHANISTAN</country>
+  </countryName>
+  <countryName oid="1160082039269">
+    <code>AX</code>
+    <country>ÅLAND ISLANDS</country>
+  </countryName>
+  <countryName oid="1160082061645">
+    <code>AL</code>
+    <country>ALBANIA</country>
+  </countryName>
+  <countryName oid="1160082089380">
+    <code>DZ</code>
+    <country>ALGERIA</country>
+  </countryName>
+  <countryName oid="1160082101147">
+    <code>AS</code>
+    <country>AMERICAN SAMOA</country>
+  </countryName>
+  <countryName oid="1160082118273">
+    <code>AD</code>
+    <country>ANDORRA</country>
+  </countryName>
+  <countryName oid="1160082131196">
+    <code>AO</code>
+    <country>ANGOLA</country>
+  </countryName>
+  <countryName oid="1160082150915">
+    <code>AI</code>
+    <country>ANGUILLA</country>
+  </countryName>
+  <countryName oid="1160082164948">
+    <code>AQ</code>
+    <country>ANTARCTICA</country>
+  </countryName>
+  <countryName oid="1160082182933">
+    <code>AG</code>
+    <country>ANTIGUA AND BARBUDA</country>
+  </countryName>
+  <countryName oid="1160082202184">
+    <code>AR</code>
+    <country>ARGENTINA</country>
+  </countryName>
+  <countryName oid="1160082218341">
+    <code>AM</code>
+    <country>ARMENIA</country>
+  </countryName>
+  <countryName oid="1160082234717">
+    <code>AW</code>
+    <country>ARUBA</country>
+  </countryName>
+  <countryName oid="1160082252687">
+    <code>AU</code>
+    <country>AUSTRALIA</country>
+  </countryName>
+  <countryName oid="1160082269172">
+    <code>AT</code>
+    <country>AUSTRIA</country>
+  </countryName>
+  <countryName oid="1160082285486">
+    <code>AZ</code>
+    <country>AZERBAIJAN</country>
+  </countryName>
+  <countryName oid="1160082303581">
+    <code>BS</code>
+    <country>BAHAMAS</country>
+  </countryName>
+  <countryName oid="1160082318644">
+    <code>BH</code>
+    <country>BAHRAIN</country>
+  </countryName>
+  <countryName oid="1160082347083">
+    <code>BD</code>
+    <country>BANGLADESH</country>
+  </countryName>
+  <countryName oid="1160082365131">
+    <code>BB</code>
+    <country>BARBADOS</country>
+  </countryName>
+  <countryName oid="1160082382897">
+    <code>BY</code>
+    <country>BELARUS</country>
+  </countryName>
+  <countryName oid="1160082396695">
+    <code>BE</code>
+    <country>BELGIUM</country>
+  </countryName>
+  <countryName oid="1160082410712">
+    <code>BZ</code>
+    <country>BELIZE</country>
+  </countryName>
+  <countryName oid="1160082425885">
+    <code>BJ</code>
+    <country>BENIN</country>
+  </countryName>
+  <countryName oid="1160082440167">
+    <code>BM</code>
+    <country>BERMUDA</country>
+  </countryName>
+  <countryName oid="1160082453012">
+    <code>BT</code>
+    <country>BHUTAN</country>
+  </countryName>
+  <countryName oid="1160082469591">
+    <code>BO</code>
+    <country>BOLIVIA</country>
+  </countryName>
+  <countryName oid="1160082484185">
+    <code>BA</code>
+    <country>BOSNIA AND HERZEGOVINA</country>
+  </countryName>
+  <countryName oid="1160082502421">
+    <code>BW</code>
+    <country>BOTSWANA</country>
+  </countryName>
+  <countryName oid="1160082515516">
+    <code>BV</code>
+    <country>BOUVET ISLAND</country>
+  </countryName>
+  <countryName oid="1160082531595">
+    <code>BR</code>
+    <country>BRAZIL</country>
+  </countryName>
+  <countryName oid="1160082545064">
+    <code>IO</code>
+    <country>BRITISH INDIAN OCEAN TERRITORY</country>
+  </countryName>
+  <countryName oid="1160082561112">
+    <code>BN</code>
+    <country>BRUNEI DARUSSALAM</country>
+  </countryName>
+  <countryName oid="1160082576863">
+    <code>BG</code>
+    <country>BULGARIA</country>
+  </countryName>
+  <countryName oid="1160082591224">
+    <code>BF</code>
+    <country>BURKINA FASO</country>
+  </countryName>
+  <countryName oid="1160082665101">
+    <code>BI</code>
+    <country>BURUNDI</country>
+  </countryName>
+  <countryName oid="1160082695758">
+    <code>KH</code>
+    <country>CAMBODIA</country>
+  </countryName>
+  <countryName oid="1160082703665">
+    <code>CM</code>
+    <country>CAMEROON</country>
+  </countryName>
+  <countryName oid="1160082719869">
+    <code>CA</code>
+    <country>CANADA</country>
+  </countryName>
+  <countryName oid="1160082736620">
+    <code>CV</code>
+    <country>CAPE VERDE</country>
+  </countryName>
+  <countryName oid="1160082931621">
+    <code>KY</code>
+    <country>CAYMAN ISLANDS</country>
+  </countryName>
+  <countryName oid="1160082940497">
+    <code>CF</code>
+    <country>CENTRAL AFRICAN REPUBLIC</country>
+  </countryName>
+  <countryName oid="1160082965576">
+    <code>TD</code>
+    <country>CHAD</country>
+  </countryName>
+  <countryName oid="1160082979156">
+    <code>CL</code>
+    <country>CHILE</country>
+  </countryName>
+  <countryName oid="1160082996844">
+    <code>CN</code>
+    <country>CHINA</country>
+  </countryName>
+  <countryName oid="1160083004189">
+    <code>CX</code>
+    <country>CHRISTMAS ISLAND</country>
+  </countryName>
+  <countryName oid="1160083018815">
+    <code>CC</code>
+    <country>COCOS (KEELING) ISLANDS</country>
+  </countryName>
+  <countryName oid="1160083032019">
+    <code>CO</code>
+    <country>COLOMBIA</country>
+  </countryName>
+  <countryName oid="1160083050176">
+    <code>KM</code>
+    <country>COMOROS</country>
+  </countryName>
+  <countryName oid="1160083065568">
+    <code>CG</code>
+    <country>CONGO</country>
+  </countryName>
+  <countryName oid="1160083091397">
+    <code>CD</code>
+    <country>CONGO, THE DEMOCRATIC REPUBLIC OF THE</country>
+  </countryName>
+  <countryName oid="1160083098664">
+    <code>CK</code>
+    <country>COOK ISLANDS</country>
+  </countryName>
+  <countryName oid="1160083113024">
+    <code>CR</code>
+    <country>COSTA RICA</country>
+  </countryName>
+  <countryName oid="1160083124462">
+    <code>CI</code>
+    <country>CÔTE D'IVOIRE</country>
+  </countryName>
+  <countryName oid="1160083141651">
+    <code>HR</code>
+    <country>CROATIA</country>
+  </countryName>
+  <countryName oid="1160083155839">
+    <code>CU</code>
+    <country>CUBA</country>
+  </countryName>
+  <countryName oid="1160083176544">
+    <code>CY</code>
+    <country>CYPRUS</country>
+  </countryName>
+  <countryName oid="1160083183810">
+    <code>CZ</code>
+    <country>CZECH REPUBLIC</country>
+  </countryName>
+  <countryName oid="1160083197467">
+    <code>DK</code>
+    <country>DENMARK</country>
+  </countryName>
+  <countryName oid="1160083210343">
+    <code>DJ</code>
+    <country>DJIBOUTI</country>
+  </countryName>
+  <countryName oid="1160083227673">
+    <code>DM</code>
+    <country>DOMINICA</country>
+  </countryName>
+  <countryName oid="1160083241205">
+    <code>DO</code>
+    <country>DOMINICAN REPUBLIC</country>
+  </countryName>
+  <countryName oid="1160083249393">
+    <code>EC</code>
+    <country>ECUADOR</country>
+  </countryName>
+  <countryName oid="1160083261801">
+    <code>EG</code>
+    <country>EGYPT</country>
+  </countryName>
+  <countryName oid="1160083274380">
+    <code>SV</code>
+    <country>EL SALVADOR</country>
+  </countryName>
+  <countryName oid="1160083331522">
+    <code>GQ</code>
+    <country>EQUATORIAL GUINEA</country>
+  </countryName>
+  <countryName oid="1160083346695">
+    <code>ER</code>
+    <country>ERITREA</country>
+  </countryName>
+  <countryName oid="1160083361727">
+    <code>EE</code>
+    <country>ESTONIA</country>
+  </countryName>
+  <countryName oid="1160083373682">
+    <code>ET</code>
+    <country>ETHIOPIA</country>
+  </countryName>
+  <countryName oid="1160083395886">
+    <code>FK</code>
+    <country>FALKLAND ISLANDS (MALVINAS)</country>
+  </countryName>
+  <countryName oid="1160083403184">
+    <code>FO</code>
+    <country>FAROE ISLANDS</country>
+  </countryName>
+  <countryName oid="1160083417685">
+    <code>FJ</code>
+    <country>FIJI</country>
+  </countryName>
+  <countryName oid="1160083433701">
+    <code>FI</code>
+    <country>FINLAND</country>
+  </countryName>
+  <countryName oid="1160083448374">
+    <code>FR</code>
+    <country>FRANCE</country>
+  </countryName>
+  <countryName oid="1160442088139">
+    <code>GF</code>
+    <country>FRENCH GUIANA</country>
+  </countryName>
+  <countryName oid="1160442153108">
+    <code>PF</code>
+    <country>FRENCH POLYNESIA</country>
+  </countryName>
+  <countryName oid="1160442171672">
+    <code>TF</code>
+    <country>FRENCH SOUTHERN TERRITORIES</country>
+  </countryName>
+  <countryName oid="1160442188017">
+    <code>GA</code>
+    <country>GABON</country>
+  </countryName>
+  <countryName oid="1160442211252">
+    <code>GM</code>
+    <country>GAMBIA</country>
+  </countryName>
+  <countryName oid="1160442218347">
+    <code>GE</code>
+    <country>GEORGIA</country>
+  </countryName>
+  <countryName oid="1160442238801">
+    <code>DE</code>
+    <country>GERMANY</country>
+  </countryName>
+  <countryName oid="1160442245177">
+    <code>GH</code>
+    <country>GHANA</country>
+  </countryName>
+  <countryName oid="1160442263975">
+    <code>GI</code>
+    <country>GIBRALTAR</country>
+  </countryName>
+  <countryName oid="1160442280835">
+    <code>GR</code>
+    <country>GREECE</country>
+  </countryName>
+  <countryName oid="1160442295633">
+    <code>GL</code>
+    <country>GREENLAND</country>
+  </countryName>
+  <countryName oid="1160442315634">
+    <code>GD</code>
+    <country>GRENADA</country>
+  </countryName>
+  <countryName oid="1160442329744">
+    <code>GP</code>
+    <country>GUADELOUPE</country>
+  </countryName>
+  <countryName oid="1160442345152">
+    <code>GU</code>
+    <country>GUAM</country>
+  </countryName>
+  <countryName oid="1160442358543">
+    <code>GT</code>
+    <country>GUATEMALA</country>
+  </countryName>
+  <countryName oid="1160442372404">
+    <code>GG</code>
+    <country>GUERNSEY</country>
+  </countryName>
+  <countryName oid="1160442400249">
+    <code>GN</code>
+    <country>GUINEA</country>
+  </countryName>
+  <countryName oid="1160442416266">
+    <code>GW</code>
+    <country>GUINEA-BISSAU</country>
+  </countryName>
+  <countryName oid="1160442430439">
+    <code>GY</code>
+    <country>GUYANA</country>
+  </countryName>
+  <countryName oid="1160442443909">
+    <code>HT</code>
+    <country>HAITI</country>
+  </countryName>
+  <countryName oid="1160442458988">
+    <code>HM</code>
+    <country>HEARD ISLAND AND MCDONALD ISLANDS</country>
+  </countryName>
+  <countryName oid="1160442473192">
+    <code>VA</code>
+    <country>HOLY SEE (VATICAN CITY STATE)</country>
+  </countryName>
+  <countryName oid="1160442486490">
+    <code>HN</code>
+    <country>HONDURAS</country>
+  </countryName>
+  <countryName oid="1160442499944">
+    <code>HK</code>
+    <country>HONG KONG</country>
+  </countryName>
+  <countryName oid="1160442513851">
+    <code>HU</code>
+    <country>HUNGARY</country>
+  </countryName>
+  <countryName oid="1160442533712">
+    <code>IS</code>
+    <country>ICELAND</country>
+  </countryName>
+  <countryName oid="1160443200697">
+    <code>IN</code>
+    <country>INDIA</country>
+  </countryName>
+  <countryName oid="1160443218495">
+    <code>ID</code>
+    <country>INDONESIA</country>
+  </countryName>
+  <countryName oid="1160443244011">
+    <code>IR</code>
+    <country>IRAN, ISLAMIC REPUBLIC OF</country>
+  </countryName>
+  <countryName oid="1160443251966">
+    <code>IQ</code>
+    <country>IRAQ</country>
+  </countryName>
+  <countryName oid="1160443264748">
+    <code>IE</code>
+    <country>IRELAND</country>
+  </countryName>
+  <countryName oid="1160443279702">
+    <code>IM</code>
+    <country>ISLE OF MAN</country>
+  </countryName>
+  <countryName oid="1160443294140">
+    <code>IL</code>
+    <country>ISRAEL</country>
+  </countryName>
+  <countryName oid="1160443310985">
+    <code>IT</code>
+    <country>ITALY</country>
+  </countryName>
+  <countryName oid="1160443338127">
+    <code>JM</code>
+    <country>JAMAICA</country>
+  </countryName>
+  <countryName oid="1160443351065">
+    <code>JP</code>
+    <country>JAPAN</country>
+  </countryName>
+  <countryName oid="1160443369238">
+    <code>JE</code>
+    <country>JERSEY</country>
+  </countryName>
+  <countryName oid="1160443384661">
+    <code>JO</code>
+    <country>JORDAN</country>
+  </countryName>
+  <countryName oid="1160443408303">
+    <code>KZ</code>
+    <country>KAZAKHSTAN</country>
+  </countryName>
+  <countryName oid="1160443430866">
+    <code>KE</code>
+    <country>KENYA</country>
+  </countryName>
+  <countryName oid="1160443438586">
+    <code>KI</code>
+    <country>KIRIBATI</country>
+  </countryName>
+  <countryName oid="1160443452446">
+    <code>KP</code>
+    <country>KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</country>
+  </countryName>
+  <countryName oid="1160443466744">
+    <code>KR</code>
+    <country>KOREA, REPUBLIC OF</country>
+  </countryName>
+  <countryName oid="1160443482667">
+    <code>KW</code>
+    <country>KUWAIT</country>
+  </countryName>
+  <countryName oid="1160443499262">
+    <code>KG</code>
+    <country>KYRGYZSTAN</country>
+  </countryName>
+  <countryName oid="1160443515841">
+    <code>LA</code>
+    <country>LAO PEOPLE'S DEMOCRATIC REPUBLIC</country>
+  </countryName>
+  <countryName oid="1160443531701">
+    <code>LV</code>
+    <country>LATVIA</country>
+  </countryName>
+  <countryName oid="1160443546046">
+    <code>LB</code>
+    <country>LEBANON</country>
+  </countryName>
+  <countryName oid="1160443562594">
+    <code>LS</code>
+    <country>LESOTHO</country>
+  </countryName>
+  <countryName oid="1160443575361">
+    <code>LR</code>
+    <country>LIBERIA</country>
+  </countryName>
+  <countryName oid="1160443594768">
+    <code>LY</code>
+    <country>LIBYAN ARAB JAMAHIRIYA</country>
+  </countryName>
+  <countryName oid="1160443609425">
+    <code>LI</code>
+    <country>LIECHTENSTEIN</country>
+  </countryName>
+  <countryName oid="1160443625020">
+    <code>LT</code>
+    <country>LITHUANIA</country>
+  </countryName>
+  <countryName oid="1160443641786">
+    <code>LU</code>
+    <country>LUXEMBOURG</country>
+  </countryName>
+  <countryName oid="1160443655444">
+    <code>MO</code>
+    <country>MACAO</country>
+  </countryName>
+  <countryName oid="1160443680773">
+    <code>MK</code>
+    <country>MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</country>
+  </countryName>
+  <countryName oid="1160443697586">
+    <code>MG</code>
+    <country>MADAGASCAR</country>
+  </countryName>
+  <countryName oid="1160443712275">
+    <code>MW</code>
+    <country>MALAWI</country>
+  </countryName>
+  <countryName oid="1160443729948">
+    <code>MY</code>
+    <country>MALAYSIA</country>
+  </countryName>
+  <countryName oid="1160443744542">
+    <code>MV</code>
+    <country>MALDIVES</country>
+  </countryName>
+  <countryName oid="1160443761778">
+    <code>ML</code>
+    <country>MALI</country>
+  </countryName>
+  <countryName oid="1160443774998">
+    <code>MT</code>
+    <country>MALTA</country>
+  </countryName>
+  <countryName oid="1160443788499">
+    <code>MH</code>
+    <country>MARSHALL ISLANDS</country>
+  </countryName>
+  <countryName oid="1160443802968">
+    <code>MQ</code>
+    <country>MARTINIQUE</country>
+  </countryName>
+  <countryName oid="1160443816219">
+    <code>MR</code>
+    <country>MAURITANIA</country>
+  </countryName>
+  <countryName oid="1160443846643">
+    <code>MU</code>
+    <country>MAURITIUS</country>
+  </countryName>
+  <countryName oid="1160443866863">
+    <code>YT</code>
+    <country>MAYOTTE</country>
+  </countryName>
+  <countryName oid="1160443906537">
+    <code>MX</code>
+    <country>MEXICO</country>
+  </countryName>
+  <countryName oid="1160443915444">
+    <code>FM</code>
+    <country>MICRONESIA, FEDERATED STATES OF</country>
+  </countryName>
+  <countryName oid="1160443933133">
+    <code>MD</code>
+    <country>MOLDOVA, REPUBLIC OF</country>
+  </countryName>
+  <countryName oid="1160443949868">
+    <code>MC</code>
+    <country>MONACO</country>
+  </countryName>
+  <countryName oid="1160443968650">
+    <code>MN</code>
+    <country>MONGOLIA</country>
+  </countryName>
+  <countryName oid="1160443982323">
+    <code>ME</code>
+    <country>MONTENEGRO</country>
+  </countryName>
+  <countryName oid="1160443996840">
+    <code>MS</code>
+    <country>MONTSERRAT</country>
+  </countryName>
+  <countryName oid="1160444012356">
+    <code>MA</code>
+    <country>MOROCCO</country>
+  </countryName>
+  <countryName oid="1160444028435">
+    <code>MZ</code>
+    <country>MOZAMBIQUE</country>
+  </countryName>
+  <countryName oid="1160444041718">
+    <code>MM</code>
+    <country>MYANMAR</country>
+  </countryName>
+  <countryName oid="1160444054937">
+    <code>NA</code>
+    <country>NAMIBIA</country>
+  </countryName>
+  <countryName oid="1160444068220">
+    <code>NR</code>
+    <country>NAURU</country>
+  </countryName>
+  <countryName oid="1160444081424">
+    <code>NP</code>
+    <country>NEPAL</country>
+  </countryName>
+  <countryName oid="1160444094440">
+    <code>NL</code>
+    <country>NETHERLANDS</country>
+  </countryName>
+  <countryName oid="1160444110426">
+    <code>AN</code>
+    <country>NETHERLANDS ANTILLES</country>
+  </countryName>
+  <countryName oid="1160444132317">
+    <code>NC</code>
+    <country>NEW CALEDONIA</country>
+  </countryName>
+  <countryName oid="1160444146334">
+    <code>NZ</code>
+    <country>NEW ZEALAND</country>
+  </countryName>
+  <countryName oid="1160444161007">
+    <code>NI</code>
+    <country>NICARAGUA</country>
+  </countryName>
+  <countryName oid="1160444219570">
+    <code>NE</code>
+    <country>NIGER</country>
+  </countryName>
+  <countryName oid="1160444228321">
+    <code>NG</code>
+    <country>NIGERIA</country>
+  </countryName>
+  <countryName oid="1160444242979">
+    <code>NU</code>
+    <country>NIUE</country>
+  </countryName>
+  <countryName oid="1160444258605">
+    <code>NF</code>
+    <country>NORFOLK ISLAND</country>
+  </countryName>
+  <countryName oid="1160444273809">
+    <code>MP</code>
+    <country>NORTHERN MARIANA ISLANDS</country>
+  </countryName>
+  <countryName oid="1160444288888">
+    <code>NO</code>
+    <country>NORWAY</country>
+  </countryName>
+  <countryName oid="1160444303467">
+    <code>OM</code>
+    <country>OMAN</country>
+  </countryName>
+  <countryName oid="1160444317671">
+    <code>PK</code>
+    <country>PAKISTAN</country>
+  </countryName>
+  <countryName oid="1160444332641">
+    <code>PW</code>
+    <country>PALAU</country>
+  </countryName>
+  <countryName oid="1160444347704">
+    <code>PS</code>
+    <country>PALESTINIAN TERRITORY, OCCUPIED</country>
+  </countryName>
+  <countryName oid="1160444365862">
+    <code>PA</code>
+    <country>PANAMA</country>
+  </countryName>
+  <countryName oid="1160444387175">
+    <code>PG</code>
+    <country>PAPUA NEW GUINEA</country>
+  </countryName>
+  <countryName oid="1160444397426">
+    <code>PY</code>
+    <country>PARAGUAY</country>
+  </countryName>
+  <countryName oid="1160444417896">
+    <code>PE</code>
+    <country>PERU</country>
+  </countryName>
+  <countryName oid="1160444432397">
+    <code>PH</code>
+    <country>PHILIPPINES</country>
+  </countryName>
+  <countryName oid="1160444440460">
+    <code>PN</code>
+    <country>PITCAIRN</country>
+  </countryName>
+  <countryName oid="1160444460915">
+    <code>PL</code>
+    <country>POLAND</country>
+  </countryName>
+  <countryName oid="1160444476369">
+    <code>PT</code>
+    <country>PORTUGAL</country>
+  </countryName>
+  <countryName oid="1160444489010">
+    <code>PR</code>
+    <country>PUERTO RICO</country>
+  </countryName>
+  <countryName oid="1160444507761">
+    <code>QA</code>
+    <country>QATAR</country>
+  </countryName>
+  <countryName oid="1160444520481">
+    <code>RE</code>
+    <country>RÉUNION</country>
+  </countryName>
+  <countryName oid="1160444533498">
+    <code>RO</code>
+    <country>ROMANIA</country>
+  </countryName>
+  <countryName oid="1160444547827">
+    <code>RU</code>
+    <country>RUSSIAN FEDERATION</country>
+  </countryName>
+  <countryName oid="1160444562656">
+    <code>RW</code>
+    <country>RWANDA</country>
+  </countryName>
+  <countryName oid="1160444575423">
+    <code>SH</code>
+    <country>SAINT HELENA</country>
+  </countryName>
+  <countryName oid="1160444589127">
+    <code>KN</code>
+    <country>SAINT KITTS AND NEVIS</country>
+  </countryName>
+  <countryName oid="1160444604346">
+    <code>LC</code>
+    <country>SAINT LUCIA</country>
+  </countryName>
+  <countryName oid="1160444617832">
+    <code>PM</code>
+    <country>SAINT PIERRE AND MIQUELON</country>
+  </countryName>
+  <countryName oid="1160444633395">
+    <code>VC</code>
+    <country>SAINT VINCENT AND THE GRENADINES</country>
+  </countryName>
+  <countryName oid="1160444741366">
+    <code>WS</code>
+    <country>SAMOA</country>
+  </countryName>
+  <countryName oid="1160444758976">
+    <code>SM</code>
+    <country>SAN MARINO</country>
+  </countryName>
+  <countryName oid="1160444775306">
+    <code>ST</code>
+    <country>SAO TOME AND PRINCIPE</country>
+  </countryName>
+  <countryName oid="1160444789447">
+    <code>SA</code>
+    <country>SAUDI ARABIA</country>
+  </countryName>
+  <countryName oid="1160444804854">
+    <code>SN</code>
+    <country>SENEGAL</country>
+  </countryName>
+  <countryName oid="1160444818621">
+    <code>RS</code>
+    <country>SERBIA</country>
+  </countryName>
+  <countryName oid="1160444833153">
+    <code>SC</code>
+    <country>SEYCHELLES</country>
+  </countryName>
+  <countryName oid="1160444845951">
+    <code>SL</code>
+    <country>SIERRA LEONE</country>
+  </countryName>
+  <countryName oid="1160444859921">
+    <code>SG</code>
+    <country>SINGAPORE</country>
+  </countryName>
+  <countryName oid="1160444876078">
+    <code>SK</code>
+    <country>SLOVAKIA</country>
+  </countryName>
+  <countryName oid="1160444888501">
+    <code>SI</code>
+    <country>SLOVENIA</country>
+  </countryName>
+  <countryName oid="1160444902299">
+    <code>SB</code>
+    <country>SOLOMON ISLANDS</country>
+  </countryName>
+  <countryName oid="1160444916003">
+    <code>SO</code>
+    <country>SOMALIA</country>
+  </countryName>
+  <countryName oid="1160444932426">
+    <code>ZA</code>
+    <country>SOUTH AFRICA</country>
+  </countryName>
+  <countryName oid="1160444947099">
+    <code>GS</code>
+    <country>SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</country>
+  </countryName>
+  <countryName oid="1160444963115">
+    <code>ES</code>
+    <country>SPAIN</country>
+  </countryName>
+  <countryName oid="1160444975913">
+    <code>LK</code>
+    <country>SRI LANKA</country>
+  </countryName>
+  <countryName oid="1160444991774">
+    <code>SD</code>
+    <country>SUDAN</country>
+  </countryName>
+  <countryName oid="1160445006931">
+    <code>SR</code>
+    <country>SURIcountry</country>
+  </countryName>
+  <countryName oid="1160445021166">
+    <code>SJ</code>
+    <country>SVALBARD AND JAN MAYEN</country>
+  </countryName>
+  <countryName oid="1160445034792">
+    <code>SZ</code>
+    <country>SWAZILAND</country>
+  </countryName>
+  <countryName oid="1160445050184">
+    <code>SE</code>
+    <country>SWEDEN</country>
+  </countryName>
+  <countryName oid="1160445064435">
+    <code>CH</code>
+    <country>SWITZERLAND</country>
+  </countryName>
+  <countryName oid="1160445076592">
+    <code>SY</code>
+    <country>SYRIAN ARAB REPUBLIC</country>
+  </countryName>
+  <countryName oid="1160445092187">
+    <code>TW</code>
+    <country>TAIWAN, PROVINCE OF CHINA</country>
+  </countryName>
+  <countryName oid="1160445108797">
+    <code>TJ</code>
+    <country>TAJIKISTAN</country>
+  </countryName>
+  <countryName oid="1160445122392">
+    <code>TZ</code>
+    <country>TANZANIA, UNITED REPUBLIC OF</country>
+  </countryName>
+  <countryName oid="1160445137581">
+    <code>TH</code>
+    <country>THAILAND</country>
+  </countryName>
+  <countryName oid="1160445149675">
+    <code>TL</code>
+    <country>TIMOR-LESTE</country>
+  </countryName>
+  <countryName oid="1160445162442">
+    <code>TG</code>
+    <country>TOGO</country>
+  </countryName>
+  <countryName oid="1160445178724">
+    <code>TK</code>
+    <country>TOKELAU</country>
+  </countryName>
+  <countryName oid="1160445192538">
+    <code>TO</code>
+    <country>TONGA</country>
+  </countryName>
+  <countryName oid="1160445206132">
+    <code>TT</code>
+    <country>TRINIDAD AND TOBAGO</country>
+  </countryName>
+  <countryName oid="1160445218602">
+    <code>TN</code>
+    <country>TUNISIA</country>
+  </countryName>
+  <countryName oid="1160445302464">
+    <code>TR</code>
+    <country>TURKEY</country>
+  </countryName>
+  <countryName oid="1160445314402">
+    <code>TM</code>
+    <country>TURKMENISTAN</country>
+  </countryName>
+  <countryName oid="1160445330262">
+    <code>TC</code>
+    <country>TURKS AND CAICOS ISLANDS</country>
+  </countryName>
+  <countryName oid="1160445343951">
+    <code>TV</code>
+    <country>TUVALU</country>
+  </countryName>
+  <countryName oid="1160445359186">
+    <code>UG</code>
+    <country>UGANDA</country>
+  </countryName>
+  <countryName oid="1160445372219">
+    <code>UA</code>
+    <country>UKRAINE</country>
+  </countryName>
+  <countryName oid="1160445387298">
+    <code>AE</code>
+    <country>UNITED ARAB EMIRATES</country>
+  </countryName>
+  <countryName oid="1160445400939">
+    <code>GB</code>
+    <country>UNITED KINGDOM</country>
+  </countryName>
+  <countryName oid="1160445414597">
+    <code>US</code>
+    <country>UNITED STATES</country>
+  </countryName>
+  <countryName oid="1160445427051">
+    <code>UM</code>
+    <country>UNITED STATES MINOR OUTLYING ISLANDS</country>
+  </countryName>
+  <countryName oid="1160445441661">
+    <code>UY</code>
+    <country>URUGUAY</country>
+  </countryName>
+  <countryName oid="1160445454631">
+    <code>UZ</code>
+    <country>UZBEKISTAN</country>
+  </countryName>
+  <countryName oid="1160445470944">
+    <code>VU</code>
+    <country>VANUATU</country>
+  </countryName>
+  <countryName oid="1160445483992">
+    <code>VE</code>
+    <country>VENEZUELA</country>
+  </countryName>
+  <countryName oid="1160445525134">
+    <code>VN</code>
+    <country>VIET NAM</country>
+  </countryName>
+  <countryName oid="1160445541025">
+    <code>VG</code>
+    <country>VIRGIN ISLANDS, BRITISH</country>
+  </countryName>
+  <countryName oid="1160445557042">
+    <code>VI</code>
+    <country>VIRGIN ISLANDS, U.S.</country>
+  </countryName>
+  <countryName oid="1160445569887">
+    <code>WF</code>
+    <country>WALLIS AND FUTUNA</country>
+  </countryName>
+  <countryName oid="1160445584950">
+    <code>EH</code>
+    <country>WESTERN SAHARA</country>
+  </countryName>
+  <countryName oid="1160445597373">
+    <code>YE</code>
+    <country>YEMEN</country>
+  </countryName>
+  <countryName oid="1160445609093">
+    <code>ZM</code>
+    <country>ZAMBIA</country>
+  </countryName>
+  <countryName oid="1160445627125">
+    <code>ZW</code>
+    <country>ZIMBABWE</country>
+  </countryName>
+</countryNames>

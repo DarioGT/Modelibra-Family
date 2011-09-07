@@ -1,0 +1,36 @@
+/* layout3c.css */
+
+/* ===[ begin ]=== */
+
+/*
+    Title:                   3 Columns Layout Design Style
+    Author:                  Dzenan Ridjanovic
+    Influenced By:           http://www.simplebits.com/
+    Created:                 2006-09-03
+    Updated:                 2007-10-28
+*/
+
+    .west {
+        float: left;
+        width: 70%;
+    }
+	
+    .west-west { /* left sidebar */
+        margin-right: 40%;
+        width: 30%;
+        background: #fffff0;
+    }
+
+    .west-east { /* center */
+        float: right; 
+        width: 68%;
+        padding: 2px;
+    }
+
+    .east { /* right sidebar */
+        margin-left: 71%;
+        width: 29%;
+        background: #fffff0;
+    }
+		
+/* ===[ end ]=== */

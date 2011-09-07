@@ -1,0 +1,209 @@
+/* menu.css */
+
+/* ===[ begin ]=== */
+
+/*
+    Title:                  Menu Design Style
+    Author:                 Dzenan Ridjanovic
+    Influenced By:          http://www.simplebits.com/
+    						http://www.seoconsultants.com/css/menus/tutorial/
+    Created:                2006-09-03
+    Updated:                2007-11-16
+*/
+
+/* ===[ basic menu ]=== */
+
+	.menu {
+		margin: 0px;
+		padding: 0px 0px 9px 3px;
+		background: #fffff0;
+	}
+
+	.menu li {
+		margin: 0px; 
+		padding: 0px;
+		display: inline;
+		list-style-type: none;
+    }
+
+	.menu a {
+		float: left;
+		line-height: 14px;
+		font-weight: bold;
+		font-size: 16px;
+		padding: 2px 12px 6px 12px;
+		text-decoration: none;
+		color: #003366;
+	}	
+	
+	.menu a:visited {
+		color: #c50000;
+	}
+
+	.menu a:hover {
+		color: #ffffee;
+		background: #336799;
+		/* background: url(img/tab-up.gif) no-repeat bottom center; */
+	}
+    
+/* ===[ horizontal dropdown menu bar ]=== */
+
+	.menu-h-dropdown {
+		width: 100%;
+		float: left;
+	}
+
+	.menu-h-dropdown ul {
+		background: #9999dd;
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		width: 12em;
+		float: left;
+	}
+	
+	.menu-h-dropdown a, .menu-h-dropdown h2 {
+		font-family: verdana, arial, helvetica, sans-serif;
+		font-weight: bold;
+		display: block;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #cccccc #888888 #555555 #bbbbbb;
+		margin: 0px;
+		padding: 2px 3px;
+	}
+
+	.menu-h-dropdown h2 {
+		font-size: 12px;
+		color: #003366;
+		background: #ffe4b5;
+		/* text-transform: uppercase; */
+	}
+
+	.menu-h-dropdown a {
+		font-size: 11px;
+		color: #003366;
+		background: #fcf8dc;
+		text-decoration: none;
+	}
+	
+	.menu-h-dropdown a:visited {
+		color: #c50000;
+	}
+
+	.menu-h-dropdown a:hover {
+		color: #ffffee;
+		background: #336799;
+	}
+	
+	/* ---[ positioning menus ]--- */
+	
+	.menu-h-dropdown li {
+		position: relative;
+		padding: 0px;
+	}
+
+	.menu-h-dropdown ul ul {
+		position: absolute;
+		z-index: 500;
+	}
+
+	.menu-h-dropdown ul ul ul {
+		top: 0px;
+		left: 100%;
+	}
+
+	/* ---[ hiding and revealing menus ]--- */
+
+	div.menu-h-dropdown ul ul,
+	div.menu-h-dropdown ul li:hover ul ul,
+	div.menu-h-dropdown ul ul li:hover ul ul {
+		display: none;
+	}
+
+	div.menu-h-dropdown ul li:hover ul,
+	div.menu-h-dropdown ul ul li:hover ul,
+	div.menu-h-dropdown ul ul ul li:hover ul {
+		display: block;
+	}
+	
+/* ===[ vertical popout menu bar ]=== */
+	
+	.menu-v-popout {
+		width: 100%;
+		float: left;
+	} 
+
+	.menu-v-popout ul { 
+		background: #fffff0;
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		width: 15.6em;
+		float: left;
+	}
+
+	.menu-v-popout a, .menu-v-popout h2 {
+		font-family: verdana, arial, helvetica, sans-serif;
+		font-weight: bold;
+		display: block;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #cccccc #888888 #555555 #bbbbbb;
+		margin: 0px;
+		padding: 2px 3px;
+	}
+
+	.menu-v-popout h2 {
+		font-size: 12px;
+		color: black;
+		background: #ffe4b5;
+		margin: 0px;
+		padding: 2px;
+		/* text-transform: uppercase; */
+	}
+
+	.menu-v-popout a {
+		font-size: 11px;
+		color: #003366;
+        background: #fcf8dc;
+        text-decoration: none;
+	}
+	
+	.menu-v-popout a:visited {
+		color: #c50000;
+	}
+
+	.menu-v-popout a:hover {
+		color: #ffffee;
+		background: #336799;
+	}
+	
+	/* ---[ positioning menus ]--- */
+	
+	.menu-v-popout li {
+		/* make the list elements a containing block for the nested lists */
+		position: relative;
+		padding: 0px;
+	} 	
+
+	.menu-v-popout ul ul ul {
+		position: absolute;
+		top: 0px;
+		left: 100%; /* to position them to the right of their containing block */
+		width: 100%; /* width is based on the containing block */
+	}
+
+	/* ---[ hiding and revealing menus ]--- */
+	
+	div.menu-v-popout ul ul ul,
+	div.menu-v-popout ul ul li:hover ul ul {
+		display: none;
+	}
+
+	div.menu-v-popout ul ul li:hover ul,
+	div.menu-v-popout ul ul ul li:hover ul {
+		display: block;
+	}
+    
+/* ===[ end ]=== */

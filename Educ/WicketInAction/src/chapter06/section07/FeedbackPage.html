@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<wicket:head>
+<style type="text/css">
+.example.feedback .feedbackPanelERROR {
+	color : #FF0000;
+}
+.example.feedback .feedbackPanelWARNING {
+	color : #FFA040;
+}
+.example.feedback .feedbackPanelINFO {
+	color : #000080;
+}
+
+</style>
+</wicket:head>
+</head>
+<body>
+
+	<h2>6.7 Providing feedback</h2>
+	<p>Demonstrates the options for providing feedback to your users.</p>
+	<div class="section">
+	  	<h3>6.6.1 Feedback messages</h3>
+	  	<p>Shows how to override feedback messages with your own messages.</p>
+	  	<div class="example">
+			<form wicket:id="form">
+			<table>
+			    <tr><td>Name:</td><td><input type="text" wicket:id="name" /></td></tr>
+			    <tr><td>Password:</td><td><input type="password" wicket:id="password" /></td></tr>
+			    <tr><td>Phone number:</td><td><input type="text" wicket:id="phonenumber" /></td></tr>
+			    <tr><td><input type="submit" value="Send to server" /></td></tr>
+			</table>
+		    <h4>Feedback messages</h4>
+		    <div wicket:id="feedback"></div>
+			</form>
+	  	</div>
+	</div>
+	<div class="section">
+	  	<h3>6.6.2 Using info, error and warn methods for general messages</h3>
+	  	<p>Shows how to use <tt>info</tt>, <tt>error</tt> and <tt>warn</tt> messages for sending non-validation messages to your users.</p>
+	  	<div class="example">
+			<form wicket:id="form2">
+			    Person name: <input type="text" wicket:id="name" />
+			    <input type="submit" value="Save" />
+			    
+			    <h4>Feedback messages</h4>
+			    <div wicket:id="feedback"></div>
+			</form>
+	  	</div>
+	</div>
+	<div class="section">
+	  	<h3>6.6.3 Display feedback messages using a FeedbackPanel</h3>
+	  	<p>Shows the different messages that can be sent to a feedback panel, and shows how to filter them.</p>
+	  	<div class="example feedback" wicket:id="feedback">
+	  	</div>
+	</div>
+
+</body>
+</html>
+

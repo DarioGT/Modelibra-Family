@@ -1,0 +1,50 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+	<br><br><br>
+	<div wicket:id="productQuestions">	
+		<table border="0">
+		  <tr>
+		    <td width="750">
+		    	<span class="pointMain"></span>&nbsp;<b><span wicket:id="questionText"></span></b>
+		    </td>
+		    <td>
+		     	<a wicket:id="removeQuestion" title="Remove Question" class="adminLink"><span class="removeIcon"></span></a>
+		     </td>
+		  </tr>
+		  <tr wicket:id="answersList">
+		  	 <td width="750">
+		    	<i><span wicket:id="answerText"></span></i>
+		     </td>
+		     <td>
+		     	<a wicket:id="removeAnswer" title="Remove Answer" class="adminLink"><span class="removeIcon"></span></a>
+		     </td>
+	   	  </tr>
+	   	  
+		</table>
+   	  	<form wicket:id="formAnswer">
+  		<table border="0">
+  			<td width="750">
+  				<b><i>&nbsp;&nbsp;Answer this question:</i></b><br>
+				<textarea wicket:id="answerText" rows="3"></textarea><br>
+				<button type"button" wicket:id="addAnswer">Submit</button>
+			</td>
+			<td>
+				
+				
+			</td>
+		</table>
+		</form>
+  		
+	</div>
+	<br>
+	<form wicket:id="formQuestion">
+	<hr>
+		&nbsp;&nbsp;New Question:<br>
+		&nbsp;<textarea wicket:id="questionText" rows="5"></textarea><br>
+		&nbsp;<button type"button" wicket:id="addQuestions">Submit</button>
+		
+	</form>
+	<div wicket:id="feedback"></div>
+</wicket:panel>
+</html>

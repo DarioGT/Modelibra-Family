@@ -1,0 +1,46 @@
+<html xmlns:wicket>
+	<wicket:panel>
+	   <h3>Your selection</h3>
+	   <form wicket:id="invoicePanelForm">
+		   <table width="950">
+			   <thead>
+			   	   <tr>
+			         <td width="425">Product Name</td>
+			         <td width="115" align="center">Product #</td>
+			         <td width="51" align="center">Qte</td>
+			         <td width="85" align="center">Price</td>
+			         <td width="85" align="center">Total Price</td>
+			         <td width="60" align="center">Action</td>
+			      </tr>
+			   </thead>
+			   <tbody>
+			      <tr wicket:id="invoice">
+			         <td ><a wicket:id="bookmarkableDetails"><span wicket:id="name">Name</span></a></td>
+			         <td wicket:id="productNumber" align="center"></td>
+			         <td width="51" align="center">
+			         	<a wicket:id="less"><span>&nbsp;-&nbsp;</span></a>
+			         	<input wicket:id="quantity" type="text" style="text-align:center;" class="verySmallInput" />
+			         	<!-- <span wicket:id="value">value</span> -->
+			         	<a wicket:id="more"><span>+</span></a>
+			         </td>
+			         <td wicket:id="price" width="85" align="center"></td>
+			         <td wicket:id="totalPrice" width="85" align="center"></td>
+			         <td width="60" align="center"><a wicket:id="remove"><span>remove</span></a></td>
+			      </tr>
+			   </tbody>
+			   <tfoot>
+			      <tr>
+			         <td>&nbsp;</td>
+			         <td align="center">&nbsp;</td>
+			         <td width="51"></td>
+			         <td width="85" align="right">Total:&nbsp;</td>
+			         <td wicket:id="total" width="85" align="center">$999,999.94</td>
+			         <td width="60" align="center">
+			         	<!-- <input wicket:id="refresh" type="submit" style="text-align:center;" class="mediumInput" value="Refresh"/> -->
+			         </td>
+			       </tr>
+		       </tfoot>
+		   </table>
+		</form>
+	</wicket:panel>
+</html>

@@ -1,0 +1,24 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 01
+Title: Persistent Domain Model
+Created: 2006.01.10
+Updated: 2007.09.24
+
+Objective
+
+    To create a persistent domain model.
+    
+Concepts
+
+	persistent data
+	XML data files
+	property types are Java classes (not primitive data types)
+	Date class
+	Boolean class
+	methods with primitive type arguments (boolean)
+	default value
+	user identifier (unique)
+	validation type (java.net.URL)
+	validation (unique, max. length, validation type)	
+    

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Model Config                      -->
+	<!-- ========================================== -->
+
+<domains>
+
+    <domain oid="1101">
+	    <code>Xml</code>
+	    <type>Specific</type>
+	    <packagePrefix>org.modelibra.persistency</packagePrefix>
+	
+	    <models>
+
+			<model oid="110110">
+				<code>Notes</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>test/org/modelibra/persistency/xml/test2</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+					    
+				<concepts>
+				    
+				    <concept oid="110110120">
+						<code>Comment</code>
+						<entry>true</entry>
+														    
+						<properties>
+							<property oid="110110120110">
+								<code>text</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>80</maxLength>
+								<required>true</required>
+							</property>
+							<property oid="110110120120">
+								<code>source</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>80</maxLength>
+							</property>
+							<property oid="110110120130">
+								<code>creationDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+							</property>
+						</properties>
+					    
+				    </concept>		    
+						
+				</concepts>
+				
+		    </model>
+    
+		</models>
+
+	</domain>
+		
+</domains>
+

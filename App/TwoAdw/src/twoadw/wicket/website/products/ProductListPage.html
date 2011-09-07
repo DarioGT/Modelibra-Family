@@ -1,0 +1,43 @@
+<html>
+
+<body>
+<wicket:extend>
+	<center>
+	<div id="container">
+		<div id="content">
+			<div id="main">		
+				<a wicket:id="newProduct" title="New Product" class="adminLinkH"><span class="addIcon"></span></a>
+				<div wicket:id="products" class="productsList">
+					<div id="leftImage" align=left>	
+							
+								<div wicket:id="images">
+									<a wicket:id="linkImage" border="0"><img wicket:id="imageUrl" border="0"/></a>
+								</div><!-- images -->
+							
+						</div><!-- leftImage -->
+					<div>
+						<a wicket:id="unpublishedProduct" title="Unpublished Product" class="adminLink"><span class="removeIcon"></span></a>
+						<a wicket:id="editProduct" title="Edit Product" class="adminLink"><span class="editIcon"></span></a>
+						<a wicket:id="bookmarkableDetails"><h3 wicket:id="name">Name</h3></a>
+						<h5 wicket:id="sku" align=right>ItemNumber.</h5>
+						<p wicket:id="description">ShortDescription.</p>
+				
+						<p>
+							<div wicket:id="addInvoiceProductPanel"></div>
+						</p>
+						<span wicket:id="productPublished" class="unpublished"></span>
+					</div>	
+				</div>
+				<br>				
+				<div wicket:id="navigator" align="center"></div>				
+			</div> <!-- main -->
+			<div id="left">		
+				<div wicket:id="category"></div>
+			</div> <!-- left -->	
+		</div> <!-- content -->
+	</div> <!-- container -->
+	</center>
+	</wicket:extend>
+</body>
+
+</html>

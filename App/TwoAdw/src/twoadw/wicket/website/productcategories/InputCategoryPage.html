@@ -1,0 +1,45 @@
+<html>
+<body>
+<wicket:extend>
+	<div id="container">
+		<div id="content">
+			<div id="mainLeft">			
+				<div wicket:id="feedback"></div>
+				<h3 wicket:id="categoryType"></h3>
+				<form wicket:id="form">
+					<table>			    
+				        <tr>
+							<th>Category Number</th>
+							<td><input wicket:id="categoryNumber" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Category Name</th>
+							<td><input wicket:id="categoryName" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Description</th>
+							<td><textarea wicket:id="description"></textarea></td>
+						</tr>
+						<tr>
+							<th>Image Url (180x130px)</th>
+							<td><input wicket:id="imageUrl180x130" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Published</th>
+							<td><input wicket:id="published" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<input type="submit" wicket:id="save" value="Save" />
+								<input type="button" wicket:id="cancel" value="Cancel" />
+							</td>
+						</tr>
+					</table>
+				</form>		
+			</div> <!-- main -->
+		</div> <!-- content -->
+	</div> <!-- container -->
+</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,43 @@
+Research 
+
+ModelibraWicket
+
++ home page generation
++ report generation from configurations
++ report generation from domain model
++ various display web components (similar to http://www.netvibes.com/ or to Wicket examples)
+	- sorting of table display by column
++ various update components
+
+Matchmaking
+
+http://www.comp.lancs.ac.uk/computing/research/cseg/projects/ariadne/docs/elvira97.html
+http://www.orkut.com/
+http://www.linkedin.com/
+http://canada.tribe.net/welcome
+http://www.pilotsoftware.com/
+http://www.ryze.com/
+http://www.spoke.com/
+http://www.meetup.com/
+http://www.ftc.gov/bcp/privacy/wkshp97/comments2/firefly.htm
+http://www.comp.lancs.ac.uk/computing/research/cseg/projects/ariadne/bl/report/
+http://www.comp.lancs.ac.uk/computing/research/cseg/projects/ariadne/docs/elvira97.html
+http://www.comp.lancs.ac.uk/computing/research/cseg/projects/ariadne/docs/design.html
+http://www.intelligententerprise.com/print_article.jhtml?articleID=18700579
+http://projects.ischool.washington.edu/mcdonald/papers/McDonald.CHI03.pdf
+http://foner.www.media.mit.edu/people/foner/Reports/Agents-97/Yenta.pdf
+http://www.iw.uni-karlsruhe.de/catnets/fileadmin/publications/Ludwig-et-al-MatchMaker-Shell.pdf
+http://www.sustainable.org/index.html
+http://ambient.media.mit.edu/assets/_pubs/BP2005-hugo-interestmap.pdf
+http://query.nytimes.com/gst/fullpage.html?res=9501E2DB123EF933A25751C0A9669C8B63
+http://portal.acm.org/citation.cfm?doid=323216.323355
+http://domino.fov.uni-mb.si/proceedings.nsf/Proceedings/D31A5DF7D9590BC1C1256EE000314553/$File/39Koch.pdf
+http://www.publishers.org/main/AboutAAP/DivisionsCommittees/about_CommCore_10.htm
+http://www.amazon.co.uk/Common-Interest-Good-Creating-Partnerships/dp/0875848486
+http://www-dcrp.ced.berkeley.edu/bpj/pdf/10-Christensen.pdf
+http://www.aocs.org/member/student/dec04.pdf
+http://www.awasingapore.org/actspint.html
+
+
+
+

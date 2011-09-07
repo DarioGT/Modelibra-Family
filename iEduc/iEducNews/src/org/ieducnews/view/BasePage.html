@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+<title>iEducNews</title>
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+<link rel="shortcut icon" href="css/img/favicon.ico">
+</head>
+
+<body>
+
+<div id="container">
+
+	<div id="header">
+        <div id="menu_member" wicket:id="member"></div>
+        <div id="header_logo">
+            <img src="css/img/logo.jpg" alt="iEducNews Logo" width="204" height="55">        
+        </div>
+        <br/>
+        <div id="menu" wicket:id="menu"></div>
+    </div><!-- header -->
+	
+    <div id="content_top"></div>
+	<div id="content">
+		<wicket:child />
+	</div>
+    <div id="content_bottom"></div>
+    
+    <div id="footer" wicket:id="footer"></div>
+    
+</div><!-- container -->
+
+</body>
+
+</html>

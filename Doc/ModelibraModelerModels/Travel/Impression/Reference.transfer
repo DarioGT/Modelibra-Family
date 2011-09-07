@@ -1,0 +1,35 @@
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1195157999718,1,false,?,false,true,54,40,120,107,1176319565375,2,CountryName,CountryNames,?,0,153,0,true,true
+ 
+C, === Items === 
+ 
+I,1176319565375,2,960496657960,1,Oid,1176319565375,3,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176319565375,2,1131484634992,109,Code,1176319583343,4,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1176319565375,2,1131484582316,107,LongName,1176319586234,5,country,countries,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1195157999718,1,false,?,false,true,235,43,120,108,1176319588562,6,CountryLanguage,CountryLanguages,?,0,153,0,true,true
+ 
+C, === Items === 
+ 
+I,1176319588562,6,960496657960,1,Oid,1176319588562,7,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176319588562,6,1131484634992,109,Code,1176319598343,8,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1176319588562,6,1138035633296,1,Name,1176319601078,9,language,languages,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1195157999718,1,false,?,false,true,54,185,120,92,1176319603390,10,SecurityRole,SecurityRoles,?,0,153,0,true,true
+ 
+C, === Items === 
+ 
+I,1176319603390,10,960496657960,1,Oid,1176319603390,11,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176319603390,10,1131484634992,109,Code,1176319611750,12,code,codes,?,255,204,102,1,1,false,true,?,false
+ 
+C, === Lines === 
+ 

@@ -1,0 +1,36 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+		<h4>Images Panel for administrator</h4>
+		<br>
+			<table border="0" align="center">
+				  <tr>
+				    <td><b><u>Name</u></b></td>
+				    <td><b><u>Url 96x96</u></b></td>
+				    <td><b><u>Url 180x130</u></b></td>
+				    <td><b><u>Url Full Size</u></b></td>
+				    <td></td>
+				  </tr>
+				  <tr wicket:id="imagesList">
+				    <td wicket:id="name" class="nameInput"></td>
+				    <td wicket:id="image96" class="urlInput"></td>
+				    <td wicket:id="image180" class="urlInput"></td>
+				    <td wicket:id="imageFullSize" class="urlInput"></td>
+				    <td><a wicket:id="remove"><span class="removeIcon"></span></a></td>
+				  </tr>
+			</table>
+			<form wicket:id="formImage">
+				<table border="0" align="center">
+				  <tr>
+				    <td><input type="text" wicket:id="name" class="nameInput"/></td>
+				    <td><input type="text" wicket:id="imageUrl96x96" class="urlInput"/></td>
+				    <td><input type="text" wicket:id="imageUrl180x130" class="urlInput"/></td>
+				    <td><input type="text" wicket:id="imageUrlFullSize" class="urlInput"/></td>
+				    <td><a wicket:id="add"><span class="addIcon"></span></a></td>
+				  </tr>
+				  </table>
+			  </form>
+				
+		<div wicket:id="feedback"></div>
+</wicket:panel>
+</html>

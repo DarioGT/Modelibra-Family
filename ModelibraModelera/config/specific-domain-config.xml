@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1208025784135">
+		<code>Modelibra</code>
+		<type>Specific</type>
+
+		<models>
+
+			<model oid="1208025817276">
+				<code>Designer</code>
+				<extension>true</extension>
+				<extensionDomain>Modelibra</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>Designer</extensionModel>
+				<defaultLoadSave>false</defaultLoadSave>
+				<session>true</session>
+				
+				<concepts>
+
+					<concept oid="1208025829105">
+						<code>MetaDomain</code>
+						<extension>true</extension>
+						<extensionConcept>MetaDomain</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1208025851571">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+
+							<property oid="1211145874646">
+								<code>description</code>
+								<extension>true</extension>
+								<extensionProperty>description</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1208025838298">
+						<code>MetaModel</code>
+						<extension>true</extension>
+						<extensionConcept>MetaModel</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1208025854820">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+
+							<property oid="1211145766271">
+								<code>author</code>
+								<extension>true</extension>
+								<extensionProperty>author</extensionProperty>
+
+							</property>
+
+							<property oid="1211145869092">
+								<code>description</code>
+								<extension>true</extension>
+								<extensionProperty>description</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1208025843876">
+						<code>MetaConcept</code>
+						<extension>true</extension>
+						<extensionConcept>MetaConcept</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1208025858101">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+
+							<property oid="1211140460779">
+								<code>entry</code>
+								<extension>true</extension>
+								<extensionProperty>entry</extensionProperty>
+								
+								<defaultValue>true</defaultValue>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1208025959031">
+						<code>MetaConceptGraphic</code>
+						<extension>true</extension>
+						<extensionConcept>MetaConceptGraphic</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1208025970774">
+								<code>x</code>
+								<extension>true</extension>
+								<extensionProperty>x</extensionProperty>
+								
+								<essential>true</essential>
+
+							</property>
+
+							<property oid="1208025971663">
+								<code>y</code>
+								<extension>true</extension>
+								<extensionProperty>y</extensionProperty>
+								
+								<essential>true</essential>
+
+							</property>
+
+							<property oid="1208025976897">
+								<code>width</code>
+								<extension>true</extension>
+								<extensionProperty>width</extensionProperty>
+								
+								<essential>true</essential>
+
+							</property>
+
+							<property oid="1208025979097">
+								<code>height</code>
+								<extension>true</extension>
+								<extensionProperty>height</extensionProperty>
+								
+								<essential>true</essential>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1211138929239">
+						<code>MetaProperty</code>
+						<extension>true</extension>
+						<extensionConcept>MetaProperty</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1211140626463">
+								<code>metaTypeOid</code>
+								<extension>true</extension>
+								<extensionProperty>metaTypeOid</extensionProperty>
+
+							</property>
+
+							<property oid="1211138964317">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+
+							<property oid="1211139049714">
+								<code>id</code>
+								<extension>true</extension>
+								<extensionProperty>id</extensionProperty>
+
+							</property>
+
+							<property oid="1211139463943">
+								<code>increment</code>
+								<extension>true</extension>
+								<extensionProperty>increment</extensionProperty>
+
+							</property>
+
+							<property oid="1211139389634">
+								<code>value</code>
+								<extension>true</extension>
+								<extensionProperty>value</extensionProperty>
+
+							</property>
+
+							<property oid="1211139467608">
+								<code>init</code>
+								<extension>true</extension>
+								<extensionProperty>init</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1211139625807">
+						<code>MetaType</code>
+						<extension>true</extension>
+						<extensionConcept>MetaType</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1211139677557">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+
+							<property oid="1211140035478">
+								<code>base</code>
+								<extension>true</extension>
+								<extensionProperty>base</extensionProperty>
+
+							</property>
+
+							<property oid="1211140044232">
+								<code>length</code>
+								<extension>true</extension>
+								<extensionProperty>length</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1211983552926">
+						<code>MetaNeighbor</code>
+						<extension>true</extension>
+						<extensionConcept>MetaNeighbor</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1211983764558">
+								<code>metaDestinationConceptOid</code>
+								<extension>true</extension>
+								<extensionProperty>metaDestinationConceptOid</extensionProperty>
+
+							</property>
+
+							<property oid="1211983567408">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+							
+							<property oid="1211983567410">
+								<code>id</code>
+								<extension>true</extension>
+								<extensionProperty>id</extensionProperty>
+
+							</property>
+
+							<property oid="1211983569665">
+								<code>min</code>
+								<extension>true</extension>
+								<extensionProperty>min</extensionProperty>
+
+							</property>
+
+							<property oid="1211983571970">
+								<code>max</code>
+								<extension>true</extension>
+								<extensionProperty>max</extensionProperty>
+
+							</property>
+
+							<property oid="1211983579859">
+								<code>internal</code>
+								<extension>true</extension>
+								<extensionProperty>internal</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+				
+				</concepts>
+		
+			</model>
+   
+		</models>
+
+	</domain>
+		
+</domains>

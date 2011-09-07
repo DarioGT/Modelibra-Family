@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>TwoADW - A Transaction website made simple</title>
+	<link rel="shortcut icon" href="css-specific/classic/favicon.ico" />
+
+</head>
+
+<body>
+	<center>
+		<div id="container">
+			<div id="header">
+				<div>
+					<div id="headerLeft">
+						|<a wicket:id="home"> Home </a>| <span wicket:id="BreadcrumbPanel"></span>
+					</div> <!-- headerLeft -->
+					<div id="headerRight">
+						|Total : <span wicket:id="total"></span>
+						(<span wicket:id="itemNumber"></span> items)
+						|
+						<a wicket:id="checkout"> Checkout <span class="cartIcon"></span> </a> 
+						|
+						<a wicket:id="customerLink"><span wicket:id="customer"></span></a>
+						<a wicket:id="login">Login</a>
+						<a wicket:id="logout">Logout</a> |
+					</div> <!-- headerLeft -->
+					<div id="headerLogo"></div>
+					
+				</div><br>
+				<div id="centerHeader">
+					<h1>TwoADW Application</h1>
+					<br>
+					<div id="adminPanel" wicket:id="managerPanel"></div>
+					<div id="adminPanel" wicket:id="commercialPanel"></div>
+					<div id="adminPanel" wicket:id="adminPanel"></div>
+				</div><!-- centerHeader -->
+				<div id="menu">
+					<ul>
+					    <li><a wicket:id="browse"><wicket:message key = "home.menu.browse"/></a></li>
+					    <li><a wicket:id="popularProducts"><wicket:message key = "home.menu.popularProduct"/></a></li>
+					     <li><a wicket:id="promotions"> <wicket:message key = "home.menu.promotions"/></a></li>
+					     <li><a wicket:id="aboutus"><wicket:message key = "home.menu.about"/></a></li>
+					     <li><a wicket:id="faq"><wicket:message key = "home.menu.faq"/></a></li>
+					    <li><a wicket:id="help"><wicket:message key = "home.menu.help"/></a></li>
+					     <li><a wicket:id="countryLanguageChoice"></a></li>
+					</ul>
+				</div><!-- menu -->
+			</div> <!-- header -->
+			<wicket:child />
+		</div> <!-- container -->
+		
+		<div id="footer">	
+		<br>
+			<center>
+			| <a wicket:id="terms">Terms & Conditions</a> |
+			<a wicket:id="privacy">Privacy Policy </a> |
+			<a wicket:id="contact">Contact Us</a> |
+			<p><i>
+			Website created by <a href="https://www.assembla.com/wiki/show/Team_FCP" target="_target">TeamFcp</a> | Pascal Daneault, Mahamadou Traore, Cyril Janody
+			</i></p> 
+			</center>
+		</div>
+		
+	</center>
+</body>
+
+</html>
+

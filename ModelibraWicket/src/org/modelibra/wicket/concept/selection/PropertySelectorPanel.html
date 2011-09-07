@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket>
+<body>
+<wicket:panel>
+
+  <form wicket:id = "selectionForm">
+	  <table>
+	      <tr>	 	  	  
+			  <th>
+			  	<wicket:message key="SearchBy"/>
+			  </th>	    	  
+			  <th>
+			  	<wicket:message key="Rule"/>
+			  </th>			  	    	  
+			  
+			  <wicket:enclosure child="stringTextField">
+			  <th>
+			  	<wicket:message key="Text"/>
+			  </th>	    	  			  
+			  </wicket:enclosure>
+			  
+			  <wicket:enclosure child="value1TextField">
+			  <th>
+			  	<wicket:message key="Value1"/>
+			  </th>	    	  			  
+			  </wicket:enclosure>
+			  
+			  <wicket:enclosure child="value2TextField">			  
+			  <th>
+			  	<wicket:message key="Value2"/>
+			  </th>	    	  
+			  </wicket:enclosure>
+			  
+			  <wicket:enclosure child="date1TextField">			  
+			  <th>
+			  	<wicket:message key="Date1"/>
+			  </th>	    	  
+			  </wicket:enclosure>
+			  
+			  <wicket:enclosure child="date2TextField">			  
+			  <th>
+			  	<wicket:message key="Date2"/>
+			  </th>	    	  
+			  </wicket:enclosure>
+	    	  
+			  <wicket:enclosure child="caseSensitiveChoice">			  
+			  <th>
+			  	<wicket:message key="CaseSensitive"/>
+			  </th>	
+	 	  	  </wicket:enclosure>
+			  
+			  <th/>
+		  </tr>
+		  <tr>
+	 	  	  <td>	
+	    	  	<select  wicket:id = "propertyChoice"/>		  	  
+			  </td>
+			  <td>
+			  	<select  wicket:id = "selectionRuleChoice"/>		  	  
+			  </td>			 
+			  <wicket:enclosure>
+			  <td>
+			  	<input type = "text" wicket:id = "stringTextField"/>		  	  
+			  </td>
+			  </wicket:enclosure>			  
+			 <wicket:enclosure>
+			  <td>
+			  	<input type = "text" wicket:id = "value1TextField"/>		  	  
+			  </td>
+			  </wicket:enclosure>
+			  <wicket:enclosure>
+			  <td>
+			  	<input type = "text" wicket:id="value2TextField"/>		  	  
+			  </td>
+			  </wicket:enclosure>
+			  <wicket:enclosure>
+			  <td>
+			  	<input type = "text" wicket:id="date1TextField"/>		  	  
+			  </td>
+			  </wicket:enclosure>
+			  <wicket:enclosure>
+			  <td>
+			  	<input type = "text" wicket:id="date2TextField"/>		  	  
+			  </td>
+			  </wicket:enclosure>
+			   <wicket:enclosure>
+			  <td>
+			  	<input type = "checkbox" wicket:id = "caseSensitiveChoice"/>		  	  
+			  </td>
+			  </wicket:enclosure>
+			  <td>
+			  	<input type="submit" wicket:message="value:Search"/>	          	
+	          </td> 
+		  </tr>
+	  </table>
+	  <div wicket:id = "feedback"></div>
+  </form>  
+  
+</wicket:panel>
+</body>
+</html>
+

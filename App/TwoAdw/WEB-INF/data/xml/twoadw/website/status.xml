@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<statuss>
+  <status oid="1238757446647">
+    <statusName>Awaiting Process</statusName>
+  </status>
+  <status oid="1238757466541">
+    <statusName>Order Reviewed</statusName>
+  </status>
+</statuss>

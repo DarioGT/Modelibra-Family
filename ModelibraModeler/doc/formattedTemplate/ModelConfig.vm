@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE models SYSTEM "config/model-config.dtd">
+
+	<!-- ========================================== -->
+	<!-- Reusable Model Config                      -->
+	<!-- ========================================== -->
+
+<models>
+
+	<model oid="1010">
+		<code>$modelName</code>
+		<extension>$extension</extension>
+		<extensionModel>$extensionName</extensionModel>
+		<author>$author</author>
+		<persistent>true</persistent>
+		#if ($persistence == "xml")
+			<persistenceType>$persistence</persistenceType>
+			<persistenceRelativePath>xml/data</persistenceRelativePath>
+			<defaultLoadSave>true</defaultLoadSave>
+		#elseif ($persistence == "db4o")
+			<persistenceType>db.$persistence</persistenceType>
+			<persistenceRelativePath>db4o/$modelName.yap</persistenceRelativePath>
+			<defaultLoadSave>false</defaultLoadSave>
+		#end
+		<datePattern>yyyy-MM-dd</datePattern>
+		<session>false</session>
+	    
+		<concepts>
+		#set ($conceptOid = 0)
+		#foreach($box in $boxList)
+			#set ($conceptOid = $conceptOid + 10)
+			#set ($entityName = $box.firstLetterToLower($box.getName()))
+			#set ($EntityName = $box.firstLetterToUpper($box.getName()))
+			#set ($entityname = $box.allLettersToLower($box.getName()))	
+			#set ($EntitiesName = $box.firstLetterToUpper($box.getNameInPlural()))
+			
+			<concept oid="$conceptOid">
+				<code>$EntityName</code>
+				<abstraction>false</abstraction>
+				<extension>false</extension>
+				<extensionConcept></extensionConcept>
+				<entityClass>org.${modelname}.model.component.${entityname}.$EntityName</entityClass>
+				<entitiesCode>$EntitiesName</entitiesCode>
+				<entitiesClass>org.${modelname}.model.component.${entityname}.$EntitiesName</entitiesClass>
+				#if ($box.isEntry())
+					<entry>true</entry>
+					#if ($persistence == "xml")
+						<fileName>${entityName}.xml</fileName>
+					#end
+				#else 
+					<entry>false</entry>
+					#if ($persistence == "xml")
+						<fileName></fileName>
+					#end
+				#end
+				#if ($box.isIntersection())
+					<intersection>true</intersection>
+				#else 
+					<intersection>false</intersection>
+				#end	    
+				<min>0</min>
+				<max>N</max>
+			    
+				<properties>
+					#set ($propertyOid = 0)
+					## reference properties
+					#foreach($externalLineIn in $box.getExternalLineInList())
+						#set ($propertyOid = $propertyOid + 10)					
+						#set ($neighborName = $externalLineIn.firstLetterToLower($externalLineIn.getDir21Name()))					
+						<property oid="$propertyOid">
+							<code>${neighborName}Oid</code>
+							<extension>false</extension>
+							<extensionProperty></extensionProperty>			    		
+							<propertyClass>java.lang.Long</propertyClass>
+							<validateType>false</validateType>
+							<validationType></validationType>
+							<maxLength>0</maxLength>
+							#if ($externalLineIn.getDir21Min() == "0")
+								<required>false</required>
+							#else
+								<required>true</required>
+							#end
+							<defaultValue></defaultValue>			      		
+							#if ($externalLineIn.isDir21Id())
+								<unique>true</unique>
+							#else
+								<unique>false</unique>
+							#end
+							<autoIncrement>false</autoIncrement>	            
+							<reference>true</reference>
+							<referenceNeighbor>$neighborName</referenceNeighbor>
+						</property>
+					#end
+					## regular properties
+					#foreach($item in $box.getItemList())
+						#set ($propertyName = $item.firstLetterToLower($item.getName()))
+						#if ($propertyName != "oid")
+							#set ($propertyOid = $propertyOid + 10)
+							#set ($propertyClass = $item.getTypeModel().getJavaClass())
+							#set ($propertyMaxLength = $item.getTypeModel().getLength())
+							#set ($defaultValue = $item.getDefaultValue())
+							#if ($defaultValue == "?")
+								#set ($propertyDefaultValue = "")
+							#end
+							<property oid="$propertyOid">
+								<code>$propertyName</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								#if ($item.getTypeModel().getJavaClass() == "org.dmlite.model.type.Email")
+									<propertyClass>java.lang.String</propertyClass>
+									<validateType>true</validateType>
+									<validationType>org.dmlite.model.type.Email</validationType>
+								#elseif ($item.getTypeModel().getJavaClass() == "java.net.URL")
+									<propertyClass>java.lang.String</propertyClass>
+									<validateType>true</validateType>
+									<validationType>java.net.URL</validationType>
+								#else
+									<propertyClass>$propertyClass</propertyClass>
+									<validateType>false</validateType>
+									<validationType></validationType>
+								#end
+								<maxLength>$propertyMaxLength</maxLength>
+								#if ($item.getMin() != "0")
+									<required>true</required>
+								#else 
+									<required>false</required>
+								#end      
+								<defaultValue>$propertyDefaultValue</defaultValue>
+								#if ($item.isId())
+									<unique>true</unique>
+								#else 
+									<unique>false</unique>
+								#end
+								#if ($item.isIncrement())
+									<autoIncrement>true</autoIncrement>
+								#else 
+									<autoIncrement>false</autoIncrement>
+								#end   		            
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+							</property>
+						#end
+					#end
+
+				</properties>
+
+			    <neighbors>
+			        #set ($neighborOid = 0)
+			        ## parent --> children 
+			    	#foreach($lineOut in $box.getLineOutList())
+				    	#set ($neighborOid = $neighborOid + 10)
+				    	#set ($neighborName = $lineOut.firstLetterToLower($lineOut.getDir12Name()))
+				    	#set ($inverseNeighborName = $lineOut.firstLetterToLower($lineOut.getDir21Name()))
+				    	#set ($destinationConceptName = $lineOut.firstLetterToUpper($lineOut.getBoxModel2().getName()))	    	
+				    	<neighbor oid="$neighborOid">
+				    		<code>$neighborName</code>
+				    		<extension>false</extension>
+				    		<extensionNeighbor></extensionNeighbor>
+				            <destinationConcept>$destinationConceptName</destinationConcept>
+				            <inverseNeighbor>$inverseNeighborName</inverseNeighbor>
+				            #if ($lineOut.isInternal())
+				            	<internal>true</internal>
+				            #else
+				            	<internal>false</internal>
+				            #end
+				            <type>child</type>
+				            <min>$lineOut.getDir12Min()</min>
+				            <max>$lineOut.getDir12Max()</max>
+				            <unique>false</unique>
+				            <addRule>$lineOut.getDir12InsertRule()</addRule>
+				            <removeRule>$lineOut.getDir12DeleteRule()</removeRule>
+				            <updateRule>$lineOut.getDir12UpdateRule()</updateRule>
+			            </neighbor>
+			    	#end
+			    	## child --> parent 
+			    	#foreach($lineIn in $box.getLineInList())
+				    	#set ($neighborOid = $neighborOid + 10)
+				    	#set ($neighborName = $lineIn.firstLetterToLower($lineIn.getDir21Name()))
+				    	#set ($inverseNeighborName = $lineIn.firstLetterToLower($lineIn.getDir12Name()))
+				    	#set ($destinationConceptName = $lineIn.firstLetterToUpper($lineIn.getBoxModel1().getName()))	    	
+				    	<neighbor oid="$neighborOid">
+				    		<code>$neighborName</code>
+				    		<extension>false</extension>
+				    		<extensionNeighbor></extensionNeighbor>
+				            <destinationConcept>$destinationConceptName</destinationConcept>
+				            <inverseNeighbor>$inverseNeighborName</inverseNeighbor>
+				            #if ($lineIn.isInternal())
+				            	<internal>true</internal>
+				            #else
+				            	<internal>false</internal>
+				            #end
+				            <type>parent</type>
+				            <min>$lineIn.getDir21Min()</min>
+				            <max>$lineIn.getDir21Max()</max>
+				            #if ($lineIn.isDir21Id())
+				            	<unique>true</unique>
+				            #else
+				            	<unique>false</unique>
+				            #end
+				            <addRule>$lineIn.getDir21InsertRule()</addRule>
+				            <removeRule>$lineIn.getDir21DeleteRule()</removeRule>
+				            <updateRule>$lineIn.getDir21UpdateRule()</updateRule>
+			            </neighbor>
+			    	#end
+			    	
+			    </neighbors>
+			    
+		    </concept>		    
+		#end
+		
+		</concepts>
+		
+    </model>
+    
+</models>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket>
+
+<wicket:panel>
+
+	<table>
+	  	<caption>
+	  	    <span wicket:id = "conceptsName">
+	  	        Concepts Name
+	  	    </span>
+	  	</caption>
+    	<tr>
+	    	<th wicket:id = "propertyNameLabelListView">
+	    		<span wicket:id = "propertyName">
+	  	    		Property name
+	  	  		</span>
+	    	</th>    	
+	    	<th></th>
+	    	<th></th>
+	    	<th></th>
+	    	<th></th>
+	    	<th wicket:id = "neighborEmptyNameLabelListViewHead">
+	  	    	<span wicket:id = "neighborEmptyName">
+	  	    		Neighbor empty name
+	  	    	</span>	
+	  	  	</th>
+    	</tr>
+    	<tr wicket:id = "entityUpdateTableListView">
+    		<td wicket:id = "propertyValuePanelListView">
+        		<span wicket:id = "valuePanel">
+	  	    		Value panel
+	  	  		</span>
+      		</td>
+      		<td>
+		    	<a class = "button" wicket:id = "display">
+		    		<img src="css/img/edit-find.png" alt="Display"/>
+		    	</a>
+		    </td>
+		    <td>
+		    	<a class = "button" wicket:id = "copy">
+		    		<img src="css/img/edit-copy.png" alt="Copy"/>
+		    	</a>
+		    </td>
+		    <td>
+		    	<a class = "button" wicket:id = "edit">
+		    		<img src="css/img/edit-find-replace.png" alt="Update"/>
+		    	</a>
+		    </td>
+		    <td>
+		    	<a class = "button" wicket:id = "remove">
+		    		<img src="css/img/edit-delete.png" alt="Remove"/>
+		    	</a>
+		    </td>
+		    <wicket:child/>
+		    <td wicket:id = "neighborNameLinkListView">
+		        <span class = "button">
+		            <a wicket:id = "neighbor">
+		            	<img src="css/img/edit-find-replace.png" alt="Update"/>
+			    	</a>
+			    	<span class = "marker" wicket:id = "neighborName">
+		  	    		Neighbor name
+		  	  		</span>
+		        </span>
+		    </td>
+    	</tr>  	
+  	</table>
+  	<br/>
+  	<div class = "center">
+	  	<span class = "button" wicket:id = "blockNavigator"></span> 
+	  	&ensp;
+	  	<a class = "button" wicket:id = "add">
+	  		<img src="css/img/document-new.png" alt="Add"/>
+	  	</a>
+	  	&ensp;
+	  	<a class = "button" wicket:id = "paste">
+	    	<img src="css/img/edit-paste.png" alt="Paste"/>
+	  	</a>
+  	</div>
+  	
+</wicket:panel>
+
+</html>

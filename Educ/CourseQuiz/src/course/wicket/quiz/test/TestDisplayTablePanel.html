@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>
+
+    <table>
+        <caption><wicket:message key = "quiz.title"/></caption>
+        <tr>
+	        <th><wicket:message key = "quiz.name"/></th>
+	        <th><wicket:message key = "quiz.description"/></th>
+	        <th><wicket:message key = "quiz.questions"/></th>
+	        <th><wicket:message key = "quiz.questions"/></th>
+	        <th><wicket:message key = "quiz.documents"/></th>
+        </tr>
+        <tr wicket:id="testDisplayTableListView">
+            <td wicket:id="name">
+                Quiz name will be displayed here. 
+            </td>
+            <td wicket:id="shortDescription">
+                Quiz short description will be displayed here. 
+            </td>
+            <td>
+                <a class="button" wicket:id="questionDisplayTablePage">
+                    <wicket:message key = "quiz.table"/>
+                </a>
+            </td>
+            <td>
+                <a class="button" wicket:id="questionDisplaySlidePage">
+                    <wicket:message key = "quiz.slide"/>
+                </a>
+            </td>
+            <td>
+                <a class="button" wicket:id="documentDisplayTablePage">
+                    <wicket:message key = "quiz.documents"/>
+                </a>
+            </td>
+        </tr>
+    </table>
+  
+</wicket:panel>
+
+</html>

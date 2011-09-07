@@ -1,0 +1,43 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 06
+Title: Many-to-many Relationship
+Created: 2007.02.22
+Updated: 2007.11.08
+
+Objective
+
+    To introduce many-to-many relationships.
+    
+Concepts
+
+	many-to-many relationship
+	many-to-many concept
+	
+	code generation
+	many-to-many code
+	
+	code generation
+		
+	tests
+	
+Changes
+
+	Code generation: 
+		Model: WebLink Gen class, Category Gen classes, Member classes, Interest classes, member.xml
+		Wicket: Member pages, Interest pages, app properties
+	WebLink.getMembers
+	GenCategory: interests
+	
+	Member: specific code
+	Members: specific code
+	
+	specific app properties for Member and Interest
+	
+	Member: page order
+	
+	specific config: 
+		Member.role update=false
+		Interest.categoryOid: referenceDropDownLookup=false
+		
+	Category, Member and Interest JUnit tests

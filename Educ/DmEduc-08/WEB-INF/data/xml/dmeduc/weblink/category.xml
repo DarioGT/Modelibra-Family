@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<categories>
+  <category oid="1193171129084">
+    <name>Software</name>
+    <approved>true</approved>
+    <urls>
+      <url oid="1194575051451">
+        <name>Open Source Software in Java(tm)</name>
+        <link>http://java-source.net/</link>
+        <creationDate>2007-11-08</creationDate>
+        <approved>true</approved>
+      </url>
+    </urls>
+    <categories>
+      <category oid="1193171173850">
+        <name>Framework</name>
+        <approved>true</approved>
+        <urls>
+          <url oid="1193171279804">
+            <name>Wicket</name>
+            <link>http://wicket.apache.org/</link>
+            <description>With proper mark-up/logic separation, a POJO data model, and a refreshing lack of XML, Apache Wicket makes developing web-apps simple and enjoyable again. Swap the boilerplate, complex debugging and brittle code for powerful, reusable components written with plain Java and HTML.</description>
+            <creationDate>2007-10-23</creationDate>
+            <approved>true</approved>
+          </url>
+          <url oid="1193171320227">
+            <name>Modelibra</name>
+            <link>http://drdb.fsa.ulaval.ca/modelibra/</link>
+            <description>Modelibra is a domain model framework for rapid application development. A domain model may be designed, generated, and validated as a web application. Modelibra uses the Wicket web framework for generic web components that are views of model concepts. The generic web components may be mixed with specific web components to develop a professional Wicket application.</description>
+            <creationDate>2007-10-23</creationDate>
+            <approved>true</approved>
+          </url>
+          <url oid="1193258122700">
+            <name>JBoss Seam</name>
+            <link>http://www.jboss.com/products/seam</link>
+            <description>JBoss Seam is a powerful new application framework for building next generation Web 2.0 applications by unifying and integrating technologies such as Asynchronous JavaScript and XML (AJAX), Java Server Faces (JSF), Enterprise Java Beans (EJB3), Java Portlets and Business Process Management (BPM).</description>
+            <creationDate>2007-10-24</creationDate>
+            <approved>true</approved>
+          </url>
+        </urls>
+        <categories>
+          <category oid="1194475083794">
+            <name>Modelibra</name>
+            <approved>true</approved>
+          </category>
+        </categories>
+      </category>
+      <category oid="1194378268029">
+        <name>Tools</name>
+        <approved>true</approved>
+        <urls>
+          <url oid="1194378304139">
+            <name>Java Power Tools</name>
+            <link>http://www.javapowertools.com/</link>
+            <description>This is the "official unofficial" web site for the "Java Power Tools" book, currently being written for publication by O'Reilly. "Java Power Tools" is about software tools and techniques that can contribute to improving the SDLC (Software Development Lifecyle).</description>
+            <creationDate>2007-11-06</creationDate>
+            <approved>true</approved>
+          </url>
+          <url oid="1194378432218">
+            <name>ModelibraModeler</name>
+            <link>http://www.javaforge.com/proj/summary.do?proj_id=1647</link>
+            <creationDate>2007-11-06</creationDate>
+            <approved>true</approved>
+          </url>
+        </urls>
+      </category>
+      <category oid="1194378838565">
+        <name>Web Meeting</name>
+        <approved>true</approved>
+        <urls>
+          <url oid="1194378864191">
+            <name>dimdim</name>
+            <link>http://www.dimdim.com/</link>
+            <description>dimdim is the world’s first free web meeting service based on the open source platform. dimdim is a browser-based web 2.0 service that allows anybody to share their desktop, show slides, as well as talk, listen, chat, and broadcast via webcam.</description>
+            <creationDate>2007-11-06</creationDate>
+            <approved>true</approved>
+          </url>
+          <url oid="1194378993707">
+            <name>Yugma</name>
+            <link>https://www.yugma.com/</link>
+            <description>Yugma is a free forever, cross-platform team collaboration tool.</description>
+            <creationDate>2007-11-06</creationDate>
+            <updateDate>2007-11-06</updateDate>
+            <approved>true</approved>
+          </url>
+        </urls>
+      </category>
+    </categories>
+  </category>
+  <category oid="1193262852910">
+    <name>Personal</name>
+    <approved>true</approved>
+    <urls>
+      <url oid="1194377504017">
+        <name>Dzenan Ridjanovic</name>
+        <link>http://drdb.fsa.ulaval.ca/dr/</link>
+        <description>My name is Dženan Riđanović. I am an associate professor in the Business School at the Laval University (Université Laval), Quebec, Canada. I received a B.Sc. in informatics from the University of Sarajevo in 1976, an M.Sc. in computer science from the University of Maryland in 1982, and a Ph.D. in management information systems from the University of Minnesota in 1986.</description>
+        <creationDate>2007-11-06</creationDate>
+        <approved>true</approved>
+      </url>
+      <url oid="1194377564643">
+        <name>Timothy A. Budd</name>
+        <link>http://web.engr.oregonstate.edu/~budd/</link>
+        <creationDate>2007-11-06</creationDate>
+        <approved>false</approved>
+      </url>
+      <url oid="1194377685065">
+        <name>Neal Ford</name>
+        <link>http://www.nealford.com/</link>
+        <creationDate>2007-11-06</creationDate>
+        <approved>false</approved>
+      </url>
+      <url oid="1194377922223">
+        <name>Kent Tong</name>
+        <link>http://www.agileskills2.org/blog/</link>
+        <description>He wrote several interesting e-books.</description>
+        <creationDate>2007-11-06</creationDate>
+        <approved>true</approved>
+      </url>
+    </urls>
+  </category>
+  <category oid="1193262901028">
+    <name>Education</name>
+    <approved>true</approved>
+    <urls>
+      <url oid="1194575195249">
+        <name>IBM Java Technology Library</name>
+        <link>http://www.ibm.com/developerworks/views/java/library.jsp</link>
+        <description>The Java technology library includes a wide range of technical articles and tips, tutorials, standards, and IBM Redbooks.</description>
+        <creationDate>2007-11-08</creationDate>
+        <approved>true</approved>
+      </url>
+    </urls>
+    <categories>
+      <category oid="1193262974715">
+        <name>Distance Learning</name>
+        <approved>true</approved>
+        <urls>
+          <url oid="1194378533203">
+            <name>LectureShare</name>
+            <link>http://www.lectureshare.com/</link>
+            <description>LectureShare lets instructors make lecture notes, audio, and video available to their students--or the world--quickly and easily.</description>
+            <creationDate>2007-11-06</creationDate>
+            <approved>true</approved>
+          </url>
+          <url oid="1194378615845">
+            <name>TeacherTube</name>
+            <link>http://teachertube.com/</link>
+            <description>Videos for teaching and learning.</description>
+            <creationDate>2007-11-06</creationDate>
+            <approved>true</approved>
+          </url>
+        </urls>
+      </category>
+      <category oid="1194378838565">
+        <name>Web Meeting</name>
+        <approved>true</approved>
+        <urls>
+          <url oid="1194378864191">
+            <name>dimdim</name>
+            <link>http://www.dimdim.com/</link>
+            <description>dimdim is the world’s first free web meeting service based on the open source platform. dimdim is a browser-based web 2.0 service that allows anybody to share their desktop, show slides, as well as talk, listen, chat, and broadcast via webcam.</description>
+            <creationDate>2007-11-06</creationDate>
+            <approved>true</approved>
+          </url>
+          <url oid="1194378993707">
+            <name>Yugma</name>
+            <link>https://www.yugma.com/</link>
+            <description>Yugma is a free forever, cross-platform team collaboration tool.</description>
+            <creationDate>2007-11-06</creationDate>
+            <updateDate>2007-11-06</updateDate>
+            <approved>true</approved>
+          </url>
+        </urls>
+      </category>
+    </categories>
+  </category>
+  <category oid="1195497662672">
+    <name>Links</name>
+    <description>Web sites about web links.</description>
+    <approved>false</approved>
+    <urls>
+      <url oid="1195497727394">
+        <name>del.icio.us</name>
+        <link>http://del.icio.us/</link>
+        <creationDate>2007-11-19</creationDate>
+        <approved>true</approved>
+      </url>
+      <url oid="1195497789301">
+        <name>dzone</name>
+        <link>http://www.dzone.com/</link>
+        <creationDate>2007-11-19</creationDate>
+        <approved>true</approved>
+      </url>
+      <url oid="1195497822130">
+        <name>Devlisting</name>
+        <link>http://www.devlisting.com/</link>
+        <creationDate>2007-11-19</creationDate>
+        <approved>true</approved>
+      </url>
+      <url oid="1195497846740">
+        <name>javacio.us</name>
+        <link>http://javacio.us/</link>
+        <creationDate>2007-11-19</creationDate>
+        <approved>true</approved>
+      </url>
+      <url oid="1195497869366">
+        <name>reddit</name>
+        <link>http://reddit.com/</link>
+        <creationDate>2007-11-19</creationDate>
+        <approved>true</approved>
+      </url>
+      <url oid="1195497893430">
+        <name>MyWeb</name>
+        <link>http://myweb.yahoo.com/</link>
+        <creationDate>2007-11-19</creationDate>
+        <approved>false</approved>
+      </url>
+      <url oid="1195497908743">
+        <name>Jordysoft</name>
+        <link>http://www.jordysoft.com/aucatalog/aucatalog.php</link>
+        <creationDate>2007-11-19</creationDate>
+        <approved>false</approved>
+      </url>
+    </urls>
+  </category>
+  <category oid="1195506073529">
+    <name>FAQ</name>
+    <description>Frequently Asked Questions about DmEduc and Modelibra.</description>
+    <approved>false</approved>
+  </category>
+  <category oid="1237390897758">
+    <name>test</name>
+    <approved>false</approved>
+  </category>
+</categories>

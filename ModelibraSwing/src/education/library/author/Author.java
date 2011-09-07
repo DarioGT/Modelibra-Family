@@ -1,0 +1,80 @@
+/*
+ * Modelibra
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+package education.library.author;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.modelibra.IDomainModel;
+
+import education.library.book.Book;
+import education.library.writer.Writer;
+
+/**
+ * Author specific entity.
+ * 
+ * @author Dzenan Ridjanovic
+ * @version 2009-03-04
+ */
+public class Author extends GenAuthor {
+
+	private static final long serialVersionUID = 1235856477619L;
+
+	private static Log log = LogFactory.getLog(Author.class);
+
+	/* ======= base constructor ======= */
+
+	/**
+	 * Constructs author within the domain model.
+	 * 
+	 * @param model
+	 *            model
+	 */
+	public Author(IDomainModel model) {
+		super(model);
+	}
+
+	/* ======= parent argument(s) constructor ======= */
+
+	/**
+	 * Constructs author within its parent(s).
+	 * 
+	 * @param Book
+	 *            book
+	 * @param Writer
+	 *            writer
+	 */
+	public Author(Book book, Writer writer) {
+		super(book, writer);
+	}
+
+	/* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+
+	public String getWriterLastName() {
+		return getWriter().getLastName();
+	}
+
+	public String getWriterFirstName() {
+		return getWriter().getFirstName();
+	}
+
+	public void setWriterOid(Long writerOid) {
+		super.setWriterOid(writerOid);
+		notifyObservers(getConceptConfig().getPropertyConfig("writerOid"));
+	}
+
+}

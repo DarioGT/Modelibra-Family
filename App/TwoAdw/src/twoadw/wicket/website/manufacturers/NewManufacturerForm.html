@@ -1,0 +1,43 @@
+<wicket:panel>
+  <table>
+    <form wicket:id="form">
+      <tbody>
+        <tr>
+          <td>Manufacturer Number:</td>
+          <td><input type="text" wicket:id="manufacturerNumber" class="nameInput"/></td>
+        </tr>
+        <tr>
+          <td>Manufacturer Name:</td>
+          <td><input type="text" wicket:id="name" class="nameInput"/></td>
+        </tr>
+        <tr>
+          <td>Website Url:</td>
+          <td><input type="text" wicket:id="websiteUrl" class="urlInput"/></td>
+        </tr>
+       	<tr>
+          <td>Support Url:</td>
+          <td><input type="text" wicket:id="supportUrl" class="urlInput"/></td>
+        </tr>
+        <tr>
+          <td>Contact Name:</td>
+          <td><input type="text" wicket:id="contactName" class="nameInput"/></td>
+        </tr>
+        <tr>
+          <td>Contact Email:</td>
+          <td><input type="text" wicket:id="contactEmail" class="nameInput"/></td>
+        </tr>
+     	<tr>
+          <td colspan="4">
+          	<input type="submit" wicket:id="addButton" value="add" class="genericInput"/>
+            <input type="submit" wicket:id="cancelButton" value="cancel" class="genericInput"/>
+          </td>
+        </tr>
+        <tr>
+           <td colspan="4">
+             <span wicket:id="feedback">[any feedback here]</span>
+           </td>     
+        </tr>
+      </tbody>
+    </form>
+  </table>
+</wicket:panel>

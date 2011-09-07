@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Model Config                      -->
+	<!-- ========================================== -->
+
+<domains>
+    <domain oid="1101">
+	    <code>DmEduc</code>
+	    <type>Specific</type>
+	
+	    <models>
+
+			<model oid="110110">
+				<code>WebLink</code>
+				<persistent>false</persistent>
+					    
+				<concepts>
+									
+					<concept oid="110110110">
+						<code>Url</code>
+						<entry>true</entry>
+														    
+						<properties>
+							<property oid="110110110110">
+								<code>link</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+							</property>
+							<property oid="110110110120">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+							</property>
+						</properties>	    
+					    
+				    </concept>		    
+						
+				</concepts>
+				
+		    </model>
+    
+		</models>
+
+	</domain>
+		
+</domains>

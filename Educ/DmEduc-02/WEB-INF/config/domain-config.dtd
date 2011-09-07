@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT domains (domain*)>
+
+<!ELEMENT domain (code, type, packageCode?, abstraction?, defaultConstruct?, packagePrefix?, referenceModel?, i18n?, signin?, signinConcept?, shortTextDefaultLength?, pageBlockDefaultSize?, validateForm?, confirmRemove?, models?)>
+<!ATTLIST domain 
+	oid ID #REQUIRED
+>
+
+<!ELEMENT code (CDATA)>
+<!ELEMENT type (CDATA)>
+<!ELEMENT packageCode (CDATA)>
+<!ELEMENT abstraction (true, false)>
+<!ELEMENT defaultConstruct (true, false)>
+<!ELEMENT packagePrefix (CDATA)>
+<!ELEMENT referenceModel (CDATA)>
+
+<!ELEMENT i18n (true, false)>
+<!ELEMENT signin (true, false)>
+<!ELEMENT signinConcept (CDATA)>
+<!ELEMENT shortTextDefaultLength (CDATA)>
+<!ELEMENT pageBlockDefaultSize (CDATA)>
+<!ELEMENT validateForm (true, false)>
+<!ELEMENT confirmRemove (true, false)>
+
+<!ELEMENT models (model*)>
+
+<!ELEMENT model (code, abstraction?, extension?, extensionDomain?, extensionDomainType?, extensionModel?, author?, packageCode?, persistent?, persistenceType?, persistenceRelativePath?, persistenceConfig?, defaultLoadSave?, datePattern?, session?, concepts?)>
+<!ATTLIST model 
+	oid ID #REQUIRED
+>
+
+<!ELEMENT code (CDATA)>
+<!ELEMENT abstraction (true, false)>
+<!ELEMENT extension (true, false)>
+<!ELEMENT extensionDomain (CDATA)>
+<!ELEMENT extensionDomainType (CDATA)>
+<!ELEMENT extensionModel (CDATA)>
+<!ELEMENT author (CDATA)>
+<!ELEMENT packageCode (CDATA)>
+<!ELEMENT persistent (true, false)>
+<!ELEMENT persistenceType (xml)>
+<!ELEMENT persistenceRelativePath (CDATA)>
+<!ELEMENT persistenceConfig (CDATA)>
+<!ELEMENT defaultLoadSave (true, false)>
+<!ELEMENT datePattern (CDATA)>
+<!ELEMENT session (true, false)>
+
+<!ELEMENT concepts (concept*)>
+
+<!ELEMENT concept (code, abstraction?, extension?, extensionDomain?, extensionDomainType?, extensionModel?, extensionConcept?, extensionWithNeighbors?, entitiesCode?, packageCode?, min?, max?, entry?, fileName?, index?, display?, displayType?, add?, remove?, update?, properties?, neighbors?)>
+<!ATTLIST concept 
+	oid ID #REQUIRED
+>
+
+<!ELEMENT code (CDATA)>
+<!ELEMENT abstraction (true, false)>
+<!ELEMENT extension (true, false)>
+<!ELEMENT extensionDomain (CDATA)>
+<!ELEMENT extensionDomainType (CDATA)>
+<!ELEMENT extensionModel (CDATA)>
+<!ELEMENT extensionConcept (CDATA)>
+<!ELEMENT extensionWithNeighbors (true, false)>
+<!ELEMENT entitiesCode (CDATA)>
+<!ELEMENT packageCode (CDATA)>
+<!ELEMENT min (CDATA)>
+<!ELEMENT max (CDATA)>
+<!ELEMENT entry (true, false)>
+<!ELEMENT fileName (CDATA)>
+<!ELEMENT index (true, false)>
+
+<!ELEMENT display (true, false)>
+<!ELEMENT displayType (table, list, slide)>
+<!ELEMENT add (true, false)>
+<!ELEMENT remove (true, false)>
+<!ELEMENT update (true, false)>
+
+<!ELEMENT properties (property*)>
+
+<!ELEMENT property (code, extension?, extensionProperty?, propertyClass?, derived?, validateType?, validationType?, maxLength?, required?, sensitive?, defaultValue?, autoIncrement?, unique?, index?, reference?, referenceNeighbor?, display?, update?, displayLength?, essential?, scramble?, whitespaceAllowed?, referenceDropDownLookup?)>
+<!ATTLIST property 
+	oid ID #REQUIRED
+>
+
+<!ELEMENT code (CDATA)>
+<!ELEMENT extension (true, false)>
+<!ELEMENT extensionProperty (CDATA)>
+<!ELEMENT propertyClass (CDATA)>
+<!ELEMENT derived (true, false)>
+<!ELEMENT validateType (true, false)>
+<!ELEMENT validationType (CDATA)>
+<!ELEMENT maxLength (CDATA)>
+<!ELEMENT required (true, false)>
+<!ELEMENT sensitive (true, false)>
+<!ELEMENT defaultValue (CDATA)>
+<!ELEMENT autoIncrement (true, false)>
+<!ELEMENT unique (true, false)>
+<!ELEMENT index (true, false)>
+<!ELEMENT reference (true, false)>
+<!ELEMENT referenceNeighbor (CDATA)>
+
+<!ELEMENT display (true, false)>
+<!ELEMENT update (true, false)>
+<!ELEMENT displayLength (CDATA)>
+<!ELEMENT essential (true, false)>
+<!ELEMENT scramble (true, false)>
+<!ELEMENT whitespaceAllowed (true, false)>
+<!ELEMENT referenceDropDownLookup (true, false)>
+
+<!ELEMENT neighbors (neighbor*)>
+
+<!ELEMENT neighbor (code, extension?, extensionNeighbor?, destinationConcept, inverseNeighbor?, internal?, partOfManyToMany?, type, min?, max?, unique?, index?, addRule?, removeRule?, updateRule?, display?, update?, absorb?)>
+<!ATTLIST neighbor 
+	oid ID #REQUIRED
+>
+
+<!ELEMENT code (CDATA)>
+<!ELEMENT extension (true, false)>
+<!ELEMENT extensionNeighbor (CDATA)>
+<!ELEMENT destinationConcept (CDATA)>
+<!ELEMENT inverseNeighbor (CDATA)>
+<!ELEMENT internal (true, false)>
+<!ELEMENT partOfManyToMany (true, false)>
+<!ELEMENT type (parent, child)>
+<!ELEMENT min (CDATA)>
+<!ELEMENT max (CDATA)>
+<!ELEMENT unique (true, false)>
+<!ELEMENT index (true, false)>
+<!ELEMENT addRule (NONE, RESTRICT, DETACH)>
+<!ELEMENT removeRule (NONE, RESTRICT, CASCADE)>
+<!ELEMENT updateRule (NONE, RESTRICT, DETACH)>
+
+<!ELEMENT display (true, false)>
+<!ELEMENT update (true, false)>
+<!ELEMENT absorb (true, false)>
+
+

@@ -1,0 +1,28 @@
+Updated to Modelibra on 2007-06-26
+
+License updated for Modelibra (dmlite and dmliet.wicket).
+DmLiteGenerator to ModelibraGenerator
+dmLite-domain-config to modelibra-domain-config
+check the meta data for dmLite-domain-config
+package names for dmlite and dmlite.wicket
+ModelMeta 
+Config 
+PropertiesConfig 
+dmConfig.properties 
+ValidationType
+org.type.type.Email in configs should be org.modelibra.type.Email
+
+
+
+
+	
+
+		
+
+
+
+
+
+
+
+

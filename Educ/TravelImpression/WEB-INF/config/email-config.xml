@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<emails>
+	<email oid="1">
+		<code>vlgiiora</code>
+		<toSendEmail>yes</toSendEmail>
+		<from>dzenan.ridjanovic@videotron.ca</from>
+  	    <outServer>relais.videotron.ca</outServer>
+  	    <password>dddddddd</password>
+	</email>
+	<email oid="2">
+		<code>ridjanod</code>
+		<toSendEmail>yes</toSendEmail>
+		<from>dzenan.ridjanovic@fsa.ulaval.ca</from>
+  	    <outServer>hermes.ulaval.ca</outServer>
+  	    <password>cccccccc</password>
+	</email>
+</emails>
+
+  

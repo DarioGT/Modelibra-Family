@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<books>
+  <book oid="1236181029086">
+    <categoryOid>1236352594369</categoryOid>
+    <isbn>1234-56785</isbn>
+    <name>Modelibra</name>
+    <edition>Creative Commons</edition>
+    <year>2009</year>
+    <description>Free book.
+	</description>
+    <authors>
+      <author oid="1236194390424">
+        <writerOid>1236181333475</writerOid>
+        <sequence>1</sequence>
+      </author>
+    </authors>
+    <bookItems>
+      <bookItem oid="1236187186108">
+        <memberOid>1236180482966</memberOid>
+        <number>1</number>
+        <note>This book item is signed by the author.</note>
+      </bookItem>
+      <bookItem oid="1236187218974">
+        <memberOid>1236180862782</memberOid>
+        <number>2</number>
+      </bookItem>
+    </bookItems>
+  </book>
+  <book oid="1236206065552">
+    <categoryOid>1236181376748</categoryOid>
+    <isbn>1933988649</isbn>
+    <name>Hibernate Search in Action</name>
+    <edition>Manning</edition>
+    <year>2009</year>
+    <price>49.99</price>
+    <webLink>http://www.manning.com/bernard/</webLink>
+    <description>Manning Early Access program with eBook version.</description>
+    <authors>
+      <author oid="1236206623542">
+        <writerOid>1236206501955</writerOid>
+        <sequence>1</sequence>
+      </author>
+      <author oid="1236206666983">
+        <writerOid>1236206564148</writerOid>
+        <sequence>2</sequence>
+      </author>
+    </authors>
+  </book>
+  <book oid="1236369561790">
+    <categoryOid>1236352896123</categoryOid>
+    <isbn>1-59059-986-1</isbn>
+    <name>The Definitive Guide to Terracotta</name>
+    <edition>Apress</edition>
+    <year>2008</year>
+    <price>44.99</price>
+    <webLink>http://www.apress.com/book/view/1590599861</webLink>
+    <description>Get the definitive guide on all the fundamentals of Terracotta as well as user secrets, recipes, and prepackaged frameworks.</description>
+  </book>
+  <book oid="1236183451281">
+    <categoryOid>1236181376748</categoryOid>
+    <isbn>1932394982</isbn>
+    <name>Wicket In Action</name>
+    <edition>Manning</edition>
+    <year>2008</year>
+    <price>44.99</price>
+    <webLink>http://www.manning.com/dashorst/</webLink>
+    <description>Wicket bridges the mismatch between the web's stateless protocol and Java's OO model. 
+The component-based Wicket framework shields you from the HTTP under a web app so 
+you can concentrate on business problems instead of the plumbing code. In Wicket, you use 
+logic-free HTML templates for layout and standard Java for an application's behavior. 
+The result? Coding a web app with Wicket feels more like regular Java programming.</description>
+    <authors>
+      <author oid="1236194329610">
+        <writerOid>1236187610932</writerOid>
+        <sequence>1</sequence>
+      </author>
+      <author oid="1236194352352">
+        <writerOid>1236187548621</writerOid>
+        <sequence>2</sequence>
+      </author>
+    </authors>
+    <bookItems>
+      <bookItem oid="1236185211185">
+        <memberOid>1236180862782</memberOid>
+        <number>1</number>
+        <note>Book is in a very good condition.</note>
+      </bookItem>
+      <bookItem oid="1236185218092">
+        <number>2</number>
+        <note>Page 99 has written comments.</note>
+      </bookItem>
+      <bookItem oid="1236185223384">
+        <number>3</number>
+      </bookItem>
+    </bookItems>
+    <reviews>
+      <review oid="1236184254924">
+        <webLink>http://bluxte.net/blog/2008-09/28-10-58.html</webLink>
+        <reviewDate>2008-09-28</reviewDate>
+      </review>
+      <review oid="1236184543292">
+        <webLink>http://www.mysticcoders.com/blog/2008/09/09/book-review-wicket-in-action/</webLink>
+        <reviewDate>2008-09-09</reviewDate>
+      </review>
+      <review oid="1236184835797">
+        <webLink>http://www.christophkiehl.com/book-review-wicket-in-action</webLink>
+        <reviewDate>2008-08-25</reviewDate>
+      </review>
+      <review oid="1236184974361">
+        <webLink>http://ninomartinez.wordpress.com/2008/08/19/wicket-in-action-go-get-it/</webLink>
+        <reviewDate>2008-08-19</reviewDate>
+      </review>
+      <review oid="1236185029229">
+        <webLink>http://www.modelibra.swing.org/</webLink>
+        <reviewDate>2008-07-30</reviewDate>
+      </review>
+    </reviews>
+  </book>
+  <book oid="1236181179775">
+    <categoryOid>1236181412328</categoryOid>
+    <isbn>abc-fds12-2345</isbn>
+    <name>War and Piece</name>
+    <edition>Moscow Nights</edition>
+    <year>1899</year>
+    <description>Old book.</description>
+    <authors>
+      <author oid="1236194406034">
+        <writerOid>1236181239094</writerOid>
+        <sequence>1</sequence>
+      </author>
+    </authors>
+    <bookItems>
+      <bookItem oid="1236181610554">
+        <memberOid>1236180862782</memberOid>
+        <number>1</number>
+      </bookItem>
+      <bookItem oid="1236187391504">
+        <memberOid>1236180482966</memberOid>
+        <number>2</number>
+        <note>There is a signature on one of the first pages.</note>
+      </bookItem>
+      <bookItem oid="1243204558250">
+        <memberOid>1236205848883</memberOid>
+        <number>3</number>
+      </bookItem>
+      <bookItem oid="1243204693436">
+        <memberOid>1236180482966</memberOid>
+        <number>4</number>
+      </bookItem>
+      <bookItem oid="1243205407497">
+        <memberOid>1236205697897</memberOid>
+        <number>5</number>
+      </bookItem>
+      <bookItem oid="1243205476102">
+        <memberOid>1236180862782</memberOid>
+        <number>6</number>
+      </bookItem>
+      <bookItem oid="1243205863950">
+        <memberOid>1236205848883</memberOid>
+        <number>7</number>
+      </bookItem>
+    </bookItems>
+    <reviews>
+      <review oid="1236182229948">
+        <webLink>http://www.books.se.org/</webLink>
+        <reviewDate>2009-01-04</reviewDate>
+      </review>
+      <review oid="1236183017057">
+        <webLink>http://www.books.wt.org/</webLink>
+        <reviewDate>2009-03-03</reviewDate>
+      </review>
+    </reviews>
+  </book>
+</books>

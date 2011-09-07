@@ -1,0 +1,22 @@
+/* app.css */
+
+/* ===[ begin ]=== */
+
+/*
+    Title:                   Application Design Style
+    Author:                  Dzenan Ridjanovic
+    Created:                 2006-09-03
+    Updated:                 2008-11-29
+*/
+
+	.app-title {
+		font-family: arial, sans-serif;
+		font-size: 32px;
+		font-weight: bold;
+		letter-spacing: 6px;
+		color: #336799;
+		padding: 12px 12px 6px 18px;
+		background: #d7e9f7;
+	}
+    			
+/* ===[ end ]=== */

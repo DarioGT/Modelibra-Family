@@ -1,0 +1,57 @@
+Web Components
+
++ select an entity from a table of entities and move it to another table
++ search entities based on complete regular expressions
++ section with buttons that expand into a tab section such as 
+  in http://www.yahoo.com/
++ section with tabs such as in http://www.yahoo.com/
++ a list section with the last three (parameter) entities and 
+  the first three (parameter) essential properties 
+  (property title: property value on a new line)
++ section with statistics for entities (per property parameter):
+  count, min, max, average, mean, st. dev.
++ section with different graphics (per property parameter)
++ section with a text and an image for ads that change every 10 seconds
++ section with one single-choice answer for surveys (vote)
++ section with a list and a subsection with a selected entity in the list
++ section with tags or keywords in a pool
++ match making section with two list sections and the 
+  third list section for matches
++ vertical section with several ads (link, text, link)
++ vertical section with awards (image link) 
++ news section
++ older news section (see http://www.theserverside.com/tss)
++ literature reference section
++ section with literature references
++ section with links
++ simple sign in (sign out) and sign up section
++ simple search on one property
++ serach choice section (see http://www.java.net/)
++ weekly stats section (see http://www.java.net/)
++ top activities section (see http://www.java.net/)
++ spotlight section (see http://www.java.net/)
++ events section
++ suggestion box section (see http://www.packtpub.com/)
++ ask your question section
+
++ alphabet list selection (per character; all)
++ voting (survey) results (see http://www.saray.net/)
+
+Web sites with visual examples of web componets:
+
+http://www.eurosport.com/
+http://www.bbc.co.uk/?ok
+http://www.sky.com/portal/site/skycom/home
+http://my.opera.com/community/
+
+Search
+
+http://www.thehippodrome.org/search-the-hippodrome
+
+
+
+
+
+
+
+  

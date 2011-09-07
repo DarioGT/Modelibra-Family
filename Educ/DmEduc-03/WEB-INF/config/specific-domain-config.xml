@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Model Config                      -->
+	<!-- ========================================== -->
+
+<domains>
+
+    <domain oid="1101">
+	    <code>DmEduc</code>
+	    <type>Specific</type>
+	
+	    <models>
+
+			<model oid="110110">
+				<code>WebLink</code>
+				<author>Dzenan Ridjanovic</author>
+					    
+				<concepts>
+									
+					<concept oid="110110110">
+						<code>Url</code>
+						<entry>true</entry>
+														    
+						<properties>
+							<property oid="110110110100">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+							</property>
+							<property oid="110110110110">
+								<code>link</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>java.net.URL</validationType>
+								<maxLength>96</maxLength>
+								<required>true</required>
+							</property>
+							<property oid="110110110120">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>510</maxLength>
+							</property>
+							<property oid="110110110130">
+								<code>creationDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+							</property>
+							<property oid="110110110140">
+								<code>updateDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+							</property>
+							<property oid="110110110150">
+								<code>approved</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+							</property>
+							<property oid="110110110160">
+								<code>category</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+							</property>
+							
+						</properties>    
+					    
+				    </concept>
+				    
+				    <concept oid="110110120">
+						<code>Comment</code>
+						<entry>true</entry>
+						<!-- model view -->
+						<displayType>list</displayType>
+														    
+						<properties>
+							<property oid="110110120110">
+								<code>text</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>1020</maxLength>
+								<required>true</required>
+							</property>
+							<property oid="110110120120">
+								<code>source</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>255</maxLength>
+							</property>
+							<property oid="110110120130">
+								<code>creationDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+							</property>
+						</properties>
+					    
+				    </concept>		    
+						
+				</concepts>
+				
+		    </model>
+    
+		</models>
+
+	</domain>
+		
+</domains>
+

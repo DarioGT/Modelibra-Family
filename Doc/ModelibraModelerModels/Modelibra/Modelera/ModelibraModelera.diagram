@@ -1,0 +1,100 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1208025817187,89,Designer,Designers,modelibra,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,800
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1208025817187,89,false,?,false,true,18,11,128,100,1208025829015,90,MetaDomain,MetaDomains,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1208025829015,90,960496657960,1,Oid,1208025829016,91,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1208025829015,90,1165588261375,80,String,1208025851475,96,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1208025829015,90,1165588261375,80,String,1211145874617,29,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1208025817187,89,false,?,false,false,616,39,128,116,1208025838206,92,MetaModel,MetaModels,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1208025838206,92,960496657960,1,Oid,1208025838206,93,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1208025838206,92,1165588261375,80,String,1208025854723,97,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1208025838206,92,1165588261375,80,String,1211145766244,27,author,authors,?,255,204,102,0,1,false,false,?,false
+I,1208025838206,92,1165588261375,80,String,1211145869064,28,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1208025817187,89,false,?,false,false,222,159,128,108,1208025843782,94,MetaConcept,MetaConcepts,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1208025843782,94,960496657960,1,Oid,1208025843782,95,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1208025843782,94,1165588261375,80,String,1208025858003,98,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1208025843782,94,1146828554640,178,Logic,1211140460763,16,entry,entries,?,255,204,102,1,1,false,false,false,false
+ 
+C, --- Box --- 
+ 
+B,1208025817187,89,false,?,false,false,247,472,143,130,1208025958930,101,MetaConceptGraphic,MetaConceptGraphics,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1208025958930,101,960496657960,1,Oid,1208025958930,102,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1208025958930,101,960496658020,11,Integer,1208025970671,103,x,xes,?,255,204,102,1,1,false,false,0,false
+I,1208025958930,101,960496658020,11,Integer,1208025971559,104,y,yies,?,255,204,102,1,1,false,false,0,false
+I,1208025958930,101,960496658020,11,Integer,1208025976792,105,width,widths,?,255,204,102,1,1,false,false,120,false
+I,1208025958930,101,960496658020,11,Integer,1208025978991,106,height,heights,?,255,204,102,1,1,false,false,160,false
+ 
+C, --- Box --- 
+ 
+B,1208025817187,89,false,?,false,false,19,459,128,146,1211138929238,1,MetaProperty,MetaProperties,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1211138929238,1,960496657960,1,Oid,1211138929239,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1211138929238,1,1165588261375,80,String,1211138964314,3,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1211138929238,1,1146828554640,178,Logic,1211139049709,5,id,ids,?,255,204,102,1,1,false,false,false,false
+I,1211138929238,1,1146828554640,178,Logic,1211139463935,8,increment,increments,?,255,204,102,1,1,false,false,false,false
+I,1211138929238,1,1146828554640,178,Logic,1211139389628,6,value,values,?,255,204,102,1,1,false,false,false,false
+I,1211138929238,1,1165588261375,80,String,1211139467599,9,init,inits,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1208025817187,89,false,?,false,true,15,133,128,115,1211139625797,10,MetaType,MetaTypes,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1211139625797,10,960496657960,1,Oid,1211139625797,11,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1211139625797,10,1165588261375,80,String,1211139677545,12,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1211139625797,10,1165588261375,80,String,1211140035464,14,base,bases,?,255,204,102,1,1,false,false,String,false
+I,1211139625797,10,960496658020,11,Integer,1211140044217,15,length,lengths,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1208025817187,89,false,?,false,false,739,392,128,149,1211983552925,1,MetaNeighbor,MetaNeighbors,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1211983552925,1,960496657960,1,Oid,1211983552925,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1211983552925,1,1165588261375,80,String,1211983567405,3,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1211983552925,1,1146828554640,178,Logic,1212171074287,1,id,ids,?,255,204,102,1,1,false,false,false,false
+I,1211983552925,1,960496658020,11,Integer,1211983569661,4,min,mins,?,255,204,102,1,1,false,false,0,false
+I,1211983552925,1,1165588261375,80,String,1211983571965,5,max,maxes,?,255,204,102,1,1,false,false,N,false
+I,1211983552925,1,1146828554640,178,Logic,1211983579853,6,internal,internals,?,255,204,102,1,1,false,false,true,false
+ 
+C, === Lines === 
+ 
+L,1208025817187,89,1208025829015,90,1208025838206,92,false,true,false,0,N,false,metaModels,true,NONE,NONE,NONE,1,1,true,metaDomain,true,NONE,NONE,NONE,1208026711398,1,?,?,?,255,204,102,true,false
+L,1208025817187,89,1208025838206,92,1208025843782,94,false,true,false,0,N,false,metaConcepts,true,NONE,NONE,NONE,1,1,true,metaModel,true,NONE,NONE,NONE,1208026714846,2,?,?,?,255,204,102,true,false
+L,1208025817187,89,1208025843782,94,1208025958930,101,false,true,false,0,N,false,metaConceptGraphics,true,NONE,NONE,NONE,1,1,false,metaConcept,true,NONE,NONE,NONE,1208026716830,3,?,?,?,255,204,102,true,false
+L,1208025817187,89,1208025843782,94,1211138929238,1,false,true,false,0,N,false,metaProperties,true,NONE,NONE,NONE,1,1,true,metaConcept,true,NONE,NONE,NONE,1211138981728,4,?,?,?,255,204,102,true,false
+L,1208025817187,89,1211139625797,10,1211138929238,1,false,false,false,0,N,false,metaProperties,true,NONE,NONE,NONE,0,1,false,metaType,true,NONE,NONE,NONE,1211140626446,17,?,?,?,153,102,0,true,false
+L,1208025817187,89,1208025843782,94,1211983552925,1,false,true,false,0,N,false,metaDestinationNeighbors,true,NONE,NONE,NONE,1,1,true,metaSourceConcept,true,NONE,NONE,NONE,1211983653469,8,?,?,?,255,204,102,true,false
+L,1208025817187,89,1208025843782,94,1211983552925,1,false,false,false,0,N,false,metaSourceNeighbors,true,NONE,NONE,NONE,1,1,true,metaDestinationConcept,true,NONE,NONE,NONE,1211983764549,9,?,?,?,153,102,0,true,false

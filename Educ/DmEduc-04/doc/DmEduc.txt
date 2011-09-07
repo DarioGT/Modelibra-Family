@@ -1,0 +1,35 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 04
+Title: One-to-many Relationship
+Created: 2006.01.11
+Updated: 2007.10.10
+
+Objective
+
+    To introduce a one-to-many relationships.
+    
+Concepts
+
+	Relationship directions 
+	
+	Category
+	Url: no category property
+	neighbors
+		Category-Url
+		Url-Category
+	
+	Url
+		category parent
+	Urls
+		category parent
+		no more getCategoryUrls(String category)
+		no more getOrderByCategory
+	
+	Category
+	Categories
+	
+	DmEducApp.properties
+	
+	JUnit tests
+	

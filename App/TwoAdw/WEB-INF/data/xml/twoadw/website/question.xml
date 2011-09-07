@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<questions>
+  <question oid="1238452560099">
+    <questionText>How do I get access to my profil?</questionText>
+    <published>true</published>
+    <answers>
+      <answer oid="1238452705057">
+        <answerText>Logging in the loggin form and click on your username at the top of the page.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+    <qQCategories>
+      <qQCategory oid="1238452922545">
+        <questionCategoryOid>1238452893482</questionCategoryOid>
+      </qQCategory>
+    </qQCategories>
+  </question>
+  <question oid="1240367722808">
+    <questionText>Are HDMI cable included?</questionText>
+    <published>false</published>
+    <productOid>1237317226038</productOid>
+    <answers>
+      <answer oid="1240367761003">
+        <answerText>No, like most TV's the connection cable are optional.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240367851552">
+    <questionText>Are most LGA775 motherboard compatible with this product?</questionText>
+    <published>false</published>
+    <productOid>1237727434825</productOid>
+    <answers>
+      <answer oid="1240367944818">
+        <answerText>Yes and no. Most of the motherboards are, but some will need an Bios upgrade.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240367977593">
+    <questionText>The iPod is black but comes with white earbuds?</questionText>
+    <published>false</published>
+    <productOid>1237329625840</productOid>
+    <answers>
+      <answer oid="1240368045946">
+        <answerText>Yes, it comes with regular Apple earbuds.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240368132058">
+    <questionText>Is 8ms of response time enough to play console games without shadow?</questionText>
+    <published>false</published>
+    <productOid>1238091046972</productOid>
+    <answers>
+      <answer oid="1240368168182">
+        <answerText>Yes. There will always be a little bit of lag, but 8ms is less then you can perceive.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240368202252">
+    <questionText>Does it really is open like that?</questionText>
+    <published>false</published>
+    <productOid>1237726571828</productOid>
+    <answers>
+      <answer oid="1240368256083">
+        <answerText>Yes, but there is a plexiglass.</answerText>
+        <published>true</published>
+      </answer>
+      <answer oid="1240368270070">
+        <answerText>Yes, you can see the disk spinning.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240368256082">
+    <questionText>What kind of Sata is that?</questionText>
+    <published>false</published>
+    <productOid>1237726571828</productOid>
+    <answers>
+      <answer oid="1240368315863">
+        <answerText>Sata 2</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240368380332">
+    <questionText>Why does it take 2 slots?</questionText>
+    <published>false</published>
+    <productOid>1237727998298</productOid>
+    <answers>
+      <answer oid="1240368396411">
+        <answerText>The hot air exit your case.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240368458198">
+    <questionText>Does it have a CD-Rom?</questionText>
+    <published>false</published>
+    <productOid>1237429554562</productOid>
+    <answers>
+      <answer oid="1240368474415">
+        <answerText>No, theres no disk drive in most of the netbooks.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240368533763">
+    <questionText>How can you control this thing with only one button?</questionText>
+    <published>false</published>
+    <productOid>1237385756588</productOid>
+    <answers>
+      <answer oid="1240368561530">
+        <answerText>By a combination of button sequence. Exemple, 2 quick click to skip a tune.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240368673516">
+    <questionText>Does it come with photoshop?</questionText>
+    <published>false</published>
+    <productOid>1237725768427</productOid>
+    <answers>
+      <answer oid="1240368693534">
+        <answerText>No.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240368807524">
+    <questionText>Does it come with cable?</questionText>
+    <published>false</published>
+    <productOid>1237727112462</productOid>
+    <answers>
+      <answer oid="1240368826669">
+        <answerText>This is a OEM item, so theres nothing else than the hard drive wraped in plastic.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+  </question>
+  <question oid="1240369136492">
+    <questionText>How can i see my shipping information?</questionText>
+    <published>true</published>
+    <answers>
+      <answer oid="1240369168451">
+        <answerText>This is a "sample" website, there is no shipping.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+    <qQCategories>
+      <qQCategory oid="1240369206133">
+        <questionCategoryOid>1238452900700</questionCategoryOid>
+      </qQCategory>
+    </qQCategories>
+  </question>
+  <question oid="1240369214976">
+    <questionText>How can i pay? Why don't the checkout work?</questionText>
+    <published>true</published>
+    <answers>
+      <answer oid="1240369246919">
+        <answerText>This is a "sample" website, the checkout are only saved for testing purpose.</answerText>
+        <published>true</published>
+      </answer>
+    </answers>
+    <qQCategories>
+      <qQCategory oid="1240369274621">
+        <questionCategoryOid>1238452910068</questionCategoryOid>
+      </qQCategory>
+    </qQCategories>
+  </question>
+</questions>

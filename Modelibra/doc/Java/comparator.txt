@@ -1,0 +1,24 @@
+
+http://tech.puredanger.com/2006/11/22/comparator-jdk5/
+
+Type specific Comparators in JDK 5
+
+Took me a few minutes today to figure out how to implement a type-specific Comparator in JDK 5, 
+so I thought I would blog it. In JDK 5, the Comparator class is parameterized with the type of 
+the object being compared (Comparator<T>).
+
+I wanted to define a ThingComparator that was not paramaterized and was specific to Things, not generic. 
+I don’t think I’ve run across the case of wanted to extend and specialize the generic-ness out of a class before now.
+
+It turns out to be quite easy:
+
+public class ThingComparator implements Comparator<Thing> {
+    public int compare(Thing t1, Thing t2) {
+        // nifty thing comparison logic
+    }
+}
+
+The nice thing here is that the compare() method is defined in terms of the Comparator type (int compare(T o1, T o2)). 
+Thus, the compare method that you are expected to implement is in terms of Thing, not in terms of Object as it would 
+have been in JDK 1.4. And thus, no casting is necessary as the compiler will enforce that this comparator cannot be 
+used on the wrong type.

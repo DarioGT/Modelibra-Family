@@ -1,0 +1,26 @@
+<html>
+<body>
+<wicket:extend>
+	<div id="content">
+		<div id="main">	
+			<div wicket:id="QcategoryList">
+				<h3 wicket:id="name">The text of question</h3>
+				<div wicket:id="QuestionList">
+					  <span class="pointMain"></span>&nbsp;<b><span wicket:id="questionText"></span></b>
+					  <div wicket:id="AnswerList">
+					  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pointSub"></span>&nbsp;<span wicket:id="answerText"></span>
+					  	
+					  </div><!-- AnswerList -->
+				</div><!-- QuestionList -->
+			</div> <!-- QcategoryList -->
+			<br>
+			<div wicket:id="navigator" align="center"></div>		
+		</div> <!-- main -->
+		<div id="left">		
+			<div wicket:id="category"></div>
+		</div> <!-- left -->	
+	</div> <!-- content -->
+</wicket:extend>
+</body>
+</html>
+		

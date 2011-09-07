@@ -1,0 +1,48 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style/style.css"/>
+</head>
+<body>
+<wicket:extend>
+		<div id="content">
+		
+			<br><br><br><br><br><br>
+			<center><span wicket:id="feedback"/></center>
+			<div id="signIn">		
+  
+			  <br>
+			  
+			  <form wicket:id="signInForm" >
+			    
+			    <table align="center">
+			    	<tr>
+						<th>Username</th>
+						<td><input type="text" wicket:id="wiaUsername" /></td>
+					</tr>
+					<tr>
+						<th>Password</th>
+						<td><input type="password" wicket:id="wiaPassword" /></td>
+					</tr>
+					<tr>
+						<th></th>
+						<td> <input type="submit" value="sign in" /></td>
+					</tr>
+				</table>
+				
+			  </form><br>
+			  
+			</div> <!-- mainLeft -->
+			
+			
+			<center><a wicket:id="register"><span class="arrowRight"></span>Register here</a></center>
+			<h5><u>User List by Role:</u></h5><br><br>
+			   <h5>***Password and Username are the same***</h5><br>
+			  <h5>Role 99: admin</h5>	<br>
+			  <h5>Role 3: commercial</h5>	<br>
+			  <h5>Role 2: manager</h5><br>
+			  <h5>Role 1: customer</h5>
+		</div> <!-- content -->
+	
+</wicket:extend>
+</body>
+</html>

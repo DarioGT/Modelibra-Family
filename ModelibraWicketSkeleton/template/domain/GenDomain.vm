@@ -1,0 +1,55 @@
+#include ("template/ModelibraComment.txt")
+
+package $domainpackagecode;
+
+import org.modelibra.Domain;
+import org.modelibra.config.DomainConfig;
+
+/* ======= import models ======= */
+
+#foreach ($modelConfig in $modelConfigList) 
+#set ($modelClass = $modelConfig.getModelClass())
+import $modelClass;	
+#end
+
+/**
+ * $DomainCode generated domain. This class should not be changed manually. 
+ * Use a subclass to add specific code.
+ * 
+ * @author $author
+ * @version $today
+ */
+public abstract class Gen$DomainCode extends Domain {
+
+	private static final long serialVersionUID = ${serialNumber}L;
+	
+#foreach ($modelConfig in $modelConfigList) 
+#set ($ModelCode = $modelConfig.getCode())
+#set ($modelCode = $modelConfig.getCodeWithFirstLetterAsLower())		
+	private $ModelCode $modelCode;
+		
+#end
+	/**
+	 * Creates the $DomainCode domain.
+	 * 
+	 * @param domainConfig
+	 *            domain configuration
+	 */
+	public Gen$DomainCode(DomainConfig domainConfig) {
+		super(domainConfig);
+#foreach ($modelConfig in $modelConfigList) 
+#set ($ModelCode = $modelConfig.getCode())
+#set ($modelCode = $modelConfig.getCodeWithFirstLetterAsLower())		
+		$modelCode = new $ModelCode(this);		
+#end
+	}
+
+#foreach ($modelConfig in $modelConfigList) 
+#set ($ModelCode = $modelConfig.getCode())
+#set ($modelCode = $modelConfig.getCodeWithFirstLetterAsLower())		
+	public $ModelCode get$ModelCode() {
+		return $modelCode;
+	}
+		
+#end
+}

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<jnlp spec='1.0'
+      codebase='http://dl.getdropbox.com/u/161496/java/mm/'
+      href='mm.jnlp'>
+  <information>
+    <title>ModelibraModeler</title>
+    <vendor>Dzenan Ridjanovic</vendor>
+    <description kind='one-line'>
+      Modelibra domain model design tool.
+    </description>
+    <shortcut online='false'>
+      <desktop/>
+    </shortcut>
+  </information>
+  <security>
+		<all-permissions/>
+	</security>
+  <resources>
+    <j2se version='1.5+' />
+    <jar href='mm.jar' main='true' />
+    <jar href='velocity-1.5.jar' main='false' />
+    <jar href='velocity-dep-1.5.jar' main='false' />
+  </resources>
+  <application-desc main-class='org.modelibra.modeler.app.context.Start' />
+</jnlp>

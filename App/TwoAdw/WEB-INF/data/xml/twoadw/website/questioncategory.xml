@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<questionCategories>
+  <questionCategory oid="1238452893482">
+    <name>General</name>
+    <published>true</published>
+  </questionCategory>
+  <questionCategory oid="1238452900700">
+    <name>Shipping</name>
+    <published>true</published>
+  </questionCategory>
+  <questionCategory oid="1238452910068">
+    <name>Paiement</name>
+    <published>true</published>
+  </questionCategory>
+</questionCategories>

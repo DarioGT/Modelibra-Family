@@ -1,0 +1,40 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+		<h4>Manufacturers Panel for administrator</h4>
+		<br>
+			<table border="0" align="left" width="765">
+				  <tr>
+				    <td width="210"><b><u>Manuf Number</u></b></td>	    
+				    <td width="210"><b><u>Manufacturer Part Number</u></b></td>
+				    <td width="295"><b><u>Manufacturer Name</u></b></td>
+				    <td></td>
+				  </tr>
+				  <tr wicket:id="pmList">
+				    <td wicket:id="manufacturerNumber" class="nameInput"></td>
+				    <td wicket:id="partNumber" class="urlInput"></td>
+				    <td wicket:id="name" class="urlInput"></td>
+				    <td><a wicket:id="remove"><span class="removeIcon"></span></a></td>
+				  </tr>
+			</table>
+			
+			<form wicket:id="form">
+				<table border="0" align="left" width="765">
+				  <tr>
+					<td width="210">
+				    	<select wicket:id="manufacturerChoice" class="urlInput">
+							<option>Hard</option><option>Soft</option>
+						</select>
+					</td>
+				    <td width="210"><input type="text" wicket:id="partNumber" class="urlInput"/></td>
+				    <td width="295"></td>
+				    <td><a wicket:id="add"><span class="addIcon"></span></a></td>
+				    
+				  </tr>
+				  </table>
+			  </form>
+				
+				<span wicket:id="noManufacturer"></span>
+		<div wicket:id="feedback"></div>
+</wicket:panel>
+</html>

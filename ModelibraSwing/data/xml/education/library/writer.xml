@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<writers>
+  <writer oid="1236181239094">
+    <lastName>Tolstoy</lastName>
+    <firstName>Leo</firstName>
+    <webLink>http://en.wikipedia.org/wiki/Leo_Tolstoy</webLink>
+  </writer>
+  <writer oid="1236181333475">
+    <lastName>Ridjanovic</lastName>
+    <firstName>Dzenan</firstName>
+  </writer>
+  <writer oid="1236187548621">
+    <lastName>Hillenius</lastName>
+    <firstName>Eelco</firstName>
+    <webLink>http://chillenious.wordpress.com/</webLink>
+  </writer>
+  <writer oid="1236187610932">
+    <lastName>Dashorst</lastName>
+    <firstName>Martijn</firstName>
+    <webLink>http://martijndashorst.com/blog/</webLink>
+  </writer>
+  <writer oid="1236200664506">
+    <lastName>Reed</lastName>
+    <firstName>John B.</firstName>
+  </writer>
+  <writer oid="1236206501955">
+    <lastName>Bernard</lastName>
+    <firstName>Emmanuel</firstName>
+  </writer>
+  <writer oid="1236206564148">
+    <lastName>Griffin</lastName>
+    <firstName>John</firstName>
+  </writer>
+  <writer oid="1259604166212">
+    <lastName>Reed</lastName>
+    <firstName>John</firstName>
+  </writer>
+</writers>

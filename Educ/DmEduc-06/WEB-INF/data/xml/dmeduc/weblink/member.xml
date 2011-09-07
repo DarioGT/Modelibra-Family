@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<members>
+  <member oid="1194463980706">
+    <code>dr</code>
+    <password>dr</password>
+    <lastName>Ridjanovic</lastName>
+    <firstName>Dzenan</firstName>
+    <email>dzenan.ridjanovic@fsa.ulaval.ca</email>
+    <receiveEmail>true</receiveEmail>
+    <role>regular</role>
+    <startDate>2007-11-07</startDate>
+    <interests>
+      <interest oid="1194465573399">
+        <categoryOid>1193262901028</categoryOid>
+        <description>I am a professor...
+
+... and a software engineer.</description>
+      </interest>
+      <interest oid="1194468471244">
+        <categoryOid>1193171173850</categoryOid>
+        <description>My principal research area.</description>
+      </interest>
+    </interests>
+  </member>
+  <member oid="1194464884727">
+    <code>admin</code>
+    <password>admin</password>
+    <lastName>Adminovic</lastName>
+    <firstName>Admin</firstName>
+    <email>admin.adminovic@gmail.com</email>
+    <receiveEmail>false</receiveEmail>
+    <role>admin</role>
+    <startDate>2007-11-07</startDate>
+  </member>
+</members>

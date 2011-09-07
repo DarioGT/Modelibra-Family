@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urls>
+  <url oid="1172855461234">
+    <name>Dzenan Ridjanovic</name>
+    <link>http://drdb.fsa.ulaval.ca/</link>
+    <creationDate>2007-02-02</creationDate>
+    <approved>true</approved>
+    <category>Personal</category>
+  </url>
+  <url oid="1172855461329">
+    <name>Modelibra</name>
+    <link>http://drdb.fsa.ulaval.ca/modelibra/</link>
+    <description>Modelibra is a domain model framework. A domain model is a model of specific domain classes that describe the core data and their behavior. For prototypes and small applications, the model objects are saved in XML files.</description>
+    <creationDate>2007-03-02</creationDate>
+    <updateDate>2007-09-27</updateDate>
+    <approved>true</approved>
+    <category>Framework</category>
+  </url>
+  <url oid="1172855461361">
+    <name>Wicket</name>
+    <link>http://wicket.apache.org/</link>
+    <description>With proper mark-up/logic separation, a POJO data model, and a refreshing lack of XML, Apache Wicket makes developing web-apps simple and enjoyable again. Swap the boilerplate, complex debugging and brittle code for powerful, reusable components written with plain Java and HTML.</description>
+    <creationDate>2007-03-02</creationDate>
+    <updateDate>2007-09-27</updateDate>
+    <approved>true</approved>
+    <category>Framework</category>
+  </url>
+  <url oid="1173475041350">
+    <name>Struts</name>
+    <link>http://struts.apache.org/</link>
+    <creationDate>2007-03-09</creationDate>
+    <updateDate>2007-09-27</updateDate>
+    <approved>false</approved>
+    <category>Framework</category>
+  </url>
+  <url oid="1190924977625">
+    <name>iGoogle</name>
+    <link>http://www.google.com/ig</link>
+    <creationDate>2007-09-27</creationDate>
+    <approved>false</approved>
+    <category>Web</category>
+  </url>
+  <url oid="1190925087673">
+    <name>dimdim</name>
+    <link>http://www.dimdim.com/</link>
+    <description>dimdim is the world’s first free web meeting service based on the open source platform. dimdim is a browser-based web 2.0 service that allows anybody to share their desktop, show slides, as well as talk, listen, chat, and broadcast via webcam.</description>
+    <creationDate>2007-09-27</creationDate>
+    <updateDate>2007-09-27</updateDate>
+    <approved>true</approved>
+    <category>Web</category>
+  </url>
+</urls>

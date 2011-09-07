@@ -1,0 +1,54 @@
+Generic Selection Page	
+		
+		If one wants to keep state of the selection
+		panel, then add PropertySelectorPanel argument to page constructor:
+		
+		QuestionSelectionPage(final ViewModel viewModel, final View view, final PropertySelectorPanel panel)
+		
+		and for selection panel use:
+		
+		PropertySelectorPanel selectionPanel;
+		if (panel != null){
+			selectionPanel = panel;
+		} else {
+			selectionPanel = new PropertySelectorPanel(
+					questionSelectionPageModel, questionSelectionPanelView) {
+				@Override
+				protected Page getNewPageInstance(ViewModel viewModel, View view) {
+					return new QuestionSelectionPage(viewModel, view, selectionPanel);
+				}
+			};
+		}
+		add(selectionPanel);
+		
+		Of course, ViewModel, View constructor is still needed for the first creation of the page:
+		
+		public QuestionSelectionPage(final ViewModel viewModel, final View view){
+			this(viewModel, view, null);
+		}
+		
+		This way you use one instance of selector in different instances of the page. Since selector 
+		keeps its state, it also keeps original collection of entities on which selection is made.
+		There is one problem with above code. When context link used, previous instance of page cannot
+		find selection panel (one instance of one component can be child of only one container, so when 
+		component, that already has a parent, is added to one container wicket removes it from current 
+		container). Problem with our context link can be fixed by following change in override of 
+		getNewPageInstance() method:
+		
+		protected Page getNewPageInstance(ViewModel viewModel, View selectionPanelView) {
+			selectionPanelView.getContextView().setPage(view.getContextView().getPage());
+			return new QuestionSelectionPage(viewModel, selectionPanelView, selectionPanel);
+		}
+		
+		so in case of this(DmEduc-10) application, contextPage is homePage (and that is real semantical 
+		context) However problem remains after back button is used (if you try to search after this). 
+		Then  this page should be versioned (setVersioned(true)), and in app init: 
+
+		getRequestCycleSettings().setRenderStrategy(IRequestCycleSettings.REDIRECT_TO_BUFFER);
+		
+		should be used (default in wicket 1.3) instead of:
+		
+		getRequestCycleSettings().setRenderStrategy(IRequestCycleSettings.REDIRECT_TO_RENDER);
+		
+		These are really interesting features of this generic component so you can move this text
+		to some separate file so we can investigate it more in the future.

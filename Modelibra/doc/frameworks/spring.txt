@@ -1,0 +1,81 @@
+Re: Interesting alternatives to Hibernate Click to flag this post
+
+by Upayavira-2 Nov 20, 2006; 05:24am :: Rate this Message: Click to rate as Poor PostClick to rate as Below Average PostClick to rate as Average PostClick to rate as Above Average PostClick to rate as Excellent Post Click to clear rating (use ratings to moderate[?])
+
+Reply | Reply to Author | Show Only this Message | Link to this Message
+Ian Clarke wrote:
+> I'm in the process of planning a rather large web-based project and I
+> have settled on Wicket, but I'm still undecided on how to handle
+> persistent storage.
+>
+> The default option seems to be Hibernate backed by Postgresql or MySql,
+> but I'm wondering if there are other options I should consider.  I'm
+> particularly interested in anything that is tailored towards storing
+> Java objects, perhaps even something that doesn't use SQL at all
+> (what heresy!), since much of the complexity of solutions like Hibernate
+> seem to stem from trying to hammer a round peg (object orientated
+> design) into a square hole (SQL-based relational database).
+>
+> Thoughts and suggestions are welcome.
+
+I used to be a hibernate fan, but eventually got weary of second
+guessing the complexity behind it. Now I prefer to just use Spring JDBC.
+It is nothing particularly clever, but it seems to do the job, with just
+a little bit of sugar on top of standard JDBC.
+
+What it means is that you write a RowMapper class for each entity, which
+converts a row of your SELECT statement into an object, eg:
+
+     private class UserRowMapper implements RowMapper {
+         public Object mapRow(ResultSet rs, int rowNum) throws
+SQLException {
+             User user = new User();
+             user.setUsername(rs.getString("Username"));
+             user.setPassword(rs.getString("Password"));
+             user.setId(rs.getInt("idUser"));
+             if (rowNum>1) {
+                 throw new SQLException("Too many users found");
+             }
+             return user;
+         }
+     }
+
+You then call that with a method such as:
+
+     public User getUser(String username) {
+         JdbcTemplate jt = new JdbcTemplate(ds);
+         List results = jt.query("select * from Users where Username =
+?", new Object[]{username},
+                 new UserRowMapper());
+         if (results.size()==0) {
+             return null;
+         }
+         return (User)results.get(0);
+     }
+
+Updating is pretty simple too:
+
+     public void addUser(User user) {
+         JdbcTemplate jt = new JdbcTemplate(ds);
+         jt.update("insert into Users (username, password, email, url)
+values (?,?,?,?)",
+                     new Object[]{user.getUsername(),
+user.getPassword(), user.getEmail(), user.getUrl()});
+
+     }
+
+You're not avoiding SQL at all, you're just making the code around it
+more clear. Personally, I like this as it means I really do understand
+what is going on under the bonnet.
+
+Regards, Upayavira
+
+-------------------------------------------------------------------------
+Take Surveys. Earn Cash. Influence the Future of IT
+Join SourceForge.net's Techsay panel and you'll get the chance to share your
+opinions on IT & business topics through brief surveys - and earn cash
+http://www.techsay.com/default.php?page=join.php&p=sourceforge&CID=DEVDEV
+_______________________________________________
+Wicket-user mailing list
+Wicket-user@...
+https://lists.sourceforge.net/lists/listinfo/wicket-user 

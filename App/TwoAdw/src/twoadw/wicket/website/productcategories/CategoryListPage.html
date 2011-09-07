@@ -1,0 +1,54 @@
+<html>
+<body>
+<wicket:extend>
+		<div id="content">
+			<div id="main">	
+				<div class="categoryTree">
+					<a wicket:id="newCategory" title="New Category" class="adminLink"><span class="addIcon"></span></a>
+					<div wicket:id="categoryList" id="categoryList">
+						<a wicket:id="categoryLink"><h3 wicket:id="name">Name</h3></a>
+						<a wicket:id="unpublishedCategory" title="Unpublished Category" class="adminLinkH"><span class="removeIcon"></span></a>
+						<a wicket:id="newSubCategory" title="New SubCategory" class="adminLinkH"><span class="addIcon"></span></a>
+						<a wicket:id="editCategory" title="Edit Category" class="adminLinkH"><span class="editIcon"></span></a>
+						<i><p wicket:id="description">ShortDescription.</p></i>			
+							<table width="700" border="0" class="genericTable" >
+							  <tr>
+							  	<td width="180">
+								  	<img wicket:id="imageUrl"/>
+							  	</td>
+							    <td width="190" valign="top">
+							    <br>
+									<div wicket:id="subCategoryList" id="subCategoryList">
+										&nbsp;<span class="pointMain"></span>&nbsp;
+										<a wicket:id="subCategoryLink"><span wicket:id="subCategoryName">Name</span></a>
+										<a wicket:id="editSubCategory" title="Edit SubCategory">&nbsp;|<span class="editIcon"></span></a>
+										<a wicket:id="unpublishedSubCategory" title="Unpublished SubCategory"><span class="removeIcon"></span>|</a>
+									</div>
+							  	</td>
+							    <td valign="top" class="subMainRight">
+							    <br>
+							    	<div wicket:id="categoryProductList">
+										<span class="pointSub"></span>&nbsp;
+										<a wicket:id="productLink"><span wicket:id="productName">Name</span></a>
+									</div><!-- categoryProductList -->
+								<a wicket:id="categoryLinkProduct"><i>...all the products of this category</i></a>
+								</td>
+							  </tr>
+							</table>
+						<span wicket:id="categoryPublished" class="unpublished"></span>
+						
+					</div><!-- categoryList -->
+					
+				</div><!-- categoryTree -->
+				<br>
+				<div wicket:id="navigator" id="navigator" align="center"></div>	
+			</div> <!-- main -->
+			
+			<div id="left">		
+				<div wicket:id="category"></div>
+			</div> <!-- left -->
+		</div> <!-- content -->
+		
+</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<countries>
+  <country oid="1190136010187">
+    <code>ca</code>
+    <name>Canada</name>
+    <webLink>http://en.wikipedia.org/wiki/Canada</webLink>
+  </country>
+  <country oid="1190136021157">
+    <code>ba</code>
+    <name>Bosnia &amp; Herzegovina</name>
+    <webLink>http://en.wikipedia.org/wiki/Bosnia_and_Herzegovina</webLink>
+  </country>
+  <country oid="1190137802972">
+    <code>fr</code>
+    <name>France</name>
+    <webLink>http://en.wikipedia.org/wiki/France</webLink>
+  </country>
+  <country oid="1190912387699">
+    <code>ar</code>
+    <name>Argentina</name>
+    <webLink>http://en.wikipedia.org/wiki/Argentina</webLink>
+  </country>
+  <country oid="1191003983136">
+    <code>in</code>
+    <name>India</name>
+    <webLink>http://en.wikipedia.org/wiki/India</webLink>
+  </country>
+  <country oid="1191434469875">
+    <code>it</code>
+    <name>Italy</name>
+    <webLink>http://en.wikipedia.org/wiki/Italy</webLink>
+  </country>
+  <country oid="1194382574247">
+    <code>al</code>
+    <name>Albania</name>
+  </country>
+</countries>

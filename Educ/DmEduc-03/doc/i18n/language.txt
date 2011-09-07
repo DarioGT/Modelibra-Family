@@ -1,0 +1,26 @@
+http://www.w3.org/International/
+http://www.w3.org/blog/International/2006/09/20/language_tags_in_html_and_xml_2
+http://www.w3.org/blog/International/2006/07/21/specifying_language_in_xhtml_aamp_html_c
+http://www.w3.org/International/articles/language-tags/Overview.en.php
+
+http://www.unicode.org/unicode/onlinedat/languages.html
+
+Bosnian
+
+Ć ć
+Č č
+Đ đ
+Š š
+Ž ž
+
+Ć &#262; 
+ć &#263; 
+Č &#268; 
+č &#269; 
+Đ &#272; 
+đ &#273; 
+Š &#138; 
+š &#154; 
+Ž &#142; 
+ž &#158; 
+

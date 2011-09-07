@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+
+  <h2>6.2 How does form processing work?</h2>
+  <p>These examples show how Wicket's form processing works.</p>
+  <div class="section">
+  	<h3>6.2.1 Submitting a form from the browser to the server</h3>
+  	<p>The following example shows a simple search form. Check the URL difference between the GET and POST submitted forms.</p>
+  	<div class="example">
+  		<h4>Search using get</h4>
+  		<p>The following example searches using the <tt>get</tt> method.</p>
+		<form wicket:id="search" method="get">
+		    Text field: <input type="text" wicket:id="q" />
+		    <input type="submit" value="Search using GET" />
+		</form>
+  		<h4>Search using post</h4>
+  		<p>The following example searches using the <tt>post</tt> method.</p>
+		<form wicket:id="formPost" method="post">
+		    Text field: <input type="text" wicket:id="field" />
+		    <input type="submit" value="Search using POST" />
+		</form>
+  	</div>
+  </div>
+  <div class="section">
+  	<h3>6.2.2 Processing the form submission on the server</h3>
+  	<p>The following example shows a form that demonstrates the various stages of server side form processing.</p>
+  	<div class="example">
+		<form wicket:id="form">
+			<table>
+		    <tr><th>Description</th><th>Input value</th><th>Model value</th></tr>
+		    <tr><td>Required field:</td><td><input type="text" wicket:id="required" /></td><td wicket:id="value1"></td></tr>
+		    <tr><td>Integer field:</td><td><input type="text" wicket:id="integer" /></td><td wicket:id="value2"></td></tr>
+		    <tr><td>Must be one (1):</td><td><input type="text" wicket:id="mustbeone" /></td><td wicket:id="value3"></td></tr>
+		    </table>
+		    <input type="submit" value="Submit" />
+		    <h4>Feedback messages for this form</h4>
+		    <div wicket:id="feedback"></div>
+		</form>
+  	</div>
+  </div>
+
+</body>
+</html>
+

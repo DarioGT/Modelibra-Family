@@ -1,0 +1,53 @@
+<html>
+<body>
+<wicket:extend>
+	<div id="container">
+		<div id="content">
+			<div id="mainLeft">			
+				<div wicket:id="feedback"></div>
+				<h3 wicket:id="productType"></h3>
+				<form wicket:id="form">
+					<table>			    
+				        <tr>
+							<th>Product Number</th>
+							<td><input wicket:id="productNumber" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Product Name</th>
+							<td><input wicket:id="name" type="text" /></td>
+						</tr>
+						<tr>
+							<th>shortDescription</th>
+							<td><textarea wicket:id="shortDescription"></textarea></td>
+						</tr>
+						<tr>
+							<th>longDescription</th>
+							<td><textarea wicket:id="longDescription" rows="8"></textarea></td>
+						</tr>
+						<tr>
+							<th>Price</th>
+							<td><input wicket:id="price" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Published</th>
+							<td><input wicket:id="published" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<th>Frontpage</th>
+							<td><input wicket:id="frontpage" type="checkbox" /></td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<input type="submit" wicket:id="save" value="Save" />
+								<input type="button" wicket:id="cancel" value="Cancel" />
+							</td>
+						</tr>
+					</table>
+				</form>	
+			</div> <!-- main -->
+		</div> <!-- content -->
+	</div> <!-- container -->
+</wicket:extend>
+</body>
+</html>

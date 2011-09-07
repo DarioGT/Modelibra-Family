@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="ModelibraWicketProject" default="copy-template-dir">	
+
+	<property name="from-template-dir" value="../ModelibraSwingSkeleton/template"/>
+	<property name="to-template-dir" value="template"/>
+			
+	<target name="create-template-dir">
+		<mkdir dir="${to-template-dir}"/>
+	</target>
+		
+	<target name="copy-template-dir" depends="create-template-dir">
+		<copy todir="${to-template-dir}">
+			<fileset dir="${from-template-dir}"/>
+		</copy>  
+	</target>
+	
+</project>

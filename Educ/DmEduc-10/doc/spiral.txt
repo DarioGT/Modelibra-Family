@@ -1,0 +1,174 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 10
+Title: Web Updates
+Created: 2007.12.04
+Updated: 2007.12.13
+
+Objective
+
+    To make full use of generic component to minimize the specific code.
+    
+Concepts
+
+	Generic web components.
+	
+Constraints (to be completed)
+
+	A casual user may become a regular member.
+	Only the admin member can promote a member to a higher role.
+	Anyone can enter a comment.
+
+	A member can update his data only. He can also delete his record.
+	A member can define and maintain only his interests.
+	A member can create new categories.
+	A member can update a category but only if he is interested in.
+	A member can delete a category but only if he was interested in and 
+		if there are no other members interested in that category.
+	A member can ask a question.
+	A member can give an answer to a question, but if the question is related
+		to a category, that category must be of interest to the member.
+	A member can add a url only to a category that he is interested in.
+	A member can update a url but only if he is interested in its category.
+	A member can remove a url but only if there are no other members interested 
+		in the category of that url.
+
+Changes
+
+	HomePage
+		
+		- use generic tree component for categories tree, but provide specific node panels
+		This way there is less code to write. No need for developer to write its own 
+		CategoryTreePanel component (class + html). Instead just use anonymous inner class 
+		(extend EntitiesTreePanel) and override getRootNodePanel() and getNodePanel() methods
+	
+	HomeMenu
+		
+		- Member Page link uses generic EntityParentChildUpdatePage page. No need for MemberPage.
+		EntityParentChild contains EntityParentChildPanel which by default uses 
+		EntityEditFormPanel as parent panel and EntityUpdateTablePanel as child panel.
+		Also EntityParentChild uses first child neighbor, if exist, as source for child panel 
+		entities.
+		
+		new generic components:
+		
+		EntityParentChildPanel - abstract class.
+		
+		EntityParentChildDisplayPanel.java - implements abstract methods from EntityParentChildPanel
+		- uses EntityDisplayPanel for parent display and EntityDisplayTablePanel for children display
+		
+		EntityParentChildUpdatePanel.java - implements abstract methods from EntityParentChildPanel
+		- uses EntityEditFormPanel for parent update and EntityUpdateTablePanel for children update
+		
+		EntityParentChildDisplayPage.java
+		- contains EntityParentChildDisplayPanel
+		
+		EntityParentChildUpdatePage.java
+		- contains EntityParentChildUpdatePanel
+	
+	
+	CategoryUrls
+	
+		- CategoryUrls page uses anonymous inner class that extends generic EntityParentChildUpdatePanel 
+		to provide child entities (only if category is approved), and custom ParentPanel - EntityDisplayPanel
+		(which may be another generic panel, or	some specific panel), by overriding corresponding methods.
+	
+	QuestionSelectionPage
+	
+		- new page in dmeduc.wicket.weblink.question that shows how easy it is to use PropertySelectorPanel. 
+		Just add it to the page	and use page ViewModel. If you override getNewPageInstance method and 
+		provide new instance of the current page (i.e. QuestionSelectionPage) then you get the effect 
+		of narrowing search. Also context link returns to previous selection. All components that use 
+		page ViewModel will	reflect selection (in case of QuestionSelectionPage that is EntityDisplayTablePanel).
+		Note that getNewPageInstance() method is not abstract, and default response page is EntityDisplayTablePage
+		You can see that on each search, selection panel is reset.
+		
+	AboutMenu
+	
+		-faqLink		
+		-in general there are some problems with menu buttons when they are used after back button
+		they mostly lead to domain page! 
+		
+		-Update!!! I have investigated this. It happens that when back button is used, all links on
+		current page that are constructed like:
+		
+		Page somePage = new Page();
+		Link somePageLink = new Link("somePageLink"){
+			public void onClick() {
+					setResponsePage(somePage);
+				}
+		}
+		
+		lead to DomainPage.
+		
+		Links that construct new instance of the page on every click like:
+		
+		PageLink somePage = Page.link("somePageLink", viewModel, view);
+		
+		where page have static link method,	work fine.
+		
+		Still problem remains with context link since we use instance of a page.
+		
+		check the LinkBug.jpg for this.
+		
+	RegistrationConfirmationPage
+		
+		- abstract generic RegistrationConfirmationPage. This page is abstract since it has one protected 
+		abstract method:
+		
+		getApplicantEntities()
+		
+		Other protected, but implemented, methods are:
+		
+		getComponentForNotRegistered()
+		
+		getComponentForRegistered()
+		
+		getRedirectPageClass()
+		
+		- In this spiral, specific ConfirmationPage extends  
+		generic RegistrationConfirmationPage, implements getApplicantEntities() providing 
+		applicant entities and overrides getComponentForRegistered() to provide 
+		ApplicantNotRegisteredPanel which contains link to signup (we can add this to generic
+		NotRegisteredPanel once we have generic signup panel)
+		
+		- in dmeduc.wicket.weblink.member ConfirmationPage and Confirmation deleted.
+				
+	DmEducApp
+		
+		- mountBookmarkablePage("/confirmation", ConfirmationPage.class);
+		used to mount specific ConfirmationPage. This produces more user friendly url while hiding
+		some structure data that could be extracted from url at the same time. 
+		
+		When user signs up, email with confirmation link is sent:
+		
+		http://localhost:8081/ModelibraWicket/app/confirmation/register/oid
+		
+		where register/oid is key-value pair in page parameters for ConfirmationPage.
+		
+		Without mounting, this url would be:
+		
+		http://localhost:8081/ModelibraWicket/app/?wicket:bookmarkablePage=%3Admeduc.wicket.weblink.applicant.ConfirmationPage&register=oid		
+				
+		
+	dmeduc.wicket.weblink.applicant.EntityAddForm
+		
+		- confirmation code replaced with confirmation url. 
+		
+		- new method getConfirmationLink()
+		
+		- EntityAddForm properties adjusted for new message. 
+		
+		- user is redirected to HomePage after he applies for registration not to 
+		ConfirmationPage since that step is not needed anymore.
+		 
+		-I have added log.info(message) to Member.emailMessage method for
+		testing of the confirmation link.		
+			
+	dmeduc.wicket.weblink.applicant.SignUpPage
+		
+		- new private method getAppContextPath() used to retrieve application context path
+		Passed to EntityAddForm via viewModel user properties.
+		- this is needed because since version 1.3 wicket uses relative paths so
+		urlFor() method returns url relative to application context
+		

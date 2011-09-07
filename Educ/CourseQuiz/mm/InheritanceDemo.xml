@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Reusable Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1188594552974">
+		<code>Course</code>
+		<type>Reusable</type>
+	    
+		<models>
+
+			<model oid="1169579175415">
+				<code>DmReference</code>
+				<abstraction>true</abstraction>
+				<author>Dzenan Ridjanovic</author>
+	    
+				<concepts>
+			
+					<concept oid="1169579175416">
+						<code>Member</code>					
+						<entitiesCode>Members</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1169579175418">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175419">
+								<code>password</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+
+								<essential>false</essential>
+								<scramble>true</scramble>
+							</property>
+							<property oid="1169579175420">
+								<code>lastName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175421">
+								<code>firstName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175422">
+								<code>email</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>org.modelibra.type.Email</validationType>
+								<maxLength>80</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175438">
+								<code>receiveEmail</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175439">
+								<code>role</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175440">
+								<code>startDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1169579175446">
+						<code>Applicant</code>					
+						<entitiesCode>Applicants</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1169579175448">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175449">
+								<code>password</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+
+								<essential>false</essential>
+								<scramble>true</scramble>
+							</property>
+							<property oid="1169579175450">
+								<code>lastName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175451">
+								<code>firstName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175452">
+								<code>email</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>org.modelibra.type.Email</validationType>
+								<maxLength>80</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175453">
+								<code>receiveEmail</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175454">
+								<code>role</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169579175455">
+								<code>startDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1169918222016">
+						<code>CountryName</code>					
+						<entitiesCode>CountryNames</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1169918429681">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169918465245">
+								<code>country</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1169918230143">
+						<code>CountryLanguage</code>					
+						<entitiesCode>CountryLanguages</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1169918419633">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1169918423977">
+								<code>language</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1169918246255">
+						<code>SecurityRole</code>					
+						<entitiesCode>SecurityRoles</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1169918493183">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1199036888032">
+				<code>ReferenceAll</code>
+				<extension>true</extension>
+				<extensionDomain>Course</extensionDomain>
+				<extensionModel>DmReference</extensionModel>			
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/referenceall</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1199038341929">
+				<code>ReferenceAllPlus</code>
+				<extension>true</extension>
+				<extensionDomain>Course</extensionDomain>
+				<extensionModel>DmReference</extensionModel>			
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/referenceallplus</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1199038395664">
+						<code>PostalCity</code>					
+						<entitiesCode>PostalCities</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1199038570978">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1199038574243">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1199037039162">
+				<code>ReferenceSomeAll</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/referencesomeall</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1199037039164">
+						<code>Member</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>Member</extensionConcept>
+						<entitiesCode>Members</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199037039166">
+						<code>Applicant</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>Applicant</extensionConcept>
+						<entitiesCode>Applicants</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199037039167">
+						<code>CountryName</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>CountryName</extensionConcept>
+						<entitiesCode>CountryNames</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199037039169">
+						<code>CountryLanguage</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>CountryLanguage</extensionConcept>
+						<entitiesCode>CountryLanguages</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199037039171">
+						<code>SecurityRole</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>SecurityRole</extensionConcept>
+						<entitiesCode>SecurityRoles</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1199037275662">
+				<code>ReferenceSome</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/referencesome</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1199037275663">
+						<code>Member</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>Member</extensionConcept>
+						<entitiesCode>Members</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199037275668">
+						<code>CountryLanguage</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>CountryLanguage</extensionConcept>
+						<entitiesCode>CountryLanguages</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199037275670">
+						<code>SecurityRole</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>SecurityRole</extensionConcept>
+						<entitiesCode>SecurityRoles</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1199037407436">
+				<code>ReferenceSomePlus</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/referencesomeplus</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1199037407437">
+						<code>Member</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>Member</extensionConcept>
+						<entitiesCode>Members</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199037407442">
+						<code>CountryLanguage</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>CountryLanguage</extensionConcept>
+						<entitiesCode>CountryLanguages</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199037407444">
+						<code>SecurityRole</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>SecurityRole</extensionConcept>
+						<entitiesCode>SecurityRoles</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1199037472710">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1199038773991">
+				<code>ReferenceSomePlusPlus</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/referencesomeplusplus</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1199038773992">
+						<code>Member</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>Member</extensionConcept>
+						<entitiesCode>Members</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199038773995">
+						<code>CountryName</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>CountryName</extensionConcept>
+						<entitiesCode>CountryNames</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1199038929599">
+								<code>postalCities</code>
+								<destinationConcept>PostalCity</destinationConcept>
+								<inverseNeighbor>countryName</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199038773997">
+						<code>CountryLanguage</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>CountryLanguage</extensionConcept>
+						<entitiesCode>CountryLanguages</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199038773999">
+						<code>SecurityRole</code>					
+						<extension>true</extension>
+						<extensionDomain>Course</extensionDomain>
+						<extensionModel>DmReference</extensionModel>
+						<extensionConcept>SecurityRole</extensionConcept>
+						<entitiesCode>SecurityRoles</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1199038852482">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1199038869526">
+						<code>PostalCity</code>					
+						<entitiesCode>PostalCities</entitiesCode>
+			    
+						<properties>
+							<property oid="1199038888951">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1199038892105">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1199038929599">
+								<code>countryName</code>
+								<destinationConcept>CountryName</destinationConcept>
+								<inverseNeighbor>postalCities</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+    
+		</models>
+
+	</domain>
+		
+</domains>

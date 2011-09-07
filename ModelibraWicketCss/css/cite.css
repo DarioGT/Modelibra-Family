@@ -1,0 +1,44 @@
+/* cite.css */
+
+/* ===[ begin ]=== */
+
+/*
+    Title:                   Citation Design Style
+    Author:                  Dzenan Ridjanovic
+    Influenced By:           http://www.simplebits.com/
+    Created:                 2006-09-03
+    Updated:                 2007-11-02
+*/
+
+	cite {
+		font-style: italic;
+		font-weight: bold;
+		color: #ff9911;
+		background: #fffff0;
+	}
+
+	blockquote {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		font-family: georgia, serif;
+		font-size: 150%;
+		letter-spacing: -1px;
+		line-height: 1em;
+		color: #555555;
+		background: #fffff0;
+	}
+	
+	.quote {
+		margin: 0;
+		padding: 20px 20px 10px 20px;
+	}
+
+	.author {
+		margin: 0;
+		padding: 0 0 10px 0;
+		color: #999999;
+		font-size: 60%;	
+	}
+			
+/* ===[ end ]=== */

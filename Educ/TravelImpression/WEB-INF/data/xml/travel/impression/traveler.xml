@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<travelers>
+  <traveler oid="1190136047517">
+    <code>dr</code>
+    <firstName>Dzenan</firstName>
+    <lastName>Ridjanovic</lastName>
+    <email>dzenan.ridjanovic@fsa.ulaval.ca</email>
+    <password>dr</password>
+    <securityRole>regular</securityRole>
+    <messages>
+      <message oid="1190136241193">
+        <sentDate>2007-09-18</sentDate>
+        <subject>Visit to Sarajevo</subject>
+        <text>This summer I spent few weeks in my born town.</text>
+        <notes>
+          <note oid="1190205452740">
+            <placeOid>1190205405598</placeOid>
+            <impression>Sarajevo is an old city between the East and the West.</impression>
+          </note>
+          <note oid="1190736198290">
+            <placeOid>1190305386562</placeOid>
+            <impression>I am sorry that I did not visit Bjelasnica.</impression>
+          </note>
+        </notes>
+        <photos>
+          <photo oid="1194381992590">
+            <title>Beautiful Sarajevo</title>
+            <webLink>http://userpages.wittenberg.edu/kdoubt/Sarajevo/Lijepo.html</webLink>
+          </photo>
+        </photos>
+      </message>
+      <message oid="1190821415260">
+        <sentDate>2007-09-26</sentDate>
+        <subject>Dreaming...</subject>
+        <text>I always wanted to visit Canadian Rockies.</text>
+        <notes>
+          <note oid="1190821461792">
+            <placeOid>1190305193873</placeOid>
+            <impression>I would love to have one.</impression>
+          </note>
+        </notes>
+      </message>
+      <message oid="1190998589162">
+        <sentDate>2007-09-28</sentDate>
+        <subject>Weekly visits to Québec</subject>
+        <text>I live in Québec and I love the old city.</text>
+        <notes>
+          <note oid="1190998643761">
+            <placeOid>1190998477477</placeOid>
+            <impression>At least once a week I am there, to be impressed each time.</impression>
+          </note>
+        </notes>
+        <photos>
+          <photo oid="1194381748323">
+            <title>Château Frontenac in night</title>
+            <webLink>http://www.reggie.net/photo.php?albid=130&amp;ph=1181839</webLink>
+          </photo>
+        </photos>
+      </message>
+      <message oid="1191434662193">
+        <sentDate>2007-10-03</sentDate>
+        <subject>My vist to Venice long ago</subject>
+        <text>It was six years ago.</text>
+        <notes>
+          <note oid="1191434785289">
+            <placeOid>1191434563862</placeOid>
+            <impression>It was six years ago.
+
+I stayed with my family only one day. You definitely need more than one day to visit famous places in Venice.</impression>
+          </note>
+        </notes>
+        <photos>
+          <photo oid="1194381185901">
+            <title>Water street</title>
+            <webLink>http://www.destination360.com/europe/italy/venice.php</webLink>
+          </photo>
+        </photos>
+      </message>
+    </messages>
+  </traveler>
+  <traveler oid="1191003332424">
+    <code>ogdenr</code>
+    <firstName>Ogden</firstName>
+    <lastName>Ridjanovic</lastName>
+    <email>majstor_ogdenr@hotmail.com</email>
+    <password>ogdenr</password>
+    <securityRole>regular</securityRole>
+    <messages>
+      <message oid="1191003875073">
+        <sentDate>2007-04-23</sentDate>
+        <subject>Kashmir</subject>
+        <text>Greetings, people of all places except India,
+
+I write to you from New Delhi once again, but I have just today come back with Sarah from Kashmir, the most northern state of India, which is majorily muslim and almost looks like western Canada but with bigger mountains. We spent one week in the city of Srinagar, living in a houseboat, on Dal Lake, in a familys house which we payed for stay and food. They made excellent kashmiri home food for us every morning, lunch time and dinner, and made us drink a least 70 cups of tea per day. It was really relaxing and very nice experience, you should go check out the photos of houseboats. We met a really interesting religious guy in this family whose name is Seba. Hses a muslim holy man and he possesses virtually nothing, except a few shirts and countless packs of cigarettes, which he smokes at an average of about 60 per day, but he says its for his fire inside, so that his heart will stay pure and without worry. We went trekking in the Himalaya, in a village called Pahalgam, and we rode to the top of one of the mountains of this great chain on horses, which was a really amazing experience. Aside from that, we went to visite the new and old part of Srinagar, with its old and sumptuous Mughal mosques and its infinite number of small shops. We also did a tour of 4 pretty large lakes in a shikara, which is a kind of tourist canoe where you just lay in some kind of big cushion and the man in the back who owns the shikara just paddles away for the entire day, while Seba tells us about the lakes and the trees and the events of the place. The ride back was a long 28 hour bus ride in the serpentous mountain way and its not a ride for the faint of heart, because the tires of the bus are only about half a foot away from the cliff, and the driver still drives like a mad indian driver (like all Indians, but still, no accident, not one). Tonight we head for Ahmedabad, the main city of the state of Gujarat, which is one of Indias less visited states, but we have a special destination, the small ex-portuguese island of Diu, which is very small but we read about it and it seems very nice and not noisy and crowdy and hassling like Delhi is. Ali we met while trying to retreive our luggage, he works at a tourism office in Delhi and he called British airways, got our bags back and talked about Kashmir to us. Anyway, I will be writing soon, sooner than in one week, I am sorry for having made you wait this week, but the internet access in Srinagar is hard to get, especially when youre in the mountains or on a boat that is a house.
+
+Much love to everybody, and thank you for following my adventures !</text>
+        <notes>
+          <note oid="1191004220497">
+            <placeOid>1191004180414</placeOid>
+            <impression>I have just today come back with Sarah from Kashmir, the most northern state of India, which is majorily muslim and almost looks like western Canada but with bigger mountains.</impression>
+          </note>
+          <note oid="1191009504534">
+            <placeOid>1191005397614</placeOid>
+            <impression>We spent one week in the city of Srinagar, living in a houseboat, on Dal Lake, in a familys house which we payed for stay and food.</impression>
+          </note>
+        </notes>
+      </message>
+    </messages>
+  </traveler>
+  <traveler oid="1194383336531">
+    <code>md</code>
+    <firstName>Mayo</firstName>
+    <lastName>Dover</lastName>
+    <email>majo@mmcc.com.ba</email>
+    <password>md</password>
+    <securityRole>regular</securityRole>
+    <messages>
+      <message oid="1194383623078">
+        <sentDate>2007-11-06</sentDate>
+        <subject>Going south east</subject>
+        <text>Never been before in Albania.</text>
+        <notes>
+          <note oid="1194384110236">
+            <placeOid>1194383061076</placeOid>
+            <impression>Nicer place than I thought it would be.</impression>
+          </note>
+        </notes>
+        <photos>
+          <photo oid="1194384455627">
+            <title>Tirana By Night</title>
+            <webLink>http:// www.trekearth.com/gallery/Europe/Albania/North/Tirane/Tirana/photo622899.htm</webLink>
+          </photo>
+        </photos>
+      </message>
+    </messages>
+  </traveler>
+</travelers>

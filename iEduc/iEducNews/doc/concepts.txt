@@ -1,0 +1,19 @@
+iEducNews-11
+
+Member
+
+approved is by default true
+
+Contribution abstract class
+
+WebLink extends Contribution
+
+model with relationships
+
+concepts with constructors with parameters for mandatory parents
+
+property validations in add methods
+
+inits in the domain model
+
+new tests with adds on different collections of entities

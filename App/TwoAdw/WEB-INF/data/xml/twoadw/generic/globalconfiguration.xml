@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<globalConfigurations>
+  <globalConfiguration oid="1237786724693">
+    <siteName>2adw</siteName>
+    <organisationName>TeamFcp</organisationName>
+    <online>true</online>
+    <offlineMessage>The website is offline</offlineMessage>
+    <template>Classic</template>
+    <siteMetaDescription>TwoAdw Wicket</siteMetaDescription>
+    <siteMetaKeywords>TwoAdw, Wicket, Modelibra</siteMetaKeywords>
+  </globalConfiguration>
+</globalConfigurations>

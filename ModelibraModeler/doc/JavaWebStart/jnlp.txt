@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <jnlp href="my_applet.jnlp">
+     <information>
+       <title>My Applet</title>
+       <vendor>My Company, Inc.</vendor>
+       <offline-allowed />
+     </information>
+     <resources>
+       <j2se version="1.4+"
+             href="http://java.sun.com/products/autodl/j2se" />
+       <jar href="mm.jar" main="true" />
+       <extension name="SomeExtension"
+                  href="http://some.server.com/some_extension.jnlp" />
+     </resources>
+     <applet-desc 
+         name="My Applet"
+         main-class="com.mycompany.MyApplet"
+         width="300"
+         height="300">
+     </applet-desc>
+   </jnlp>

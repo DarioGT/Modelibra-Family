@@ -1,0 +1,23 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1168374619156,88,WebLink,WebLinks,dmeduc.weblink,255,255,255,Dzenan Ridjanovic,false,?,?,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1168374619156,88,false,?,false,true,false,93,67,101,109,1168375108203,89,Url,Urls,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1168375108203,89,960496657960,1,Oid,1168375108203,90,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1168375108203,89,1165588261375,80,String,1168375115578,91,link,links,?,255,204,102,1,1,false,false,?,false
+I,1168375108203,89,1165588261375,80,String,1168375121171,92,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, === Lines === 
+ 

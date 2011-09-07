@@ -1,0 +1,77 @@
+
+
+Formula: 
+
+(p - 1) / (t + 2)^1.5
+
+Description: 
+
+Votes divided by age factor
+
+p = votes (points) from users.
+t = time since submission in hours.
+
+p is subtracted by 1 to negate submiter's vote.
+age factor is (time since submission in hours plus two) to the power of 1.5.
+
+No points "from users up-voting" (my bad) :P
+
+    * Weblink
+          o Name
+          o Link
+          o Date
+          o Points
+          o Score (if we don't want to calculate all the entries every time there is a request)
+    * Member
+          o LastName
+          o ...
+          o Karma (aka score but with the Hacker News Term)
+          
+Actually you need to calculate the score immediately in order not to
+loose the time delay. When I click on the upper arrow on the web link
+it gets one point more but the score is recalculated based on the
+formula. If I click 3 days later the score will increase a bit, but if
+I click immediately after the web link is posted the score will be
+higher. Is this a correct reasoning?
+
+No. 
+Time delay is the difference in time between the request to display sorted links/comments 
+and the submission time.
+
+Member one-to-many Comment (my comments)
+Member one-to-many WebLink (my submissions)
+WebLink one-to-many Comment (comments on the web link)
+Comment one-to-many Comment (comments on the comment)
+
+Member properties from HN:
+
+    * Saved: Number of stories (web links) that you have up-voted
+      onClick transfer to a page that display those stories
+    * show-dead: show unpublished stories and comments
+    * no-procrastination: If you turn it on by setting it to "yes," you'll only be allowed to visit 
+      the site for max-visit minutes at a time, with gaps of min-away minutes in between. 
+      The defaults are 20 and 180, which would let you view the site for 20 minutes at a time, 
+      and then not allow you back in for 3 hours. You can override no-procrastination if you want, 
+      in which case your visit clock starts over at zero.
+    * delay: (in minutes) between when you create a comment and when it's visible to others.
+
+show-dead: show unpublished stories and comments
+
+Does that mean that comments may be disapproved?
+I suppose that a moderator (there are 30 moderators at HN) can un-publish a comment.
+
+delay: (in minutes) between when you create a comment and when it's visible to others.
+
+Do you understand the rationale?
+Yes, its a counter to flame wars. Many sites have a delay to comment reply, because sometimes a series 
+of replies looks more like a chat screen than a comment screen :D
+As to why they let the user set this.. this is a mystery. 
+
+StatelessForm
+
+From the Wicket In Actions book
+
+"It’s possible (although probably rare) for a user to go to the login screen, decide to do something 
+else for an hour, then try to log in using that page of the now-expired session, and be confronted with a
+session-expired message."
+

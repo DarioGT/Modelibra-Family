@@ -1,0 +1,31 @@
+#include ("template/ModelibraComment.txt")
+
+package $domainpackagecode;
+
+import org.modelibra.config.DomainConfig;
+
+/**
+ * Creates domain and its models.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $DomainCode extends Gen$DomainCode {
+
+	private static final long serialVersionUID = ${serialNumber}L;
+	
+	/**
+	 * Creates the $DomainCode domain.
+	 * 
+	 * @param domainConfig
+	 *            domain configuration
+	 */
+	public $DomainCode(DomainConfig domainConfig) {
+		super(domainConfig);
+	}
+	
+	/* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+
+}

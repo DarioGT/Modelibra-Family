@@ -1,0 +1,30 @@
+where before you used to do A.add(new B("id"));
+you now do new B(A,"id"); 
+
+i have just migrated wicket 2.0 from commons-logging to slf4j as was
+previously discussed and agreed upon.
+
+people using 2.0 need to add the following to their project's pom or
+equivalent:
+
+if you are using commons-logging:
+
+<dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jcl</artifactId>
+     <version>1.1.0</version>
+</dependency>
+
+
+if you are using log4j
+
+<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.1.0</version>
+</dependency>
+
+these jars will bind slf4j to the proper logging library
+
+if you are using another logging impl like jdk see slf4j website for the
+appropriate binding jar

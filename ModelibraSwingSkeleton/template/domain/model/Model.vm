@@ -1,0 +1,35 @@
+#include ("template/ModelibraComment.txt")
+
+package ${modelpackagecode};
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.modelibra.IDomain;
+
+/**
+ * $ModelCode specific model.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $ModelCode extends Gen$ModelCode {
+
+	private static final long serialVersionUID = ${serialNumber}L;
+	
+	private static Log log = LogFactory.getLog(${ModelCode}.class);
+	
+	/**
+	 * Constructs a domain model within the domain.
+	 * 
+	 * @param domain
+	 *            domain
+	 */
+	public $ModelCode(IDomain domain) {
+		super(domain);
+	}
+	
+	/* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+
+}

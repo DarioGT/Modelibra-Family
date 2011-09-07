@@ -1,0 +1,46 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+<br>
+		<div wicket:id="modComments" id="comments">
+			<h4 wicket:id="commentTitle">the title comment</h4>
+			<p wicket:id="commentText">the comment</p>
+			<p wicket:id="creationDate">the comment</p>
+		</div> <!-- comments -->
+		
+		<div wicket:id="comments">
+		<div wicket:id="list" id="comments">
+			<h4 wicket:id="ajaxCommentTitle"></h4>
+			<p wicket:id="ajaxCommentText">the comment</p>
+		</div>
+		<br>
+		<span><i>add a comment:</i></span>
+		<hr>
+			<form wicket:id="formComment">
+		
+			
+				<table>
+				    
+				    <tr>
+						<th align=right>Title</th>
+						<td><input type="text" wicket:id="editTitle" maxlength="64"></td>
+					</tr>
+					<tr>
+						<th>Comment</th>
+						<td><textarea wicket:id="editText" rows="8">Comment</textarea></td>
+					</tr>
+					
+					<tr>
+						<th>&nbsp;</th>
+						<td>
+							<input type="button" wicket:id="save" value="Add comment" />
+						</td>
+					</tr>
+					
+				</table>
+				
+			</form>
+		
+		</div><!-- comments -->
+</wicket:panel>
+</html>

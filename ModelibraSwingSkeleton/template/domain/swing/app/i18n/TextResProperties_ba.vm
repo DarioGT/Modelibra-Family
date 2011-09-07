@@ -1,0 +1,144 @@
+about=O
+aboutTitle=O
+accepted=Prihva\u0107en
+add=Dodaj
+addNot=Dodavanje nije uspjelo.
+appTitle=Modelibra Swing Aplikacija
+arrangeEntities=Razmjesti koncepte
+attach=Zaka\u010di
+author=Autor
+baseType=Bazna klasa
+close=Zatvori
+colorChoice=Izbor boje
+colorEntities=Oboji koncepte
+concept=Koncept
+concepts=Koncepti
+createEntities=Kreiraj koncepte
+data=Podaci
+deleteSelectedEntities=Izbri\u0161i izabrane koncepte
+deselectEntities=Anuliraj izabrane koncepte
+decreaseHeightSelectedEntities=Smanji visinu izabranih koncepata
+decreaseWidthSelectedEntities=Smanji \u0161irinu izabranih koncepata
+decreaseSizeSelectedEntities=Smanji veli\u010dinu izabranih koncepata
+description=Opis
+dictionary=Repozitorij
+display=Prika\u017ei
+domain=Domen
+domains=Domeni
+edit=Edicija
+entityTip=Kreiraj koncept.
+entry=Ulaz
+exit=Izlaz
+file=Datoteka
+findEntity=Na\u0111i koncept
+fileExists=Datoteka postoji!
+generation=Generacija koncepata
+help=Pomo\u0107
+hideSelectedEntities=Sakrij izabrane koncepte
+id=Id
+increaseHeightSelectedEntities=Pove\u0107aj visinu izabranih koncepata
+increaseWidthSelectedEntities=Pove\u0107aj \u0161irinu izabranih koncepata
+increaseSizeSelectedEntities=Pove\u0107aj veli\u010dinu izabranih koncepata
+increment=Inkrement
+init=Inicijalna vrijednost
+internal=Interni
+invalidType=Tip osobine nije validan.
+length=Du\u017eina
+lookup=Izaberi
+model=Model
+models=Modeli
+name=Ime
+neighbor=Kom\u0161ija
+neighborName=kom\u0161ija
+neighbors=Kom\u0161ije
+number=Broj
+new=Nova
+no=Ne
+open=Otvori
+property=Osobina
+propertyName=osobina
+properties=Osobine
+random=Slu\u010dajno
+remove=Izbri\u0161i
+removeNot=Brisanje nije uspjelo.
+replaceFile=Da zamijenimo datoteku?
+rshipTip=Izaberi relaciju.
+save=Sa\u010duvaj
+saveAs=Sa\u010duvaj kao
+search=Pretra\u017eivanje
+selectDirectory=Izaberi direktorij
+selectEntities=Izaberi koncepte
+selectFile=Izaberi datoteku
+selectTip=Izaberi koncept.
+showHiddenEntities=Poka\u017ei sakrivene koncepte
+text=Tekst
+type=Tip
+types=Tipovi
+update=Azuriraj
+updateNot=Azuriranje nije uspjelo.
+undo=Vrati
+value=Obavezna vrijednost
+view=Pogled
+yes=Da
+zoomIn=Pove\u0107aj
+zoomOut=Smanji
+
+Concept=Koncept
+Concept.name=Ime ulaznog koncepta
+
+Domain=Domen
+Domain.name=Ime domene
+Domain.type=Tip domene
+Domains=Domene
+
+Model=Domenski model
+Model.name=Ime domenskog modela
+Model.entries=Ulazi domenskog modela
+Models=Domenski modeli
+
+$DomainCode=$DomainCode  
+${DomainCode}.title=$DomainCode Domain
+${DomainCode}.description=Modelibra - $DomainCode Domain Models.
+
+#foreach ($modelConfig in $modelConfigList) 
+#set ($ModelCode = $modelConfig.getCode())
+#set ($conceptConfigList = $modelConfig.getConceptsConfig().getConceptConfigList())
+
+$ModelCode=$ModelCode
+${ModelCode}.title=$ModelCode Model
+${ModelCode}.description=Modelibra - $DomainCode Domain - $ModelCode Model
+#foreach ($conceptConfig in $conceptConfigList) 
+#set ($EntityCode = $conceptConfig.getCode())
+#set ($EntitiesCode = $conceptConfig.getEntitiesCode())
+#set ($propertyConfigList = $conceptConfig.getPropertiesConfig().getPropertyConfigList())
+#set ($neighborConfigList = $conceptConfig.getNeighborsConfig().getNeighborConfigList())
+		
+$EntityCode=$EntityCode
+$EntitiesCode=$EntitiesCode
+#if ($conceptConfig.getUniqueConfig().isNotEmpty())     
+${EntityCode}.id=$EntityCode identifier: $conceptConfig.getUniqueConfig().getCodes()
+${EntityCode}.id.unique=$EntityCode identifier $conceptConfig.getUniqueConfig().getCodes() is not unique.
+#end
+#foreach ($propertyConfig in $propertyConfigList) 
+#set ($propertyCode = $propertyConfig.getCode())	
+#set ($PropertyCode = $propertyConfig.getPropertyName()) 
+${EntityCode}.$propertyCode=$PropertyCode
+#if ($propertyConfig.isRequired())     
+${EntityCode}.${propertyCode}.required=$PropertyCode is required.
+#end
+#if ($propertyConfig.isMaxLength())     
+${EntityCode}.${propertyCode}.length=$PropertyCode is longer than $propertyConfig.getMaxLengthInt().
+#end
+#if ($propertyConfig.isValidateType())     
+${EntityCode}.${propertyCode}.validation=$PropertyCode is not a valid $propertyConfig.getValidationType() value.
+#end 
+#end
+#foreach ($neighborConfig in $neighborConfigList) 
+#set ($neighborCode = $neighborConfig.getCode())
+#set ($NeighborCode = $neighborConfig.getNeighborName()) 
+${EntityCode}.$neighborCode=$NeighborCode
+#end
+#end
+#end
+
+

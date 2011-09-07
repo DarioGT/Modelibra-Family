@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<patients>
+  <patient oid="1253218667914">
+    <firstName>Dzenan</firstName>
+    <lastName>Ridjanovic</lastName>
+    <email>dzenanr@gmail.com</email>
+  </patient>
+</patients>

@@ -1,0 +1,6 @@
+For Velocity, use class loader, put template in the src directory, 
+and when jarring select the template also and indicate the main class (Start).
+
+http://forums.java.net/jive/thread.jspa?forumID=23&threadID=342&messageID=9558
+http://www.rgagnon.com/javadetails/java-0319.html
+http://one-jar.sourceforge.net/

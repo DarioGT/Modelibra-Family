@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1253218217141">
+		<code>Medical</code>
+		<type>Specific</type>
+
+		<models>
+
+			<model oid="1253218267551">
+				<code>Records</code>
+				<extension>true</extension>
+				<extensionDomain>Medical</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>Records</extensionModel>
+				
+				<concepts>
+
+					<concept oid="1253218298654">
+						<code>Patient</code>
+						<extension>true</extension>
+						<extensionConcept>Patient</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1253218328515">
+								<code>firstName</code>
+								<extension>true</extension>
+								<extensionProperty>firstName</extensionProperty>
+
+							</property>
+
+							<property oid="1253218332772">
+								<code>lastName</code>
+								<extension>true</extension>
+								<extensionProperty>lastName</extensionProperty>
+
+							</property>
+
+							<property oid="1253218351381">
+								<code>email</code>
+								<extension>true</extension>
+								<extensionProperty>email</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+				
+				</concepts>
+		
+			</model>
+   
+		</models>
+
+	</domain>
+		
+</domains>

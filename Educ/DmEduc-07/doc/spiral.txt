@@ -1,0 +1,40 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 07
+Title: Web Components
+Created: 2007.03.24
+Updated: 2007.11.28
+
+Objective
+
+    To create a specific home page by creating specific web components
+    and by reusing ModelibraWicket generic components.
+    
+Concepts
+
+	Specific and generic web components.
+	
+Changes
+
+	Interests
+		getInterestsOrderedByCategoryOid
+
+	dmeduc.wicket.home
+		HomePage.java
+		HomePageMenuPanel.java
+		HomePage.html
+		HomePageMenuPanel.html
+	
+	dmeduc.wicket.weblink.member
+		MemberInterestsList.java
+		MemberInterestsListPanel.java
+		MemberInterestsListPanel.html
+	
+	dmeduc.wicket.weblink.interest
+		InterestsList.java
+		InterestsListPanel.java
+		InterestsListPanel.html
+	
+	dmeduc.wicket.weblink.url
+		EntityDisplayListPanel
+	

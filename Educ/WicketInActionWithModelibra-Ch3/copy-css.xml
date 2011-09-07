@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="ModelibraWicketProject" default="copy-css-dir">	
+	
+	<property name="from-css-dir" value="../ModelibraWicketCss/css"/>
+	<property name="to-css-dir" value="css"/>
+			
+	<target name="create-css-dir">
+		<mkdir dir="${to-css-dir}"/>	
+	</target>
+		
+	<target name="copy-css-dir" depends="create-css-dir">
+		<copy todir="${to-css-dir}">
+			<fileset dir="${from-css-dir}"/>
+		</copy> 
+	</target>
+	
+</project>

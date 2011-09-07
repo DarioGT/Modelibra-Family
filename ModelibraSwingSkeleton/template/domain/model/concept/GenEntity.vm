@@ -1,0 +1,464 @@
+#include ("template/ModelibraComment.txt")
+
+package $entitypackagecode;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.modelibra.Entity;
+import org.modelibra.IDomainModel;
+import org.modelibra.Oid;
+
+/* ======= import model class ======= */
+
+#set ($packageModelClass = $modelConfig.getModelClass())
+import $packageModelClass;
+
+/* ======= import property classes ======= */
+
+#foreach ($propertyConfig in $notBaseClassPropertyConfigList) 
+	#set ($packagePropertyClass = $propertyConfig.getPropertyClass())
+	import $packagePropertyClass;	
+#end
+
+/* ======= import internal parent entity class ======= */
+
+#if ($internalParentConfig)
+#set ($packageNeighborEntityClass = $internalParentConfig.getDestinationConceptConfig().getEntityClass())
+import $packageNeighborEntityClass;	
+#end
+
+/* ======= import internal child entities classes ======= */
+
+#foreach ($neighborConfig in $internalChildConfigList) 
+	#set ($packageNeighborEntitiesClass = $neighborConfig.getDestinationConceptConfig().getEntitiesClass())
+	import $packageNeighborEntitiesClass;	
+#end
+
+/* ======= import external parent entity and entities classes ======= */
+
+#foreach ($neighborConfig in $externalParentConfigList) 
+	#set ($packageNeighborEntityClass = $neighborConfig.getDestinationConceptConfig().getEntityClass())
+	#set ($packageNeighborEntitiesClass = $neighborConfig.getDestinationConceptConfig().getEntitiesClass())
+	import $packageNeighborEntityClass;
+	import $packageNeighborEntitiesClass;	
+#end
+
+/* ======= import external child entities classes ======= */
+
+#foreach ($neighborConfig in $externalChildConfigList) 
+	#set ($packageNeighborEntitiesClass = $neighborConfig.getDestinationConceptConfig().getEntitiesClass())
+	import $packageNeighborEntitiesClass;	
+#end
+
+/* ======= import external many-to-many internal parent entities classes ======= */
+
+#foreach ($neighborConfig in $externalManyToManyChildConfigList)  
+	#set ($internalManyToManyParentConceptConfig = $neighborConfig.getInternalManyToManyParentConceptConfig())  
+	#if ($internalManyToManyParentConceptConfig)
+		#set ($packageOtherEntitiesClass = $internalManyToManyParentConceptConfig.getEntitiesClass())
+		import $packageOtherEntitiesClass;
+	#end	
+#end
+
+/**
+ * $EntityCode generated entity. This class should not be changed manually. 
+ * Use a subclass to add specific code.
+ * 
+ * @author $author
+ * @version $today
+ */
+public abstract class Gen$EntityCode extends Entity<$EntityCode> {
+
+	private static final long serialVersionUID = ${serialNumber}L;
+
+	private static Log log = LogFactory.getLog(Gen${EntityCode}.class);
+
+	/* ======= entity properties (without the code, reference and derived properties) ======= */
+	
+    #foreach ($propertyConfig in $entityPropertyConfigList) 
+    	#set ($propertyCode = $propertyConfig.getCode())
+    	#set ($PropertyClass = $propertyConfig.getPropertyClassSimpleName())
+	    private $PropertyClass $propertyCode;
+	
+    #end
+    
+    /* ======= reference properties ======= */
+	
+    #foreach ($propertyConfig in $referencePropertyConfigList) 
+    	#set ($propertyCode = $propertyConfig.getCode())
+    	#set ($PropertyClass = $propertyConfig.getPropertyClassSimpleName())
+	    private $PropertyClass $propertyCode;
+	
+    #end
+    
+    /* ======= internal parent neighbors ======= */
+	
+    #if ($internalParentConfig) 
+    	#set ($neighborCode = $internalParentConfig.getCode())
+    	#set ($NeighborEntityCode = $internalParentConfig.getDestinationConceptConfig().getCode())
+	    private $NeighborEntityCode $neighborCode;	
+    #end
+
+	/* ======= internal child neighbors ======= */
+	
+    #foreach ($neighborConfig in $internalChildConfigList) 
+    	#set ($neighborCode = $neighborConfig.getCode()) 
+    	#set ($NeighborEntitiesCode = $neighborConfig.getDestinationConceptConfig().getEntitiesCode())
+	    private $NeighborEntitiesCode $neighborCode;
+	
+    #end
+    
+    /* ======= external parent neighbors ======= */
+	
+    #foreach ($neighborConfig in $externalParentConfigList)
+    	#set ($neighborCode = $neighborConfig.getCode()) 
+    	#set ($NeighborEntityCode = $neighborConfig.getDestinationConceptConfig().getCode()) 
+	    private $NeighborEntityCode $neighborCode;
+	
+    #end
+
+	/* ======= external child neighbors ======= */
+	
+    #foreach ($neighborConfig in $externalChildConfigList)
+    	#set ($neighborCode = $neighborConfig.getCode()) 
+    	#set ($NeighborEntitiesCode = $neighborConfig.getDestinationConceptConfig().getEntitiesCode()) 
+	    private $NeighborEntitiesCode $neighborCode;
+	
+    #end
+    
+	/* ======= base constructor ======= */
+	
+	/**
+	 * Constructs $entityCode within the domain model.
+	 * 
+	 * @param model
+	 *            model
+	 */
+	public Gen$EntityCode(IDomainModel model) {
+		super(model);
+		// internal child neighbors only
+		#foreach ($neighborConfig in $internalChildConfigList) 
+			#set ($neighborCode = $neighborConfig.getCode())
+			#set ($NeighborCode = $neighborConfig.getNeighborName()) 
+			#set ($NeighborEntitiesCode = $neighborConfig.getDestinationConceptConfig().getEntitiesCode())
+	    	set$NeighborCode(new $NeighborEntitiesCode(($EntityCode) this));
+    	#end
+	}
+	
+	/* ======= parent argument(s) constructor ======= */
+	
+	#if ($parentConfigList.size() > 0)
+	    /**
+	     * Constructs $entityCode within its parent(s).
+	     * 
+	    #foreach ($neighborConfig in $parentConfigList)   
+	    	#set ($neighborCode = $neighborConfig.getCode()) 
+	    	#set ($NeighborEntityCode = $neighborConfig.getDestinationConceptConfig().getCode())
+    		* @param $NeighborEntityCode $neighborCode
+		#end
+	     */
+	    public Gen$EntityCode(
+	    	#foreach ($neighborConfig in $parentConfigList) 
+	    		#set ($neighborCode = $neighborConfig.getCode())
+	    		#set ($NeighborEntityCode = $neighborConfig.getDestinationConceptConfig().getCode())
+	    		#if ($neighborConfig == $lastParentConfig)     
+					$NeighborEntityCode $neighborCode  
+	    		#else
+					$NeighborEntityCode $neighborCode,
+	    		#end 
+	    	#end    
+	    ) {
+	    	#set ($lastParentCode = $lastParentConfig.getCode())
+			this(${lastParentCode}.getModel());
+			// parents
+			#foreach ($neighborConfig in $parentConfigList) 
+				#set ($neighborCode = $neighborConfig.getCode()) 
+				#set ($NeighborCode = $neighborConfig.getNeighborName())   
+				set$NeighborCode($neighborCode);
+	    	#end  
+	    }
+    #end
+    
+    /* ======= entity property (without the code, reference and derived properties) set and get methods ======= */
+	
+    #foreach($propertyConfig in $entityPropertyConfigList) 
+    	#set ($propertyCode = $propertyConfig.getCode())
+    	#set ($PropertyCode = $propertyConfig.getPropertyName()) 
+    	#set ($PropertyClass = $propertyConfig.getPropertyClassSimpleName())
+		/**
+		 * Sets $propertyCode.
+		 * 
+		 * @param $propertyCode
+		 *            $propertyCode
+		 */
+		public void set$PropertyCode($PropertyClass $propertyCode) {
+			this.$propertyCode = $propertyCode;
+		}
+		
+		/**
+		 * Gets $propertyCode.
+		 * 
+		 * @return $propertyCode
+		 */
+		public $PropertyClass get$PropertyCode() {
+			return $propertyCode;
+		}  
+		
+		#set ($propertyBooleanClass = "java.lang.Boolean")
+		#if ($propertyConfig.getPropertyClass() == $propertyBooleanClass)
+			/**
+		     * Sets $propertyCode.
+		     * 
+		     * @param $propertyCode
+		     *            $propertyCode
+		     */
+			public void set$PropertyCode(boolean $propertyCode) {
+				set$PropertyCode(new Boolean($propertyCode));
+			}
+
+			/**
+	          * Checks if it is <code>true</code> or <code>false</code>.
+	          * 
+	          * @return <code>true</code> or <code>false</code>
+	          */
+			public boolean is$PropertyCode() {
+				return get${PropertyCode}().booleanValue();
+			}
+			
+		#end
+    #end
+    
+    /* ======= reference property set and get methods ======= */
+    
+    #foreach($propertyConfig in $referencePropertyConfigList) 
+    	#set ($propertyCode = $propertyConfig.getCode()) 
+    	#set ($PropertyCode = $propertyConfig.getPropertyName()) 
+    	#set ($PropertyClass = $propertyConfig.getPropertyClassSimpleName())
+    		#set ($referenceNeighborCode = $propertyConfig.getReferenceNeighbor())
+	/**
+		 * Sets $propertyCode.
+		 * 
+		 * @param $propertyCode
+		 *            $propertyCode
+		 */
+		public void set$PropertyCode($PropertyClass $propertyCode) {
+			this.$propertyCode = $propertyCode;
+							$referenceNeighborCode = null;
+			}
+		
+		/**
+		 * Gets $propertyCode.
+		 * 
+		 * @return $propertyCode
+		 */
+		public $PropertyClass get$PropertyCode() {
+			return $propertyCode;
+		}  
+    #end
+    
+    /* ======= derived property abstract get methods ======= */
+    
+    #foreach($propertyConfig in $derivedPropertyConfigList) 
+    	#set ($propertyCode = $propertyConfig.getCode()) 
+    	#set ($PropertyCode = $propertyConfig.getPropertyName()) 
+    	#set ($PropertyClass = $propertyConfig.getPropertyClassSimpleName())
+		
+		/**
+		 * Gets $propertyCode.
+		 * 
+		 * @return $propertyCode
+		 */
+		public abstract $PropertyClass get$PropertyCode();
+    #end
+    
+    /* ======= internal parent set and get methods ======= */
+    
+    #if ($internalParentConfig)   
+    	#set ($neighborCode = $internalParentConfig.getCode()) 
+    	#set ($NeighborCode = $internalParentConfig.getNeighborName()) 
+    	#set ($NeighborEntityCode = $internalParentConfig.getDestinationConceptConfig().getCode())
+    	/**
+		 * Sets $neighborCode.
+		 * 
+		 * @param $neighborCode
+		 *            $neighborCode
+		 */
+    	public void set$NeighborCode($NeighborEntityCode $neighborCode) {
+			this.$neighborCode = $neighborCode;
+		}
+
+		/**
+		 * Gets $neighborCode.
+		 * 
+		 * @return $neighborCode
+		 */
+		public $NeighborEntityCode get$NeighborCode() {
+			return $neighborCode;
+		}
+		
+	#end
+	
+	/* ======= internal child set and get methods ======= */
+    
+    #foreach ($neighborConfig in $internalChildConfigList)    
+    	#set ($neighborCode = $neighborConfig.getCode()) 
+    	#set ($NeighborCode = $neighborConfig.getNeighborName()) 
+    	#set ($NeighborEntitiesCode = $neighborConfig.getDestinationConceptConfig().getEntitiesCode())
+    	#set ($InverseNeighbor = $neighborConfig.getInverseNeighborFirstLetterAsUpper())
+    	/**
+		 * Sets $neighborCode.
+		 * 
+		 * @param $neighborCode
+		 *            $neighborCode
+		 */
+    	public void set$NeighborCode($NeighborEntitiesCode $neighborCode) {
+			this.$neighborCode = $neighborCode;
+			if ($neighborCode != null) {
+				${neighborCode}.set$InverseNeighbor(($EntityCode) this);
+			}
+		}
+
+		/**
+		 * Gets $neighborCode.
+		 * 
+		 * @return $neighborCode
+		 */
+		public $NeighborEntitiesCode get$NeighborCode() {
+			return $neighborCode;
+		}
+		
+	#end
+	
+	/* ======= external parent set and get methods ======= */
+    
+    #foreach ($neighborConfig in $externalParentConfigList)   
+    	#set ($neighborCode = $neighborConfig.getCode()) 
+    	#set ($NeighborCode = $neighborConfig.getNeighborName()) 
+    	#set ($neighborEntityCode = $neighborConfig.getDestinationConceptConfig().getCodeWithFirstLetterAsLower())
+    	#set ($NeighborEntityCode = $neighborConfig.getDestinationConceptConfig().getCode())
+    	#set ($neighborEntitiesCode = $neighborConfig.getDestinationConceptConfig().getEntitiesCodeWithFirstLetterAsLower())
+    	#set ($NeighborEntitiesCode = $neighborConfig.getDestinationConceptConfig().getEntitiesCode())
+    	#set ($destinationConceptConfig = $neighborConfig.getDestinationConceptConfig())
+    	#set ($ModelCode = $modelConfig.getCode())
+    	#set ($modelCode = $modelConfig.getCodeWithFirstLetterAsLower())
+    	/**
+		 * Sets $neighborCode.
+		 * 
+		 * @param $neighborCode
+		 *            $neighborCode
+		 */
+    	public void set$NeighborCode($NeighborEntityCode $neighborCode) {
+			this.$neighborCode = $neighborCode;
+			if ($neighborCode != null) {
+				${neighborCode}Oid = ${neighborCode}.getOid().getUniqueNumber();
+			} else {
+				${neighborCode}Oid = null;
+			}
+		}
+
+		/**
+		 * Gets $neighborCode.
+		 * 
+		 * @return $neighborCode
+		 */
+		public $NeighborEntityCode get$NeighborCode() {
+			if ($neighborCode == null) {
+				$ModelCode $modelCode = ($ModelCode) getModel();
+				$NeighborEntitiesCode $neighborEntitiesCode = ${modelCode}.get$NeighborEntitiesCode();
+				if (${neighborCode}Oid != null) {
+					#if ($destinationConceptConfig.isReflexive())
+						$neighborCode = ${neighborEntitiesCode}.getReflexive$NeighborEntityCode(${neighborCode}Oid);
+					#else
+						$neighborCode = ${neighborEntitiesCode}.get$NeighborEntityCode(${neighborCode}Oid);
+					#end
+				}
+			}
+			return $neighborCode;
+		}
+		
+	#end
+	
+	/* ======= external one-to-many child set and get methods ======= */
+    
+    #foreach ($neighborConfig in $externalOneToManyChildConfigList)   
+    	#set ($neighborCode = $neighborConfig.getCode())
+    	#set ($NeighborCode = $neighborConfig.getNeighborName()) 
+    	#set ($NeighborEntitiesCode = $neighborConfig.getDestinationConceptConfig().getEntitiesCode())
+    	#set ($InverseNeighbor = $neighborConfig.getInverseNeighborFirstLetterAsUpper())
+    			#set ($destinationConceptConfig = $neighborConfig.getDestinationConceptConfig())
+    				#set ($DestinationConceptEntitiesCode = $destinationConceptConfig.getEntitiesCode())
+    	#set ($ModelCode = $modelConfig.getCode())
+    	#set ($modelCode = $modelConfig.getCodeWithFirstLetterAsLower())
+    	/**
+		 * Sets $neighborCode.
+		 * 
+		 * @param $neighborCode
+		 *            $neighborCode
+		 */
+    	public void set$NeighborCode($NeighborEntitiesCode $neighborCode) {
+			this.$neighborCode = $neighborCode;
+			if ($neighborCode != null) {
+				${neighborCode}.set$InverseNeighbor(($EntityCode) this);
+			}
+		}
+
+		/**
+		 * Gets $neighborCode.
+		 * 
+		 * @return $neighborCode
+		 */
+		public $NeighborEntitiesCode get$NeighborCode() {
+			if ($neighborCode == null) {
+				$ModelCode $modelCode = ($ModelCode) getModel();
+				$NeighborEntitiesCode $neighborCode = ${modelCode}.get$NeighborEntitiesCode();
+				set$NeighborCode (${neighborCode}.get$InverseNeighbor$DestinationConceptEntitiesCode(($EntityCode) this));
+			}
+			return $neighborCode;
+		}
+		
+	#end
+	
+	/* ======= external (part of) many-to-many child set and get methods ======= */
+    
+    #foreach ($neighborConfig in $externalManyToManyChildConfigList)    
+    	#set ($neighborCode = $neighborConfig.getCode())
+    	#set ($NeighborCode = $neighborConfig.getNeighborName())
+    	#set ($NeighborEntitiesCode = $neighborConfig.getDestinationConceptConfig().getEntitiesCode())
+    	#set ($InverseNeighbor = $neighborConfig.getInverseNeighborFirstLetterAsUpper())
+    	#set ($internalManyToManyParentConceptConfig = $neighborConfig.getInternalManyToManyParentConceptConfig())  
+    	#set ($ModelCode = $modelConfig.getCode())
+		#set ($modelCode = $modelConfig.getCodeWithFirstLetterAsLower())
+		#if ($internalManyToManyParentConceptConfig)
+			#set ($OtherEntitiesCode = $internalManyToManyParentConceptConfig.getEntitiesCode())
+    		#set ($otherEntitiesCode = $internalManyToManyParentConceptConfig.getEntitiesCodeWithFirstLetterAsLower())
+			/**
+			 * Sets $neighborCode.
+			 * 
+			 * @param $neighborCode
+			 *            $neighborCode
+			 */
+	    	public void set$NeighborCode($NeighborEntitiesCode $neighborCode) {
+				this.$neighborCode = $neighborCode;
+				if ($neighborCode != null) {
+					${neighborCode}.set$InverseNeighbor(($EntityCode) this);
+				}
+			}
+	
+			/**
+			 * Gets $neighborCode.
+			 * 
+			 * @return $neighborCode
+			 */
+			public $NeighborEntitiesCode get$NeighborCode() {
+			    if ($neighborCode == null) {
+					$ModelCode $modelCode = ($ModelCode) getModel();
+					$OtherEntitiesCode $otherEntitiesCode = ${modelCode}.get$OtherEntitiesCode();
+					set$NeighborCode(${otherEntitiesCode}.get$EntityCode$NeighborCode(($EntityCode) this));
+				}
+				return $neighborCode;
+			}
+			
+		#end		
+	#end
+    
+}

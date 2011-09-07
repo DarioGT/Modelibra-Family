@@ -1,0 +1,41 @@
+#include ("template/ModelibraComment.txt")
+
+package $domainpackagecode;
+
+import org.modelibra.config.Config;
+import org.modelibra.config.DomainConfig;
+
+/**
+ * Provides the $DomainCode configuration.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $DomainConfigCode extends Config {
+
+	private static final long serialVersionUID = 1L;
+	
+	private DomainConfig domainConfig;
+
+	/**
+	 * Creates the $DomainCode configuration.
+	 */
+	public $DomainConfigCode() {
+		super();
+		domainConfig = getDomainConfig("$DomainCode", "Specific");
+	}
+	
+	/**
+	 * Gets the domain configuration.
+	 * 
+	 * @return domain configuration
+	 */
+	public DomainConfig getDomainConfig() {
+		return domainConfig;
+	}
+	
+	/* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+
+}

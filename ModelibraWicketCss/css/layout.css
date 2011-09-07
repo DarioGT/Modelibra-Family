@@ -1,0 +1,47 @@
+/* layout.css */
+
+/* ===[ begin ]=== */
+
+/*
+    Title:                   Basic Layout Design Style
+    Author:                  Dzenan Ridjanovic
+    Influenced By:           http://www.simplebits.com/
+    Created:                 2006-09-03
+    Updated:                 2007-11-29
+*/
+
+    .header {
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 10px;
+        background: #003366;
+    }
+
+	.north {
+		color: #708491;
+		padding: 6px;
+		background: #d7e9f7;
+	}
+    
+    .middle {
+    	font-family: arial, sans-serif;
+        font-size: 12px;
+    }
+	
+	.footer, .south {
+		clear: both;
+		font-family: arial, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #fffff0;
+		background: #4b91d1;
+		padding: 10px;
+	}
+    
+    .footer {
+        border-top: 2px solid #999999;
+    }
+		
+/* ===[ end ]=== */

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<members>
+  <member oid="1236180482966">
+    <code>dzenanr</code>
+    <password></password>
+    <firstName>Dzenan</firstName>
+    <lastName>Ridjanovic</lastName>
+    <email>dzenanr@gmail.com</email>
+    <onTime>true</onTime>
+    <maxNumberOfBooks>2</maxNumberOfBooks>
+    <returnDate>2009-03-04</returnDate>
+  </member>
+  <member oid="1236180862782">
+    <code>vensa</code>
+    <password></password>
+    <firstName>Vensada</firstName>
+    <lastName>Okanovic</lastName>
+    <email>vensa@email.com</email>
+    <onTime>true</onTime>
+    <maxNumberOfBooks>1</maxNumberOfBooks>
+    <returnDate>2009-03-04</returnDate>
+  </member>
+  <member oid="1236180940323">
+    <code>kirlich</code>
+    <password></password>
+    <firstName>Vedad</firstName>
+    <lastName>Kirlic</lastName>
+    <email>vedad.kirlich@gmail.com</email>
+    <onTime>true</onTime>
+    <maxNumberOfBooks>1</maxNumberOfBooks>
+    <returnDate>2009-03-04</returnDate>
+  </member>
+  <member oid="1236205697897">
+    <code>tim</code>
+    <password></password>
+    <firstName>Timur</firstName>
+    <lastName>Ridjanovic</lastName>
+    <email>timr@hotmail.com</email>
+    <onTime>true</onTime>
+    <maxNumberOfBooks>1</maxNumberOfBooks>
+    <returnDate>2009-03-04</returnDate>
+  </member>
+  <member oid="1236205848883">
+    <code>ogi</code>
+    <password></password>
+    <firstName>Ogden</firstName>
+    <lastName>Ridjanovic</lastName>
+    <email>ogir@gmail.com</email>
+    <onTime>true</onTime>
+    <maxNumberOfBooks>1</maxNumberOfBooks>
+    <returnDate>2009-03-04</returnDate>
+  </member>
+  <member oid="1258490227354">
+    <code>acr</code>
+    <password>zuta</password>
+    <firstName>Amra</firstName>
+    <lastName>Curovac Ridjanovic</lastName>
+    <email>modelibra.swing@email.org</email>
+    <onTime>true</onTime>
+    <maxNumberOfBooks>2</maxNumberOfBooks>
+    <returnDate>2009-11-17</returnDate>
+  </member>
+</members>

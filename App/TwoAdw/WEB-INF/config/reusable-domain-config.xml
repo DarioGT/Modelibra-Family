@@ -1,0 +1,1849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Reusable Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1231088671635">
+		<code>Twoadw</code>
+		<type>Reusable</type>
+	    
+		<models>
+
+			<model oid="1234213131026">
+				<code>Website</code>
+				<author>TeamFcp</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/twoadw/website</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1234213171465">
+						<code>Product</code>					
+						<entitiesCode>Products</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1234213185701">
+								<code>productNumber</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234213187968">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234213193047">
+								<code>shortDescription</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>128</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234213200860">
+								<code>longDescription</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>4080</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234213208955">
+								<code>price</code>
+								<propertyClass>java.lang.Double</propertyClass>
+								<required>true</required>
+								<defaultValue>99999</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234213227128">
+								<code>startDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234213233191">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236707563689">
+								<code>soldNumber</code>
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<defaultValue>0</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236738607876">
+								<code>frontpage</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1234213959745">
+								<code>invoiceProducts</code>
+								<destinationConcept>InvoiceProduct</destinationConcept>
+								<inverseNeighbor>product</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1234729976224">
+								<code>productManufacturers</code>
+								<destinationConcept>ProductManufacturer</destinationConcept>
+								<inverseNeighbor>product</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236704780007">
+								<code>productRebates</code>
+								<destinationConcept>ProductRebate</destinationConcept>
+								<inverseNeighbor>product</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236796157393">
+								<code>specificationCategories</code>
+								<destinationConcept>SpecificationCategory</destinationConcept>
+								<inverseNeighbor>product</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236973583926">
+								<code>productImages</code>
+								<destinationConcept>ProductImage</destinationConcept>
+								<inverseNeighbor>product</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236973779427">
+								<code>productComments</code>
+								<destinationConcept>ProductComment</destinationConcept>
+								<inverseNeighbor>product</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236975959923">
+								<code>questions</code>
+								<destinationConcept>Question</destinationConcept>
+								<inverseNeighbor>product</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1237227397827">
+								<code>assignProductCategories</code>
+								<destinationConcept>AssignProductCategory</destinationConcept>
+								<inverseNeighbor>product</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234213515630">
+						<code>InvoiceProduct</code>					
+						<entitiesCode>InvoiceProducts</entitiesCode>
+			    
+						<properties>
+							<property oid="1234213959745">
+								<code>productOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>product</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1234943443028">
+								<code>quantity</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>1</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236707465801">
+								<code>price</code>
+								<propertyClass>java.lang.Double</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1234213959745">
+								<code>product</code>
+								<destinationConcept>Product</destinationConcept>
+								<inverseNeighbor>invoiceProducts</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1234214021511">
+								<code>invoice</code>
+								<destinationConcept>Invoice</destinationConcept>
+								<inverseNeighbor>invoiceProducts</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234213538116">
+						<code>Invoice</code>					
+						<entitiesCode>Invoices</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236205120886">
+								<code>addressOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>address</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1234213550431">
+								<code>invoiceNumber</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234213552072">
+								<code>paid</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234213555870">
+								<code>shipped</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234213558215">
+								<code>date</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1234214021511">
+								<code>invoiceProducts</code>
+								<destinationConcept>InvoiceProduct</destinationConcept>
+								<inverseNeighbor>invoice</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1234728395437">
+								<code>invoiceStatuss</code>
+								<destinationConcept>InvoiceStatus</destinationConcept>
+								<inverseNeighbor>invoice</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236205120886">
+								<code>address</code>
+								<destinationConcept>Address</destinationConcept>
+								<inverseNeighbor>invoices</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234213586153">
+						<code>Customer</code>					
+						<entitiesCode>Customers</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1234213617843">
+								<code>codeCustomer</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234213621313">
+								<code>password</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+
+								<essential>false</essential>
+								<scramble>true</scramble>
+							</property>
+							<property oid="1234213635798">
+								<code>lastName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234213637815">
+								<code>firstName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234213640003">
+								<code>email</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>org.modelibra.type.Email</validationType>
+								<maxLength>80</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234213649489">
+								<code>receiveEmail</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234213760900">
+								<code>startDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236723155414">
+								<code>securityRole</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>1</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1235990680004">
+								<code>addresss</code>
+								<destinationConcept>Address</destinationConcept>
+								<inverseNeighbor>customer</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234725304094">
+						<code>ProductCategory</code>					
+						<entitiesCode>ProductCategories</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1234725391316">
+								<code>categoryNumber</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234725343956">
+								<code>categoryName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234725427864">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>128</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236973341253">
+								<code>imageUrl180x130</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<defaultValue>/css-specific/images/noimage180.jpg</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234725432724">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234725436913">
+								<code>startDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236973812805">
+								<code>productCategories</code>
+								<destinationConcept>ProductCategory</destinationConcept>
+								<inverseNeighbor>productCategory</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1237227400468">
+								<code>assignProductCategories</code>
+								<destinationConcept>AssignProductCategory</destinationConcept>
+								<inverseNeighbor>productCategory</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236973812805">
+								<code>productCategory</code>
+								<destinationConcept>ProductCategory</destinationConcept>
+								<inverseNeighbor>productCategories</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>0</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234725739868">
+						<code>ProductImage</code>					
+						<entitiesCode>ProductImages</entitiesCode>
+			    
+						<properties>
+							<property oid="1234725978842">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+								<defaultValue></defaultValue>
+								<unique>true</unique>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234725966544">
+								<code>imageUrl96x96</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<defaultValue>/css-specific/images/noimage96.jpg</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236973058391">
+								<code>imageUrl180x130</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<defaultValue>/css-specific/images/noimage180.jpg</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236973085564">
+								<code>imageUrlFullSize</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236973583926">
+								<code>product</code>
+								<destinationConcept>Product</destinationConcept>
+								<inverseNeighbor>productImages</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234726511675">
+						<code>Address</code>					
+						<entitiesCode>Addresss</entitiesCode>
+			    
+						<properties>
+							<property oid="1234726999542">
+								<code>addressName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+								<defaultValue>Default</defaultValue>
+								<unique>true</unique>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234726859522">
+								<code>street</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234726863226">
+								<code>city</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234726868789">
+								<code>zipCode</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234726878728">
+								<code>state</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234726883729">
+								<code>country</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1235991252585">
+								<code>telephone</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236205120886">
+								<code>invoices</code>
+								<destinationConcept>Invoice</destinationConcept>
+								<inverseNeighbor>address</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1235990680004">
+								<code>customer</code>
+								<destinationConcept>Customer</destinationConcept>
+								<inverseNeighbor>addresss</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234727536423">
+						<code>Manufacturer</code>					
+						<entitiesCode>Manufacturers</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1234727725847">
+								<code>manufacturerNumber</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234727733473">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234727748755">
+								<code>websiteUrl</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>java.net.URL</validationType>
+								<maxLength>96</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234727764429">
+								<code>supportUrl</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>java.net.URL</validationType>
+								<maxLength>96</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234727758850">
+								<code>contactEmail</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>org.modelibra.type.Email</validationType>
+								<maxLength>80</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234727832243">
+								<code>contactName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1234729980100">
+								<code>productManufacturers</code>
+								<destinationConcept>ProductManufacturer</destinationConcept>
+								<inverseNeighbor>manufacturer</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234728303057">
+						<code>InvoiceStatus</code>					
+						<entitiesCode>InvoiceStatuss</entitiesCode>
+			    
+						<properties>
+							<property oid="1235990802565">
+								<code>statusOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>status</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1235990912299">
+								<code>date</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234728327357">
+								<code>note</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>255</maxLength>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1234728395437">
+								<code>invoice</code>
+								<destinationConcept>Invoice</destinationConcept>
+								<inverseNeighbor>invoiceStatuss</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1235990802565">
+								<code>status</code>
+								<destinationConcept>Status</destinationConcept>
+								<inverseNeighbor>invoiceStatuss</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234728771938">
+						<code>ProductComment</code>					
+						<entitiesCode>ProductComments</entitiesCode>
+			    
+						<properties>
+							<property oid="1234728811426">
+								<code>commentText</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>4080</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234728793050">
+								<code>commentTitle</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1234728920803">
+								<code>creationDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234728931554">
+								<code>modificationDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1234728913708">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>true</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236973779427">
+								<code>product</code>
+								<destinationConcept>Product</destinationConcept>
+								<inverseNeighbor>productComments</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1234729930222">
+						<code>ProductManufacturer</code>					
+						<entitiesCode>ProductManufacturers</entitiesCode>
+			    
+						<properties>
+							<property oid="1234729980100">
+								<code>manufacturerOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>manufacturer</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1237228657763">
+								<code>partNumber</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1234729976224">
+								<code>product</code>
+								<destinationConcept>Product</destinationConcept>
+								<inverseNeighbor>productManufacturers</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1234729980100">
+								<code>manufacturer</code>
+								<destinationConcept>Manufacturer</destinationConcept>
+								<inverseNeighbor>productManufacturers</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1235990711424">
+						<code>Status</code>					
+						<entitiesCode>Statuss</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1235990735305">
+								<code>statusName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1235990802565">
+								<code>invoiceStatuss</code>
+								<destinationConcept>InvoiceStatus</destinationConcept>
+								<inverseNeighbor>status</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236704376847">
+						<code>Rebate</code>					
+						<entitiesCode>Rebates</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236704609607">
+								<code>rebateName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236704712505">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>510</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236705093239">
+								<code>rebateValue</code>
+								<propertyClass>java.lang.Double</propertyClass>
+								<required>true</required>
+								<defaultValue>0</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236974404825">
+								<code>postalRebate</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236974450248">
+								<code>percentRebate</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236974480155">
+								<code>rebatePriority</code>
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<defaultValue>0</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236704714394">
+								<code>start</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236704716690">
+								<code>finish</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236704783832">
+								<code>productRebates</code>
+								<destinationConcept>ProductRebate</destinationConcept>
+								<inverseNeighbor>rebate</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236704565607">
+						<code>ProductRebate</code>					
+						<entitiesCode>ProductRebates</entitiesCode>
+			    
+						<properties>
+							<property oid="1236704783832">
+								<code>rebateOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>rebate</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236704780007">
+								<code>product</code>
+								<destinationConcept>Product</destinationConcept>
+								<inverseNeighbor>productRebates</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1236704783832">
+								<code>rebate</code>
+								<destinationConcept>Rebate</destinationConcept>
+								<inverseNeighbor>productRebates</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236738768962">
+						<code>QuestionCategory</code>					
+						<entitiesCode>QuestionCategories</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236738852933">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236738856325">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236973838167">
+								<code>questionCategories</code>
+								<destinationConcept>QuestionCategory</destinationConcept>
+								<inverseNeighbor>questionCategory</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236976040381">
+								<code>qQCategories</code>
+								<destinationConcept>QQCategory</destinationConcept>
+								<inverseNeighbor>questionCategory</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236973838167">
+								<code>questionCategory</code>
+								<destinationConcept>QuestionCategory</destinationConcept>
+								<inverseNeighbor>questionCategories</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>0</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236739001410">
+						<code>Question</code>					
+						<entitiesCode>Questions</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236975959923">
+								<code>productOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<reference>true</reference>
+								<referenceNeighbor>product</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1236739024811">
+								<code>questionText</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>1020</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236739027460">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236739232376">
+								<code>answers</code>
+								<destinationConcept>Answer</destinationConcept>
+								<inverseNeighbor>question</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236976036067">
+								<code>qQCategories</code>
+								<destinationConcept>QQCategory</destinationConcept>
+								<inverseNeighbor>question</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236975959923">
+								<code>product</code>
+								<destinationConcept>Product</destinationConcept>
+								<inverseNeighbor>questions</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>0</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236739076032">
+						<code>Answer</code>					
+						<entitiesCode>Answers</entitiesCode>
+			    
+						<properties>
+							<property oid="1236739091609">
+								<code>answerText</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>1020</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236739094746">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>true</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236739232376">
+								<code>question</code>
+								<destinationConcept>Question</destinationConcept>
+								<inverseNeighbor>answers</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236796091291">
+						<code>SpecificationCategory</code>					
+						<entitiesCode>SpecificationCategories</entitiesCode>
+			    
+						<properties>
+							<property oid="1236796114636">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236796214018">
+								<code>specifications</code>
+								<destinationConcept>Specification</destinationConcept>
+								<inverseNeighbor>specificationCategory</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236796157393">
+								<code>product</code>
+								<destinationConcept>Product</destinationConcept>
+								<inverseNeighbor>specificationCategories</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236796162010">
+						<code>Specification</code>					
+						<entitiesCode>Specifications</entitiesCode>
+			    
+						<properties>
+							<property oid="1236796197850">
+								<code>title</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236796199899">
+								<code>detail</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>128</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236796214018">
+								<code>specificationCategory</code>
+								<destinationConcept>SpecificationCategory</destinationConcept>
+								<inverseNeighbor>specifications</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236975992799">
+						<code>QQCategory</code>					
+						<entitiesCode>QQCategories</entitiesCode>
+			    
+						<properties>
+							<property oid="1236976040381">
+								<code>questionCategoryOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>questionCategory</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236976036067">
+								<code>question</code>
+								<destinationConcept>Question</destinationConcept>
+								<inverseNeighbor>qQCategories</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+							<neighbor oid="1236976040381">
+								<code>questionCategory</code>
+								<destinationConcept>QuestionCategory</destinationConcept>
+								<inverseNeighbor>qQCategories</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1237227206430">
+						<code>AssignProductCategory</code>					
+						<entitiesCode>AssignProductCategories</entitiesCode>
+			    
+						<properties>
+							<property oid="1237227397827">
+								<code>productOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>product</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1237227397827">
+								<code>product</code>
+								<destinationConcept>Product</destinationConcept>
+								<inverseNeighbor>assignProductCategories</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1237227400468">
+								<code>productCategory</code>
+								<destinationConcept>ProductCategory</destinationConcept>
+								<inverseNeighbor>assignProductCategories</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1236707938386">
+				<code>Generic</code>
+				<author>TeamFcp</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/twoadw/generic</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1236708297988">
+						<code>CategoryLink</code>					
+						<entitiesCode>CategoryLinks</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236708318677">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236708321909">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>true</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236708348987">
+								<code>categoryLinks</code>
+								<destinationConcept>CategoryLink</destinationConcept>
+								<inverseNeighbor>categoryLink</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236708426275">
+								<code>links</code>
+								<destinationConcept>Link</destinationConcept>
+								<inverseNeighbor>categoryLink</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1236708348987">
+								<code>categoryLink</code>
+								<destinationConcept>CategoryLink</destinationConcept>
+								<inverseNeighbor>categoryLinks</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>0</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236708354131">
+						<code>Link</code>					
+						<entitiesCode>Links</entitiesCode>
+			    
+						<properties>
+							<property oid="1236708369933">
+								<code>url</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>java.net.URL</validationType>
+								<maxLength>96</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236708372270">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236708379446">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>510</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236708381567">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>true</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236708426275">
+								<code>categoryLink</code>
+								<destinationConcept>CategoryLink</destinationConcept>
+								<inverseNeighbor>links</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236708441723">
+						<code>InformationPage</code>					
+						<entitiesCode>InformationPages</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236708480282">
+								<code>codePage</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236708486035">
+								<code>title</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236708496891">
+								<code>page</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236708500971">
+								<code>published</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>true</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236796790476">
+						<code>Template</code>					
+						<entitiesCode>Templates</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236796800806">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236796803863">
+								<code>directory</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>128</maxLength>
+								<required>true</required>
+								<defaultValue>css-specific/</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236798670103">
+						<code>GlobalConfiguration</code>					
+						<entitiesCode>GlobalConfigurations</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236798800801">
+								<code>siteName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236799175869">
+								<code>organisationName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236798780201">
+								<code>online</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>true</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236798827669">
+								<code>offlineMessage</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>510</maxLength>
+								<required>true</required>
+								<defaultValue>The website is offline</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236798970583">
+								<code>template</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+								<defaultValue>Classic</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236799240714">
+								<code>siteMetaDescription</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>255</maxLength>
+								<required>true</required>
+								<defaultValue>TwoAdw Wicket</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1236799299367">
+								<code>siteMetaKeywords</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>255</maxLength>
+								<required>true</required>
+								<defaultValue>TwoAdw, Wicket, Modelibra</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1236722508078">
+				<code>Reference</code>
+				<author>TeamFcp</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/twoadw/reference</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1236722534893">
+						<code>SecurityRole</code>					
+						<entitiesCode>SecurityRoles</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236722560029">
+								<code>roleCode</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236722632879">
+								<code>roleName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236722681012">
+						<code>Country</code>					
+						<entitiesCode>Countries</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236722981411">
+								<code>countryCode</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236722984060">
+								<code>countryName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236723031417">
+								<code>states</code>
+								<destinationConcept>State</destinationConcept>
+								<inverseNeighbor>countryName</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236723018872">
+						<code>State</code>					
+						<entitiesCode>States</entitiesCode>
+			    
+						<properties>
+							<property oid="1236723063070">
+								<code>stateCode</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236723080038">
+								<code>stateName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1236723031417">
+								<code>countryName</code>
+								<destinationConcept>Country</destinationConcept>
+								<inverseNeighbor>states</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1236723103069">
+						<code>CountryLanguage</code>					
+						<entitiesCode>CountryLanguages</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1236723127574">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1236723130455">
+								<code>language</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+    
+		</models>
+
+	</domain>
+		
+</domains>

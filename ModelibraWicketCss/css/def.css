@@ -1,0 +1,35 @@
+/* def.css */
+
+/* ===[ begin ]=== */
+
+/*
+    Title:                   Definition Design Style
+    Author:                  Dzenan Ridjanovic
+    Influenced By:           http://www.simplebits.com/
+    Created:                 2006-09-03
+    Updated:                 2008-01-18
+*/
+
+	dl {
+		list-style: none;
+		padding: 0px;
+		font-family: arial, sans-serif;
+		text-align: left;
+	}
+
+	dt {	
+		font-weight: bold;
+		padding: 4px;
+	}
+
+	dd {
+		line-height: 1.2em;
+		margin-left: 15px;
+		padding-left: 15px;
+	}
+	
+	.def dd {
+		background: #fffff0 url(img/arrow-down-right.gif) no-repeat 0 2px;
+	}		
+	
+/* ===[ end ]=== */

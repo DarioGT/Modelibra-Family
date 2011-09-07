@@ -1,0 +1,81 @@
+/*
+ * Modelibra
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+package org.modelibra.wicket.view;
+
+import java.io.Serializable;
+
+import org.modelibra.IEntities;
+import org.modelibra.IEntity;
+
+/**
+ * ModelibraWicket clipboard.
+ * 
+ * @version 2006-11-15
+ * @author Dzenan Ridjanovic
+ */
+@SuppressWarnings("serial")
+public class Clipboard implements Serializable {
+
+	private IEntities<?> entities;
+
+	private IEntity<?> entity;
+
+	/**
+	 * Constructs a clipboard.
+	 */
+	public Clipboard() {
+		super();
+	}
+
+	/**
+	 * Sets entities.
+	 * 
+	 * @param entities
+	 *            entities
+	 */
+	public void setEntities(IEntities<?> entities) {
+		this.entities = entities;
+	}
+
+	/**
+	 * Gets entities.
+	 * 
+	 * @return entities
+	 */
+	public IEntities<?> getEntities() {
+		return entities;
+	}
+
+	/**
+	 * Sets an entity.
+	 * 
+	 * @param entity
+	 *            entity
+	 */
+	public void setEntity(IEntity<?> entity) {
+		this.entity = entity;
+	}
+
+	/**
+	 * Gets an entity.
+	 * 
+	 * @return entity
+	 */
+	public IEntity<?> getEntity() {
+		return entity;
+	}
+
+}

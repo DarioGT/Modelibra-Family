@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<customers>
+  <customer oid="1237232718812">
+    <codeCustomer>daneault</codeCustomer>
+    <password>7aj82pal</password>
+    <lastName>Daneault</lastName>
+    <firstName>Pascal</firstName>
+    <email>pascal.daneault@gmail.com</email>
+    <receiveEmail>false</receiveEmail>
+    <startDate>2009-03-16</startDate>
+    <securityRole>99</securityRole>
+    <addresss>
+      <address oid="1237790916068">
+        <addressName>Default</addressName>
+        <street>425 Pere Lelievre</street>
+        <city>Quebec</city>
+        <zipCode>G1M 1M9</zipCode>
+        <state>Quebec</state>
+        <country>Canada</country>
+        <telephone>418-686-1730</telephone>
+      </address>
+      <address oid="1238669067267">
+        <addressName>Parent</addressName>
+        <street>76 des hêtres</street>
+        <city>Victoriaville</city>
+        <zipCode>G6T 1L3</zipCode>
+        <state>Quebec</state>
+        <country>Canada</country>
+        <telephone>(819) 758-4305</telephone>
+      </address>
+    </addresss>
+  </customer>
+  <customer oid="1237316851234">
+    <codeCustomer>admin</codeCustomer>
+    <password>admin</password>
+    <lastName>Administrator</lastName>
+    <firstName>Administrator</firstName>
+    <email>admin@twoadw.com</email>
+    <receiveEmail>false</receiveEmail>
+    <startDate>2009-03-17</startDate>
+    <securityRole>99</securityRole>
+  </customer>
+  <customer oid="1237316889662">
+    <codeCustomer>commercial</codeCustomer>
+    <password>commercial</password>
+    <lastName>Commercial</lastName>
+    <firstName>Commercial</firstName>
+    <email>Commercial@twoadw.com</email>
+    <receiveEmail>false</receiveEmail>
+    <startDate>2009-03-17</startDate>
+    <securityRole>3</securityRole>
+  </customer>
+  <customer oid="1237316913582">
+    <codeCustomer>manager</codeCustomer>
+    <password>manager</password>
+    <lastName>Manager</lastName>
+    <firstName>Manager</firstName>
+    <email>Manager@twoadw.com</email>
+    <receiveEmail>false</receiveEmail>
+    <startDate>2009-03-17</startDate>
+    <securityRole>2</securityRole>
+  </customer>
+  <customer oid="1237316937116">
+    <codeCustomer>customer</codeCustomer>
+    <password>customer</password>
+    <lastName>Customer</lastName>
+    <firstName>Customer</firstName>
+    <email>Customer@twoadw.com</email>
+    <receiveEmail>true</receiveEmail>
+    <startDate>2009-03-17</startDate>
+    <securityRole>1</securityRole>
+    <addresss>
+      <address oid="1237316961300">
+        <addressName>Default</addressName>
+        <street>99 Default street</street>
+        <city>DefaultCity</city>
+        <zipCode>A9A A9A</zipCode>
+        <state>DefaultState</state>
+        <country>DefaultCountry</country>
+        <telephone>555-555-5555</telephone>
+      </address>
+    </addresss>
+  </customer>
+  <customer oid="1238783378005">
+    <codeCustomer>test123</codeCustomer>
+    <password>test123</password>
+    <lastName>safd</lastName>
+    <firstName>safd</firstName>
+    <email>asfd@asdf.com</email>
+    <receiveEmail>false</receiveEmail>
+    <startDate>2009-04-03</startDate>
+    <securityRole>1</securityRole>
+  </customer>
+</customers>

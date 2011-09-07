@@ -1,0 +1,19 @@
+http://www.codeproject.com/KB/java/KeyGuard.aspx?fid=156862&df=90&mpp=25&noise=3&sort=Position&view=Quick&select=1116109
+http://www.mkyong.com/java/java-web-start-jnlp-tutorial-unofficial-guide/
+
+cd workspace/ModelibraModeler/deploy
+
+/usr/lib/jvm/java-6-openjdk/bin/keytool -genkey -keystore mm -alias mm
+cc
+cc
+
+The first mm is a keystore file created by the keytool.
+The second mm is an alias stored in the mm keystore file.
+
+/usr/lib/jvm/java-6-openjdk/bin/jarsigner -keystore mm mm.jar mm
+
+/usr/lib/jvm/java-6-openjdk/bin/jarsigner -keystore mm velocity-1.5.jar mm
+
+/usr/lib/jvm/java-6-openjdk/bin/jarsigner -keystore mm velocity-dep-1.5.jar mm
+
+MySql is not allowed (mysql jar is not signed nor referenced in the mm.jnlp file)

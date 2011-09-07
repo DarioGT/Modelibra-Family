@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>
+	<br/>
+	<form wicket:id="imageForm">
+		<table>
+			<tr>
+				<th>
+					<wicket:message key="image"/>
+				</th>
+				<td  wicket:id="image">					
+				</td>				
+			</tr>
+			<tr>
+				<th>
+					<wicket:message key="text"/>
+				</th>
+				<td wicket:id="text">
+				</td>				
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input wicket:id="submit" type="submit" wicket:message="value:save"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<div wicket:id="feedback"></div>
+</wicket:panel>
+
+</html>

@@ -1,0 +1,46 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 00
+Title: Simple Domain Model
+Created: 2006.01.09
+Updated: 2007.07.02
+
+Objective
+
+    To create a simple domain model without persistence.
+
+Concepts
+
+    domain model
+    single concept domain model
+    	Url concept with link and description properties only.
+    domain configuration
+    XML configuration file
+    XML document type definition (DTD)
+    Entity, Entities
+	entry concept
+	oid
+	validation (required)
+	
+	static property
+	static method
+	interface vs. class
+	default constructor vs. constructor
+	super vs. this
+	try catch
+	Exception
+	
+	property 
+	get and set methods
+	void vs. return
+	null vs. required
+	property type (base type vs. class)
+	String class
+	
+	Eclipse
+	project directory structure
+	application configuration
+	JUnit tests
+  
+  
+

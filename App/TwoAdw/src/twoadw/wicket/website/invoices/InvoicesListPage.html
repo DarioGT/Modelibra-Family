@@ -1,0 +1,39 @@
+<html>
+<body>
+<wicket:extend>
+	<div id="content">
+		<div id="main">
+					<h3>Invoices List</h3>	
+			<div wicket:id="invoiceList">
+				<b>
+				<span class="pointMain"></span>&nbsp;<a wicket:id="invoiceLink"><span wicket:id="iNumber">Name</span></a>
+				| <span wicket:id="date">date</span></b>
+				<br>
+				&nbsp;&nbsp;&nbsp;<span class="pointMain"></span>
+				<span wicket:id="codeCustomer">codeCustomer</span>
+				&nbsp;(<span wicket:id="lastName">lastName</span>, <span wicket:id="firstName">firstName</span>)
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span wicket:id="street">street</span>,
+				<span wicket:id="city">city</span>,
+				<span wicket:id="state">state</span>,
+				<span wicket:id="country">country</span>,
+				<span wicket:id="zipCode">zipCode</span>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span wicket:id="telephone">telephone</span><br>
+				&nbsp;&nbsp;&nbsp;<span class="pointMain"></span>Products:
+				<div wicket:id="products">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pointSub"></span>
+					<span wicket:id="quantity">quantity</span>&nbsp;x&nbsp;
+					<span wicket:id="productNumber">productNumber</span>&nbsp;(
+					<span wicket:id="productName">productName</span>)
+				</div>
+				<br>
+			</div>
+		</div> <!-- main -->
+		<div id="left">		
+				<div wicket:id="invoiceSearchPanel"></div>
+			</div> <!-- left -->
+	</div> <!-- content -->
+</wicket:extend>
+</body>
+</html>

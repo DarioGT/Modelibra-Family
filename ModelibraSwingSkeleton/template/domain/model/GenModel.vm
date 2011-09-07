@@ -1,0 +1,121 @@
+#include ("template/ModelibraComment.txt")
+
+package ${modelpackagecode};
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.modelibra.IDomain;
+import org.modelibra.DomainModel;
+
+/* ======= import entry concept entities ======= */
+
+#foreach ($entryConceptConfig in $entryConceptConfigList) 
+#set ($entryEntitiesClass = $entryConceptConfig.getEntitiesClass())
+import $entryEntitiesClass;	
+#end
+
+/* ======= import non entry external child/parent required concept entities ======= */
+
+#foreach ($nonEntryExternalChildConceptConfig in $requiredGetterNonEntryConceptConfigList) 
+#set ($nonEntryEntitiesClass = $nonEntryExternalChildConceptConfig.getEntitiesClass())
+#set ($nonEntryEntityClass = $nonEntryExternalChildConceptConfig.getEntityClass())
+#set ($internalParentEntitiyClass = $nonEntryExternalChildConceptConfig.getInternalParentNeighbor().getDestinationConceptConfig().getEntityClass())
+import $nonEntryEntitiesClass;	
+import $nonEntryEntityClass;
+import $internalParentEntitiyClass;
+#end
+
+/**
+ * $ModelCode generated model. This class should not be changed manually. 
+ * Use a subclass to add specific code.
+ * 
+ * @author $author
+ * @version $today
+ */
+public abstract class Gen$ModelCode extends DomainModel {
+
+	private static final long serialVersionUID = ${serialNumber}L;
+	
+	private static Log log = LogFactory.getLog(Gen${ModelCode}.class);
+	
+#foreach ($entryConceptConfig in $entryConceptConfigList) 
+#set ($EntryEntitiesCode = $entryConceptConfig.getEntitiesCode())
+#set ($entryEntitiesCode = $entryConceptConfig.getEntitiesCodeWithFirstLetterAsLower())		
+	private $EntryEntitiesCode $entryEntitiesCode;
+		
+#end
+	/**
+	 * Constructs a domain model within the domain.
+	 * 
+	 * @param domain
+	 *            domain
+	 */
+	public Gen$ModelCode(IDomain domain) {
+		super(domain);
+#foreach ($entryConceptConfig in $entryConceptConfigList) 
+#set ($EntryEntitiesCode = $entryConceptConfig.getEntitiesCode())
+#set ($entryEntitiesCode = $entryConceptConfig.getEntitiesCodeWithFirstLetterAsLower())
+		$entryEntitiesCode = new $EntryEntitiesCode(this);
+#end
+	}
+
+#foreach ($entryConceptConfig in $entryConceptConfigList) 
+#set ($EntryEntityCode = $entryConceptConfig.getCode())
+#set ($EntryEntitiesCode = $entryConceptConfig.getEntitiesCode())
+#set ($entryEntitiesCode = $entryConceptConfig.getEntitiesCodeWithFirstLetterAsLower())
+	/**
+	 * Gets $EntryEntityCode entities.
+	 * 
+	 * @return $EntryEntityCode entities
+	 */
+	public $EntryEntitiesCode get$EntryEntitiesCode() {
+		return $entryEntitiesCode;
+	}
+	
+#end
+
+#foreach ($nonEntryExternalChildConceptConfig in $requiredGetterNonEntryConceptConfigList) 
+#set ($NonEntryEntityCode = $nonEntryExternalChildConceptConfig.getCode())
+#set ($nonEntryEntityCode = $nonEntryExternalChildConceptConfig.getCodeWithFirstLetterAsLower())
+#set ($NonEntryEntitiesCode = $nonEntryExternalChildConceptConfig.getEntitiesCode())
+#set ($nonEntryEntitiesCode = $nonEntryExternalChildConceptConfig.getEntitiesCodeWithFirstLetterAsLower())
+#set ($internalParentConceptConfig = $nonEntryExternalChildConceptConfig.getInternalParentNeighbor().getDestinationConceptConfig())
+#set ($ParentEntitiesCode = $internalParentConceptConfig.getEntitiesCode())
+#set ($parentEntitiesCode = $internalParentConceptConfig.getEntitiesCodeWithFirstLetterAsLower())
+#set ($ParentEntityCode = $internalParentConceptConfig.getCode())
+#set ($parentEntityCode = $internalParentConceptConfig.getCodeWithFirstLetterAsLower())
+
+	/**
+	 * Gets all $NonEntryEntityCode entities.
+	 * 
+	 * @return $NonEntryEntityCode entities
+	 */
+	public $NonEntryEntitiesCode get$NonEntryEntitiesCode() {
+		$NonEntryEntitiesCode all$NonEntryEntitiesCode = null;
+		boolean dataLoaded = isInitialized();
+		if (dataLoaded) {
+			try {
+				all$NonEntryEntitiesCode = new $NonEntryEntitiesCode(this);
+				all${NonEntryEntitiesCode}.setPersistent(false);
+				all${NonEntryEntitiesCode}.setPre(false);
+				all${NonEntryEntitiesCode}.setPost(false);
+				$ParentEntitiesCode $parentEntitiesCode = get$ParentEntitiesCode();
+				for ($ParentEntityCode $parentEntityCode : $parentEntitiesCode) {
+					$NonEntryEntitiesCode $parentEntityCode$NonEntryEntitiesCode = ${parentEntityCode}.get$NonEntryEntitiesCode();
+					for ($NonEntryEntityCode $nonEntryEntityCode : $parentEntityCode$NonEntryEntitiesCode) {
+						all${NonEntryEntitiesCode}.add($nonEntryEntityCode);
+					}
+				}	
+			} catch (Exception e) {
+				log.error("Error in Gen${ModelCode}.get$NonEntryEntitiesCode(): " + e.getMessage());
+			} finally {
+				all${NonEntryEntitiesCode}.setPersistent(true);
+				all${NonEntryEntitiesCode}.setPre(true);
+				all${NonEntryEntitiesCode}.setPost(true);
+			}			
+		}
+		return all$NonEntryEntitiesCode;
+	}
+	
+#end
+}

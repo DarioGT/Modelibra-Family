@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!-- ========================================== -->
+    <!-- DEFINE APPENDERS FOR 1 GLOBAL LOGGER       -->
+    <!-- ========================================== -->
+    <appender name="info.html" class="org.apache.log4j.RollingFileAppender">
+      <param name="File" value="logs/info.html"/>
+      <param name="MaxFileSize" value="96KB"/>
+      <param name="MaxBackupIndex" value="2"/>
+      <layout class="org.apache.log4j.HTMLLayout"/>
+    </appender>
+    <appender name="error.html" class="org.apache.log4j.RollingFileAppender">
+      <param name="File" value="logs/error.html"/> 
+      <param name="MaxFileSize" value="32KB"/>
+      <param name="MaxBackupIndex" value="2"/>
+      <layout class="org.apache.log4j.HTMLLayout"/>
+    </appender>
+    <appender name="other" class="org.apache.log4j.ConsoleAppender">
+      <layout class="org.apache.log4j.PatternLayout">
+        <param name="ConversionPattern" value="%d{HH:mm:ss} %5p %c{1} %m%n"/>
+      </layout>
+    </appender>
+    <logger name="INFO">
+      <appender-ref ref="info.html"/>
+    </logger>
+    <logger name="ERROR">
+      <appender-ref ref="error.html"/>
+    </logger>
+    <logger name="org.apache.catalina.session.ManagerBase">
+      <appender-ref ref="other"/>
+    </logger>
+    <logger name="org.apache.commons.digester.Digester">
+      <appender-ref ref="other"/>
+    </logger>
+    <root>
+      <priority value="INFO"/>
+      <appender-ref ref="info.html"/>
+    </root>
+</log4j:configuration>

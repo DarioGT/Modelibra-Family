@@ -1,0 +1,9 @@
+
+
+http://www.verisign.com/products/signing/code/
+http://www.devx.com/Java/Article/10185/0/page/3
+http://java.sun.com/docs/books/tutorial/jar/sign/intro.html
+http://java.sun.com/j2se/1.4.2/docs/guide/security/cert3.html
+http://mysun-mail.sun.com/system/doc/security/ssl.html
+http://www.securingjava.com/
+

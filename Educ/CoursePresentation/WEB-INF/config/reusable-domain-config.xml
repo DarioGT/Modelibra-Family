@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Reusable Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1196717863883">
+		<code>Course</code>
+		<type>Reusable</type>
+	    
+		<models>
+
+			<model oid="1176413467981">
+				<code>Lecture</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/lecture</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1176413488810">
+						<code>Presentation</code>
+						<entitiesCode>Presentations</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1176413542941">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176413546364">
+								<code>title</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176413549287">
+								<code>author</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176413553866">
+								<code>organisation</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1176413558414">
+								<code>creationDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1176413562040">
+								<code>objective</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>255</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1176413565525">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>510</maxLength>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1176413619830">
+								<code>slides</code>
+								<destinationConcept>Slide</destinationConcept>
+								<inverseNeighbor>presentation</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1176413490734">
+						<code>Slide</code>
+						<entitiesCode>Slides</entitiesCode>
+			    
+						<properties>
+							<property oid="1176413600826">
+								<code>number</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+								<autoIncrement>true</autoIncrement>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176413604827">
+								<code>title</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176413608922">
+								<code>subTitle</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1176413611970">
+								<code>purpose</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>255</maxLength>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1176413625706">
+								<code>points</code>
+								<destinationConcept>Point</destinationConcept>
+								<inverseNeighbor>slide</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1176413619830">
+								<code>presentation</code>
+								<destinationConcept>Presentation</destinationConcept>
+								<inverseNeighbor>slides</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1176413492939">
+						<code>Point</code>
+						<entitiesCode>Points</entitiesCode>
+			    
+						<properties>
+							<property oid="1176413579105">
+								<code>number</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+								<autoIncrement>true</autoIncrement>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176413583652">
+								<code>text</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>255</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1197832688671">
+								<code>explanation</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>1020</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1176418711626">
+								<code>url</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>java.net.URL</validationType>
+								<maxLength>96</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1197827941510">
+								<code>image</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1197828178661">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>4080</maxLength>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1176413586153">
+								<code>comment</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>255</maxLength>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1176413625706">
+								<code>slide</code>
+								<destinationConcept>Slide</destinationConcept>
+								<inverseNeighbor>points</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+
+			<model oid="1196719559144">
+				<code>Reference</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/course/reference</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1176743255484">
+						<code>Member</code>
+						<entitiesCode>Members</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1176743266564">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176743269877">
+								<code>password</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+
+								<essential>false</essential>
+								<scramble>true</scramble>
+							</property>
+							<property oid="1176743276909">
+								<code>lastName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176743280082">
+								<code>firstName</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176743286036">
+								<code>email</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>org.modelibra.type.Email</validationType>
+								<maxLength>80</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176743291334">
+								<code>receiveEmail</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1176743294320">
+								<code>role</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>regular</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1176743297133">
+								<code>startDate</code>
+								<propertyClass>java.util.Date</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<defaultValue>today</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1176561884333">
+						<code>SecurityRole</code>
+						<entitiesCode>SecurityRoles</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1176561901413">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176561903726">
+								<code>role</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176562083684">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>510</maxLength>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1176561912587">
+						<code>CountryLanguage</code>
+						<entitiesCode>CountryLanguages</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1176561929104">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1176561932074">
+								<code>language</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+    
+		</models>
+
+	</domain>
+		
+</domains>

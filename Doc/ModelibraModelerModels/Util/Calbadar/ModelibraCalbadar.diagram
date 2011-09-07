@@ -1,0 +1,63 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1200867392193,91,Calbadar,?,util.calbadar,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1200867392193,91,false,?,false,true,35,20,128,108,1200867415154,92,Calendar,Calendars,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1200867415154,92,960496657960,1,Oid,1200867415154,93,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1200867415154,92,1131484634992,109,Code,1200867570114,106,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1200867415154,92,1131484610357,108,Description,1200867574842,107,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1200867392193,91,false,?,false,false,421,115,128,96,1200867420712,94,Year,Years,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1200867420712,94,960496657960,1,Oid,1200867420712,95,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1200867420712,94,960496658020,11,Integer,1200867579578,108,number,numbers,?,255,204,102,1,1,false,true,2008,false
+ 
+C, --- Box --- 
+ 
+B,1200867392193,91,false,?,false,false,34,183,128,94,1200867422808,96,Month,Months,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1200867422808,96,960496657960,1,Oid,1200867422808,97,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1200867422808,96,960496658020,11,Integer,1200867583891,109,number,numbers,?,255,204,102,1,1,false,true,?,false
+ 
+C, --- Box --- 
+ 
+B,1200867392193,91,false,?,false,false,421,278,128,88,1200867423435,98,Day,Days,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1200867423435,98,960496657960,1,Oid,1200867423435,99,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1200867423435,98,960496658020,11,Integer,1200867588323,110,number,numbers,?,255,204,102,1,1,false,true,?,false
+ 
+C, --- Box --- 
+ 
+B,1200867392193,91,false,?,false,false,32,351,128,91,1200867424282,100,Note,Notes,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1200867424282,100,960496657960,1,Oid,1200867424282,101,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1200867424282,100,1138035779453,2,Text,1200867596291,111,text,texts,?,255,204,102,1,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1200867392193,91,1200867415154,92,1200867420712,94,false,true,false,0,N,false,years,true,NONE,NONE,NONE,1,1,true,calendar,true,NONE,NONE,NONE,1200867480706,102,?,?,?,255,204,102,true,false
+L,1200867392193,91,1200867420712,94,1200867422808,96,false,true,false,0,N,false,months,true,NONE,NONE,NONE,1,1,true,year,true,NONE,NONE,NONE,1200867484376,103,?,?,?,255,204,102,true,false
+L,1200867392193,91,1200867422808,96,1200867423435,98,false,true,false,0,N,false,days,true,NONE,NONE,NONE,1,1,true,month,true,NONE,NONE,NONE,1200867488688,104,?,?,?,255,204,102,true,false
+L,1200867392193,91,1200867423435,98,1200867424282,100,false,true,false,0,N,false,notes,true,NONE,NONE,NONE,1,1,false,day,true,NONE,NONE,NONE,1200867502112,105,?,?,?,255,204,102,true,false

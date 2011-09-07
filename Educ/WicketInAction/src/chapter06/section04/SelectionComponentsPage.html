@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+
+  <h2>6.4 Selecting from a list of items</h2>
+  <p>This section demonstrates the uses of the selection components.</p>
+  <div class="section">
+  	<h3>6.4.1 Selecting a single value from a list of choices</h3>
+  	<p>Examples of components for selecting a single value from a list of choices.</p>
+  	<div class="example">
+		Category: <select wicket:id="category1" size="6">
+		    <option>Hard</option><option>Soft</option>
+		</select>
+  	</div>
+  	<div class="example">
+		Category: <select wicket:id="category2">
+		    <option>Hard</option><option>Soft</option>
+		</select>
+  	</div>
+  	<div class="example">
+		Category: <span wicket:id="category3">
+		    <input type="radio" /> Hard<br />
+		    <input type="radio" /> Soft<br />
+		</span>
+  	</div>
+  </div>
+  <div class="section">
+  	<h3>6.4.2 Selecting multiple values from a list of choices</h3>
+  	<p>Examples of components for selecting multiple values from a list of choices.</p>
+  	<div class="example">
+		Milk types: <select wicket:id="milkTypes1" size="6" multipe="multiple">
+		    <option>Bison</option><option>Camel</option>
+		</select>
+  	</div>
+  	<div class="example">
+		Milk types: <span wicket:id="milkTypes2">
+		    <input type="checkbox" /> Cow<br />
+		    <input type="checkbox" /> Yak<br />
+		</span>
+  	</div>
+  </div>
+  <div class="section">
+  	<h3>6.4.3 Mapping an object to a choice and back using a ChoiceRenderer</h3>
+  	<p>Example of mapping a database backed object to a choice with a ChoiceRenderer.</p>
+  	<div class="example">
+		Milk types: <select wicket:id="milkTypes3">
+		    <option>Bison</option><option>Camel</option>
+		</select>
+  	</div>
+  </div>
+  <div class="section">
+  	<h3>6.4.4 Using checkboxes for boolean properties</h3>
+  	<p>The next example demonstrates the binding of a checkbox to a <tt>Boolean</tt> property.</p>
+  	<div class="example">
+  		<input type="checkbox" wicket:id="wantsspam" id="wantspam" />
+		<label for="wantspam">I want to receive spam with my cheese!</label>
+  	</div>
+  	<p>The following example shows a form with an advanced search parameters block that is shown/hidden using Ajax.</p>
+  	<div class="example">
+	  	<!-- markup -->
+		<h4>Cheese search</h4>
+		<form wicket:id="form744">
+		    <input type="text" wicket:id="q" />
+		    <input type="submit" value="Search" /><br/>
+		    <label>
+		        <input type="checkbox" wicket:id="advanced" />
+		        Show advanced options
+		    </label>
+		    <div wicket:id="wmc">
+		        Milk type:<br />
+		        <span wicket:id="milktypes"></span>
+		    </div>
+		</form>  
+  	</div>
+  </div>
+
+</body>
+</html>
+

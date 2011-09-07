@@ -1,0 +1,37 @@
+<wicket:panel>
+  <table>
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>%</th>
+        <th>description</th>
+        <th>from</th>
+        <th>until</th>
+        <th>action</th>
+      </tr>
+    </thead>
+    <form wicket:id="form">
+      <tbody>
+        <tr wicket:id="discounts">
+          <td><span wicket:id="cheese.name">name</span></td>
+          <td><input type="text" wicket:id="percentage" size="6" /></td>
+          <td><input type="text" wicket:id="description" /></td>
+          <td><span wicket:id="from" /></td>
+          <td><span wicket:id="until" /></td>
+          <td><a href="#" wicket:id="remove"><img wicket:id="icon" /></a></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input type="submit" wicket:id="newButton" value="new" />
+            <input type="submit" wicket:id="updateButton" value="update" />
+          </td>
+        </tr>
+        <tr>
+           <td colspan="4">
+             <span wicket:id="feedback">[any feedback here]</span>
+           </td>     
+        </tr>
+      </tbody>
+    </form>
+  </table>
+</wicket:panel>

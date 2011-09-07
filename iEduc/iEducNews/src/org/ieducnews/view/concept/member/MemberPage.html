@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<wicket:extend>
+	<div class="section_title">Member Information</div>
+	<div id="main_text">
+		<div id="large_form">
+			<form wicket:id="form">
+				<span>account: </span>
+				<span wicket:id="account"></span><br/><br/>
+				<span>karma: </span>
+				<span wicket:id="karma"></span><br/><br/>
+				<span>password</span><br/>
+				<input type="password" class="inputNormal" wicket:id="password"/><br/>
+				<span>first name </span><br/>
+				<input type="text" class="inputNormal" wicket:id="firstName"/><br/>
+				<span>last name </span><br/>
+				<input type="text" class="inputNormal" wicket:id="lastName"/><br/>
+				<span>email </span><br/>
+				<input type="text" class="inputEmail" wicket:id="email"/><br/>
+				<input type="submit" value="update" wicket:id="update"/>
+			</form>
+			<div id="feedback" wicket:id="feedback"></div>
+		</div>
+	</div>
+</wicket:extend>
+
+</body>
+</html>

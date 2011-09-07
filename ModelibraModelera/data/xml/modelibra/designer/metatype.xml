@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metaTypes>
+  <metaType oid="1211374981842">
+    <code>Boolean</code>
+    <base>java.lang.Boolean</base>
+  </metaType>
+  <metaType oid="1211375238621">
+    <code>Date</code>
+    <base>java.util.Date</base>
+  </metaType>
+  <metaType oid="1211374994433">
+    <code>Double</code>
+    <base>java.lang.Double</base>
+  </metaType>
+  <metaType oid="1211375045717">
+    <code>Float</code>
+    <base>java.lang.Float</base>
+  </metaType>
+  <metaType oid="1211375073306">
+    <code>Integer</code>
+    <base>java.lang.Integer</base>
+  </metaType>
+  <metaType oid="1211375138451">
+    <code>Long</code>
+    <base>java.lang.Long</base>
+  </metaType>
+  <metaType oid="1211375174257">
+    <code>Short</code>
+    <base>java.lang.Short</base>
+  </metaType>
+  <metaType oid="1211375202944">
+    <code>String</code>
+    <base>java.lang.String</base>
+  </metaType>
+  <metaType oid="1211380856705">
+    <code>Code</code>
+    <base>java.lang.String</base>
+    <length>16</length>
+  </metaType>
+  <metaType oid="1211380879568">
+    <code>Description</code>
+    <base>java.lang.String</base>
+    <length>516</length>
+  </metaType>
+  <metaType oid="1211380896298">
+    <code>Email</code>
+    <base>org.modelibra.type.Email</base>
+    <length>80</length>
+  </metaType>
+  <metaType oid="1211381022514">
+    <code>LongtName</code>
+    <base>java.lang.String</base>
+    <length>64</length>
+  </metaType>
+  <metaType oid="1211381055777">
+    <code>LongText</code>
+    <base>java.lang.String</base>
+    <length>4080</length>
+  </metaType>
+  <metaType oid="1211381071900">
+    <code>Name</code>
+    <base>java.lang.String</base>
+    <length>32</length>
+  </metaType>
+  <metaType oid="1211381096249">
+    <code>Note</code>
+    <base>java.lang.String</base>
+    <length>255</length>
+  </metaType>
+  <metaType oid="1211381127386">
+    <code>ShortText</code>
+    <base>java.lang.String</base>
+    <length>128</length>
+  </metaType>
+  <metaType oid="1211381144190">
+    <code>Text</code>
+    <base>java.lang.String</base>
+    <length>1020</length>
+  </metaType>
+  <metaType oid="1211381164606">
+    <code>Url</code>
+    <base>java.net.URL</base>
+  </metaType>
+</metaTypes>

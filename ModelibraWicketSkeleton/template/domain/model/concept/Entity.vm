@@ -1,0 +1,101 @@
+#include ("template/ModelibraComment.txt")
+
+package $entitypackagecode;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.modelibra.IDomainModel;
+
+/* ======= import model class ======= */
+
+#set ($packageModelClass = $modelConfig.getModelClass())
+import $packageModelClass;
+
+/* ======= import internal parent entity class ======= */
+
+#if ($internalParentConfig)
+#set ($packageNeighborEntityClass = $internalParentConfig.getDestinationConceptConfig().getEntityClass())
+import $packageNeighborEntityClass;	
+#end
+
+/* ======= import internal child entities classes ======= */
+
+#foreach ($neighborConfig in $internalChildConfigList) 
+	#set ($packageNeighborEntitiesClass = $neighborConfig.getDestinationConceptConfig().getEntitiesClass())
+	import $packageNeighborEntitiesClass;	
+#end
+
+/* ======= import external parent entity and entities classes ======= */
+
+#foreach ($neighborConfig in $externalParentConfigList) 
+	#set ($packageNeighborEntityClass = $neighborConfig.getDestinationConceptConfig().getEntityClass())
+	#set ($packageNeighborEntitiesClass = $neighborConfig.getDestinationConceptConfig().getEntitiesClass())
+	import $packageNeighborEntityClass;
+	import $packageNeighborEntitiesClass;	
+#end
+
+/**
+ * $EntityCode specific entity.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $EntityCode extends Gen$EntityCode {
+
+	private static final long serialVersionUID = ${serialNumber}L;
+
+	private static Log log = LogFactory.getLog(${EntityCode}.class);
+    
+	/* ======= base constructor ======= */
+	
+	/**
+	 * Constructs $entityCode within the domain model.
+	 * 
+	 * @param model
+	 *            model
+	 */
+	public $EntityCode(IDomainModel model) {
+		super(model);
+	}
+	
+	/* ======= parent argument(s) constructor ======= */
+	
+	#if ($parentConfigList.size() > 0)
+	    /**
+	     * Constructs $entityCode within its parent(s).
+	     * 
+	    #foreach ($neighborConfig in $parentConfigList)   
+	    	#set ($neighborCode = $neighborConfig.getCode()) 
+	    	#set ($NeighborEntityCode = $neighborConfig.getDestinationConceptConfig().getCode())
+    		* @param $NeighborEntityCode $neighborCode
+		#end
+	     */
+	    public $EntityCode(
+	    	#foreach ($neighborConfig in $parentConfigList) 
+	    		#set ($neighborCode = $neighborConfig.getCode())
+	    		#set ($NeighborEntityCode = $neighborConfig.getDestinationConceptConfig().getCode())
+	    		#if ($neighborConfig == $lastParentConfig)     
+					$NeighborEntityCode $neighborCode  
+	    		#else
+					$NeighborEntityCode $neighborCode,
+	    		#end 
+	    	#end    
+	    ) {
+			super(
+				#foreach ($neighborConfig in $parentConfigList) 
+	    			#set ($neighborCode = $neighborConfig.getCode())
+	    			#if ($neighborConfig == $lastParentConfig)     
+						$neighborCode  
+	    			#else
+						$neighborCode,
+	    			#end 
+	    		#end
+			);
+	    }
+    #end
+	
+	/* ============================= */
+	/* ======= SPECIFIC CODE ======= */
+	/* ============================= */
+    
+}

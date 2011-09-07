@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket>
+
+<wicket:panel>
+
+	<table>
+	  	<caption>
+	  	    <span wicket:id = "modelName">
+	  	        Model name
+	  	    </span>
+	  	</caption>
+    	<tr>
+	    	<th>
+	    		<wicket:message key = "entry.name"/>
+	    	</th>    	
+	    	<th></th>
+    	</tr>
+    	<tr wicket:id = "entryUpdateTableListView">
+    		<td wicket:id = "entryName">
+        		Entry name
+      		</td>
+      		<td>
+		    	<a class = "button" wicket:id = "entryUpdateTable">
+		    		<img src="css/img/edit-find-replace.png" alt="Update"/>
+		    	</a>
+		    </td>
+    	</tr> 
+  	</table>
+  
+</wicket:panel>
+
+</html>

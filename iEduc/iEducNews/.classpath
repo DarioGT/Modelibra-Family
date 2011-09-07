@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/junit-4.7.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/servlet-api-2.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/org.mortbay.jetty-4.2.24.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-log4j12-1.5.8.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/wicket-1.4.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mail-1.4.2.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,119 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 09
+Title: Web Updates
+Created: 2007.11.22
+Updated: 2007.12.11
+
+Objective
+
+    To provide data updates with minimal navigation.
+    
+Concepts
+
+	Specific and generic web components.
+	
+Constraints (to be completed)
+
+	A casual user may become a regular member.
+	Only the admin member can promote a member to a higher role.
+	Anyone can enter a comment.
+
+	A member can update his data only. He can also delete his record.
+	A member can define and maintain only his interests.
+	A member can create new categories.
+	A member can update a category but only if he is interested in.
+	A member can delete a category but only if he was interested in and 
+		if there are no other members interested in that category.
+	A member can ask a question.
+	A member can give an answer to a question, but if the question is related
+		to a category, that category must be of interest to the member.
+	A member can add a url only to a category that he is interested in.
+	A member can update a url but only if he is interested in its category.
+	A member can remove a url but only if there are no other members interested 
+		in the category of that url.
+
+Update Views
+		
+	Member with his interests with an interest with the category link (parent-child).
+	
+	Categories tree.
+		Add a category.
+		Category with urls.
+		Category with questions (to be done)
+			and a possibility to attach/detach a question (parent-children).
+	Questions without a category (to be done).
+	
+Changes
+
+	specific config
+					<concept oid="1172170727630">
+						<code>Applicant</code>
+						<extension>true</extension>
+						<extensionConcept>Member</extensionConcept>
+						<entitiesCode>Applicants</entitiesCode>
+						
+						<add>true</add>
+						<remove>true</remove>
+						<update>false</update>				
+					</concept>
+					
+	specific code in WebLink:
+	
+	public WebLink(IDomain domain) {
+		super(domain);
+		applicants = new Applicants(this);
+	}
+
+	private Applicants applicants;
+
+	public Applicants getApplicants() {
+		return applicants;
+	}
+	
+	dmeduc.weblink.applicant
+		Applicant
+		Applicants
+		
+	SignUpPage
+		guest user as an applicant
+			
+	dmeduc.wicket.weblink.member
+		EntityAddForm removed
+		
+	dmeduc.wicket.weblink.applicant
+		EntityAddForm added
+		
+	ConfirmationPage
+		ConfirmationPanel with a form
+		
+	Member
+		hasAdminAccess()
+		
+	MemberPage
+		link from HomeMenu conditional on sign in
+		parent-child
+			parent: min member (display)
+			child: table of interests (update)
+		interest 
+			EntityUpdateTableListView
+				specific link to CategoryPage
+		edit member (to be done)
+				
+	Category
+		getApprovedUrlsOrderedByName()
+	
+	CategoryPage
+		parent-child
+			parent: full category (display)
+			child: table of urls (update)
+		if category is not approved its urls are not displayed
+		for an approved category only approved urls are displayed
+		
+	specific config for Interest and Url
+		essential property: false
+		absorb parent: false
+	
+	Question Selection page
+	
+	

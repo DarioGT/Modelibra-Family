@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<categories>
+  <category oid="1228243298310">
+    <name>Software</name>
+    <description>This is a category of home pages of different software products.</description>
+    <urls>
+      <url oid="1228243346879">
+        <link>http://www.modelibra.org/</link>
+        <description>Modelibra is a domain model framework. It is an open source software developed in Java. It is used to create domain models, to query objects from a model, to update objects in a model, and to persist domain models. Its main characteristic is that a model must be completely loaded into main memory from a persistent storage in order to be used.</description>
+      </url>
+      <url oid="1228243371521">
+        <link>http://wicket.apache.org/</link>
+        <description>From the home page of Wicket: With proper mark-up/logic separation, a POJO data model, and a refreshing lack of XML, Apache Wicket makes developing web-apps simple and enjoyable again. Swap the boilerplate, complex debugging and brittle code for powerful, reusable components written with plain Java and HTML.</description>
+      </url>
+    </urls>
+  </category>
+  <category oid="1228243309180">
+    <name>Personal</name>
+    <description>This is a category of personal links such as personal web sites or blogs.</description>
+    <urls>
+      <url oid="1228243389624">
+        <link>http://drdb.fsa.ulaval.ca/dr/</link>
+        <description>My name is Dženan Riđanović. I am an associate professor in the Business School at the Laval University (Université Laval), Quebec, Canada. I received a B.Sc. in informatics from the University of Sarajevo in 1976, an M.Sc. in computer science from the University of Maryland in 1982, and a Ph.D. in management information systems from the University of Minnesota in 1986.</description>
+      </url>
+      <url oid="1228243400121">
+        <link>http://martinfowler.com/bliki/</link>
+        <description>I'm an author, speaker, consultant and general loud-mouth on software development. I concentrate on designing enterprise software - looking at what makes a good design and what practices are needed to come up with good design. I've been a pioneer of object-oriented technology, refactoring, patterns, agile methodologies, domain modeling, the Unified Modeling Language (UML), and Extreme Programming.</description>
+      </url>
+      <url oid="1228247137632">
+        <link>http://www.joelonsoftware.com/</link>
+        <description>I'm your host, Joel Spolsky, a software developer in New York City. Since 2000, I've been writing about software development, management, business, and the Internet on this site.</description>
+      </url>
+      <url oid="1228324231766">
+        <link>http://www.useit.com/alertbox/</link>
+        <description>Bi-weekly column by Dr. Jakob Nielsen, principal, Nielsen Norman Group.</description>
+      </url>
+    </urls>
+  </category>
+  <category oid="1228243318637">
+    <name>Technology</name>
+    <description>This is a category of technology oriented web links including technology blogs.</description>
+    <urls>
+      <url oid="1228243418707">
+        <link>http://news.ycombinator.com/</link>
+        <description>Y Combinator is a new kind of venture firm specializing in funding early stage startups. We help startups through what is for many the hardest step, from idea to company.</description>
+      </url>
+      <url oid="1228243432477">
+        <link>http://www.techcrunch.com/</link>
+        <description>TechCrunch, founded on June 11, 2005, is a weblog dedicated to obsessively profiling and reviewing new Internet products and companies. In addition to covering new companies, we profile existing companies that are making an impact (commercial and/or cultural) on the new web space.</description>
+      </url>
+      <url oid="1228247227047">
+        <link>http://janeknight.typepad.com/pick/</link>
+        <description>A daily item of e-learning interest selected by Jane Hart of the Centre for Learning &amp; Performance Technologies.</description>
+      </url>
+    </urls>
+  </category>
+</categories>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Reusable Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1208025784135">
+		<code>Modelibra</code>
+		<type>Reusable</type>
+	    
+		<models>
+
+			<model oid="1208025817276">
+				<code>Designer</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/modelibra/designer</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1208025829105">
+						<code>MetaDomain</code>					
+						<entitiesCode>MetaDomains</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1208025851571">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1211145874646">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1208026711399">
+								<code>metaModels</code>
+								<destinationConcept>MetaModel</destinationConcept>
+								<inverseNeighbor>metaDomain</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1208025838298">
+						<code>MetaModel</code>					
+						<entitiesCode>MetaModels</entitiesCode>
+			    
+						<properties>
+							<property oid="1208025854820">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1211145766271">
+								<code>author</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1211145869092">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1208026714848">
+								<code>metaConcepts</code>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaModel</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1208026711399">
+								<code>metaDomain</code>
+								<destinationConcept>MetaDomain</destinationConcept>
+								<inverseNeighbor>metaModels</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1208025843876">
+						<code>MetaConcept</code>					
+						<entitiesCode>MetaConcepts</entitiesCode>
+			    
+						<properties>
+							<property oid="1208025858101">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1211140460779">
+								<code>entry</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1208026716833">
+								<code>metaConceptGraphics</code>
+								<destinationConcept>MetaConceptGraphic</destinationConcept>
+								<inverseNeighbor>metaConcept</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1211138981732">
+								<code>metaProperties</code>
+								<destinationConcept>MetaProperty</destinationConcept>
+								<inverseNeighbor>metaConcept</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1211983653477">
+								<code>metaDestinationNeighbors</code>
+								<destinationConcept>MetaNeighbor</destinationConcept>
+								<inverseNeighbor>metaSourceConcept</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1211983764558">
+								<code>metaSourceNeighbors</code>
+								<destinationConcept>MetaNeighbor</destinationConcept>
+								<inverseNeighbor>metaDestinationConcept</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1208026714848">
+								<code>metaModel</code>
+								<destinationConcept>MetaModel</destinationConcept>
+								<inverseNeighbor>metaConcepts</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1208025959031">
+						<code>MetaConceptGraphic</code>					
+						<entitiesCode>MetaConceptGraphics</entitiesCode>
+			    
+						<properties>
+							<property oid="1208025970774">
+								<code>x</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+								<defaultValue>0</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1208025971663">
+								<code>y</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+								<defaultValue>0</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1208025976897">
+								<code>width</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+								<defaultValue>120</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1208025979097">
+								<code>height</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+								<defaultValue>160</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1208026716833">
+								<code>metaConcept</code>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaConceptGraphics</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1211138929239">
+						<code>MetaProperty</code>					
+						<entitiesCode>MetaProperties</entitiesCode>
+			    
+						<properties>
+							<property oid="1211140626463">
+								<code>metaTypeOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<reference>true</reference>
+								<referenceNeighbor>metaType</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1211138964317">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1211139049714">
+								<code>id</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1211139463943">
+								<code>increment</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1211139389634">
+								<code>value</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1211139467608">
+								<code>init</code>
+								<propertyClass>java.lang.String</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1211138981732">
+								<code>metaConcept</code>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaProperties</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1211140626463">
+								<code>metaType</code>
+								<destinationConcept>MetaType</destinationConcept>
+								<inverseNeighbor>metaProperties</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>0</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1211139625807">
+						<code>MetaType</code>					
+						<entitiesCode>MetaTypes</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1211139677557">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1211140035478">
+								<code>base</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<defaultValue>String</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1211140044232">
+								<code>length</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1211140626463">
+								<code>metaProperties</code>
+								<destinationConcept>MetaProperty</destinationConcept>
+								<inverseNeighbor>metaType</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1211983552926">
+						<code>MetaNeighbor</code>					
+						<entitiesCode>MetaNeighbors</entitiesCode>
+			    
+						<properties>
+							<property oid="1211983764558">
+								<code>metaDestinationConceptOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>metaDestinationConcept</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1211983567408">
+								<code>code</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1212171074288">
+								<code>id</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>false</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1211983569665">
+								<code>min</code>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<required>true</required>
+								<defaultValue>0</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1211983571970">
+								<code>max</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<required>true</required>
+								<defaultValue>N</defaultValue>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1211983579859">
+								<code>internal</code>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<required>true</required>
+								<defaultValue>true</defaultValue>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1211983653477">
+								<code>metaSourceConcept</code>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaDestinationNeighbors</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1211983764558">
+								<code>metaDestinationConcept</code>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaSourceNeighbors</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+    
+		</models>
+
+	</domain>
+		
+</domains>

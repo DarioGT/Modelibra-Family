@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket>
+
+<wicket:panel>
+  
+    <form wicket:id = "emailMessageForm">
+	    <table>
+		    <caption wicket:id = "title">
+		        Title
+		    </caption>
+	        <tr>
+	            <th>
+	                <wicket:message key = "email.subject"/>
+	            </th>
+	            <td>
+	                <input wicket:id = "subject" type = "text" size = "64"/>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th>
+	                <wicket:message key = "email.message"/>
+	            </th>
+	            <td>
+	                <textarea wicket:id = "message" rows = "20" cols = "80" >
+		            </textarea>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th wicket:id = "errorLabel">
+                    Error label
+	            </th>
+	            <td wicket:id = "errorMessage">
+                    Error message
+	            </td>
+	        </tr>
+	        <tr>
+	            <td>
+	                <input type = "submit" value = "Send"/>
+	            </td>
+	            <td>
+	    	        <input type = "reset" value = "Reset"/>
+	            </td>
+	  	    </tr>
+	    </table>
+    </form>
+  
+</wicket:panel>
+
+</html>
+

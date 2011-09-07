@@ -1,0 +1,104 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1176413467890,91,Lecture,?,course.lecture,255,255,255,Dzenan Ridjanovic,false,?,xml,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1176413467890,91,false,?,false,true,27,33,120,180,1176413488718,92,Presentation,Presentations,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1176413488718,92,960496657960,1,Oid,1176413488718,93,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176413488718,92,1131484634992,109,Code,1176413542843,98,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1176413488718,92,1131484582316,107,LongName,1176413546265,99,title,titles,?,255,204,102,1,1,false,false,?,false
+I,1176413488718,92,1131484582316,107,LongName,1176413549187,100,author,authors,?,255,204,102,1,1,false,false,?,false
+I,1176413488718,92,1131484582316,107,LongName,1176413553765,101,organisation,organisations,?,255,204,102,0,1,false,false,?,false
+I,1176413488718,92,1137362490437,10,JDate,1176413558312,102,creationDate,creationDates,?,255,204,102,1,1,false,false,today,false
+I,1176413488718,92,1165588406062,81,Note,1176413561937,103,objective,objectives,?,255,204,102,0,1,false,false,?,false
+I,1176413488718,92,1131484610357,108,Description,1176413565421,104,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1176413467890,91,false,?,false,false,342,219,120,140,1176413490640,94,Slide,Slides,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1176413490640,94,960496657960,1,Oid,1176413490640,95,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176413490640,94,960496658020,11,Integer,1176413600718,108,number,numbers,?,255,204,102,1,1,false,true,?,true
+I,1176413490640,94,1131484582316,107,LongName,1176413604718,109,title,titles,?,255,204,102,1,1,false,false,?,false
+I,1176413490640,94,1131484582316,107,LongName,1176413608812,110,subTitle,subTitles,?,255,204,102,0,1,false,false,?,false
+I,1176413490640,94,1165588406062,81,Note,1176413611859,111,purpose,purposes,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1176413467890,91,false,?,false,false,29,343,120,182,1176413492843,96,Point,Points,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1176413492843,96,960496657960,1,Oid,1176413492843,97,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176413492843,96,960496658020,11,Integer,1176413579000,105,number,numbers,?,255,204,102,1,1,false,true,?,true
+I,1176413492843,96,1165588406062,81,Note,1176413583546,106,text,texts,?,255,204,102,1,1,false,false,?,false
+I,1176413492843,96,1138035779453,2,Text,1197832688670,1,explanation,?,?,255,204,102,0,1,false,false,?,false
+I,1176413492843,96,1131484778208,111,Url,1176418711625,1,url,urls,?,255,204,102,0,1,false,false,?,false
+I,1176413492843,96,1131484582316,107,LongName,1197827941509,1,image,images,?,255,204,102,0,1,false,false,?,false
+I,1176413492843,96,1176496101906,129,LongText,1197828178659,2,code,codes,?,255,204,102,0,1,false,false,?,false
+I,1176413492843,96,1165588406062,81,Note,1176413586046,107,comment,comments,?,255,204,102,0,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1176413467890,91,1176413488718,92,1176413490640,94,false,true,false,0,N,false,slides,true,NONE,NONE,NONE,1,1,true,presentation,true,NONE,NONE,NONE,1176413619718,112,?,?,?,255,204,102,true,false
+L,1176413467890,91,1176413490640,94,1176413492843,96,false,true,false,0,N,false,points,true,NONE,NONE,NONE,1,1,true,slide,true,NONE,NONE,NONE,1176413625593,113,?,?,?,255,204,102,true,false
+ 
+C, --- Diagram --- 
+ 
+D,1196719559143,1,Reference,?,course.reference,255,255,255,Dzenan Ridjanovic,false,?,xml,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1196719559143,1,false,?,false,true,48,195,120,201,1176743255375,109,Member,Members,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1176743255375,109,960496657960,1,Oid,1176743255375,110,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176743255375,109,1131484634992,109,Code,1176743266453,111,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1176743255375,109,1131484634992,109,Code,1176743269765,112,password,passwords,?,255,204,102,1,1,false,false,?,false
+I,1176743255375,109,1138035633296,1,Name,1176743276796,113,lastName,lastNames,?,255,204,102,1,1,false,false,?,false
+I,1176743255375,109,1138035633296,1,Name,1176743279968,114,firstName,firstNames,?,255,204,102,1,1,false,false,?,false
+I,1176743255375,109,1131484746612,110,Email,1176743285921,115,email,emails,?,255,204,102,1,1,false,false,?,false
+I,1176743255375,109,1146828554640,178,Logic,1176743291218,116,receiveEmail,receiveEmails,?,255,204,102,1,1,false,false,false,false
+I,1176743255375,109,1131484634992,109,Code,1176743294203,117,role,roles,?,255,204,102,1,1,false,false,regular,false
+I,1176743255375,109,1137362490437,10,JDate,1176743297015,118,startDate,startDates,?,255,204,102,1,1,false,false,today,false
+ 
+C, --- Box --- 
+ 
+B,1196719559143,1,false,?,false,true,49,40,120,123,1176561884328,5,SecurityRole,SecurityRoles,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1176561884328,5,960496657960,1,Oid,1176561884328,6,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176561884328,5,1131484634992,109,Code,1176561901406,7,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1176561884328,5,1138035633296,1,Name,1176561903718,8,role,roles,?,255,204,102,1,1,false,false,?,false
+I,1176561884328,5,1131484610357,108,Description,1176562083671,13,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1196719559143,1,false,?,false,true,232,45,120,107,1176561912578,9,CountryLanguage,CountryLanguages,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1176561912578,9,960496657960,1,Oid,1176561912578,10,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1176561912578,9,1131484634992,109,Code,1176561929093,11,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1176561912578,9,1138035633296,1,Name,1176561932062,12,language,languages,?,255,204,102,1,1,false,false,?,false
+ 
+C, === Lines === 
+ 

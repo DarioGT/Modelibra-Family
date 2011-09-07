@@ -1,0 +1,50 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1170626361375,30,WebLink,?,dmeduc.weblink,255,255,255,Dzenan Ridjanovic,false,?,xml,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1170626361375,30,false,?,false,false,327,171,130,167,1170626361375,31,Url,Urls,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1170626361375,31,960496657960,1,Oid,1170626361375,32,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1170626361375,31,1131484582316,107,LongName,1170626361375,33,name,names,?,255,204,102,1,1,false,true,?,false
+I,1170626361375,31,1131484778208,111,Url,1170626361375,34,link,links,?,255,204,102,1,1,false,false,?,false
+I,1170626361375,31,1131484610357,108,Description,1170626361375,35,description,descriptions,?,255,204,102,0,1,false,false,?,false
+I,1170626361375,31,1137362490437,10,JDate,1170626361375,36,creationDate,creationDates,?,255,204,102,1,1,false,false,today,false
+I,1170626361375,31,1137362490437,10,JDate,1170626361375,37,updateDate,updateDates,?,255,204,102,0,1,false,false,?,false
+I,1170626361375,31,1146828554640,178,Logic,1170626361375,38,approved,approveds,?,255,204,102,1,1,false,false,false,false
+ 
+C, --- Box --- 
+ 
+B,1170626361375,30,false,?,false,true,33,213,120,117,1170626361375,40,Comment,Comments,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1170626361375,40,960496657960,1,Oid,1170626361375,41,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1170626361375,40,1138035779453,2,Text,1170626361375,42,text,texts,?,255,204,102,1,1,false,false,?,false
+I,1170626361375,40,1165588406062,81,Note,1170626361375,43,source,sources,?,255,204,102,0,1,false,false,?,false
+I,1170626361375,40,1137362490437,10,JDate,1170626361375,44,creationDate,creationDates,?,255,204,102,1,1,false,false,today,false
+ 
+C, --- Box --- 
+ 
+B,1170626361375,30,false,?,false,true,33,29,120,119,1170626627031,45,Category,Categories,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1170626627031,45,960496657960,1,Oid,1170626627031,46,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1170626627031,45,1131484582316,107,LongName,1170626634828,47,name,names,?,255,204,102,1,1,false,true,?,false
+I,1170626627031,45,1131484610357,108,Description,1170626638015,48,description,descriptions,?,255,204,102,0,1,false,false,?,false
+I,1170626627031,45,1146828554640,178,Logic,1170626640015,49,approved,approveds,?,255,204,102,1,1,false,false,false,false
+ 
+C, === Lines === 
+ 
+L,1170626361375,30,1170626627031,45,1170626361375,31,false,true,false,0,N,false,urls,true,NONE,NONE,NONE,1,1,true,category,true,NONE,NONE,NONE,1170626925312,50,?,?,?,255,204,102,true,false

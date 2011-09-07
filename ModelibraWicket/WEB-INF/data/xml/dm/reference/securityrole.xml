@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<securityRoles>
+  <securityRole oid="1160065956256">
+    <code>admin</code>
+    <role>admin</role>
+  </securityRole>
+  <securityRole oid="1160065956266">
+    <code>manager</code>
+    <role>manager</role>
+  </securityRole>
+  <securityRole oid="1160065956270">
+    <code>advanced</code>
+    <role>advanced</role>
+  </securityRole>
+  <securityRole oid="1160065956276">
+    <code>regular</code>
+    <role>regular</role>
+  </securityRole>
+  <securityRole oid="1160065956279">
+    <code>casual</code>
+    <role>casual</role>
+  </securityRole>
+</securityRoles>

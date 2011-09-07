@@ -1,0 +1,13 @@
+#include ("template/ModelibraComment.txt")
+
+package ${domainswingappi18npackagecode};
+
+import java.io.IOException;
+
+public class TextRes extends org.modelibra.swing.app.i18n.TextRes {
+
+	TextRes() throws IOException {
+		super("TextRes.properties");
+	}
+
+}

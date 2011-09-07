@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket>
+
+<wicket:panel>
+
+  <form wicket:id = "entityUpdateForm">
+	  <table>
+	  	  <caption>
+	  	      <span wicket:id = "formTitle">
+	  	          Form title
+	  	      </span>
+	 	  </caption>
+	 	  <tr wicket:id = "propertyNameLabelValuePanelListView">
+	 	  	  <th wicket:id = "propertyName">
+	 	  	  	  Property name
+	    	  </th>
+	    	  <td wicket:id = "valuePanel">
+			  	  Value panel
+			  </td>
+		  </tr>
+		  
+		  <wicket:child/>
+		  
+		  <tr>
+	    	  <td>
+	    	  </td>
+	    	  <td>
+	    	      <wicket:message key = "save"/>
+	              <input type = "submit" value = "+"/>
+	              &ensp; &ensp;
+	              <wicket:message key = "cancel"/>
+	              <input wicket:id = "cancel" type = "submit" value = "&Phi;"/>
+	          </td>
+	  	  </tr>
+	  	  
+	  </table>
+  </form>
+  
+</wicket:panel>
+
+</html>
+

@@ -1,0 +1,53 @@
+<html>
+<body>
+<wicket:extend>
+	<div id="container">
+		<div id="content">
+			<div id="mainLeft">			
+				<div wicket:id="feedback"></div>
+				<h3 wicket:id="title"></h3>
+				<form wicket:id="form">
+					<table>			    
+				        <tr>
+							<th>Address Name</th>
+							<td><input wicket:id="addressName" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Street</th>
+							<td><input wicket:id="street" type="text" /></td>
+						</tr>
+						<tr>
+							<th>City</th>
+							<td><input wicket:id="city" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Zip Code</th>
+							<td><input wicket:id="zipCode" type="text" /></td>
+						</tr>
+						<tr>
+							<th>State/Province</th>
+							<td><input wicket:id="state" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Country</th>
+							<td><input wicket:id="country" type="text" /></td>
+						</tr>
+						<tr>
+							<th>Telephone</th>
+							<td><input wicket:id="telephone" type="text" /></td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td>
+								<input type="submit" wicket:id="save" value="Save" />
+								<input type="button" wicket:id="cancel" value="Cancel" />
+							</td>
+						</tr>
+					</table>
+				</form>		
+			</div> <!-- main -->
+		</div> <!-- content -->
+	</div> <!-- container -->
+</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,5 @@
+ModelibraWicket
+
++ replacing generic components with user created components (use user properties)
++ predefined package where all specalized generic components are for all concepts 
+	(if not there then use the specific concept package)

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<questions>
+  <question oid="1193171543447">
+    <categoryOid>1193171129084</categoryOid>
+    <number>1</number>
+    <text>Is software really soft?</text>
+    <creationDate>2007-10-23</creationDate>
+    <points>0.5</points>
+  </question>
+  <question oid="1193247606925">
+    <categoryOid>1193171173850</categoryOid>
+    <number>2</number>
+    <text>How heavy is Modelibra in pounds?</text>
+    <creationDate>2007-10-24</creationDate>
+    <points>0.5</points>
+  </question>
+  <question oid="1193247700256">
+    <categoryOid>1196271585471</categoryOid>
+    <number>3</number>
+    <text>What is this?</text>
+    <creationDate>2007-10-24</creationDate>
+    <points>0.5</points>
+  </question>
+  <question oid="1194378006349">
+    <categoryOid>1193262852910</categoryOid>
+    <number>4</number>
+    <text>Is the Personal category only for blog links, or it can be used to  show a personal web page that is actually public?</text>
+    <creationDate>2007-11-06</creationDate>
+    <points>0.5</points>
+  </question>
+  <question oid="1194378006355">
+    <categoryOid>1195506073529</categoryOid>
+    <number>5</number>
+    <text>What is the difference between Modelibra and ModelibraWicket?</text>
+    <response>Modelibra is a domain model framework and ModelibraWicket is a web component framework based on Modelibra for a model and Wicket for a view.</response>
+    <creationDate>2007-11-19</creationDate>
+    <points>0.5</points>
+  </question>
+  <question oid="1194378006367">
+    <categoryOid>1195506073529</categoryOid>
+    <number>6</number>
+    <text>Can I use Modelibra without ModelibraModeler?</text>
+    <response>You can, but you will have to create an XML configuration by hand.</response>
+    <creationDate>2007-11-19</creationDate>
+    <points>0.5</points>
+  </question>
+</questions>

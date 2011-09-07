@@ -1,0 +1,42 @@
+/* slide.css */
+
+/* ===[ begin ]=== */
+
+/*
+    Title:                   Slide Design Style
+    Author:                  Dzenan Ridjanovic
+    Created:                 2006-09-09
+    Updated:                 2007-12-03
+*/
+
+    .slide-title {
+        font-family: arial, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        padding: 8px;
+        background:  #003366;
+    }
+
+    .slide-subtitle {
+        font-family: arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color:  #003366;
+        padding: 4px;
+        padding-left: 14px;
+        background: white;
+    }
+    
+    .slide-point {
+        font-family: arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color:  #003366;
+        padding: 2px;
+        background: white;
+    }
+			
+/* ===[ end ]=== */

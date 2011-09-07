@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1189015928269">
+		<code>Travel</code>
+		<type>Specific</type>
+		
+		<referenceModel>Reference</referenceModel>
+		
+		<i18n>true</i18n>
+		<signin>true</signin>
+    	<signinConcept>Traveler</signinConcept>
+	    <shortTextDefaultLength>40</shortTextDefaultLength>
+    	<pageBlockDefaultSize>16</pageBlockDefaultSize>
+	    
+		<models>
+
+			<model oid="1190053285158">
+				<code>Impression</code>
+				<extension>true</extension>
+				<extensionDomain>Travel</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>Impression</extensionModel>
+	    
+				<concepts>
+			
+					<concept oid="1189698214159">
+						<code>Traveler</code>
+						<extension>true</extension>
+						<extensionConcept>Traveler</extensionConcept>
+						
+						<add>false</add>
+						<remove>false</remove>
+						<update>true</update>
+			    
+						<properties>
+							<property oid="1189698214161">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1189698214163">
+								<code>firstName</code>
+								<extension>true</extension>
+								<extensionProperty>firstName</extensionProperty>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1189698214164">
+								<code>lastName</code>
+								<extension>true</extension>
+								<extensionProperty>lastName</extensionProperty>
+
+								<essential>false</essential>
+							</property>
+							<property oid="1189698214165">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>true</derived>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1189698214166">
+								<code>email</code>
+								<extension>true</extension>
+								<extensionProperty>email</extensionProperty>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+			    
+					</concept>	   
+					
+					<concept oid="1176495162541">
+						<code>Place</code>
+						<extension>true</extension>
+						<extensionConcept>Place</extensionConcept>
+						
+						<add>true</add>
+						<remove>false</remove>
+						<update>true</update>
+						
+					</concept>	    
+			
+					<concept oid="1189698214190">
+						<code>Note</code>
+						<extension>true</extension>
+						<extensionConcept>Note</extensionConcept>
+						
+						<add>true</add>
+						<remove>false</remove>
+						<update>true</update>
+																	    
+						<properties>
+							<property oid="1189698214199">
+								<code>placeOid</code>			    		
+								<extension>true</extension>
+								<extensionProperty>placeOid</extensionProperty>
+		
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+						</properties>
+			    
+					</concept>		    
+			
+					<concept oid="1189698214194">
+						<code>Message</code>
+						<extension>true</extension>
+						<extensionConcept>Message</extensionConcept>
+						
+						<add>true</add>
+						<remove>false</remove>
+						<update>true</update>
+																	    
+						<properties>
+						    <property oid="1189698214196">
+								<code>sentDate</code>
+								<extension>true</extension>
+								<extensionProperty>sentDate</extensionProperty>
+
+								<essential>true</essential>
+							</property>
+						    <property oid="1189698214197">
+								<code>subject</code>
+								<extension>true</extension>
+								<extensionProperty>subject</extensionProperty>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1189698214198">
+								<code>text</code>
+								<extension>true</extension>
+								<extensionProperty>text</extensionProperty>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+			    
+					</concept>		    
+			
+					<concept oid="1189698236077">
+						<code>Photo</code>
+						<extension>true</extension>
+						<extensionConcept>Photo</extensionConcept>
+						
+						<add>true</add>
+						<remove>false</remove>
+						<update>true</update>
+																	    
+						<properties>
+							<property oid="1189698788794">
+								<code>title</code>
+								<extension>true</extension>
+								<extensionProperty>title</extensionProperty>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+			    
+					</concept>		    
+			
+					<concept oid="1189698402632">
+						<code>Country</code>
+						<extension>true</extension>
+						<extensionConcept>Country</extensionConcept>
+						
+						<add>true</add>
+						<remove>false</remove>
+						<update>true</update>
+			    
+						<properties>
+							<property oid="1189698432666">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+								<essential>false</essential>
+							</property>
+						</properties>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+			
+			<model oid="1196784081361">
+				<code>Reference</code>
+				<extension>true</extension>
+				<extensionDomain>Travel</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>Reference</extensionModel>
+				
+				<concepts>
+
+					<concept oid="1176319565377">
+						<code>CountryName</code>
+						<extension>true</extension>
+						<extensionConcept>CountryName</extensionConcept>
+						
+						<displayType>list</displayType>
+						<add>true</add>
+						<remove>false</remove>
+						<update>false</update>
+			    
+						<properties>
+
+							<property oid="1176319583347">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+
+							<property oid="1176319586239">
+								<code>country</code>
+								<extension>true</extension>
+								<extensionProperty>country</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1176319588568">
+						<code>CountryLanguage</code>
+						<extension>true</extension>
+						<extensionConcept>CountryLanguage</extensionConcept>
+						
+						<displayType>list</displayType>
+						<add>true</add>
+						<remove>false</remove>
+						<update>false</update>
+			    
+						<properties>
+
+							<property oid="1176319598351">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+
+							<property oid="1176319601087">
+								<code>language</code>
+								<extension>true</extension>
+								<extensionProperty>language</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1176319603400">
+						<code>SecurityRole</code>
+						<extension>true</extension>
+						<extensionConcept>SecurityRole</extensionConcept>
+						
+						<min>1</min>
+						<max>5</max>
+		            	
+						<displayType>list</displayType>
+						<add>false</add>
+						<remove>false</remove>
+						<update>false</update>
+			    
+						<properties>
+
+							<property oid="1176319611762">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+				
+				</concepts>
+		
+			</model>
+    
+		</models>
+
+	</domain>
+		
+</domains>

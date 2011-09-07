@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="$domainOid">
+		<code>$DomainCode</code>
+		<type>Specific</type>
+
+		<models>
+#foreach($modelConfig in $modelConfigList)
+#set ($modelOid = $modelConfig.getOid().toString())
+#set ($ModelCode = $modelConfig.getCode())
+
+			<model oid="$modelOid">
+				<code>$ModelCode</code>
+				<extension>true</extension>
+				<extensionDomain>$DomainCode</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>$ModelCode</extensionModel>
+				
+				<concepts>
+#foreach($conceptConfig in $modelConfig.getConceptsConfig().getList())
+#set ($conceptOid = $conceptConfig.getOid().toString())
+#set ($ConceptCode = $conceptConfig.getCode())
+
+					<concept oid="$conceptOid">
+						<code>$ConceptCode</code>
+						<extension>true</extension>
+						<extensionConcept>$ConceptCode</extensionConcept>
+			    
+						<properties>
+#foreach($propertyConfig in $conceptConfig.getPropertiesConfig().getList())
+#set ($propertyOid = $propertyConfig.getOid().toString())
+#set ($propertyCode = $propertyConfig.getCode())
+
+							<property oid="$propertyOid">
+								<code>$propertyCode</code>
+								<extension>true</extension>
+								<extensionProperty>$propertyCode</extensionProperty>
+
+							</property>
+#end
+					
+						</properties>
+						
+					</concept>
+#end
+				
+				</concepts>
+		
+			</model>
+#end
+   
+		</models>
+
+	</domain>
+		
+</domains>

@@ -1,0 +1,42 @@
+<wicket:panel>
+<br>
+  <table>
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>WebsiteUrl</th>
+        <th>SupportUrl</th>
+        <th>ContactName</th>
+        <th>ContactEmail</th>
+        <th></th>
+      </tr>
+    </thead>
+    <form wicket:id="form">
+      <tbody>
+        <tr wicket:id="manufacturers">
+          <td><span wicket:id="manufacturerNumber">manufacturerNumber</span></td>
+          <td><input type="text" wicket:id="name" class="nameInput"/></td>
+          <td><input type="text" wicket:id="websiteUrl" size="30" class="genericInput"/></td>
+          <td><input type="text" wicket:id="supportUrl" size="30" class="genericInput"/></td>
+          <td><input type="text" wicket:id="contactName" class="nameInput"/></td>
+          <td><input type="text" wicket:id="contactEmail" class="nameInput"/></td>
+          
+          <td><a href="#" wicket:id="remove" title="Delete Manufacturer" class="adminLink"><span class="removeIcon"></span></a></td>
+        </tr>
+        <tr>
+          <td colspan="500px" >
+            <hr>
+            <input type="submit" wicket:id="newButton" value="new" class="genericInput"/>
+            <input type="submit" wicket:id="updateButton" value="update" class="genericInput" />
+          </td>
+        </tr>
+        <tr>
+           <td colspan="500px">
+             <span wicket:id="feedback">[any feedback here]</span>
+           </td>     
+        </tr>
+      </tbody>
+    </form>
+  </table>
+</wicket:panel>

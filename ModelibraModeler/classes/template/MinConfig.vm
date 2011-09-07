@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Reusable Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="$domainOid">
+		<code>$DomainName</code>
+		<type>Reusable</type>
+#if ($packageprefix != "?")
+		<packagePrefix>$packageprefix</packagePrefix>
+#end
+	    
+		<models>
+#foreach($model in $modelList)
+#set ($modelOid = $model.getOid().getOidUniqueNumberString())
+#set ($ModelName = $model.firstLetterToUpper($model.getName()))
+#set ($modelname = $model.allLettersToLower($model.getName()))
+#set ($modelAbstraction = $model.isAbstractDef())
+#set ($modelExtension = $model.isExtension())
+#set ($ModelExtensionName = $model.firstLetterToUpper($model.getExtensionName()))
+#set ($author = $model.getAuthor())
+#set ($persistence = $model.getPersistence())
+
+			<model oid="$modelOid">
+				<code>$ModelName</code>
+#if ($modelAbstraction)					
+				<abstraction>$modelAbstraction</abstraction>
+#end
+#if ($modelExtension)
+				<extension>$modelExtension</extension>
+				<extensionDomain>$DomainName</extensionDomain>
+				<extensionModel>$ModelExtensionName</extensionModel>			
+#end 
+				<author>$author</author>
+#if ($modelAbstraction)
+#else
+#if ($persistence == "?")
+				<persistent>false</persistent>
+#elseif ($persistence == "xml")
+				<persistenceType>$persistence</persistenceType>
+				<persistenceRelativePath>data/xml/$domainname/$modelname</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+#elseif ($persistence == "db4o")
+				<persistenceType>$persistence</persistenceType>
+				<persistenceRelativePath>data/db4o/$domainname/$modelname</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+#elseif ($persistence == "dbLite")
+				<persistenceType>$persistence</persistenceType>
+				<persistenceConfig>dbLite-config.xml</persistenceConfig>
+				<defaultLoadSave>true</defaultLoadSave>
+#elseif ($persistence == "jdbc")
+				<persistenceType>$persistence</persistenceType>
+				<persistenceConfig>jdbc-config.xml</persistenceConfig>
+				<defaultLoadSave>true</defaultLoadSave>
+#end
+#end
+	    
+				<concepts>
+#foreach($concept in $model.getBoxList())
+#set ($conceptOid = $concept.getOid().getOidUniqueNumberString())
+#set ($entityName = $concept.firstLetterToLower($concept.getName()))
+#set ($EntityName = $concept.firstLetterToUpper($concept.getName()))
+#set ($entityname = $concept.allLettersToLower($concept.getName()))	
+#set ($EntitiesName = $concept.firstLetterToUpper($concept.getNameInPlural()))
+#set ($conceptAbstraction = $concept.isAbstractDef())
+#set ($conceptExtension = $concept.isExtension())
+#set ($ConceptExtensionName = $concept.firstLetterToUpper($concept.getExtensionName()))
+			
+					<concept oid="$conceptOid">
+						<code>$EntityName</code>					
+#if ($conceptAbstraction)					
+						<abstraction>$conceptAbstraction</abstraction>
+#end						
+#if ($conceptExtension)
+						<extension>$conceptExtension</extension>
+						<extensionDomain>$DomainName</extensionDomain>
+						<extensionModel>$ModelExtensionName</extensionModel>
+						<extensionConcept>$ConceptExtensionName</extensionConcept>
+#end
+						<entitiesCode>$EntitiesName</entitiesCode>
+#if ($concept.isEntry())
+						<entry>true</entry>
+#end	    
+			    
+						<properties>
+## reference properties
+#foreach($referenceProperty in $concept.getExternalLineInList())
+#set ($propertyOid = $referenceProperty.getOid().getOidUniqueNumberString())					
+#set ($neighborName = $referenceProperty.firstLetterToLower($referenceProperty.getDir21Name()))					
+							<property oid="$propertyOid">
+								<code>${neighborName}Oid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+#if ($referenceProperty.getDir21Min() != "0")
+								<required>true</required>
+#end			      		            
+								<reference>true</reference>
+								<referenceNeighbor>$neighborName</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+#end
+## regular properties
+#foreach($property in $concept.getItemList())
+#set ($propertyName = $property.firstLetterToLower($property.getName()))
+#if ($propertyName != "oid")
+#set ($propertyOid = $property.getOid().getOidUniqueNumberString())
+#set ($propertyClass = $property.getTypeModel().getJavaClass())
+#set ($propertyMaxLength = $property.getTypeModel().getLength())
+#set ($defaultValue = $property.getDefaultValue())																		
+							<property oid="$propertyOid">
+								<code>$propertyName</code>
+#if ($property.getTypeModel().getJavaClass() == "org.modelibra.type.Email")
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>org.modelibra.type.Email</validationType>
+#elseif ($property.getTypeModel().getJavaClass() == "java.net.URL")
+								<propertyClass>java.lang.String</propertyClass>
+								<validateType>true</validateType>
+								<validationType>java.net.URL</validationType>
+#elseif ($property.getTypeModel().getJavaClass() == "java.sql.Date")
+								<propertyClass>java.util.Date</propertyClass>
+#elseif ($property.getTypeModel().getJavaClass() == "java.sql.Time")
+								<propertyClass>java.util.Date</propertyClass>
+#elseif ($property.getTypeModel().getJavaClass() == "java.sql.Timestamp")
+								<propertyClass>java.util.Date</propertyClass>
+#else
+								<propertyClass>$propertyClass</propertyClass>
+#end
+#if ($property.getTypeModel().getLength() != "0")
+								<maxLength>$propertyMaxLength</maxLength>
+#end 
+#if ($property.getMin() != "0")
+								<required>true</required>
+#end  
+#if ($defaultValue != "?")
+								<defaultValue>$defaultValue</defaultValue>
+#end   
+#if ($property.isIncrement())
+								<autoIncrement>true</autoIncrement>
+#end     
+#if ($property.isId())
+								<unique>true</unique>
+#end
+
+#if ($property.getMin() != "0" && $defaultValue == "?" && $propertyName != "password")
+								<essential>true</essential>
+#else
+								<essential>false</essential>
+#end
+#if ($propertyName == "password")
+								<scramble>true</scramble>
+#end		            
+							</property>
+#end 
+#end
+						</properties>
+
+						<neighbors>
+## parent --> children 
+#foreach($parentChild in $concept.getLineOutList())
+#set ($neighborOid = $parentChild.getOid().getOidUniqueNumberString())
+#set ($neighborName = $parentChild.firstLetterToLower($parentChild.getDir12Name()))
+#set ($inverseNeighborName = $parentChild.firstLetterToLower($parentChild.getDir21Name()))
+#set ($destinationConceptName = $parentChild.firstLetterToUpper($parentChild.getBoxModel2().getName()))	    	
+							<neighbor oid="$neighborOid">
+								<code>$neighborName</code>
+								<destinationConcept>$destinationConceptName</destinationConcept>
+								<inverseNeighbor>$inverseNeighborName</inverseNeighbor>
+#if ($parentChild.isInternal())
+								<internal>true</internal>
+#else
+								<internal>false</internal>
+#end
+#if ($parentChild.isPartOfManyToMany())
+								<partOfManyToMany>true</partOfManyToMany>
+#else
+								<partOfManyToMany>false</partOfManyToMany>
+#end
+								<type>child</type>
+								<min>$parentChild.getDir12Min()</min>
+								<max>$parentChild.getDir12Max()</max>
+							</neighbor>
+#end
+## child --> parent 
+#foreach($childParent in $concept.getLineInList())
+#set ($neighborOid = $childParent.getOid().getOidUniqueNumberString())
+#set ($neighborName = $childParent.firstLetterToLower($childParent.getDir21Name()))
+#set ($inverseNeighborName = $childParent.firstLetterToLower($childParent.getDir12Name()))
+#set ($destinationConceptName = $childParent.firstLetterToUpper($childParent.getBoxModel1().getName()))	    	
+							<neighbor oid="$neighborOid">
+								<code>$neighborName</code>
+								<destinationConcept>$destinationConceptName</destinationConcept>
+								<inverseNeighbor>$inverseNeighborName</inverseNeighbor>
+#if ($childParent.isInternal())
+								<internal>true</internal>
+#else
+								<internal>false</internal>
+#end
+#if ($childParent.isPartOfManyToMany())
+								<partOfManyToMany>true</partOfManyToMany>
+#else
+								<partOfManyToMany>false</partOfManyToMany>
+#end
+								<type>parent</type>
+								<min>$childParent.getDir21Min()</min>
+								<max>$childParent.getDir21Max()</max>
+#if ($childParent.isDir21Id())
+								<unique>true</unique>
+#end
+							</neighbor>
+#end	    	
+						</neighbors>
+			    
+					</concept>		    
+#end
+		
+				</concepts>
+		
+			</model>
+#end
+    
+		</models>
+
+	</domain>
+		
+</domains>

@@ -1,0 +1,101 @@
+Domain: DmEduc
+Model: WebLink
+Spiral: 08
+Title: Web Application
+Created: 2007.03.24
+Updated: 2007.11.28
+
+Objective
+
+    To provide a sign in and an i18n version of the application, 
+    with some standard pages.
+    
+Concepts
+
+	Specific and generic web components.
+	
+Changes
+
+	New Reference model created in ModelibraModeler.
+	Regenerated the minimal reusable-domain-config.xml.
+	
+	// *** 2. Generate new with preserving specific ***
+	// *** All for an additional model
+	dmGenerator.getDmModelibraGenerator().generateDomainGenClass();
+	dmGenerator.getDmModelibraGenerator().generateModel("Reference");
+	// *** Optional: If done, be sure to have a backup of
+	// specific-domain-config.xml ***
+	dmGenerator.getDmModelibraGenerator().generateSpecificDomainConfig();
+	
+	// *** 2. Generate new with preserving specific ***
+	dmGenerator.getDmModelibraWicketGenerator().generateConceptPageClasses("Reference");
+	// *** All generic properties ***
+	dmGenerator.getDmModelibraWicketGenerator().generateModelibraWicketAppProperties();
+	
+	Filled Reference model data directly in XML data files.
+	
+	Specific domain config changes: 
+		<referenceModel>Reference</referenceModel>
+		
+		<i18n>true</i18n>
+		<signin>true</signin>
+    	<signinConcept>Member</signinConcept>
+	    <shortTextDefaultLength>48</shortTextDefaultLength>
+    	<pageBlockDefaultSize>16</pageBlockDefaultSize>
+	
+	Member.role
+		<validateType>true</validateType>                			
+		<validationType>SecurityRoles</validationType>
+	Member
+		hasValidRole is deleted
+	Members
+		postAdd is deleted
+		postUpdate is deleted
+	DmEducApp_en.properties, fr, ba
+		Member.role.validation=Role is not valid: must be admin, manager, advanced, regular or casual.
+		Member.Interests=Member Interests
+		SecurityRoles.max.cardinality=Max. number of security roles had already been reached (max. 5).
+		Category.categories=Sub-categories
+		Category.category=Super-category
+		
+	HomePage
+		SigninPanel component
+		EntityDisplayTablePanel (Country Names) component
+		
+	HomePageMenuPanel
+		Sign Out link
+		CountryLanguageChoicePanel component
+	
+	I18n
+		<wicket:message key = "menu.admin"/>
+		HomePage.properties, fr, ba
+		
+		CountryLanguage.code
+			specific config
+				<maxLength>2</maxLength>
+		
+		ConuntryLanguages
+			public CountryLanguage getCountryLanguage(String languageCode)
+			public String getLanguageCode(String language)
+			public List<String> getLanguageList()
+			
+		CountryName.code
+			specific config
+				<maxLength>2</maxLength>
+	
+	SecurityRole	
+		specific config
+			<min>1</min>
+			<max>5</max>
+	
+	AboutPage
+	FaqPage
+	SignUpPage
+	ContactPage
+	EntityAddForm for Member
+	EntityAddForm for Comment
+	Specific config: add, remove, update
+	
+		
+		
+	

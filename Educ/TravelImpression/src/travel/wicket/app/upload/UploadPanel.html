@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>
+
+    <div wicket:id="uploadFeedback"/>
+
+    <form wicket:id="uploadForm">
+    
+            <table>
+                <caption>
+                    <wicket:message key = "upload.title"/>
+                </caption>
+			    <tr> 	        
+	                <th>
+	                    <wicket:message key = "upload.file"/>
+	                </th>
+	                <td>
+	                    <input wicket:id="fileInput" type="file" size="80"/>
+	                </td>
+			    </tr>
+	        </table>
+	    
+	    <br/>   
+        
+	    <div class="left">
+	        <table>
+	  	        <tr>
+	  	            <th><wicket:message key = "upload.folder.public"/>&ensp;
+	  	                <input type="submit" value="&uarr;"/>
+	  	            </th>
+	  	        </tr>
+			    <tr>
+		  	        <td>
+		  	            <div wicket:id="publicFolderSection"/>
+		  	        </td>   
+			    </tr>
+	        </table>
+	    </div>   
+	    
+	    <div class="right">
+	         <table>
+	  	        <tr>
+		  	        <th><wicket:message key = "upload.folder.private"/>&ensp;
+		  	            <input wicket:id="privateUpload" type="submit" value="&uarr;"/>
+		  	        </th>
+	  	        </tr>
+			    <tr>
+		  	        <td>
+		  	            <div wicket:id="privateFolderSection"/>
+		  	        </td>  
+			    </tr>
+	        </table>
+	    </div>   
+	    	    
+    </form>
+  
+</wicket:panel>
+
+</html>

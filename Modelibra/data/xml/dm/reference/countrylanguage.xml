@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<countryLanguages>
+  <countryLanguage oid="1970082039279">
+    <code>en</code>
+    <language>english</language>
+  </countryLanguage>
+  <countryLanguage oid="1970082071745">
+    <code>fr</code>
+    <language>français</language>
+  </countryLanguage>
+  <countryLanguage oid="1970075957250">
+    <code>ba</code>
+    <language>bosanski</language>
+  </countryLanguage>
+  <countryLanguage oid="1970075957255">
+    <code>hr</code>
+    <language>hrvatski</language>
+  </countryLanguage>
+</countryLanguages>

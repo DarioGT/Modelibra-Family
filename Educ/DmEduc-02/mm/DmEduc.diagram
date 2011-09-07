@@ -1,0 +1,38 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1168374619156,88,WebLink,WebLinks,dmeduc.weblink,255,255,255,Dzenan Ridjanovic,false,?,xml,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1168374619156,88,false,?,false,true,99,68,116,170,1189006070437,189,Url,Urls,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1189006070437,189,960496657960,1,Oid,1189006070437,190,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1189006070437,189,1131484778208,111,Url,1189006076578,191,link,links,?,255,204,102,1,1,false,true,?,false
+I,1189006070437,189,1131484610357,108,Description,1189006079187,192,description,descriptions,?,255,204,102,0,1,false,false,?,false
+I,1189006070437,189,1137362490437,10,JDate,1189518393437,105,creationDate,creationDates,?,255,204,102,1,1,false,false,today,false
+I,1189006070437,189,1137362490437,10,JDate,1189518406046,106,updateDate,updateDates,?,255,204,102,0,1,false,false,?,false
+I,1189006070437,189,1146828554640,178,Logic,1189518421625,107,approved,approveds,?,255,204,102,1,1,false,false,false,false
+I,1189006070437,189,1138035633296,1,Name,1189518423765,108,category,categories,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1168374619156,88,false,?,false,true,294,70,128,121,1189795509213,106,Comment,Comments,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1189795509213,106,960496657960,1,Oid,1189795509213,107,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1189795509213,106,1138035779453,2,Text,1189795524075,108,text,texts,?,255,204,102,1,1,false,false,?,false
+I,1189795509213,106,1165588406062,81,Note,1189795525730,109,source,sources,?,255,204,102,0,1,false,false,?,false
+I,1189795509213,106,1137362490437,10,JDate,1189795529087,110,creationDate,?,?,255,204,102,1,1,false,false,today,false
+ 
+C, === Lines === 
+ 

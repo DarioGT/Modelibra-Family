@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<carts>
+  <cart oid="1231199185654">
+    <addressOid>1231199190731</addressOid>
+    <cartCheeses>
+      <cartCheese oid="1231199188020">
+        <cheeseOid>1231195901638</cheeseOid>
+      </cartCheese>
+    </cartCheeses>
+  </cart>
+  <cart oid="1233773141587">
+    <addressOid>1233774256487</addressOid>
+    <cartCheeses>
+      <cartCheese oid="1233773144050">
+        <cheeseOid>1231195964978</cheeseOid>
+      </cartCheese>
+      <cartCheese oid="1233773145258">
+        <cheeseOid>1231195994044</cheeseOid>
+      </cartCheese>
+    </cartCheeses>
+  </cart>
+  <cart oid="1233774570708">
+    <addressOid>1233774587812</addressOid>
+    <cartCheeses>
+      <cartCheese oid="1233774577398">
+        <cheeseOid>1231196021973</cheeseOid>
+      </cartCheese>
+      <cartCheese oid="1233774585397">
+        <cheeseOid>1231196265859</cheeseOid>
+      </cartCheese>
+    </cartCheeses>
+  </cart>
+  <cart oid="1233786596365">
+    <addressOid>1233788229163</addressOid>
+    <cartCheeses>
+      <cartCheese oid="1233786840600">
+        <cheeseOid>1231195901638</cheeseOid>
+      </cartCheese>
+      <cartCheese oid="1233787546923">
+        <cheeseOid>1231196229781</cheeseOid>
+      </cartCheese>
+      <cartCheese oid="1233788033096">
+        <cheeseOid>1231196265859</cheeseOid>
+      </cartCheese>
+    </cartCheeses>
+  </cart>
+</carts>

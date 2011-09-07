@@ -1,0 +1,398 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1169577221984,1,Meta,Metas,dm.meta,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,1200
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1169577221984,1,false,?,false,false,398,175,169,305,1169577222171,100,DomainModel,DomainModels,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1169577222171,100,960496657960,1,Oid,1169577222171,101,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,102,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1169577222171,100,1165588261375,80,String,1170444565840,17,abstraction,abstractions,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,103,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1170444590215,18,extensionDomain,extensionDomains,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1191442513328,2,extensionDomainType,extensionDomainTypes,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,104,extensionModel,extensionModels,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,105,author,authors,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1182892833343,2,packageCode,packageCodes,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,107,persistent,persistents,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,108,persistenceType,persistenceTypes,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,109,persistenceRelativePath,persistenceRelativePaths,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,110,persistenceConfig,persistenceConfigs,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,111,defaultLoadSave,defaultLoadSaves,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222187,119,datePattern,datePatterns,?,255,204,102,0,1,false,false,?,false
+I,1169577222171,100,1165588261375,80,String,1169577222171,112,session,sessions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1169577221984,1,false,?,false,false,12,527,170,385,1169577222187,122,Concept,Concepts,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1169577222187,122,960496657960,1,Oid,1169577222187,123,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222187,124,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1169577222187,122,1165588261375,80,String,1170444821528,19,abstraction,abstractions,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222187,125,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1170444833637,20,extensionDomain,extensionDomains,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1191442579218,3,extensionDomainType,extensionDomainTypes,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169591250421,1,extensionModel,extensionModels,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222187,126,extensionConcept,extensionConcepts,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1170444858653,21,extensionWithNeighbors,extensionWithNeighborss,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222187,127,entitiesCode,entitiesCodes,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1188594656188,597,packageCode,packageCodes,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,131,min,mins,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,132,max,maxes,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,128,entry,entries,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,129,fileName,fileNames,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1170867213921,1,index,indexes,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,133,display,displaies,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,134,displayType,displayTypes,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,135,add,adds,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,136,remove,removes,?,255,204,102,0,1,false,false,?,false
+I,1169577222187,122,1165588261375,80,String,1169577222203,137,update,updates,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1169577221984,1,false,?,false,false,510,540,139,417,1169577222218,138,Property,Properties,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1169577222218,138,960496657960,1,Oid,1169577222218,139,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,140,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,141,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,142,extensiopnProperty,extensiopnProperties,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,143,propertyClass,propertyClasss,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1190652973062,1,derived,deriveds,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,144,validateType,validateTypes,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,145,validationType,validationTypes,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,146,maxLength,maxLengths,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,147,required,requireds,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1182893111390,3,sensitive,sensitives,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,148,defaultValue,defaultValues,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,150,autoIncrement,autoIncrements,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,149,unique,uniques,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1170867302437,2,index,indexes,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222218,151,reference,references,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222234,152,referenceNeighbor,referenceNeighbors,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222234,153,display,displaies,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222234,154,update,updates,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222234,155,displayLength,displayLengths,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222234,156,essential,essentials,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1169577222234,157,scramble,scrambles,?,255,204,102,0,1,false,false,?,false
+I,1169577222218,138,1165588261375,80,String,1189525258593,1,whitespaceAllowed,whitespaceAlloweds,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1169577221984,1,false,?,false,false,347,760,143,357,1169577222234,158,Neighbor,Neighbors,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1169577222234,158,960496657960,1,Oid,1169577222234,159,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222234,160,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222234,161,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222234,162,extensionNeighbor,extensionNeighbors,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222234,163,destinationConcept,destinationConcepts,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222234,164,inverseNeighbor,inverseNeighbors,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1170445144184,22,internal,internals,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1173790833296,1,partOfManyToMany,partOfManyToManies,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,165,type,types,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,166,min,mins,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,167,max,maxes,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,168,unique,uniques,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1182893293218,7,index,indexes,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,169,addRule,addRules,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,170,removeRule,removeRules,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,171,updateRule,updateRules,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,172,display,displaies,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,173,update,updates,?,255,204,102,0,1,false,false,?,false
+I,1169577222234,158,1165588261375,80,String,1169577222250,174,absorb,absorbs,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1169577221984,1,false,?,false,true,15,15,169,289,1170444314168,1,Domain,Domains,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1170444314168,1,960496657960,1,Oid,1170444314168,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444352684,4,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1170444314168,1,1165588261375,80,String,1191442425031,1,type,types,?,255,204,102,1,1,false,true,?,false
+I,1170444314168,1,1165588261375,80,String,1182892726375,1,packageCode,packageCodes,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444406590,5,abstraction,abstractions,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444413965,6,defaultConstruct,defaultConstructs,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444425418,7,packagePrefix,packagePrefixes,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444431512,8,referenceModel,referenceModels,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444447809,9,i18n,i18ns,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444452309,10,signin,signins,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444460903,11,signinConcept,signinConcepts,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444484746,13,shortTextDefaultLength,shortTextDefaultLengths,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444500590,14,pageBlockDefaultSize,pageBlockDefaultSizes,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444517496,15,validateForm,validateForms,?,255,204,102,0,1,false,false,?,false
+I,1170444314168,1,1165588261375,80,String,1170444521949,16,confirmRemove,confirmRemoves,?,255,204,102,0,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1169577221984,1,1169577222171,100,1169577222187,122,false,true,false,0,N,false,concepts,true,NONE,NONE,NONE,1,1,true,domainModel,true,NONE,NONE,NONE,1169577222281,181,?,?,?,255,204,102,true,false
+L,1169577221984,1,1169577222187,122,1169577222218,138,false,true,false,0,N,false,properties,true,NONE,NONE,NONE,1,1,true,concept,true,NONE,NONE,NONE,1169577222281,182,?,?,?,255,204,102,true,false
+L,1169577221984,1,1169577222187,122,1169577222234,158,false,true,false,0,N,false,neighbors,true,NONE,NONE,NONE,1,1,true,concept,true,NONE,NONE,NONE,1169577222281,183,?,?,?,255,204,102,true,false
+L,1169577221984,1,1170444314168,1,1169577222171,100,false,true,false,0,N,false,domainModels,true,NONE,NONE,NONE,1,1,true,domain,true,NONE,NONE,NONE,1170444346809,3,?,?,?,255,204,102,true,false
+ 
+C, --- Diagram --- 
+ 
+D,1169579172625,2790,Reference,?,dm.reference,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,1200
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1169579172625,2790,false,?,false,true,49,20,105,197,1169579172625,2791,Member,Members,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1169579172625,2791,960496657960,1,Oid,1169579172625,2792,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169579172625,2791,1131484634992,109,Code,1169579172625,2793,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1169579172625,2791,1131484634992,109,Code,1169579172625,2794,password,passwords,?,255,204,102,1,1,false,false,?,false
+I,1169579172625,2791,1138035633296,1,Name,1169579172625,2795,lastName,lastNames,?,255,204,102,1,1,false,false,?,false
+I,1169579172625,2791,1138035633296,1,Name,1169579172625,2796,firstName,firstNames,?,255,204,102,1,1,false,false,?,false
+I,1169579172625,2791,1131484746612,110,Email,1169579172625,2797,email,emails,?,255,204,102,1,1,false,false,?,false
+I,1169579172625,2791,1146828554640,178,Logic,1169579172640,2798,receiveEmail,receiveEmails,?,255,204,102,1,1,false,false,?,false
+I,1169579172625,2791,1131484634992,109,Code,1169579172640,2799,role,roles,?,255,204,102,1,1,false,false,?,false
+I,1169579172625,2791,1137362490437,10,JDate,1169579172640,2800,startDate,startDates,?,255,204,102,1,1,false,false,today,false
+ 
+C, --- Box --- 
+ 
+B,1169579172625,2790,false,?,false,true,194,19,106,196,1169579172640,2806,Applicant,Applicants,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1169579172640,2806,960496657960,1,Oid,1169579172640,2807,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169579172640,2806,1131484634992,109,Code,1169579172640,2808,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1169579172640,2806,1131484634992,109,Code,1169579172640,2809,password,passwords,?,255,204,102,1,1,false,false,?,false
+I,1169579172640,2806,1138035633296,1,Name,1169579172640,2810,lastName,lastNames,?,255,204,102,1,1,false,false,?,false
+I,1169579172640,2806,1138035633296,1,Name,1169579172640,2811,firstName,firstNames,?,255,204,102,1,1,false,false,?,false
+I,1169579172640,2806,1131484746612,110,Email,1169579172640,2812,email,emails,?,255,204,102,1,1,false,false,?,false
+I,1169579172640,2806,1146828554640,178,Logic,1169579172640,2813,receiveEmail,receiveEmails,?,255,204,102,1,1,false,false,?,false
+I,1169579172640,2806,1131484634992,109,Code,1169579172640,2814,role,roles,?,255,204,102,1,1,false,false,?,false
+I,1169579172640,2806,1137362490437,10,JDate,1169579172640,2815,startDate,startDates,?,255,204,102,1,1,false,false,today,false
+ 
+C, --- Box --- 
+ 
+B,1169579172625,2790,false,?,false,true,195,251,120,140,1169918222015,1,CountryName,CountryNames,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1169918222015,1,960496657960,1,Oid,1169918222015,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169918222015,1,1165588261375,80,String,1169918429671,10,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1169918222015,1,1165588261375,80,String,1169918465234,11,country,countries,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1169579172625,2790,false,?,false,true,342,251,129,140,1169918230140,3,CountryLanguage,CountryLanguages,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1169918230140,3,960496657960,1,Oid,1169918230140,4,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169918230140,3,1165588261375,80,String,1169918419625,8,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1169918230140,3,1165588261375,80,String,1169918423968,9,language,languages,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1169579172625,2790,false,?,false,true,46,252,120,140,1169918246250,5,SecurityRole,SecurityRoles,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1169918246250,5,960496657960,1,Oid,1169918246250,6,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1169918246250,5,1165588261375,80,String,1169918493171,12,code,codes,?,255,204,102,1,1,false,true,?,false
+ 
+C, === Lines === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1199049728893,74,Meta1,?,dm.meta,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,1200
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1199049728893,74,false,?,false,false,398,175,169,305,1199049728894,75,DomainModel,DomainModels,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1199049728894,75,960496657960,1,Oid,1199049728894,76,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728894,77,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728894,78,abstraction,abstractions,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728895,79,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728895,80,extensionDomain,extensionDomains,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728895,81,extensionDomainType,extensionDomainTypes,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728896,82,extensionModel,extensionModels,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728896,83,author,authors,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728896,84,packageCode,packageCodes,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728896,85,persistent,persistents,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728897,86,persistenceType,persistenceTypes,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728897,87,persistenceRelativePath,persistenceRelativePaths,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728897,88,persistenceConfig,persistenceConfigs,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728898,89,defaultLoadSave,defaultLoadSaves,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728898,90,datePattern,datePatterns,?,255,204,102,0,1,false,false,?,false
+I,1199049728894,75,1165588261375,80,String,1199049728898,91,session,sessions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1199049728893,74,false,?,false,false,12,527,170,385,1199049728899,92,Concept,Concepts,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1199049728899,92,960496657960,1,Oid,1199049728899,93,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728899,94,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728900,95,abstraction,abstractions,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728900,96,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728900,97,extensionDomain,extensionDomains,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728901,98,extensionDomainType,extensionDomainTypes,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728904,99,extensionModel,extensionModels,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728904,100,extensionConcept,extensionConcepts,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728905,101,extensionWithNeighbors,extensionWithNeighborss,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728905,102,entitiesCode,entitiesCodes,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728906,103,packageCode,packageCodes,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728906,104,min,mins,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728906,105,max,maxes,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728907,106,entry,entries,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728907,107,fileName,fileNames,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728907,108,index,indexes,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728908,109,display,displaies,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728908,110,displayType,displayTypes,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728908,111,add,adds,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728909,112,remove,removes,?,255,204,102,0,1,false,false,?,false
+I,1199049728899,92,1165588261375,80,String,1199049728910,113,update,updates,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1199049728893,74,false,?,false,true,15,15,169,289,1199049728940,158,Domain,Domains,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1199049728940,158,960496657960,1,Oid,1199049728940,159,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728941,160,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728941,161,type,types,?,255,204,102,1,1,false,true,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728942,162,packageCode,packageCodes,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728942,163,abstraction,abstractions,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728943,164,defaultConstruct,defaultConstructs,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728943,165,packagePrefix,packagePrefixes,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728944,166,referenceModel,referenceModels,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728944,167,i18n,i18ns,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728945,168,signin,signins,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728948,169,signinConcept,signinConcepts,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728948,170,shortTextDefaultLength,shortTextDefaultLengths,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728949,171,pageBlockDefaultSize,pageBlockDefaultSizes,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728949,172,validateForm,validateForms,?,255,204,102,0,1,false,false,?,false
+I,1199049728940,158,1165588261375,80,String,1199049728950,173,confirmRemove,confirmRemoves,?,255,204,102,0,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1199049728893,74,1199049728894,75,1199049728899,92,false,true,false,0,N,false,concepts,true,NONE,NONE,NONE,1,1,true,domainModel,true,NONE,NONE,NONE,1199049728951,174,?,?,?,255,204,102,true,false
+L,1199049728893,74,1199049728940,158,1199049728894,75,false,true,false,0,N,false,domainModels,true,NONE,NONE,NONE,1,1,true,domain,true,NONE,NONE,NONE,1199049728963,177,?,?,?,255,204,102,true,false
+ 
+C, --- Diagram --- 
+ 
+D,1199049732910,178,Meta2,?,dm.meta,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,1200
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1199049732910,178,false,?,false,false,20,19,170,385,1199049732915,196,Concept,Concepts,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1199049732915,196,960496657960,1,Oid,1199049732915,197,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732915,198,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732915,199,abstraction,abstractions,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732916,200,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732916,201,extensionDomain,extensionDomains,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732919,202,extensionDomainType,extensionDomainTypes,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732920,203,extensionModel,extensionModels,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732920,204,extensionConcept,extensionConcepts,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732920,205,extensionWithNeighbors,extensionWithNeighborss,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732921,206,entitiesCode,entitiesCodes,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732921,207,packageCode,packageCodes,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732921,208,min,mins,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732922,209,max,maxes,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732922,210,entry,entries,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732922,211,fileName,fileNames,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732923,212,index,indexes,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732923,213,display,displaies,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732923,214,displayType,displayTypes,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732924,215,add,adds,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732924,216,remove,removes,?,255,204,102,0,1,false,false,?,false
+I,1199049732915,196,1165588261375,80,String,1199049732924,217,update,updates,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1199049732910,178,false,?,false,false,544,29,139,417,1199049732925,218,Property,Properties,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1199049732925,218,960496657960,1,Oid,1199049732925,219,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732925,220,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732926,221,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732926,222,extensiopnProperty,extensiopnProperties,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732927,223,propertyClass,propertyClasss,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732927,224,derived,deriveds,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732927,225,validateType,validateTypes,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732928,226,validationType,validationTypes,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732928,227,maxLength,maxLengths,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732928,228,required,requireds,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732929,229,sensitive,sensitives,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732929,230,defaultValue,defaultValues,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732930,231,autoIncrement,autoIncrements,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732930,232,unique,uniques,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732930,233,index,indexes,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732931,234,reference,references,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732931,235,referenceNeighbor,referenceNeighbors,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732931,236,display,displaies,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732932,237,update,updates,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732932,238,displayLength,displayLengths,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732933,239,essential,essentials,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732933,240,scramble,scrambles,?,255,204,102,0,1,false,false,?,false
+I,1199049732925,218,1165588261375,80,String,1199049732933,241,whitespaceAllowed,whitespaceAlloweds,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1199049732910,178,false,?,false,false,379,249,143,357,1199049732934,242,Neighbor,Neighbors,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1199049732934,242,960496657960,1,Oid,1199049732934,243,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732935,244,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732935,245,extension,extensions,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732936,246,extensionNeighbor,extensionNeighbors,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732936,247,destinationConcept,destinationConcepts,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732936,248,inverseNeighbor,inverseNeighbors,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732937,249,internal,internals,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732938,250,partOfManyToMany,partOfManyToManies,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732938,251,type,types,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732939,252,min,mins,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732939,253,max,maxes,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732939,254,unique,uniques,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732940,255,index,indexes,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732940,256,addRule,addRules,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732941,257,removeRule,removeRules,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732941,258,updateRule,updateRules,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732942,259,display,displaies,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732942,260,update,updates,?,255,204,102,0,1,false,false,?,false
+I,1199049732934,242,1165588261375,80,String,1199049732943,261,absorb,absorbs,?,255,204,102,0,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1199049732910,178,1199049732915,196,1199049732925,218,false,true,false,0,N,false,properties,true,NONE,NONE,NONE,1,1,true,concept,true,NONE,NONE,NONE,1199049732956,279,?,?,?,255,204,102,true,false
+L,1199049732910,178,1199049732915,196,1199049732934,242,false,true,false,0,N,false,neighbors,true,NONE,NONE,NONE,1,1,true,concept,true,NONE,NONE,NONE,1199049732959,280,?,?,?,255,204,102,true,false

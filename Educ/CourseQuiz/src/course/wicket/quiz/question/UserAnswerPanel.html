@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>
+
+<div>
+    <textarea wicket:id="shortAnswer" rows="12" cols="80" >
+        short answer
+    </textarea>
+</div>
+
+<div wicket:id="singleChoice">
+    <div wicket:id="singleChoiceItems">
+	    <input type="radio" wicket:id="radio"/>
+		<span wicket:id="questionItemNumber">
+		    question item number	
+		</span>:
+	    <span wicket:id="questionItemText">
+	        question item text
+	    </span>
+	</div>
+</div>
+
+<div wicket:id="multipleChoice">
+    <div wicket:id="multipleChoiceItems">
+	    <input type="checkbox" wicket:id="check"/>
+		<span wicket:id="questionItemNumber">
+		    question item number
+		</span>:
+	    <span wicket:id="questionItemText">
+	        question item text
+	    </span>
+	</div>
+</div>
+
+</wicket:panel>
+
+</html>
+

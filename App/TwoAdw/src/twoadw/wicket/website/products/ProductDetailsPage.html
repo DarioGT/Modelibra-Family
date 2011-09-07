@@ -1,0 +1,39 @@
+<html>
+
+<body>
+<wicket:extend>
+		<div id="content">
+			<div id="main">
+				
+				<h3 wicket:id="name"></h3>
+				<a wicket:id="modify" title="Modify Product" class="adminLinkH"><span class="editIcon"></span></a>
+					<div id="productTop"> <!-- productTop -->
+						<div id="leftImage" align=left>
+							<div wicket:id="images">
+								<img wicket:id="imageUrl"/>
+								
+							</div><!-- images -->
+							
+						</div><!-- leftImage -->
+						
+						<h4>Description:</h4>
+						<p wicket:id="shortDescription"></p>
+						
+						<div wicket:id="addInvoiceProductPanel"></div>
+						
+					</div> <!-- productTop -->
+					<div wicket:id="lbp" class="lbp"></div>
+					<!---<div wicket:id="lbi" class="lbp"></div>--->
+					<div wicket:id="tabpanel">[tabbed panel will be here]</div>
+					<br>
+				
+				
+			</div> <!-- main -->
+			<div id="left">		
+				<div wicket:id="category"></div>
+			</div> <!-- left -->
+		</div> <!-- content -->
+	</wicket:extend>
+</body>
+
+</html>

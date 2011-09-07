@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<invoices>
+  <invoice oid="1237478568953">
+    <addressOid>1237316961300</addressOid>
+    <invoiceNumber>090319120735873-customer</invoiceNumber>
+    <paid>false</paid>
+    <shipped>false</shipped>
+    <date>2009-03-19</date>
+    <invoiceProducts>
+      <invoiceProduct oid="1237478702242">
+        <productOid>1237429554562</productOid>
+        <quantity>1</quantity>
+        <price>499.99</price>
+      </invoiceProduct>
+    </invoiceProducts>
+    <invoiceStatuss>
+      <invoiceStatus oid="1239200575663">
+        <statusOid>1238757446647</statusOid>
+        <date>2009-04-08</date>
+      </invoiceStatus>
+    </invoiceStatuss>
+  </invoice>
+  <invoice oid="1237951056455">
+    <addressOid>1237790916068</addressOid>
+    <invoiceNumber>090324231830661-daneault</invoiceNumber>
+    <paid>false</paid>
+    <shipped>false</shipped>
+    <date>2009-03-24</date>
+    <invoiceProducts>
+      <invoiceProduct oid="1237951106324">
+        <productOid>1237727434825</productOid>
+        <quantity>1</quantity>
+        <price>216.99</price>
+      </invoiceProduct>
+    </invoiceProducts>
+    <invoiceStatuss>
+      <invoiceStatus oid="1239021985711">
+        <statusOid>1238757466541</statusOid>
+        <date>2009-04-06</date>
+      </invoiceStatus>
+    </invoiceStatuss>
+  </invoice>
+  <invoice oid="1238676984751">
+    <addressOid>1238669067267</addressOid>
+    <invoiceNumber>090402085659380-daneault</invoiceNumber>
+    <paid>false</paid>
+    <shipped>false</shipped>
+    <date>2009-04-02</date>
+    <invoiceProducts>
+      <invoiceProduct oid="1238677005950">
+        <productOid>1237727434825</productOid>
+        <quantity>1</quantity>
+        <price>216.99</price>
+      </invoiceProduct>
+    </invoiceProducts>
+    <invoiceStatuss>
+      <invoiceStatus oid="1238757493778">
+        <statusOid>1238757446647</statusOid>
+        <date>2009-04-03</date>
+        <note>automatic gen</note>
+      </invoiceStatus>
+    </invoiceStatuss>
+  </invoice>
+  <invoice oid="1240282162956">
+    <addressOid>1238669067267</addressOid>
+    <invoiceNumber>090420225345594-daneault</invoiceNumber>
+    <paid>false</paid>
+    <shipped>false</shipped>
+    <date>2009-04-20</date>
+    <invoiceProducts>
+      <invoiceProduct oid="1240282370506">
+        <productOid>1237317226038</productOid>
+        <quantity>50</quantity>
+        <price>1899.99</price>
+      </invoiceProduct>
+      <invoiceProduct oid="1240282373758">
+        <productOid>1237727434825</productOid>
+        <quantity>559</quantity>
+        <price>216.99</price>
+      </invoiceProduct>
+      <invoiceProduct oid="1240282377051">
+        <productOid>1237329625840</productOid>
+        <quantity>12</quantity>
+        <price>289.99</price>
+      </invoiceProduct>
+      <invoiceProduct oid="1240282377703">
+        <productOid>1238091046972</productOid>
+        <quantity>1</quantity>
+        <price>1999.99</price>
+      </invoiceProduct>
+      <invoiceProduct oid="1240282378515">
+        <productOid>1237726571828</productOid>
+        <quantity>1</quantity>
+        <price>189.97</price>
+      </invoiceProduct>
+      <invoiceProduct oid="1240282381749">
+        <productOid>1237727998298</productOid>
+        <quantity>1</quantity>
+        <price>206.25</price>
+      </invoiceProduct>
+    </invoiceProducts>
+  </invoice>
+</invoices>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rebates>
+  <rebate oid="1237378702199">
+    <rebateName>TestPercentRebate</rebateName>
+    <description>TestPercentRebate</description>
+    <rebateValue>50.0</rebateValue>
+    <postalRebate>false</postalRebate>
+    <percentRebate>true</percentRebate>
+    <rebatePriority>0</rebatePriority>
+    <start>2009-03-18</start>
+    <finish>2010-03-18</finish>
+  </rebate>
+  <rebate oid="1237378734930">
+    <rebateName>TestMoneyRebate</rebateName>
+    <description>Money</description>
+    <rebateValue>30.0</rebateValue>
+    <postalRebate>true</postalRebate>
+    <percentRebate>false</percentRebate>
+    <rebatePriority>1</rebatePriority>
+    <start>2009-03-18</start>
+    <finish>2010-03-18</finish>
+  </rebate>
+  <rebate oid="1237386831121">
+    <rebateName>AppleCrazyMonth</rebateName>
+    <description>Apple</description>
+    <rebateValue>20.0</rebateValue>
+    <postalRebate>false</postalRebate>
+    <percentRebate>true</percentRebate>
+    <rebatePriority>0</rebatePriority>
+    <start>2009-03-18</start>
+    <finish>2009-03-19</finish>
+  </rebate>
+  <rebate oid="1237867729742">
+    <rebateName>testRebateCyril</rebateName>
+    <rebateValue>12.0</rebateValue>
+    <postalRebate>false</postalRebate>
+    <percentRebate>true</percentRebate>
+    <rebatePriority>0</rebatePriority>
+    <start>2009-04-24</start>
+    <finish>2009-04-26</finish>
+  </rebate>
+</rebates>

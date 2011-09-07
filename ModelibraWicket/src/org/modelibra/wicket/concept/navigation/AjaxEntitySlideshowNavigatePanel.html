@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>								
+	<a class = "button" wicket:id="stopLink">
+		<img wicket:id = "stop" width="16" height="16" />
+	</a>		
+	<a class = "button" wicket:id="playLink">
+		<img wicket:id = "play" width="16" height="16" />
+	</a>
+	&ensp;		
+	<select wicket:id="timerDurationChoice"></select>
+	<span>s</span>
+	&ensp;
+	<span wicket:id="minuteCounter"/>	
+	&ensp;						
+	<input type="checkbox" wicket:id="repeatCheckBox">
+		<img wicket:id = "repeat" width="16" height="16" />
+	</input>	
+	&ensp;
+	<a class="button" wicket:id="firstLink">&lt;&lt;</a>		
+	<a class="button" wicket:id="priorLink">&lt;</a>		
+	<a class="button" wicket:id="nextLink">&gt;</a>		
+	<a class="button" wicket:id="lastLink">&gt;&gt;</a>			
+</wicket:panel>
+
+</html>

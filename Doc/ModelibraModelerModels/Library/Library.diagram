@@ -1,0 +1,101 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1233251516994,89,Library,Libraries,EducationLibrary,255,255,255,Dzenan Ridjanovic,false,?,false,xml,true,true,800,600
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,true,32,52,161,195,1233251560026,90,Member,Members,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1233251560026,90,960496657960,1,Oid,1233251560027,91,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1233251560026,90,1131484634992,109,Code,1236178661699,1,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1233251560026,90,1131484634992,109,Code,1235857739799,33,password,passwords,?,255,204,102,1,1,false,false,?,false
+I,1233251560026,90,1138035633296,1,Name,1233252088979,92,firstName,firstNames,?,255,204,102,1,1,false,false,?,false
+I,1233251560026,90,1138035633296,1,Name,1234736532404,5,lastName,lastNames,?,255,204,102,1,1,false,false,?,false
+I,1233251560026,90,1131484746612,110,Email,1235772852256,4,email,emails,?,255,204,102,1,1,false,false,?,false
+I,1233251560026,90,1146828554640,178,Logic,1235772584766,1,onTime,onTimes,?,255,204,102,1,1,false,false,true,false
+I,1233251560026,90,960496658020,11,Integer,1233252095780,93,maxNumberOfBooks,maxNumberOfBookss,?,255,204,102,1,1,false,false,1,false
+I,1233251560026,90,1137362490437,10,JDate,1235772763295,2,returnDate,returnDates,?,255,204,102,0,1,false,false,today,false
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,true,359,351,128,178,1234736431783,1,Book,Books,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1234736431783,1,960496657960,1,Oid,1234736431783,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1234736431783,1,1131484634992,109,Code,1235856599585,10,isbn,isbns,?,255,204,102,1,1,false,true,?,false
+I,1234736431783,1,1131484582316,107,LongName,1234736439091,3,name,names,?,255,204,102,1,1,false,false,?,false
+I,1234736431783,1,1141774778531,1,ShortText,1235856624497,11,edition,editions,?,255,204,102,1,1,false,false,?,false
+I,1234736431783,1,960496658020,11,Integer,1235856628274,12,year,years,?,255,204,102,1,1,false,false,?,false
+I,1234736431783,1,1165588734953,84,ShortDecimal,1235858735308,34,price,prices,?,255,204,102,0,1,false,false,?,false
+I,1234736431783,1,1131484778208,111,Url,1235772843103,3,webLink,webLinks,?,255,204,102,0,1,false,false,?,false
+I,1234736431783,1,1131484610357,108,Description,1235841544643,1,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,true,520,52,128,123,1235856417412,2,Writer,Writers,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1235856417412,2,960496657960,1,Oid,1235856417412,3,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1235856417412,2,1138035633296,1,Name,1235856440785,4,lastName,lastNames,?,255,204,102,1,1,false,true,?,false
+I,1235856417412,2,1138035633296,1,Name,1235856445729,5,firstName,firstNames,?,255,204,102,1,1,false,true,?,false
+I,1235856417412,2,1131484778208,111,Url,1235856461203,6,webLink,webLinks,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,false,668,273,128,96,1235856477610,7,Author,Authors,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1235856477610,7,960496657960,1,Oid,1235856477611,8,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1235856477610,7,960496658020,11,Integer,1235856534593,9,sequence,sequences,?,255,204,102,0,1,false,false,1,false
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,true,287,118,128,106,1235856986398,15,Category,Categories,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1235856986398,15,960496657960,1,Oid,1235856986398,16,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1235856986398,15,1138035633296,1,Name,1235856993955,17,name,names,?,255,204,102,1,1,false,false,?,false
+I,1235856986398,15,1165588406062,81,Note,1235856998259,18,note,notes,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,false,667,491,128,103,1235857133350,21,Review,Reviews,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1235857133350,21,960496657960,1,Oid,1235857133351,22,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1235857133350,21,1131484778208,111,Url,1235857152196,23,webLink,webLinks,?,255,204,102,1,1,false,false,?,false
+I,1235857133350,21,1137362490437,10,JDate,1235857158564,24,reviewDate,reviewDates,?,255,204,102,1,1,false,false,today,false
+ 
+C, --- Box --- 
+ 
+B,1233251516994,89,false,?,false,false,44,504,128,101,1235857282262,25,BookItem,BookItems,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1235857282262,25,960496657960,1,Oid,1235857282262,26,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1235857282262,25,960496658020,11,Integer,1235857314741,27,number,numbers,?,255,204,102,1,1,false,true,?,false
+I,1235857282262,25,1165588406062,81,Note,1236178928886,2,note,notes,?,255,204,102,0,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1233251516994,89,1234736431783,1,1235856477610,7,false,true,true,0,N,false,authors,true,NONE,NONE,NONE,1,1,true,book,true,NONE,NONE,NONE,1235856716119,13,?,?,?,255,204,102,true,false
+L,1233251516994,89,1235856417412,2,1235856477610,7,false,false,true,0,N,false,authors,true,NONE,NONE,NONE,1,1,true,writer,true,NONE,NONE,NONE,1235856720751,14,?,?,?,153,102,0,true,false
+L,1233251516994,89,1235856986398,15,1235856986398,15,false,true,false,0,N,false,categories,true,NONE,NONE,NONE,0,1,false,category,true,NONE,NONE,NONE,1235857002456,19,?,?,?,255,204,102,true,false
+L,1233251516994,89,1235856986398,15,1234736431783,1,false,false,false,0,N,false,books,true,NONE,NONE,NONE,0,1,false,category,true,NONE,NONE,NONE,1235857034167,20,?,?,?,153,102,0,true,false
+L,1233251516994,89,1234736431783,1,1235857282262,25,false,true,false,0,N,false,bookItems,true,NONE,NONE,NONE,1,1,true,book,true,NONE,NONE,NONE,1235857475643,30,?,?,?,255,204,102,true,false
+L,1233251516994,89,1233251560026,90,1235857282262,25,false,false,false,0,N,false,bookItems,true,NONE,NONE,NONE,0,1,false,member,true,NONE,NONE,NONE,1235857480571,31,?,?,?,153,102,0,true,false
+L,1233251516994,89,1234736431783,1,1235857133350,21,false,true,false,0,N,false,reviews,true,NONE,NONE,NONE,1,1,false,book,true,NONE,NONE,NONE,1235857527499,32,?,?,?,255,204,102,true,false

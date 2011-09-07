@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:wicket>
+
+<wicket:panel>
+
+    <form wicket:id = "signinForm">
+		<table>
+		    <tr>
+		  	    <th align = "right">
+		  	        <wicket:message key = "signin.code"/>:
+		  	    </th>
+		  	    <td>
+	      	        <input wicket:id = "code" type = "text" value = "?" size = "12"/>
+                </td>
+		    </tr>
+		    <tr>
+		  	    <th align = "right">
+		  	        <wicket:message key = "signin.password"/>:
+		  	    </th>
+		  	    <td>
+	      	        <input wicket:id = "password" type = "password" value = "?" size = "12"/>
+                </td>
+		    </tr>
+		    <tr>
+	    	    <th>
+	    	    </th>
+	    	    <td> 
+	    	        <wicket:message key = "signin"/>
+                    <input type = "submit" value = "-->"/>
+                </td>
+	  	    </tr>
+		</table>	
+	</form>
+  
+</wicket:panel>
+
+</html>
+

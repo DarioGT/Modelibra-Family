@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Specific Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1233251484875">
+		<code>Education</code>
+		<type>Specific</type>
+
+		<models>
+
+			<model oid="1233251517083">
+				<code>Library</code>
+				<extension>true</extension>
+				<extensionDomain>Education</extensionDomain>
+				<extensionDomainType>Reusable</extensionDomainType>
+				<extensionModel>Library</extensionModel>
+				
+				<session>true</session>
+				
+				<concepts>
+
+					<concept oid="1233251560116">
+						<code>Member</code>
+						<extension>true</extension>
+						<extensionConcept>Member</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1236178661700">
+								<code>code</code>
+								<extension>true</extension>
+								<extensionProperty>code</extensionProperty>
+
+							</property>
+
+							<property oid="1235857739832">
+								<code>password</code>
+								<extension>true</extension>
+								<extensionProperty>password</extensionProperty>
+
+							</property>
+
+							<property oid="1233252089071">
+								<code>firstName</code>
+								<extension>true</extension>
+								<extensionProperty>firstName</extensionProperty>
+
+							</property>
+
+							<property oid="1234736532409">
+								<code>lastName</code>
+								<extension>true</extension>
+								<extensionProperty>lastName</extensionProperty>
+
+							</property>
+
+							<property oid="1235772852260">
+								<code>email</code>
+								<extension>true</extension>
+								<extensionProperty>email</extensionProperty>
+
+							</property>
+
+							<property oid="1235772584767">
+								<code>onTime</code>
+								<extension>true</extension>
+								<extensionProperty>onTime</extensionProperty>
+
+							</property>
+
+							<property oid="1233252095873">
+								<code>maxNumberOfBooks</code>
+								<extension>true</extension>
+								<extensionProperty>maxNumberOfBooks</extensionProperty>
+
+							</property>
+
+							<property oid="1235772763297">
+								<code>returnDate</code>
+								<extension>true</extension>
+								<extensionProperty>returnDate</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1234736431784">
+						<code>Book</code>
+						<extension>true</extension>
+						<extensionConcept>Book</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1235857034187">
+								<code>categoryOid</code>
+								<extension>true</extension>
+								<extensionProperty>categoryOid</extensionProperty>
+
+							</property>
+
+							<property oid="1235856599595">
+								<code>isbn</code>
+								<extension>true</extension>
+								<extensionProperty>isbn</extensionProperty>
+
+							</property>
+
+							<property oid="1234736439094">
+								<code>name</code>
+								<extension>true</extension>
+								<extensionProperty>name</extensionProperty>
+
+							</property>
+
+							<property oid="1235856624508">
+								<code>edition</code>
+								<extension>true</extension>
+								<extensionProperty>edition</extensionProperty>
+
+							</property>
+
+							<property oid="1235856628286">
+								<code>year</code>
+								<extension>true</extension>
+								<extensionProperty>year</extensionProperty>
+
+							</property>
+
+							<property oid="1235858735342">
+								<code>price</code>
+								<extension>true</extension>
+								<extensionProperty>price</extensionProperty>
+
+							</property>
+
+							<property oid="1235772843106">
+								<code>webLink</code>
+								<extension>true</extension>
+								<extensionProperty>webLink</extensionProperty>
+
+							</property>
+
+							<property oid="1235841544644">
+								<code>description</code>
+								<extension>true</extension>
+								<extensionProperty>description</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1235856417414">
+						<code>Writer</code>
+						<extension>true</extension>
+						<extensionConcept>Writer</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1235856440789">
+								<code>lastName</code>
+								<extension>true</extension>
+								<extensionProperty>lastName</extensionProperty>
+
+							</property>
+
+							<property oid="1235856445734">
+								<code>firstName</code>
+								<extension>true</extension>
+								<extensionProperty>firstName</extensionProperty>
+
+							</property>
+
+							<property oid="1235856461209">
+								<code>webLink</code>
+								<extension>true</extension>
+								<extensionProperty>webLink</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1235856477617">
+						<code>Author</code>
+						<extension>true</extension>
+						<extensionConcept>Author</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1235856720765">
+								<code>writerOid</code>
+								<extension>true</extension>
+								<extensionProperty>writerOid</extensionProperty>
+
+							</property>
+
+							<property oid="1235856534602">
+								<code>sequence</code>
+								<extension>true</extension>
+								<extensionProperty>sequence</extensionProperty>
+								
+								<essential>true</essential>
+							</property>
+							
+							<property oid="1236178928892">
+								<code>writerLastName</code>
+								<derived>true</derived>
+								<propertyClass>java.lang.String</propertyClass>
+								
+								<essential>true</essential>
+
+							</property>
+							
+							<property oid="1236178928894">
+								<code>writerFirstName</code>
+								<derived>true</derived>
+								<propertyClass>java.lang.String</propertyClass>
+								
+								<essential>true</essential>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1235856986413">
+						<code>Category</code>
+						<extension>true</extension>
+						<extensionConcept>Category</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1235856993972">
+								<code>name</code>
+								<extension>true</extension>
+								<extensionProperty>name</extensionProperty>
+
+							</property>
+
+							<property oid="1235856998277">
+								<code>note</code>
+								<extension>true</extension>
+								<extensionProperty>note</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1235857133371">
+						<code>Review</code>
+						<extension>true</extension>
+						<extensionConcept>Review</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1235857152219">
+								<code>webLink</code>
+								<extension>true</extension>
+								<extensionProperty>webLink</extensionProperty>
+
+							</property>
+
+							<property oid="1235857158588">
+								<code>reviewDate</code>
+								<extension>true</extension>
+								<extensionProperty>reviewDate</extensionProperty>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+
+					<concept oid="1235857282287">
+						<code>BookItem</code>
+						<extension>true</extension>
+						<extensionConcept>BookItem</extensionConcept>
+			    
+						<properties>
+
+							<property oid="1235857480602">
+								<code>memberOid</code>
+								<extension>true</extension>
+								<extensionProperty>memberOid</extensionProperty>
+
+							</property>
+
+							<property oid="1235857314768">
+								<code>number</code>
+								<extension>true</extension>
+								<extensionProperty>number</extensionProperty>
+
+							</property>
+							
+							<property oid="1236178928888">
+								<code>bookName</code>
+								<derived>true</derived>
+								<propertyClass>java.lang.String</propertyClass>
+								
+								<essential>true</essential>
+
+							</property>
+
+							<property oid="1236178928888">
+								<code>note</code>
+								<extension>true</extension>
+								<extensionProperty>note</extensionProperty>
+								
+								<essential>true</essential>
+
+							</property>
+					
+						</properties>
+						
+					</concept>
+				
+				</concepts>
+		
+			</model>
+   
+		</models>
+
+	</domain>
+		
+</domains>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<places>
+  <place oid="1190205405598">
+    <countryOid>1190136021157</countryOid>
+    <name>Sarajevo</name>
+    <city>Sarajevo</city>
+    <webLink>http://en.wikipedia.org/wiki/Sarajevo</webLink>
+    <description>Sarajevo, in English usually [ˌsærəˈjeɪvoʊ]) is the capital city and largest urban center of Bosnia and Herzegovina.</description>
+  </place>
+  <place oid="1190305193873">
+    <countryOid>1190136010187</countryOid>
+    <name>Rockies</name>
+    <webLink>http://www.canadianrockies.com/</webLink>
+  </place>
+  <place oid="1190305386562">
+    <countryOid>1190136021157</countryOid>
+    <name>Bjelasnica</name>
+    <webLink>http://www.bhtourism.ba/eng/bjelasnica.wbsp</webLink>
+    <description>Bjelašnica is a mountain in central Bosnia and Herzegovina. It is found directly to the southwest of Sarajevo, bordering Mt. Igman. Bjelašnica's tallest peak is 2067 meters (6782 feet).</description>
+  </place>
+  <place oid="1190912510622">
+    <countryOid>1190912387699</countryOid>
+    <name>Buenos Aires</name>
+    <city>Buenos Aires</city>
+    <webLink>http://en.wikipedia.org/wiki/Buenos_Aires</webLink>
+    <description>Buenos Aires is the capital of Argentina and its largest city and port. It is located on the southern shore of the Río de la Plata, on the southeastern coast of the South American continent.</description>
+  </place>
+  <place oid="1190998477477">
+    <countryOid>1190136010187</countryOid>
+    <name>Québec</name>
+    <city>Québec</city>
+    <webLink>http://www.quebecregion.com/e/</webLink>
+  </place>
+  <place oid="1191004180414">
+    <countryOid>1191003983136</countryOid>
+    <name>Kashmir</name>
+    <webLink>http://en.wikipedia.org/wiki/Kashmir_region</webLink>
+    <description>Kashmir is the northwestern region of the Indian subcontinent. Historically the term Kashmir was used to refer to the valley lying between the Great Himalayas and the Pir Panjal range.</description>
+  </place>
+  <place oid="1191005397614">
+    <countryOid>1191003983136</countryOid>
+    <name>Srinagar</name>
+    <city>Srinagar</city>
+    <webLink>http://www.jktourism.org/cities/kashmir/srinagar/index.htm</webLink>
+    <description>Srinagar is located in the heart of the Kashmir valley at an altitude of 1,730 m above sea level, spread on both sides of the river Jhelum. The Dal and Nagin lakes enhance its picturesque setting, while the changing play of the seasons and the salubrious climate ensures that the city is equally attractive to visitors around the year.</description>
+  </place>
+  <place oid="1191434563862">
+    <countryOid>1191434469875</countryOid>
+    <name>Venice</name>
+    <city>Venice</city>
+    <webLink>http://europeforvisitors.com/venice/</webLink>
+  </place>
+  <place oid="1194383061076">
+    <countryOid>1194382574247</countryOid>
+    <name>Tirana</name>
+  </place>
+</places>

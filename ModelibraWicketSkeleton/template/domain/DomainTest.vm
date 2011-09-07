@@ -1,0 +1,57 @@
+#include ("template/ModelibraComment.txt")
+
+package ${domainpackagecode};
+
+import org.modelibra.config.DomainConfig;
+import org.modelibra.config.ModelConfig;
+
+/**
+ * Domain tests. In general, there may be more than one domain model.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $DomainTestCode {
+	
+	private static $DomainTestCode $domainTestCode;
+
+	private $DomainCode $domainCode;
+
+	private $PersistentDomainCode $persistentDomainCode;
+	
+	private $DomainTestCode() {
+		super();
+		open();
+	}
+	
+	public static $DomainTestCode getSingleton() {
+		if ($domainTestCode == null) {
+			$domainTestCode = new $DomainTestCode();
+		}
+		return $domainTestCode;
+	}
+	
+	private void open() {
+		$DomainConfigCode $domainConfigCode = new $DomainConfigCode();
+		DomainConfig domainConfig = ${domainConfigCode}.getDomainConfig();
+		for (ModelConfig modelConfig : domainConfig.getModelsConfig()) {
+			modelConfig.setPersistenceRelativePath(modelConfig
+					.getPersistenceRelativePath()
+					+ ${DomainConfigCode}.SEPARATOR
+					+ ${domainConfigCode}.getModelibraProperties().getTestDirectoryName());
+		}
+		$domainCode = new $DomainCode(domainConfig);
+		$persistentDomainCode = new $PersistentDomainCode($domainCode);
+	}
+
+	public $DomainCode get$DomainCode() {
+		return $domainCode;
+	}
+	
+	public void close() {
+		if ($persistentDomainCode != null) {
+			${persistentDomainCode}.close();
+		}
+	}
+	
+}

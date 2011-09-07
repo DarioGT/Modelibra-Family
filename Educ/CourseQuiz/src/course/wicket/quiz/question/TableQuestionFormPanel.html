@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>
+
+<form wicket:id="tableQuestionForm">
+	    <table>
+	  	    <caption>
+	  	        <wicket:message key = "question"/>
+	  	    </caption>
+			<tr>
+		  	    <th align="right"><wicket:message key = "question.quiz"/>:</th>
+		  	    <td wicket:id="quiz">
+	      	        Quiz name will be displayed here. 
+	            </td>
+			</tr>
+	  	    <tr>
+		  	    <th align="right"><wicket:message key = "question.number"/>:</th>
+		  	    <td wicket:id="number">
+	      	        Question number will be displayed here. 
+	            </td>
+			</tr>
+			<tr>
+		  	    <th align="right"><wicket:message key = "question.type"/>:</th>
+		  	    <td wicket:id="type">
+	      	        Question type will be displayed here. 
+	            </td>
+			</tr>
+			<tr>
+		  	    <th align="right"><wicket:message key = "question.points"/>:</th>
+		  	    <td wicket:id="points">
+	      	        Question points will be displayed here. 
+	            </td>
+			</tr>		
+			<tr>
+			    <th align="right"><wicket:message key = "question"/>:</th>
+		  	    <td wicket:id="text">
+		    	    Question text will be displayed here. 
+		  	    </td>
+			</tr>
+			<tr>
+			    <th align="right"><wicket:message key = "question.answer"/>:</th>
+		  	    <td wicket:id="userAnswerPanel">
+		  	        User answer will be displayed here. 
+		  	    </td>
+			</tr>
+			<tr>
+	    	    <td>
+	    	    </td>
+	    	    <td>
+	    	        <wicket:message key = "submit"/>
+	                <input type = "submit" value = "+"/>
+	                &ensp; &ensp;
+	                <wicket:message key = "cancel"/>
+	                <input wicket:id = "cancel" type = "submit" value = "&Phi;"/>
+	            </td>
+	  	    </tr>
+	    </table>
+    
+</form>
+
+<br/>
+	
+<div wicket:id="correctResponsePanel"/>
+  
+</wicket:panel>
+
+</html>
+

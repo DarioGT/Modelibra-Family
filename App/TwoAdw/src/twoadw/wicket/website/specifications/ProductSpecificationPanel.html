@@ -1,0 +1,53 @@
+<html xmlns:wicket>
+
+<wicket:panel>
+	<br><br><br>
+	<div wicket:id="specficiationCategories">	
+		<table border="0">
+		  <tr>
+		    <td width="250">
+		    	<span class="pointMain"></span>&nbsp;<b><span wicket:id="categoryName"></span></b>
+		    </td>
+		    <td width="450">&nbsp;</td>
+		    <td>
+		     	<a wicket:id="removeCat" title="Remove Category" class="adminLink"><span class="removeIcon"></span></a>
+		     </td>
+		  </tr>
+		  <tr wicket:id="specficiationsList">
+		  	 <td width="250">
+		    	&nbsp;&nbsp;<span class="pointSub"></span><span wicket:id="title"></span>
+		     </td>
+		     <td width="450">
+		    	<span wicket:id="detail"></span>
+		    	
+		     </td>
+		     <td>
+		     	<a wicket:id="removeSpec" title="Remove Specification" class="adminLink"><span class="removeIcon"></span></a>
+		     </td>
+	   	  </tr>
+	   	  
+		</table>
+   	  	<form wicket:id="formSpecification">
+  		<table border="0">
+  			<td width="250">
+				&nbsp;&nbsp;<span class="pointSub"></span>
+				<input type="text" wicket:id="title" class="nameInput"/>
+			</td>
+			<td width="450">
+				<input type="text" wicket:id="detail" class="nameInput"/>
+				<a wicket:id="add" title="Add Specification"><span class="addIcon"></span></a>
+			</td>
+		</table>
+		</form>
+  		
+	</div>
+	<br>
+	<form wicket:id="formCategory">
+	<hr>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Category:<br>
+		<span class="pointMain"></span>&nbsp;<input type="text" wicket:id="name" class="nameInput"/><a wicket:id="add" title="Add Category"><span class="addIcon"></span></a>
+		
+	</form>
+	<div wicket:id="feedback"></div>
+</wicket:panel>
+</html>

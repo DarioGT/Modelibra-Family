@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="ModelibraSwingWicketProject" default="copy-lib-dir">	
+	
+	<property name="from-lib-dir" value="../ModelibraSwingSkeleton/lib"/>
+	<property name="to-lib-dir" value="lib"/>
+		
+	<target name="create-lib-dir">
+		<mkdir dir="${to-lib-dir}"/>
+	</target>
+	
+	<target name="copy-lib-dir" depends="create-lib-dir">
+		<copy todir="${to-lib-dir}">
+			<fileset dir="${from-lib-dir}"/>
+		</copy>  
+	</target>
+	
+</project>

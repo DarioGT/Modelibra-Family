@@ -1,0 +1,32 @@
+/* msg.css */
+
+/* ===[ begin ]=== */
+
+/*
+    Title:                   Message Design Style
+    Author:                  Dzenan Ridjanovic
+    Created:                 2006-09-03
+    Updated:                 2007-10-30
+*/
+
+	.msg-title {
+		font-family: arial, sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+		font-style: italic;
+		font-variant: small-caps;
+		color: #003366;
+		padding: 10px;
+		background: #ffe4b5;
+	}
+	
+	.msg-text {
+		color: #a30000;
+		background: #fffff0;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4em;
+		padding: 0px 4px 0px 8px;
+}
+			
+/* ===[ end ]=== */

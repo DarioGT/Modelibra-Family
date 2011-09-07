@@ -1,0 +1,53 @@
+>>>>>>>>>>>>>>>>>>>> Chapter 01 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 02 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 03 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 04 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 05 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 06 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 07 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 08 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 09 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 10 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 11 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 12 <<<<<<<<<<<<<<<<<<<<
+
+_____________________________________________________________________________________________
+page:19
+paragraph 1 (done)
+
+- stands:
+
+There are also EntityParentChildUpdatePage and EntityParentChildUpdatePanel generic display 
+components that are similar to the generic components.
+
+- should be:
+
+There are also EntityParentChildDisplayPage and EntityParentChildDisplayPanel generic display
+components that are similar to the generic components.
+
+- This could be added too:
+
+EntityParentChildDisplayPage contains EntityParentChildDisplayPanel that uses EntityDisplayPanel 
+for parent entity display and EntityDisplayTablePanel for child entities display.
+_____________________________________________________________________________________________
+
+>>>>>>>>>>>>>>>>>>>> Chapter 13 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Chapter 14 <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Appendix A <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Appendix B <<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>> Appendix C <<<<<<<<<<<<<<<<<<<<

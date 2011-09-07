@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<questionTypes>
+  <questionType oid="1160152479155">
+    <code>short answer</code>
+    <type>short answer</type>
+  </questionType>
+  <questionType oid="1160152539203">
+    <code>true or false</code>
+    <type>true or false</type>
+  </questionType>
+  <questionType oid="1160152554986">
+    <code>single choice</code>
+    <type>single choice</type>
+  </questionType>
+  <questionType oid="1160152564565">
+    <code>multiple choice</code>
+    <type>multiple choice</type>
+  </questionType>
+</questionTypes>

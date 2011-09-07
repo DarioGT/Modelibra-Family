@@ -1,0 +1,201 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1206346054005,89,pic,pics,pic,255,255,255,Nijaz Nanic,false,?,false,xml,true,true,2042,750
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,true,8,140,128,99,1206346810658,92,Djelatnost,Djelatnosti,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1206346810658,92,960496657960,1,Oid,1206346810658,93,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1206346810658,92,1131484634992,109,Code,1206346810658,94,sifraDjelatnosti,sifraDjelatnostis,?,255,204,102,1,1,false,true,?,false
+I,1206346810658,92,1131484634992,109,Code,1206346810659,96,nazivDjelatnosti,nazivDjelatnostis,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,56,9,128,68,1206346810792,117,KlijentDjelatnost,KlijentDjelatnosti,?,255,204,102,true,true
+ 
+C, === Items === 
+ 
+I,1206346810792,117,960496657960,1,Oid,1206346810792,118,oid,?,?,255,204,102,1,1,true,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,322,19,128,98,1206346810971,140,Posta,Poste,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1206346810971,140,960496657960,1,Oid,1206346810971,141,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1206346810971,140,1131484634992,109,Code,1206346810972,145,postBroj,postBrojs,?,255,204,102,1,1,false,true,?,false
+I,1206346810971,140,1138035633296,1,Name,1206346810972,144,nazivPoste,nazivPostes,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,551,142,128,100,1206346811014,146,Opstina,Opstine,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1206346811014,146,960496657960,1,Oid,1206346811014,147,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1206346811014,146,1131484634992,109,Code,1206346811015,149,sifraOpstine,sifraOpstines,?,255,204,102,1,1,false,true,?,false
+I,1206346811014,146,1138035633296,1,Name,1206346811015,150,nazivOpstine,nazivOpstines,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,359,219,128,97,1206346811205,161,Ulica,Ulice,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1206346811205,161,960496657960,1,Oid,1206346811205,162,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1206346811205,161,1131484634992,109,Code,1206346811206,165,sifraUlice,sifraUlices,?,255,204,102,1,1,false,true,?,false
+I,1206346811205,161,1138035633296,1,Name,1206346811206,166,nazivUlice,nazivUlices,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,true,722,476,128,146,1206346811267,168,User,Users,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1206346811267,168,960496657960,1,Oid,1206346811267,169,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1206346811267,168,1138035633296,1,Name,1206346811268,172,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1206346811267,168,1138035633296,1,Name,1206346811268,173,password,passwords,?,255,204,102,1,1,false,false,?,false
+I,1206346811267,168,1138035633296,1,Name,1206346811267,170,ime,imes,?,255,204,102,1,1,false,false,?,false
+I,1206346811267,168,1138035633296,1,Name,1206346811268,171,prezime,prezimes,?,255,204,102,1,1,false,false,?,false
+I,1206346811267,168,1131484634992,109,Code,1206346811268,174,jmbr,jmbrs,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,true,191,249,128,321,1206346810785,97,Klijent,Klijenti,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1206346810785,97,960496657960,1,Oid,1206346810786,98,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1206346810785,97,960496658020,11,Integer,1206346810787,114,idKlijenta,idKlijentas,?,255,204,102,1,1,false,true,?,false
+I,1206346810785,97,1138035633296,1,Name,1206346810786,99,prezime,prezimes,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1138035633296,1,Name,1206346810787,108,ime,imes,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484582316,107,LongName,1206346810786,100,naziv,nazivs,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484634992,109,Code,1206346810786,101,sifraUlice,sifraUlices,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484634992,109,Code,1206346810786,102,brojUlice,brojUlices,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484634992,109,Code,1206346810787,115,postBroj,postBrojs,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484634992,109,Code,1206346810787,107,sifraOpstine,sifraOpstines,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484634992,109,Code,1206346810787,110,sifraRegije,sifraRegijes,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484746612,110,Email,1206346810786,104,email,emails,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1137362490437,10,JDate,1206346810786,105,datumPrijave,datumPrijaves,?,255,204,102,0,1,false,false,today,false
+I,1206346810785,97,1131484634992,109,Code,1206346810786,106,tip,tips,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484634992,109,Code,1206346810787,112,ziroracun,ziroracuns,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484634992,109,Code,1206346810787,113,porezniBroj,porezniBrojs,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1131484634992,109,Code,1212579276389,13,skypeneme,skypenemes,?,255,204,102,0,1,false,false,?,false
+I,1206346810785,97,1036703802546,90,VarBinary,1212587131398,50,kljucneRijeci,kljucneRijecis,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,541,253,135,162,1206346811160,151,Telefon,Telefoni,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1206346811160,151,960496657960,1,Oid,1206346811160,152,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1206346811160,151,1131484634992,109,Code,1206346811160,154,mgDrzave,mgDrzaves,?,255,204,102,1,1,false,true,00387,false
+I,1206346811160,151,1131484634992,109,Code,1206346811160,155,mg,mgs,?,255,204,102,1,1,false,true,?,false
+I,1206346811160,151,1131484634992,109,Code,1206346811160,156,brojTel,brojTels,?,255,204,102,1,1,false,true,?,false
+I,1206346811160,151,1138035633296,1,Name,1206346811160,153,nazivKorTelefona,nazivKorTelefonas,?,255,204,102,1,1,false,false,?,false
+I,1206346811160,151,1165588261375,80,String,1212581691734,33,funkcija,funkcijas,?,255,204,102,0,1,false,false,?,false
+I,1206346811160,151,1165588261375,80,String,1212581698019,34,radnoMjesto,radnoMjestos,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,8,349,145,98,1212578246585,2,Poddjelatnost,Poddjelatnosti,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1212578246585,2,960496657960,1,Oid,1212578246586,3,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1212578246585,2,1131484634992,109,Code,1212578353249,5,sifraPoddjelatnosti,sifraPoddjelatnostis,?,255,204,102,1,1,false,true,?,false
+I,1212578246585,2,1036703803257,91,Varchar,1212578367600,6,nazivPoddjelatnosti,nazivPoddjelatnostis,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,true,787,32,128,99,1212579004897,7,Regija,Regije,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1212579004897,7,960496657960,1,Oid,1212579004897,8,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1212579004897,7,1165588261375,80,String,1212579024526,9,siraRegije,siraRegijes,?,255,204,102,1,1,false,true,?,false
+I,1212579004897,7,1165588261375,80,String,1212579029125,10,nazivRegije,nazivRegijes,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,true,544,432,128,98,1212579348240,15,Status,Statusi,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1212579348240,15,960496657960,1,Oid,1212579348241,16,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1212579348240,15,960496658020,4,Char,1212579401174,17,sifraStatusa,sifraStatusas,?,255,204,102,1,1,false,true,?,false
+I,1212579348240,15,1131484634992,109,Code,1212579408014,18,nazivStatusa,nazivStatusas,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,true,545,550,128,101,1212580141186,20,Url,Urls,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1212580141186,20,960496657960,1,Oid,1212580141186,21,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1212580141186,20,960496658020,11,Integer,1212580214525,22,sifraUrl,sifraUrls,?,255,204,102,1,1,false,true,?,false
+I,1212580141186,20,1131484778208,111,Url,1212580244948,23,link,links,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,3,478,128,140,1212580867066,25,Uplata,Uplate,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1212580867066,25,960496657960,1,Oid,1212580867066,26,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1212580867066,25,1137362490437,10,JDate,1212580884770,27,datumUplate,datumUplates,?,255,204,102,1,1,false,false,?,false
+I,1212580867066,25,1137362490437,10,JDate,1212580923486,29,vrijediOd,vrijediOds,?,255,204,102,1,1,false,false,?,false
+I,1212580867066,25,1137362490437,10,JDate,1212580916801,28,vrijediDo,vrijediDos,?,255,204,102,1,1,false,false,?,false
+I,1212580867066,25,1036703797529,77,Decimal,1212580982598,32,iznos,iznoss,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,818,288,128,97,1212583788203,35,Grad,Gradovi,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1212583788203,35,960496657960,1,Oid,1212583788203,36,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1212583788203,35,1165588261375,80,String,1212583805881,37,sifraGrada,sifraGradas,?,255,204,102,1,1,false,true,?,false
+I,1212583788203,35,1165588261375,80,String,1212583821046,38,nazivGrada,nazivGradas,?,255,204,102,1,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1206346054005,89,false,?,false,false,359,523,128,149,1212584228238,41,Oglas,Oglasi,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1212584228238,41,960496657960,1,Oid,1212584228238,42,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1212584228238,41,960496658020,11,Integer,1212584257590,43,idOglasa,idOglasas,?,255,204,102,1,1,false,true,?,false
+I,1212584228238,41,1138035633296,1,Name,1212584265949,44,nazivOglasa,nazivOglasas,?,255,204,102,1,1,false,false,?,false
+I,1212584228238,41,1131484610357,108,Description,1212584270624,45,text,texts,?,255,204,102,1,1,false,false,?,false
+I,1212584228238,41,1137362490437,10,JDate,1212586972351,48,datumObjave,datumObjaves,?,255,204,102,1,1,false,false,?,false
+I,1212584228238,41,1137362490437,10,JDate,1212586985904,49,vrijediDo,vrijediDos,?,255,204,102,1,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1206346054005,89,1206346810785,97,1206346810792,117,false,true,true,0,N,false,korisnikdjelatnosts,true,NONE,NONE,NONE,1,1,true,korisnik,true,NONE,NONE,NONE,1206347888216,180,?,?,?,255,204,102,true,false
+L,1206346054005,89,1206346810658,92,1206346810792,117,false,false,true,0,N,false,korisnikdjelatnosts,true,NONE,NONE,NONE,1,1,true,djelatnost,true,NONE,NONE,NONE,1206347898664,181,?,?,?,153,102,0,true,false
+L,1206346054005,89,1206346810785,97,1206346811160,151,false,true,false,0,N,false,telefoni,true,NONE,NONE,NONE,1,1,true,korisnik,true,NONE,NONE,NONE,1206348380063,186,?,?,?,255,204,102,true,false
+L,1206346054005,89,1206346811205,161,1206346810785,97,false,false,false,0,N,false,korisnici,true,NONE,NONE,NONE,1,1,true,ulica,true,NONE,NONE,NONE,1206349047284,187,?,?,?,153,102,0,true,false
+L,1206346054005,89,1206346811014,146,1206346810971,140,false,true,false,0,N,false,poste,true,NONE,NONE,NONE,1,1,true,opstina,true,NONE,NONE,NONE,1206349183016,188,?,?,?,255,204,102,true,false
+L,1206346054005,89,1206346810971,140,1206346811205,161,false,true,false,0,N,false,ulice,true,NONE,NONE,NONE,1,1,true,posta,true,NONE,NONE,NONE,1206349437886,191,?,?,?,255,204,102,true,false
+L,1206346054005,89,1206346810658,92,1212578246585,2,false,true,false,0,N,false,?,true,NONE,NONE,NONE,1,1,true,djelatnost,true,NONE,NONE,NONE,1212578322868,4,?,?,?,255,204,102,true,false
+L,1206346054005,89,1212579348240,15,1206346810785,97,false,false,false,0,N,false,klijents,true,NONE,NONE,NONE,1,1,true,?,true,NONE,NONE,NONE,1212579435797,19,?,?,?,153,102,0,true,false
+L,1206346054005,89,1212580141186,20,1206346810785,97,false,false,false,0,N,false,klijents,true,NONE,NONE,NONE,1,1,true,?,true,NONE,NONE,NONE,1212580504762,24,?,?,?,153,102,0,true,false
+L,1206346054005,89,1206346810785,97,1212580867066,25,false,true,false,0,N,false,?,true,NONE,NONE,NONE,1,1,true,klijent,true,NONE,NONE,NONE,1212580960326,31,?,?,?,255,204,102,true,false
+L,1206346054005,89,1212583788203,35,1206346811014,146,false,true,false,0,N,false,opstine,true,NONE,NONE,NONE,1,1,false,grad,true,NONE,NONE,NONE,1212583838909,39,?,?,?,255,204,102,true,false
+L,1206346054005,89,1212579004897,7,1212583788203,35,false,true,false,0,N,false,grads,true,NONE,NONE,NONE,1,1,false,regija,true,NONE,NONE,NONE,1212583843461,40,?,?,?,255,204,102,true,false
+L,1206346054005,89,1206346810785,97,1212584228238,41,false,true,false,0,N,false,?,true,NONE,NONE,NONE,1,1,true,klijent,true,NONE,NONE,NONE,1212584277224,46,?,?,?,255,204,102,true,false
+L,1206346054005,89,1206346810785,97,1206346810785,97,false,true,false,0,N,false,klijents,true,NONE,NONE,NONE,0,1,false,klijent,true,NONE,NONE,NONE,1212585087124,47,?,?,?,255,204,102,true,false

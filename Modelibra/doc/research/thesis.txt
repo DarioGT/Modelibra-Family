@@ -1,0 +1,73 @@
+Thesis Topics
+
+Clustering Modelibra with Terracotta
+(http://www.terracottatech.com/)
+ 
+Benchmarking Modelibra with PolePosition
+(http://polepos.sourceforge.net/)
+
+Developing B-tree Indexes in Modelibra
+
+Developing Modelibra Persistence for XML Databases
+(http://xml.apache.org/xindice/)
+(http://exist.sourceforge.net/)
+
+Developing an Incremental Load in Modelibra
+
+Developing new ModelibraModeler with Modelibra
+
+Redeveloping HotDraw with Modelibra
+(http://hillside.net/plop/plop98/final_submissions/P47.pdf)
+
+Comparing EMF and Modelibra
+(http://www.eclipse.org/emf/)
+
+Comparing Main Memory Databases with Modelibra
+
+Using Hibernate Framework with Modelibra
+
+Using Spring Framework with Modelibra
+
+One-to-one Relationships in Modelibra
+
+Data Inheritance in Modelibra
+
+Modelibra Configurations With Modelibra
+
+Java Annotations for Modelibra Configurations
+
+Generating Test Data in Modelibra
+
+I18n of Data in Modelibra
+
+Derived Properties in Modelibra
+
+Constraints in Modelibra
+
+Use of Existing Databases with Modelibra
+
+Migration of Data in Modelibra
+
+Synchronizing Off-Line Data with On-Line Data in Modelibra
+
+Developing a Security Framework in Modelibra
+
+Developing ModelibraSwing for Modelibra
+
+Code Generation of Web Pages
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

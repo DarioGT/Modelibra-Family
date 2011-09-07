@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metaDomains>
+  <metaDomain oid="1208115976646">
+    <code>Modelibra</code>
+    <metaModels>
+      <metaModel oid="1208115976663">
+        <code>Designer</code>
+      </metaModel>
+    </metaModels>
+  </metaDomain>
+</metaDomains>

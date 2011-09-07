@@ -1,0 +1,45 @@
+We’re ready to expand the team again, for several disciplines, but for this post I’ll focus on software engineers. If you are a phenomenal software engineer, or know one, drop me a note at my first name dot last name at blist.com. 
+
+What’s in it for you?
+
+1) You’ll get to work on a really cool product that’s resonating well with our target audience.
+
+2) You’ll get to work on some fun and interesting technologies - Flash (Flex), ActionScript, Ruby on Rails.
+
+3) You’ll get to try to solve some really challenging problems:
+
+    a) Creating the world’s easiest database by changing the metaphor of what it means to organize data
+
+    b) Developing a massively scalable, high performance, distributed data store
+
+4) You’ll get to work with people who are as passionate about technology as you are.
+
+5) You’ll get in early enough to make a huge difference.
+
+6) You’ll get to work in fast paced environment without undue bureaucracy, heavy specs or too many program managers. We employ scrum with very rapid, two-week sprints.
+
+7) You’ll get paid pretty well, including full benefits and stock options.
+
+What kind of software engineer are we looking for?
+
+1) We value technical diversity. We don’t care so much if you’ve worked with Flash or Rails as long as you’re smart, resourceful and have demonstrated excellence in programming in other environments.
+
+2) We build software from the bottom up, so you should have really strong fundamentals. Usually this means you have an undergrad or masters degree in CS or EE from a top university, but we’ve been impressed by more than a few folks who’ve come through other paths.
+
+3) We’re looking for people who want to get in early on something that’s going to be big.  These folks are attracted to the big systems challenges and opportunities of a Google or Facebook, but those companies are now too big for them.
+
+4) We look for people who can be stars if they chose to work alone, but who’d rather work in a small, nimble team where everyone’s contributions matter.
+
+5) We think past success is an indicator of future success. We look for people who can demonstrate how they’ve solved big problems in the past and how solving those problems really mattered.
+
+6) While we care a lot less about what languages you’ve programmed in the past, we do appreciate people who’ve experienced building Internet software that scales.
+
+7) We look for people who have a really strong passion for what we’re building. Read up on us on our website and TechCrunch. If it doesn’t interest you, by all means don’t apply. Life’s too short. Have some fun while you’re here.
+
+What Next?
+
+If you’re interested, send me an email. If you have a current resume, great. If not, we’ll get that later. I like to look at code, so send me some. Send me the solution to the following programming challenge:
+
+Without using any built in date or time functions, write a function or method that accepts two mandatory arguments. The first argument is a string of the format "[H]H:MM {AM|PM}" and the second argument is an integer. Assume the integer is the number of minutes to add to the string. The return value of the function should be a string of the same format as the first argument. For example AddMinutes("9:13 AM", 10) would return "9:23 AM". The exercise isn’t meant to be too hard. I just want to see how you code. Feel free to do it procedurally or in an object oriented way, whichever you prefer. Use any language you want. Write production quality code.
+
+I look forward to hearing from you.

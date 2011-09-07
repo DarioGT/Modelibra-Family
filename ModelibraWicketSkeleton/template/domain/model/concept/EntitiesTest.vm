@@ -1,0 +1,60 @@
+#include ("template/ModelibraComment.txt")
+
+package $entitiespackagecode;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.modelibra.type.EasyDate;
+
+import ${domainpackagecode}.$DomainTestCode;
+
+/**
+ * JUnit tests for $EntitiesCode.
+ * 
+ * @author $author
+ * @version $today
+ */
+public class $EntitiesTestCode {
+
+	private static $EntitiesCode $entitiesCode;
+
+	@BeforeClass
+	public static void beforeTests() throws Exception {
+		// If the concept is not an entry into the model, first find a collection of entities.
+		// For an entry point the following code is correct.
+		// $entitiesCode = ${DomainTestCode}.getSingleton().get$DomainCode().get$ModelCode().get$EntitiesCode();
+	}
+
+	@Before
+	public void beforeTest() throws Exception {
+		${entitiesCode}.getErrors().empty();
+	}
+
+	@Test
+	public void testName() throws Exception {
+		// to do
+	}
+
+	@After
+	public void afterTest() throws Exception {
+		for (${EntityCode} ${entityCode} : ${entitiesCode}.getList()) {
+			${entitiesCode}.remove(${entityCode});
+		}
+	}
+	
+	@AfterClass
+	public static void afterTests() throws Exception {
+		${DomainTestCode}.getSingleton().close();
+	}
+
+}

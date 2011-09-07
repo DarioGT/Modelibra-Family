@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Reusable Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1231088671635">
+		<code>Sales</code>
+		<type>Reusable</type>
+	    
+		<models>
+
+			<model oid="1231169065332">
+				<code>CheeseStore</code>
+				<author>Dzenan Ridjanovic</author>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/sales/cheesestore</persistenceRelativePath>
+				<defaultLoadSave>true</defaultLoadSave>
+	    
+				<concepts>
+			
+					<concept oid="1231169447920">
+						<code>Cart</code>					
+						<entitiesCode>Carts</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1231169615063">
+								<code>addressOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<reference>true</reference>
+								<referenceNeighbor>address</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1231169636488">
+								<code>cartCheeses</code>
+								<destinationConcept>CartCheese</destinationConcept>
+								<inverseNeighbor>cart</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+							<neighbor oid="1231169615063">
+								<code>address</code>
+								<destinationConcept>Address</destinationConcept>
+								<inverseNeighbor>carts</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>0</min>
+								<max>1</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1231169456922">
+						<code>Cheese</code>					
+						<entitiesCode>Cheeses</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1231169568815">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1231169571776">
+								<code>description</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>1020</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1231169573441">
+								<code>price</code>
+								<propertyClass>java.lang.Double</propertyClass>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1231169686874">
+								<code>cartCheeses</code>
+								<destinationConcept>CartCheese</destinationConcept>
+								<inverseNeighbor>cheese</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1231169481732">
+						<code>CartCheese</code>					
+						<entitiesCode>CartCheeses</entitiesCode>
+			    
+						<properties>
+							<property oid="1231169686874">
+								<code>cheeseOid</code>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<required>true</required>
+								<reference>true</reference>
+								<referenceNeighbor>cheese</referenceNeighbor>
+		
+								<essential>false</essential>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1231169636488">
+								<code>cart</code>
+								<destinationConcept>Cart</destinationConcept>
+								<inverseNeighbor>cartCheeses</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+							<neighbor oid="1231169686874">
+								<code>cheese</code>
+								<destinationConcept>Cheese</destinationConcept>
+								<inverseNeighbor>cartCheeses</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>true</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1231169511158">
+						<code>Address</code>					
+						<entitiesCode>Addresses</entitiesCode>
+						<entry>true</entry>
+			    
+						<properties>
+							<property oid="1231169523978">
+								<code>name</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+								<unique>true</unique>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1231169536811">
+								<code>street</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>64</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1231169538924">
+								<code>city</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>32</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+							<property oid="1231169541949">
+								<code>zipcode</code>
+								<propertyClass>java.lang.String</propertyClass>
+								<maxLength>16</maxLength>
+								<required>true</required>
+
+								<essential>true</essential>
+							</property>
+						</properties>
+
+						<neighbors>
+							<neighbor oid="1231169615063">
+								<code>carts</code>
+								<destinationConcept>Cart</destinationConcept>
+								<inverseNeighbor>address</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+							</neighbor>
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+    
+		</models>
+
+	</domain>
+		
+</domains>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<jnlp spec='1.0'
+      codebase='http://www.physci.org/jws'
+      href='mm.jnlp'>
+  <information>
+    <title>ModelibraModeler</title>
+    <vendor>Dzenan Ridjanovic</vendor>
+    <description kind='one-line'>
+      Modelibra domain model design tool.
+    </description>
+    <shortcut online='false'>
+      <desktop/>
+    </shortcut>
+  </information>
+  <resources>
+    <j2se version='1.5+' />
+    <jar href='mm.jar' main='true' />
+  </resources>
+  <application-desc main-class='org.modelibra.modeler.app.context.Start' />
+</jnlp>

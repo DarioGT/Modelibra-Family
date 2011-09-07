@@ -1,0 +1,20 @@
+Domain: Travel
+Model: Impression
+Created: 2007.12.04
+Updated: 2007.12.04
+
+Objective
+
+    To finish the TravelImpression web application (the starting point is the 04 spiral).
+    
+Concepts
+
+	Specific and generic web components.
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>
+
+    <table>
+        <caption><wicket:message key = "document.title"/></caption>
+        <tr>
+	        <th><wicket:message key = "document.name"/></th>
+	        <th><wicket:message key = "document.link"/></th>
+	        <th><wicket:message key = "document.date.creation"/></th>
+        </tr>
+        <tr wicket:id="documentDisplayTableListView">
+            <td wicket:id="quizName">
+                Quiz name 
+            </td>
+            <td>
+                <a class="button" wicket:id="documentLink">
+                   Document
+                </a>
+            </td>
+            <td wicket:id="creationDate">
+                Document creation date
+            </td>
+        </tr>
+    </table>
+  
+</wicket:panel>
+
+</html>

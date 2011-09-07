@@ -1,0 +1,18 @@
+Model Rules
+
+1. For each model 1 class: Model.
+
+2. Entry points in the model. Create entry points in the model's constructor.
+
+3. For each concept 2 classes: Concept and Concepts.
+
+4. First do Concept classes for the entry points.
+
+5. Concept class: properties for parent concepts, properties for child concepts;
+
+6. Create child entities in the concepts's constructor.
+
+7. Private set methods (or not at all) for setting parents or children.
+
+8. Public attach and detach methods for relationships. 
+

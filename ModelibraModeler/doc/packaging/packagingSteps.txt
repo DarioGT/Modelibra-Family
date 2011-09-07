@@ -1,0 +1,81 @@
+Old Packaging Steps (mmLite-2.0 2007-02-13)
+
+In the src directory:
+
++ jar all packages with Eclipse to mmLite/executable/software directory (mmLite-2.0.jar);
+
+In the mmLite/executable/packaging directory:
+
++ use key.bat to create a new key (dzenanr, ccxxx2cc), if the key does not exist;
++ use certificate.bat to create a certification;
++ use list.bat to see the certification;
+
+In the mmLite/executable/software directory:
+
++ copy the dzenanrKey key;
++ copy the mysql driver jar; 
++ copy the velocity 1 jar;
++ copy the velocity 2 jar;
+
++ sign the mmLite-2.0.jar file with signMmLite.bat;
++ sign the mysql driver jar file with signMySqlDriver.bat;
++ sign the velocity 1 jar file with signVelocity1.bat;
++ sign the velocity 2 jar file with signVelocity1.bat;
++ signatures are valid for six months only starting with 2007-02-13
+
++ execute MM with mmLiteExecute.bat;
+
+mmLiteExecute.bat:
+%JAVA_HOME%\bin\java.exe -classpath mmLite-2.0.jar;mysql-connector-java-5.0.4-bin.jar;velocity-1.5-beta2.jar;velocity-dep-1.5-beta2.jar org.mmlite.app.context.Start
+PAUSE
+
+In the mmLite/executable/webStart/localhost directory:
+
++ update mmLiteLocalhost.jnlp:
+  - codebase="http://localhost:8080/mmLite/"
+  - href="mmLiteLocalhost.jnlp
+  - <homepage href="http://localhost:8080/mmLite/"/>
+  - <j2se version="1.6"/>
+  - <jar href="mmLite-2.0.jar"/> 
+  - <jar href="mysql-connector-java-5.0.4-bin.jar"/>  
+  - <jar href="velocity-1.5-beta2.jar"/>    
+  - <jar href="velocity-dep-1.5-beta2.jar"/>    
+
+In the mmLite/executable/webStart/drdb directory:
+
++ update mmLite.jnlp:
+  - codebase="http://drdb.fsa.ulaval.ca/mmLite/"
+  - href="mmLite.jnlp"
+  - <homepage href="http://drdb.fsa.ulaval.ca/mmLite/"/>
+  - <j2se version="1.6"/>
+  - <jar href="mmLite-2.0.jar"/> 
+  - <jar href="mysql-connector-java-5.0.4-bin.jar"/>  
+  - <jar href="velocity-1.5-beta2.jar"/>    
+  - <jar href="velocity-dep-1.5-beta2.jar"/>   
+   
+In the mmLite-2.0 directory:
+
++ zip the mmLite-2.0 directory;
+
+In the localhost mmLite Tomcat app, in the software directory:
+
++ copy mmLite-2.0.jar 
++ copy mmLite-2.0.zip 
++ copy mmLite.gif
++ copy mmLiteExecute.bat
++ copy mmLiteLocalhost.jnlp 
++ copy mmLiteLocalhostJavaWebStart.bat 
++ copy mysql driver jar 
++ copy velocity jars
+
++ test mmLite app.
+
+In the drdb mmLite Tomcat app:
+
++ copy mmLite jar to mmLite/;
++ copy mysql driver jar to mmLite/;
++ copy velocity jars to mmLite/;
++ copy mmLite.gif to mmLite/;
++ copy mmLite.jnlp to mmLite/;
++ copy mmLite-2.0.zip to mmLite/;
++ test mmLite app.

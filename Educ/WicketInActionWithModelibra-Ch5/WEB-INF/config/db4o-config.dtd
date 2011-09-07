@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT db4o-config (unicode, flushFileBuffers, blockSize)>
+
+<!ELEMENT unicode (true, false)>
+<!ELEMENT flushFileBuffers (true, false)>
+<!ELEMENT blockSize (CDATA)>

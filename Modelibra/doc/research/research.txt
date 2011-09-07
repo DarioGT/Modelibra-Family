@@ -1,0 +1,30 @@
+Research
+
++ main memory vs. persistence
++ functions vs. performance
++ clustering Modelibra with Terracotta 
++ benchamrking Modelibra with PolePosition
+
+Modelibra
+
++ one-to-one relationships
++ inheritance relationships
++ more specific class generation from configurations
++ Java annotations to replace XML configurations
++ a log in XML about adds, removals and updates.
++ i18n at the data level: categories_fr.xml
++ full scale security at the Modelibra level with 
+  groups, roles, concepts, properties, neighbors
++ B-tree data structures for entities
++ main memory index structure for faster retrievals (to be fully tested)
++ Java queries for Modelibra (similar to native queries of db4o)
++ performance benchmarks
++ JDBC persistence
++ Modelibra with Spring
++ Modelibra with Hibernate
++ how to use an existing db with Modelibra?
+
+
+
+
+

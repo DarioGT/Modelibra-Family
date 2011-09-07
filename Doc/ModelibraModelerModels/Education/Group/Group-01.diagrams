@@ -1,0 +1,202 @@
+ 
+C, === Diagrams === 
+ 
+ 
+C, --- Diagram --- 
+ 
+D,1220582530410,2,GroupMng,GroupMngs,education,255,255,255,TeamLCG,false,?,false,xml,true,true,1400,1000
+ 
+C, === Boxes === 
+ 
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,true,21,23,128,131,1220582530410,3,Team,Teams,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1220582530410,3,960496657960,1,Oid,1220582530410,4,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530410,3,1138035633296,1,Name,1220582530430,5,name,names,?,255,204,102,1,1,false,true,?,false
+I,1220582530410,3,1131484582316,107,LongName,1220582530430,7,organization,organizations,?,255,204,102,1,1,false,false,?,false
+I,1220582530410,3,1131484778208,111,Url,1221051876944,1,repository,repositories,?,255,204,102,1,1,false,false,?,false
+I,1220582530410,3,1131484610357,108,Description,1220582530430,6,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,true,683,11,128,178,1220582530430,8,Member,Members,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1220582530430,8,960496657960,1,Oid,1220582530430,9,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530430,8,1131484634992,109,Code,1220582530430,10,code,codes,?,255,204,102,1,1,false,true,?,false
+I,1220582530430,8,1131484634992,109,Code,1220582530430,11,password,passwords,?,255,204,102,1,1,false,false,?,false
+I,1220582530430,8,1131484634992,109,Code,1220582530430,16,role,roles,?,255,204,102,1,1,false,false,regular,false
+I,1220582530430,8,1138035633296,1,Name,1220582530430,12,lastName,lastNames,?,255,204,102,1,1,false,false,?,false
+I,1220582530430,8,1138035633296,1,Name,1220582530430,13,firstName,firstNames,?,255,204,102,1,1,false,false,?,false
+I,1220582530430,8,1131484746612,110,Email,1220582530430,14,email,emails,?,255,204,102,1,1,false,false,?,false
+I,1220582530430,8,1146828554640,178,Logic,1220582530430,15,leader,leaders,?,255,204,102,1,1,false,false,false,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,23,318,128,215,1220582530430,17,Project,Projects,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1220582530430,17,960496657960,1,Oid,1220582530430,18,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530430,17,1138035633296,1,Name,1220582530430,19,name,names,?,255,204,102,1,1,false,true,?,false
+I,1220582530430,17,1165588406062,81,Note,1220582530430,20,objective,objectives,?,255,204,102,1,1,false,false,?,false
+I,1220582530430,17,1131484610357,108,Description,1220582530440,21,description,descriptions,?,255,204,102,0,1,false,false,?,false
+I,1220582530430,17,1137362490437,10,JDate,1220582530440,22,beginDate,beginDates,?,255,204,102,1,1,false,false,today,false
+I,1220582530430,17,1137362490437,10,JDate,1220582530440,23,endDate,endDates,?,255,204,102,0,1,false,false,?,false
+I,1220582530430,17,1131484778208,111,Url,1220582530440,24,sourceCodeLink,sourceCodeLinks,?,255,204,102,1,1,false,false,?,false
+I,1220582530430,17,1138035779453,2,Text,1220582530440,25,context,contexts,?,255,204,102,0,1,false,false,?,false
+I,1220582530430,17,1165588734953,84,ShortDecimal,1220582530440,26,maxPoints,maxPointss,?,255,204,102,0,1,false,false,?,false
+I,1220582530430,17,1165588734953,84,ShortDecimal,1220582530440,27,obtainedPoints,obtainedPointss,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,535,525,128,236,1220582530440,28,Spiral,Spirals,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1220582530440,28,960496657960,1,Oid,1220582530440,29,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530440,28,960496658020,11,Integer,1220582530440,30,seqNo,seqNos,?,255,204,102,1,1,false,true,?,false
+I,1220582530440,28,1138035633296,1,Name,1220582530440,31,name,names,?,255,204,102,1,1,false,false,?,false
+I,1220582530440,28,1141774778531,1,ShortText,1220582530440,32,mainTheme,mainThemes,?,255,204,102,1,1,false,false,?,false
+I,1220582530440,28,1137362490437,10,JDate,1220582530440,33,beginDate,beginDates,?,255,204,102,1,1,false,false,?,false
+I,1220582530440,28,1137362490437,10,JDate,1220582530440,34,endDate,endDates,?,255,204,102,1,1,false,false,?,false
+I,1220582530440,28,1176496101906,129,LongText,1220582530440,35,plannedWork,plannedWorks,?,255,204,102,1,1,false,false,?,false
+I,1220582530440,28,1176496101906,129,LongText,1220582530440,36,workDone,workDones,?,255,204,102,0,1,false,false,?,false
+I,1220582530440,28,1176496101906,129,LongText,1220582530440,37,difference,differences,?,255,204,102,0,1,false,false,?,false
+I,1220582530440,28,960496658020,11,Integer,1220582530440,38,maxPoints,maxPointss,?,255,204,102,0,1,false,false,?,false
+I,1220582530440,28,1165588734953,84,ShortDecimal,1220582530440,39,obtainedPoints,obtainedPointss,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,1009,15,128,227,1220582530440,40,Task,Tasks,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1220582530440,40,960496657960,1,Oid,1220582530450,41,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530440,40,1146828554640,178,Logic,1220582530450,42,individual,individuals,?,255,204,102,1,1,false,false,true,false
+I,1220582530440,40,1137362490437,10,JDate,1220582530450,43,beginDate,beginDates,?,255,204,102,1,1,false,false,today,false
+I,1220582530440,40,1137362490437,10,JDate,1220582530450,44,endDate,endDates,?,255,204,102,0,1,false,false,?,false
+I,1220582530440,40,1138035779453,2,Text,1220582530450,47,plannedWork,plannedWorks,?,255,204,102,1,1,false,false,?,false
+I,1220582530440,40,1138035779453,2,Text,1220582530450,48,workDone,workDones,?,255,204,102,0,1,false,false,?,false
+I,1220582530440,40,1138035779453,2,Text,1220582530450,49,difference,differences,?,255,204,102,0,1,false,false,?,false
+I,1220582530440,40,1165588734953,84,ShortDecimal,1220582530450,45,estimatedHours,estimatedHourss,?,255,204,102,1,1,false,false,?,false
+I,1220582530440,40,1165588734953,84,ShortDecimal,1220582530450,46,actualHours,actualHourss,?,255,204,102,0,1,false,false,?,false
+I,1220582530440,40,960496658020,11,Integer,1220582530450,50,priority,priorities,?,255,204,102,1,1,false,false,5,false
+I,1220582530440,40,1146828554640,178,Logic,1220582530450,51,bug,bugs,?,255,204,102,1,1,false,false,false,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,417,342,128,150,1220582530450,52,Evaluation,Evaluations,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1220582530450,52,960496657960,1,Oid,1220582530450,53,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530450,52,1165588734953,84,ShortDecimal,1220582530450,54,attitude,attitudes,?,255,204,102,1,1,false,false,5,false
+I,1220582530450,52,1165588734953,84,ShortDecimal,1220582530450,55,quantity,quantities,?,255,204,102,1,1,false,false,5,false
+I,1220582530450,52,1165588734953,84,ShortDecimal,1220582530450,56,quality,qualities,?,255,204,102,1,1,false,false,5,false
+I,1220582530450,52,1165588734953,84,ShortDecimal,1220582530450,57,average,averages,?,255,204,102,0,1,false,false,?,false
+I,1220582530450,52,1138035779453,2,Text,1220582530450,58,comment,comments,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,873,415,128,134,1220582530450,59,Problem,Problems,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1220582530450,59,960496657960,1,Oid,1220582530450,60,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530450,59,1131484610357,108,Description,1220582530450,61,description,descriptions,?,255,204,102,1,1,false,false,?,false
+I,1220582530450,59,1146828554640,178,Logic,1220582530460,62,resolved,resolveds,?,255,204,102,1,1,false,false,false,false
+I,1220582530450,59,1138035779453,2,Text,1220582530460,63,solution,solutions,?,255,204,102,0,1,false,false,?,false
+I,1220582530450,59,1131484778208,111,Url,1220582530460,64,solutionLink,solutionLinks,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,187,732,128,99,1220582530460,65,Objective,Objectives,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1220582530460,65,960496657960,1,Oid,1220582530460,66,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530460,65,1131484610357,108,Description,1220582530460,67,description,descriptions,?,255,204,102,1,1,false,false,?,false
+I,1220582530460,65,1131484778208,111,Url,1220582530460,68,resourceLink,resourceLinks,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,851,651,128,132,1220582530460,69,Event,Events,?,255,204,102,true,false
+ 
+C, === Items === 
+ 
+I,1220582530460,69,960496657960,1,Oid,1220582530460,70,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530460,69,1146828554640,178,Logic,1220582530460,71,meeting,meetings,?,255,204,102,1,1,false,false,true,false
+I,1220582530460,69,1131484610357,108,Description,1220582530460,72,description,descriptions,?,255,204,102,1,1,false,false,?,false
+I,1220582530460,69,1137362490437,10,JDate,1220582530460,73,eventDate,eventDates,?,255,204,102,1,1,false,false,today,false
+I,1220582530460,69,1138035779453,2,Text,1220582530460,74,conclusion,conclusions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,true,1118,445,128,122,1220582530460,75,Category,Categories,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1220582530460,75,960496657960,1,Oid,1220582530460,76,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530460,75,1138035633296,1,Name,1220582530460,77,name,names,?,255,204,102,1,1,false,false,?,false
+I,1220582530460,75,1131484610357,108,Description,1220582530460,78,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,true,238,195,128,103,1220582530470,79,Type,Types,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1220582530470,79,960496657960,1,Oid,1220582530470,80,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530470,79,1138035633296,1,Name,1220582530470,81,name,names,?,255,204,102,1,1,false,true,?,false
+I,1220582530470,79,1131484610357,108,Description,1220582530470,82,description,descriptions,?,255,204,102,0,1,false,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,true,20,731,128,91,1220582530470,83,Keyword,Keywords,?,0,153,0,true,false
+ 
+C, === Items === 
+ 
+I,1220582530470,83,960496657960,1,Oid,1220582530470,84,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220582530470,83,1141774778531,1,ShortText,1220582530470,85,word,words,?,255,204,102,1,1,false,true,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,282,591,128,73,1220582530470,86,Tag,Tags,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1220582530470,86,960496657960,1,Oid,1220582530470,87,oid,?,?,255,204,102,1,1,true,false,?,false
+ 
+C, --- Box --- 
+ 
+B,1220582530410,2,false,?,false,false,376,170,128,85,1220898462321,1,Assignment,Assignments,?,153,102,0,true,false
+ 
+C, === Items === 
+ 
+I,1220898462321,1,960496657960,1,Oid,1220898462321,2,oid,?,?,255,204,102,1,1,true,false,?,false
+I,1220898462321,1,1165588261375,80,String,1220898486465,3,beginDate,beginDates,?,255,204,102,1,1,false,false,?,false
+ 
+C, === Lines === 
+ 
+L,1220582530410,2,1220582530410,3,1220582530430,17,false,true,false,0,N,false,projects,true,NONE,NONE,NONE,1,1,false,team,true,NONE,NONE,NONE,1220582530480,89,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530430,17,1220582530440,28,false,true,false,0,N,false,spirals,true,NONE,NONE,NONE,1,1,true,project,true,NONE,NONE,NONE,1220582530480,90,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530440,28,1220582530440,40,false,true,false,0,N,false,tasks,true,NONE,NONE,NONE,1,1,false,spiral,true,NONE,NONE,NONE,1220582530490,91,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530430,8,1220582530440,40,false,false,false,0,N,false,tasks,true,NONE,NONE,NONE,0,1,false,member,true,NONE,NONE,NONE,1220582530490,92,?,?,?,153,102,0,true,false
+L,1220582530410,2,1220582530430,8,1220582530450,52,false,false,true,0,N,false,evaluations,true,NONE,NONE,NONE,1,1,true,member,true,NONE,NONE,NONE,1220582530490,93,?,?,?,153,102,0,true,false
+L,1220582530410,2,1220582530440,40,1220582530450,52,false,true,true,0,N,false,evaluations,true,NONE,NONE,NONE,1,1,true,task,true,NONE,NONE,NONE,1220582530490,94,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530440,40,1220582530450,59,false,true,false,0,N,false,problems,true,NONE,NONE,NONE,1,1,false,task,true,NONE,NONE,NONE,1220582530490,95,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530440,28,1220582530460,69,false,true,false,0,N,false,events,true,NONE,NONE,NONE,1,1,false,spiral,true,NONE,NONE,NONE,1220582530490,96,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530440,28,1220582530460,65,false,true,false,0,N,false,objectives,true,NONE,NONE,NONE,1,1,false,spiral,true,NONE,NONE,NONE,1220582530500,99,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530460,75,1220582530460,75,false,true,false,0,N,false,categories,true,NONE,NONE,NONE,0,1,false,category,true,NONE,NONE,NONE,1220582530500,100,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530460,75,1220582530440,40,false,false,false,0,N,false,tasks,true,NONE,NONE,NONE,1,1,false,category,true,NONE,NONE,NONE,1220582530500,101,?,?,?,153,102,0,true,false
+L,1220582530410,2,1220582530470,79,1220582530430,17,false,false,false,0,N,false,projects,true,NONE,NONE,NONE,1,1,false,type,true,NONE,NONE,NONE,1220582530510,102,?,?,?,153,102,0,true,false
+L,1220582530410,2,1220582530470,83,1220582530470,86,false,false,true,0,N,false,tags,true,NONE,NONE,NONE,1,1,true,keyword,true,NONE,NONE,NONE,1220582530510,103,?,?,?,153,102,0,true,false
+L,1220582530410,2,1220582530430,17,1220582530470,86,false,true,true,0,N,false,tags,true,NONE,NONE,NONE,1,1,true,project,true,NONE,NONE,NONE,1220582530510,104,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530410,3,1220898462321,1,false,true,true,0,N,false,assignments,true,NONE,NONE,NONE,1,1,true,team,true,NONE,NONE,NONE,1220898492442,4,?,?,?,255,204,102,true,false
+L,1220582530410,2,1220582530430,8,1220898462321,1,false,false,true,0,N,false,assignments,true,NONE,NONE,NONE,1,1,true,member,true,NONE,NONE,NONE,1220898495811,5,?,?,?,153,102,0,true,false

@@ -1,0 +1,27 @@
+To Do ?
+
+Singleton pattern for DesignerDb.
+Observer Observable pattern for propagating changes from the model to views.
+Include selected and hidden properties to MetaConcept.
+Create the application frame with with a domain and its models.
+
+Handle concept properties in views.
+Add property types.
+Handle oid and id.
+Handle index.
+
+Handle relationships.
+
+Use a session and transactions in Modelibra.
+Add undo.
+Use indexes in Modelibra.
+
+Complete meta data.
+
+Add data dictionary windows.
+
+Generate XML configuration with proper names for XML elements (domain, model. concept, ...)
+
+
+
+

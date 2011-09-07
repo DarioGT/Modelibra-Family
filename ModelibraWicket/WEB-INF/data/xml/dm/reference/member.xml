@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<members>
+  <member oid="1140723324489">
+    <code>admin</code>
+    <lastName>Riđanović</lastName>
+    <firstName>Dzenan</firstName>
+    <email>dzenan.ridjanovic@fsa.ulaval.ca</email>
+    <receiveEmail>true</receiveEmail>
+    <role>admin</role>
+    <startDate>2006-01-16</startDate>
+    <password>admin</password>
+  </member>
+</members>

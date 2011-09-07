@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<discounts>
+  <discount oid="1237312239095">
+    <percentage>0.1</percentage>
+    <description>hurry</description>
+    <from>2009-03-17</from>
+    <until>2009-03-30</until>
+    <cheeseOid>1231195964978</cheeseOid>
+  </discount>
+  <discount oid="1237312332757">
+    <percentage>0.15</percentage>
+    <description>will not last long</description>
+    <from>2009-03-17</from>
+    <until>2009-03-19</until>
+    <cheeseOid>1231196049937</cheeseOid>
+  </discount>
+  <discount oid="1237314574903">
+    <percentage>0.01</percentage>
+    <description>better something than nothing</description>
+    <from>2009-03-17</from>
+    <until>2009-03-31</until>
+    <cheeseOid>1231195994044</cheeseOid>
+  </discount>
+</discounts>

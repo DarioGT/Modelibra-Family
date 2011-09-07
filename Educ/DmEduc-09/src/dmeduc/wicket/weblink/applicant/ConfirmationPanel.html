@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns:wicket>
+
+<wicket:panel>
+	
+	<form wicket:id = "confirmationForm">
+		<table>
+			<caption>
+				<wicket:message key = "signUp.confirmation.title"/>
+			</caption>
+			<tr>
+				<th align = "right">
+					<wicket:message key = "signUp.confirmation.oid"/>
+				</th>
+				<td>
+					<input wicket:id = "oidField" type = "text" value = "?" size = "20" />
+				</td>
+			</tr>
+		  
+			<tr>
+				<td>
+					
+				</td>
+				<td>
+					<wicket:message key = "signUp.confirmation.confirm"/>
+					<input type = "submit" value = "+"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	<br/>
+	<div wicket:id = "unconfirm" class="marker">
+		Non-confirmation message
+	</div>
+	<br/>
+	  
+</wicket:panel>
+
+</html>
+

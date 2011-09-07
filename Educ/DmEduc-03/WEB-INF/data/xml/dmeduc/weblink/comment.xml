@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<comments>
+  <comment oid="1172855461393">
+    <text>This is something!</text>
+    <creationDate>2007-03-02</creationDate>
+  </comment>
+  <comment oid="1172855461410">
+    <text>What is the magic?</text>
+    <creationDate>2007-03-02</creationDate>
+  </comment>
+  <comment oid="1190925315116">
+    <text>Modelibra is getting close to its beta version.</text>
+    <source>dr</source>
+    <creationDate>2007-09-27</creationDate>
+  </comment>
+</comments>
