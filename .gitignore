@@ -28,3 +28,4 @@ RCSLOG
 SCCS
 _$*
 .svn
+*.properties
