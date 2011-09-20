@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!-- ========================================== -->
+	<!-- Reusable Domain Config                     -->
+	<!-- ========================================== -->
+
+<domains>
+
+	<domain oid="1208025784135">
+		<code>Modelibra</code>
+		<type>Reusable</type>
+		<packageCode></packageCode>
+		<abstraction>false</abstraction>
+		<defaultConstruct>false</defaultConstruct>
+		<packagePrefix></packagePrefix>
+		<referenceModel>Reference</referenceModel>
+		
+		<i18n>false</i18n>
+		<signin>false</signin>
+		<signinConcept>Member</signinConcept>
+		<shortTextDefaultLength>64</shortTextDefaultLength>
+		<pageBlockDefaultSize>16</pageBlockDefaultSize>
+		<validateForm>true</validateForm>
+		<confirmRemove>true</confirmRemove>
+	 
+		<models>
+
+			<model oid="1208025817276">
+				<code>Designer</code>
+				<abstraction>false</abstraction>
+				<extension>false</extension>
+				<extensionDomain></extensionDomain>
+				<extensionModel></extensionModel>
+				<author>Dzenan Ridjanovic</author>
+				<packageCode></packageCode>
+				<persistent>true</persistent>
+				<persistenceType>xml</persistenceType>
+				<persistenceRelativePath>data/xml/modelibra/designer</persistenceRelativePath>
+				<persistenceConfig></persistenceConfig>
+				<defaultLoadSave>true</defaultLoadSave>
+				<datePattern>yyyy-MM-dd</datePattern>
+				<session>false</session>
+	    
+				<concepts>
+			
+					<concept oid="1208025829105">
+						<code>MetaDomain</code>
+						<abstraction>false</abstraction>
+						<extension>false</extension>
+						<extensionDomain></extensionDomain>
+						<extensionModel></extensionModel>
+						<extensionConcept></extensionConcept>
+						<extensionWithNeighbors>false</extensionWithNeighbors>
+						<entitiesCode>MetaDomains</entitiesCode>
+						<packageCode></packageCode>
+						<min>0</min>
+						<max>N</max>
+						<entry>true</entry>
+						<fileName>metadomain.xml</fileName>
+						<index>false</index>  
+						
+						<display>true</display>
+	        			<displayType>table</displayType>
+	        			<add>true</add>
+	        			<remove>true</remove>
+	        			<update>true</update>  
+			    
+						<properties>
+							<property oid="1208025851571">
+								<code>code</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>true</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>true</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211145874646">
+								<code>description</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>false</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+
+						</properties>
+
+			    		<neighbors>
+							<neighbor oid="1208026711399">
+								<code>metaModels</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaModel</destinationConcept>
+								<inverseNeighbor>metaDomain</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>false</absorb>
+							</neighbor>
+			    	
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1208025838298">
+						<code>MetaModel</code>
+						<abstraction>false</abstraction>
+						<extension>false</extension>
+						<extensionDomain></extensionDomain>
+						<extensionModel></extensionModel>
+						<extensionConcept></extensionConcept>
+						<extensionWithNeighbors>false</extensionWithNeighbors>
+						<entitiesCode>MetaModels</entitiesCode>
+						<packageCode></packageCode>
+						<min>0</min>
+						<max>N</max>
+						<entry>false</entry>
+						<fileName></fileName>
+						<index>false</index>  
+						
+						<display>true</display>
+	        			<displayType>table</displayType>
+	        			<add>true</add>
+	        			<remove>true</remove>
+	        			<update>true</update>  
+			    
+						<properties>
+							<property oid="1208025854820">
+								<code>code</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>true</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>true</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211145766271">
+								<code>author</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>false</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211145869092">
+								<code>description</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>false</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+
+						</properties>
+
+			    		<neighbors>
+							<neighbor oid="1208026714848">
+								<code>metaConcepts</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaModel</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>false</absorb>
+							</neighbor>
+							<neighbor oid="1208026711399">
+								<code>metaDomain</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaDomain</destinationConcept>
+								<inverseNeighbor>metaModels</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>true</absorb>
+							</neighbor>
+			    	
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1208025843876">
+						<code>MetaConcept</code>
+						<abstraction>false</abstraction>
+						<extension>false</extension>
+						<extensionDomain></extensionDomain>
+						<extensionModel></extensionModel>
+						<extensionConcept></extensionConcept>
+						<extensionWithNeighbors>false</extensionWithNeighbors>
+						<entitiesCode>MetaConcepts</entitiesCode>
+						<packageCode></packageCode>
+						<min>0</min>
+						<max>N</max>
+						<entry>false</entry>
+						<fileName></fileName>
+						<index>false</index>  
+						
+						<display>true</display>
+	        			<displayType>table</displayType>
+	        			<add>true</add>
+	        			<remove>true</remove>
+	        			<update>true</update>  
+			    
+						<properties>
+							<property oid="1208025858101">
+								<code>code</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>true</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>true</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211140460779">
+								<code>entry</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+
+						</properties>
+
+			    		<neighbors>
+							<neighbor oid="1208026716833">
+								<code>metaConceptGraphics</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaConceptGraphic</destinationConcept>
+								<inverseNeighbor>metaConcept</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>false</absorb>
+							</neighbor>
+							<neighbor oid="1211138981732">
+								<code>metaProperties</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaProperty</destinationConcept>
+								<inverseNeighbor>metaConcept</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>false</absorb>
+							</neighbor>
+							<neighbor oid="1211983653477">
+								<code>metaDestinationNeighbors</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaNeighbor</destinationConcept>
+								<inverseNeighbor>metaSourceConcept</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>false</absorb>
+							</neighbor>
+							<neighbor oid="1211983764558">
+								<code>metaSourceNeighbors</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaNeighbor</destinationConcept>
+								<inverseNeighbor>metaDestinationConcept</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>false</absorb>
+							</neighbor>
+							<neighbor oid="1208026714848">
+								<code>metaModel</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaModel</destinationConcept>
+								<inverseNeighbor>metaConcepts</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>true</absorb>
+							</neighbor>
+			    	
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1208025959031">
+						<code>MetaConceptGraphic</code>
+						<abstraction>false</abstraction>
+						<extension>false</extension>
+						<extensionDomain></extensionDomain>
+						<extensionModel></extensionModel>
+						<extensionConcept></extensionConcept>
+						<extensionWithNeighbors>false</extensionWithNeighbors>
+						<entitiesCode>MetaConceptGraphics</entitiesCode>
+						<packageCode></packageCode>
+						<min>0</min>
+						<max>N</max>
+						<entry>false</entry>
+						<fileName></fileName>
+						<index>false</index>  
+						
+						<display>true</display>
+	        			<displayType>table</displayType>
+	        			<add>true</add>
+	        			<remove>true</remove>
+	        			<update>true</update>  
+			    
+						<properties>
+							<property oid="1208025970774">
+								<code>x</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1208025971663">
+								<code>y</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1208025976897">
+								<code>width</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1208025979097">
+								<code>height</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+
+						</properties>
+
+			    		<neighbors>
+							<neighbor oid="1208026716833">
+								<code>metaConcept</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaConceptGraphics</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>true</absorb>
+							</neighbor>
+			    	
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1211138929239">
+						<code>MetaProperty</code>
+						<abstraction>false</abstraction>
+						<extension>false</extension>
+						<extensionDomain></extensionDomain>
+						<extensionModel></extensionModel>
+						<extensionConcept></extensionConcept>
+						<extensionWithNeighbors>false</extensionWithNeighbors>
+						<entitiesCode>MetaProperties</entitiesCode>
+						<packageCode></packageCode>
+						<min>0</min>
+						<max>N</max>
+						<entry>false</entry>
+						<fileName></fileName>
+						<index>false</index>  
+						
+						<display>true</display>
+	        			<displayType>table</displayType>
+	        			<add>true</add>
+	        			<remove>true</remove>
+	        			<update>true</update>  
+			    
+						<properties>
+							<property oid="1211140626463">
+								<code>metaTypeOid</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>false</required>
+								<defaultValue></defaultValue>		
+								<autoIncrement>false</autoIncrement>		      		
+								<unique>false</unique>          
+								<index>false</index>
+								<reference>true</reference>
+								<referenceNeighbor>metaType</referenceNeighbor>
+								
+								<display>true</display>
+								<update>false</update>
+								<displayLength>16</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1211138964317">
+								<code>code</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>true</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>true</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211139049714">
+								<code>id</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211139463943">
+								<code>increment</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211139389634">
+								<code>value</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211139467608">
+								<code>init</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>false</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+
+						</properties>
+
+			    		<neighbors>
+							<neighbor oid="1211138981732">
+								<code>metaConcept</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaProperties</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>true</absorb>
+							</neighbor>
+							<neighbor oid="1211140626463">
+								<code>metaType</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaType</destinationConcept>
+								<inverseNeighbor>metaProperties</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>0</min>
+								<max>1</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>true</absorb>
+							</neighbor>
+			    	
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1211139625807">
+						<code>MetaType</code>
+						<abstraction>false</abstraction>
+						<extension>false</extension>
+						<extensionDomain></extensionDomain>
+						<extensionModel></extensionModel>
+						<extensionConcept></extensionConcept>
+						<extensionWithNeighbors>false</extensionWithNeighbors>
+						<entitiesCode>MetaTypes</entitiesCode>
+						<packageCode></packageCode>
+						<min>0</min>
+						<max>N</max>
+						<entry>true</entry>
+						<fileName>metatype.xml</fileName>
+						<index>false</index>  
+						
+						<display>true</display>
+	        			<displayType>table</displayType>
+	        			<add>true</add>
+	        			<remove>true</remove>
+	        			<update>true</update>  
+			    
+						<properties>
+							<property oid="1211139677557">
+								<code>code</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>true</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>true</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211140035478">
+								<code>base</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211140044232">
+								<code>length</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>false</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+
+						</properties>
+
+			    		<neighbors>
+							<neighbor oid="1211140626463">
+								<code>metaProperties</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaProperty</destinationConcept>
+								<inverseNeighbor>metaType</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>child</type>
+								<min>0</min>
+								<max>N</max>
+								<unique>false</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>false</absorb>
+							</neighbor>
+			    	
+						</neighbors>
+			    
+					</concept>		    
+			
+					<concept oid="1211983552926">
+						<code>MetaNeighbor</code>
+						<abstraction>false</abstraction>
+						<extension>false</extension>
+						<extensionDomain></extensionDomain>
+						<extensionModel></extensionModel>
+						<extensionConcept></extensionConcept>
+						<extensionWithNeighbors>false</extensionWithNeighbors>
+						<entitiesCode>MetaNeighbors</entitiesCode>
+						<packageCode></packageCode>
+						<min>0</min>
+						<max>N</max>
+						<entry>false</entry>
+						<fileName></fileName>
+						<index>false</index>  
+						
+						<display>true</display>
+	        			<displayType>table</displayType>
+	        			<add>true</add>
+	        			<remove>true</remove>
+	        			<update>true</update>  
+			    
+						<properties>
+							<property oid="1211983764558">
+								<code>metaDestinationConceptOid</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>			    		
+								<propertyClass>java.lang.Long</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<defaultValue></defaultValue>		
+								<autoIncrement>false</autoIncrement>		      		
+								<unique>false</unique>          
+								<index>false</index>
+								<reference>true</reference>
+								<referenceNeighbor>metaDestinationConcept</referenceNeighbor>
+								
+								<display>true</display>
+								<update>false</update>
+								<displayLength>16</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>true</referenceDropDownLookup>
+							</property>
+							<property oid="1211983567408">
+								<code>code</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>true</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>true</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1212171074288">
+								<code>id</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211983569665">
+								<code>min</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Integer</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211983571970">
+								<code>max</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.String</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>true</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+							<property oid="1211983579859">
+								<code>internal</code>
+								<extension>false</extension>
+								<extensionProperty></extensionProperty>
+								<propertyClass>java.lang.Boolean</propertyClass>
+								<derived>false</derived>
+								<validateType>false</validateType>
+								<validationType></validationType>
+								<maxLength>0</maxLength>
+								<required>true</required>
+								<sensitive>false</sensitive>
+								<defaultValue></defaultValue>
+								<autoIncrement>false</autoIncrement>
+								<unique>false</unique>
+								<index>false</index>
+								<reference>false</reference>
+								<referenceNeighbor></referenceNeighbor>
+								
+								<display>true</display>
+								<update>true</update>
+								<displayLength>0</displayLength>
+								<essential>false</essential>
+								<scramble>false</scramble>
+								<whitespaceAllowed>false</whitespaceAllowed>
+								<referenceDropDownLookup>false</referenceDropDownLookup>
+							</property>
+
+						</properties>
+
+			    		<neighbors>
+							<neighbor oid="1211983653477">
+								<code>metaSourceConcept</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaDestinationNeighbors</inverseNeighbor>
+								<internal>true</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>true</absorb>
+							</neighbor>
+							<neighbor oid="1211983764558">
+								<code>metaDestinationConcept</code>
+								<extension>false</extension>
+								<extensionNeighbor></extensionNeighbor>
+								<destinationConcept>MetaConcept</destinationConcept>
+								<inverseNeighbor>metaSourceNeighbors</inverseNeighbor>
+								<internal>false</internal>
+								<partOfManyToMany>false</partOfManyToMany>
+								<type>parent</type>
+								<min>1</min>
+								<max>1</max>
+								<unique>true</unique>
+								<index>false</index>
+								<addRule>NONE</addRule>
+								<removeRule>NONE</removeRule>
+								<updateRule>NONE</updateRule>
+								
+								<display>true</display>
+								<update>true</update>
+								<absorb>true</absorb>
+							</neighbor>
+			    	
+						</neighbors>
+			    
+					</concept>		    
+		
+				</concepts>
+		
+			</model>
+    
+		</models>
+
+	</domain>
+		
+</domains>
